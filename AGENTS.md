@@ -23,12 +23,10 @@ The main endpoint is **`GET /api/test-substack`** — triggers the full pipeline
 ## Key Files
 - `src/lib/substack/rss.ts` — fetches and parses Substack RSS/XML
 - `src/lib/substack/parser.ts` — HTML→text conversion, HTML entity decoding
-- `src/lib/substack/programming.ts` — heuristic parser for session listings (cinema names, days, film metadata)
-- `src/lib/parser.ts` — older cinema parser (not used by the API route)
+- `src/lib/substack/programming.ts` — session parser (cinema names, days, film metadata)
 - `src/app/api/test-substack/route.ts` — API handler wiring the pipeline
 
 ## Notes
 - `.env` files are gitignored but no `.env.example` exists — add one if env vars are introduced
-- `cheerio` and `node-html-parser` are in `package.json` but not currently imported anywhere
 - RSS URL is hardcoded (`https://cinemaemsp.substack.com/feed`)
 - `sharp` and `unrs-resolver` are listed as ignored built dependencies in pnpm config

@@ -63,11 +63,8 @@ const DAYS = [
   "DOMINGO",
 ];
 
-
 export function extractSessions(text: string): Session[] {
-  
   const sessions: Session[] = [];
-
   let currentDay = "";
   let currentCinema = "";
 
@@ -79,19 +76,16 @@ export function extractSessions(text: string): Session[] {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
-    // Dia
     if (DAYS.some((d) => line.startsWith(d))) {
       currentDay = line;
       continue;
     }
 
-    // Cinema
     if (CINEMAS.includes(line)) {
       currentCinema = line;
       continue;
     }
 
-    // Filme
     const match = line.match(/^(.*?)\s*\((\d{4})\).*?\|\s*([0-9]{1,2}h[0-9]{0,2})/);
 
     if (!match) continue;
@@ -109,7 +103,6 @@ export function extractSessions(text: string): Session[] {
 
       if (!country) {
         const m = next.replace(/^•\s*/, "").match(/^(.+?)[,\s]+(\d+)’/);
-
         if (m) {
           country = m[1].trim();
           duration = Number(m[2]);
@@ -123,16 +116,7 @@ export function extractSessions(text: string): Session[] {
       }
     }
 
-    sessions.push({
-      cinema: currentCinema,
-      day: currentDay,
-      time,
-      title,
-      year,
-      country,
-      duration,
-      director,
-    });
+    sessions.push({ cinema: currentCinema, day: currentDay, time, title, year, country, duration, director });
   }
 
   return sessions;

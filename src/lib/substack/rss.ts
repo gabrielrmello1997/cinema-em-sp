@@ -27,7 +27,7 @@ export async function fetchFeed(): Promise<FeedData> {
 
   const rss = parser.parse(xml);
 
-  const item = rss?.rss?.channel?.item?.[5] ?? rss?.rss?.channel?.item;
+  const item = rss?.rss?.channel?.item?.[17] ?? rss?.rss?.channel?.item;
 
   if (!item) {
     throw new Error("Nenhum item encontrado no feed.");
