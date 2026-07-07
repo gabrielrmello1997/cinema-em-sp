@@ -1,7 +1,7 @@
 {
   "feedDate": "Mon, 06 Jul 2026 17:05:49 GMT",
   "feedTitle": "Programação segunda 06/07 a quarta 08/07",
-  "refreshedAt": "2026-07-07T14:40:54.762Z",
+  "refreshedAt": "2026-07-07T21:05:19.644Z",
   "sessions": [
     {
       "cinema": "CINE SEGALL",
@@ -12,6 +12,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/imfGMQkG1BP5O5bjQyWKiB0J1jA.jpg"
     },
     {
@@ -23,6 +24,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -34,6 +36,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -45,6 +48,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/khMIfRCgsMMqjxuGtJ2dUfJ551R.jpg"
     },
     {
@@ -56,6 +60,7 @@
       "country": "Reino Unido, França, Itália, Bélgica, Espanha",
       "duration": 116,
       "director": "Ken Loach",
+      "mostra": "ESPECIAL COPA",
       "poster": "https://image.tmdb.org/t/p/w500/xEZUei43WbPmP5Hp1UEAP3Ijz7x.jpg"
     },
     {
@@ -67,6 +72,7 @@
       "country": "Itália",
       "duration": 116,
       "director": "Mario Monicelli",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/7iML7nTQ7uZTaZQlkZwdNcCLLm5.jpg"
     },
     {
@@ -78,6 +84,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "David Zellner",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/wZU05LeIZE6azWUCnjYhEHeCDHB.jpg"
     },
     {
@@ -89,6 +96,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Don Chaffey",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/AqDQD2NgJkXImKmhbrYwuDfznJn.jpg"
     },
     {
@@ -100,6 +108,7 @@
       "country": "EUA, Itália",
       "duration": 129,
       "director": "Sidney Lumet",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/pRagfd10PPWryFRSzLPIivfAXHJ.jpg"
     },
     {
@@ -111,6 +120,7 @@
       "country": "EUA",
       "duration": 129,
       "director": "Martin Scorsese",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/lLeWJU33HgfWTnrOcaNBR5fUcF1.jpg"
     },
     {
@@ -122,6 +132,7 @@
       "country": "Brasil",
       "duration": 92,
       "director": "Arthur Fontes",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/oci0gTmLt55n6T5reT6xKvRNT9y.jpg"
     },
     {
@@ -133,6 +144,7 @@
       "country": "Brasil",
       "duration": 83,
       "director": "Oswaldo Santana, Karen Harley",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/tyKdgqeE9thRx6xycRxetUcpLrw.jpg"
     },
     {
@@ -144,6 +156,7 @@
       "country": "Brasil",
       "duration": 108,
       "director": "Eryk Rocha e Gabriela Carneiro da Cunha",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/dzBEhUSiiDJtd6v4LSN1SykSM5F.jpg"
     },
     {
@@ -155,6 +168,7 @@
       "country": "EUA",
       "duration": 136,
       "director": "Joseph L. Mankiewicz",
+      "mostra": "CINECLUBE MERTEN À LA CARTE",
       "poster": "https://image.tmdb.org/t/p/w500/cynMuhUnJgF3aCaKtR8aFTuElrF.jpg"
     },
     {
@@ -166,6 +180,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/khMIfRCgsMMqjxuGtJ2dUfJ551R.jpg"
     },
     {
@@ -177,6 +192,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -188,6 +204,7 @@
       "country": "Brasil",
       "duration": 113,
       "director": "Walter Salles e Daniela Thomas",
+      "mostra": "ESPECIAL COPA",
       "poster": "https://image.tmdb.org/t/p/w500/xKx5msZOhp71R7w9LPudDfrFQsz.jpg"
     },
     {
@@ -199,6 +216,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Maurício de Souza",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/4gtgUYAngSN6NlFX2ybJSDKCSVE.jpg"
     },
     {
@@ -210,6 +228,7 @@
       "country": "Japão",
       "duration": 102,
       "director": "Hayao Miyazaki",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/ljUAzMUhEVf2qXKgCBm61WJmV0J.jpg"
     },
     {
@@ -221,6 +240,7 @@
       "country": "EUA",
       "duration": 141,
       "director": "James Gray",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/ms4UmEmc0cyK5AN2EGPfadkbXae.jpg"
     },
     {
@@ -232,6 +252,7 @@
       "country": "EUA",
       "duration": 98,
       "director": "Aaron Horvath e Michael Jelenic",
+      "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/b3WeTp42eJSRuE4UZfyPCOJW4c.jpg"
     },
     {
@@ -243,6 +264,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/jnrMxSGHRXJYDIke83fTE9T4xVX.jpg"
     },
     {
@@ -254,6 +276,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aCXb4le0ogtxwI8kR62tMwwiu5d.jpg"
     },
     {
@@ -265,6 +288,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -276,6 +300,7 @@
       "country": "França, EUA, Reino Unido",
       "duration": 88,
       "director": "Ugo Bienvenu, Gilles Cazaux",
+      "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g2HROHxg6wTXyjjaii1S1NSl4dp.jpg"
     },
     {
@@ -287,6 +312,7 @@
       "country": "EUA",
       "duration": 121,
       "director": "Robert De Niro",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/aqo0G243ukYfVJNgncKGhqgmHfc.jpg"
     },
     {
@@ -298,6 +324,7 @@
       "country": "Hong Kong",
       "duration": 106,
       "director": "Stanley Tong",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/9Sk5pnCdu2Mm1SeaczRj0yEVH9I.jpg"
     },
     {
@@ -309,6 +336,7 @@
       "country": "Brasil",
       "duration": 101,
       "director": "Halder Gome",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/pRqry4UIbm3De8kfiDj86r9DlBC.jpg"
     },
     {
@@ -320,6 +348,7 @@
       "country": "Brasil",
       "duration": 129,
       "director": "Esmir Filho",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/sOed9XD0TS9d0XRSnTiw5tpXIIO.jpg"
     },
     {
@@ -331,6 +360,7 @@
       "country": "Brasil",
       "duration": 106,
       "director": "Marianna Brennand",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/sGLx3nUukO3ysgyuvuO8XrplTjV.jpg"
     },
     {
@@ -342,6 +372,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "Mark Herrier",
+      "mostra": "PORÃO DO BELAS: POLTRONA ENSANGUENTADA",
       "poster": "https://image.tmdb.org/t/p/w500/xtWk7eObTMXpZLByJqJtXfC6UWy.jpg"
     },
     {
@@ -353,6 +384,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/fPCfHEiLS3iPInAepWPWi1I9eFo.jpg"
     },
     {
@@ -364,6 +396,7 @@
       "country": "Brasil, Portugal",
       "duration": 125,
       "director": "Eduardo Nunes",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3o9cMXI7fx9lts7aLFCwHnMBXNt.jpg"
     },
     {
@@ -375,6 +408,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/imfGMQkG1BP5O5bjQyWKiB0J1jA.jpg"
     },
     {
@@ -386,6 +420,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -397,6 +432,7 @@
       "country": "Brasil",
       "duration": 130,
       "director": "Fernando Meirelles, Kátia Lund",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg"
     },
     {
@@ -408,6 +444,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/khMIfRCgsMMqjxuGtJ2dUfJ551R.jpg"
     },
     {
@@ -419,6 +456,7 @@
       "country": "Itália, França",
       "duration": 205,
       "director": "Luchino Visconti",
+      "mostra": "SESSÃO ESPECIAL - RESTAURADO 4K",
       "poster": "https://image.tmdb.org/t/p/w500/a3zvKpjkI1sInsjCdVx7yZ5iZFE.jpg"
     },
     {
@@ -430,6 +468,7 @@
       "country": "EUA",
       "duration": 87,
       "director": "Fritz Lang",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/4SQgosmWzGph8v983wUfPR8R2kL.jpg"
     },
     {
@@ -441,6 +480,7 @@
       "country": "EUA",
       "duration": 126,
       "director": "John Huston",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/aDx0b64VlRJt36kpDwx5CqAY2tg.jpg"
     },
     {
@@ -452,6 +492,7 @@
       "country": "França",
       "duration": 78,
       "director": "Maïlys Vallade e Liane-Cho Han Jin Kuang",
+      "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/fSGMCWbFXzfWHLnoaJBnm74viGo.jpg"
     },
     {
@@ -463,6 +504,7 @@
       "country": "Brasil",
       "duration": 70,
       "director": "Tuca Siqueira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/hCXdZXcNdgFwjmQ4iK75Mkt1UuJ.jpg"
     },
     {
@@ -474,6 +516,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -485,6 +528,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/jnrMxSGHRXJYDIke83fTE9T4xVX.jpg"
     },
     {
@@ -496,6 +540,7 @@
       "country": "Espanha",
       "duration": 128,
       "director": "Julio Medem",
+      "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/k2cSUupLrRKCDSUocPpclspvkSd.jpg"
     },
     {
@@ -507,6 +552,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Bruno Murtinho",
+      "mostra": "CINE DE QUARTA",
       "poster": "https://image.tmdb.org/t/p/w500/tNomILGgyF8u2fKcFGUyFUSWESc.jpg"
     },
     {
@@ -518,6 +564,7 @@
       "country": "Argentina, Espanha",
       "duration": 90,
       "director": "Juan José Campanella",
+      "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/tVn6BQ3vsY1YqOmeTHUSF9Tr2i0.jpg"
     }
   ],
@@ -531,6 +578,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/imfGMQkG1BP5O5bjQyWKiB0J1jA.jpg"
     },
     {
@@ -542,6 +590,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -553,6 +602,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -564,6 +614,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/khMIfRCgsMMqjxuGtJ2dUfJ551R.jpg"
     },
     {
@@ -575,6 +626,7 @@
       "country": "Reino Unido, França, Itália, Bélgica, Espanha",
       "duration": 116,
       "director": "Ken Loach",
+      "mostra": "ESPECIAL COPA",
       "poster": "https://image.tmdb.org/t/p/w500/xEZUei43WbPmP5Hp1UEAP3Ijz7x.jpg"
     },
     {
@@ -586,6 +638,7 @@
       "country": "Itália",
       "duration": 116,
       "director": "Mario Monicelli",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/7iML7nTQ7uZTaZQlkZwdNcCLLm5.jpg"
     },
     {
@@ -597,6 +650,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "David Zellner",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/wZU05LeIZE6azWUCnjYhEHeCDHB.jpg"
     },
     {
@@ -608,6 +662,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Don Chaffey",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/AqDQD2NgJkXImKmhbrYwuDfznJn.jpg"
     },
     {
@@ -619,6 +674,7 @@
       "country": "EUA, Itália",
       "duration": 129,
       "director": "Sidney Lumet",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/pRagfd10PPWryFRSzLPIivfAXHJ.jpg"
     },
     {
@@ -630,6 +686,7 @@
       "country": "EUA",
       "duration": 129,
       "director": "Martin Scorsese",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/lLeWJU33HgfWTnrOcaNBR5fUcF1.jpg"
     },
     {
@@ -641,6 +698,7 @@
       "country": "Brasil",
       "duration": 92,
       "director": "Arthur Fontes",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/oci0gTmLt55n6T5reT6xKvRNT9y.jpg"
     },
     {
@@ -652,6 +710,7 @@
       "country": "Brasil",
       "duration": 83,
       "director": "Oswaldo Santana, Karen Harley",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/tyKdgqeE9thRx6xycRxetUcpLrw.jpg"
     },
     {
@@ -663,6 +722,7 @@
       "country": "Brasil",
       "duration": 108,
       "director": "Eryk Rocha e Gabriela Carneiro da Cunha",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/dzBEhUSiiDJtd6v4LSN1SykSM5F.jpg"
     },
     {
@@ -674,6 +734,7 @@
       "country": "EUA",
       "duration": 136,
       "director": "Joseph L. Mankiewicz",
+      "mostra": "CINECLUBE MERTEN À LA CARTE",
       "poster": "https://image.tmdb.org/t/p/w500/cynMuhUnJgF3aCaKtR8aFTuElrF.jpg"
     },
     {
@@ -685,6 +746,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/khMIfRCgsMMqjxuGtJ2dUfJ551R.jpg"
     },
     {
@@ -696,6 +758,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -707,6 +770,7 @@
       "country": "Brasil",
       "duration": 113,
       "director": "Walter Salles e Daniela Thomas",
+      "mostra": "ESPECIAL COPA",
       "poster": "https://image.tmdb.org/t/p/w500/xKx5msZOhp71R7w9LPudDfrFQsz.jpg"
     },
     {
@@ -718,6 +782,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Maurício de Souza",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/4gtgUYAngSN6NlFX2ybJSDKCSVE.jpg"
     },
     {
@@ -729,6 +794,7 @@
       "country": "Japão",
       "duration": 102,
       "director": "Hayao Miyazaki",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/ljUAzMUhEVf2qXKgCBm61WJmV0J.jpg"
     },
     {
@@ -740,6 +806,7 @@
       "country": "EUA",
       "duration": 141,
       "director": "James Gray",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/ms4UmEmc0cyK5AN2EGPfadkbXae.jpg"
     },
     {
@@ -751,6 +818,7 @@
       "country": "EUA",
       "duration": 98,
       "director": "Aaron Horvath e Michael Jelenic",
+      "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/b3WeTp42eJSRuE4UZfyPCOJW4c.jpg"
     },
     {
@@ -762,6 +830,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/jnrMxSGHRXJYDIke83fTE9T4xVX.jpg"
     },
     {
@@ -773,6 +842,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aCXb4le0ogtxwI8kR62tMwwiu5d.jpg"
     },
     {
@@ -784,6 +854,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -795,6 +866,7 @@
       "country": "França, EUA, Reino Unido",
       "duration": 88,
       "director": "Ugo Bienvenu, Gilles Cazaux",
+      "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g2HROHxg6wTXyjjaii1S1NSl4dp.jpg"
     },
     {
@@ -806,6 +878,7 @@
       "country": "EUA",
       "duration": 121,
       "director": "Robert De Niro",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/aqo0G243ukYfVJNgncKGhqgmHfc.jpg"
     },
     {
@@ -817,6 +890,7 @@
       "country": "Hong Kong",
       "duration": 106,
       "director": "Stanley Tong",
+      "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/9Sk5pnCdu2Mm1SeaczRj0yEVH9I.jpg"
     },
     {
@@ -828,6 +902,7 @@
       "country": "Brasil",
       "duration": 101,
       "director": "Halder Gome",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/pRqry4UIbm3De8kfiDj86r9DlBC.jpg"
     },
     {
@@ -839,6 +914,7 @@
       "country": "Brasil",
       "duration": 129,
       "director": "Esmir Filho",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/sOed9XD0TS9d0XRSnTiw5tpXIIO.jpg"
     },
     {
@@ -850,6 +926,7 @@
       "country": "Brasil",
       "duration": 106,
       "director": "Marianna Brennand",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": "https://image.tmdb.org/t/p/w500/sGLx3nUukO3ysgyuvuO8XrplTjV.jpg"
     },
     {
@@ -861,6 +938,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "Mark Herrier",
+      "mostra": "PORÃO DO BELAS: POLTRONA ENSANGUENTADA",
       "poster": "https://image.tmdb.org/t/p/w500/xtWk7eObTMXpZLByJqJtXfC6UWy.jpg"
     },
     {
@@ -872,6 +950,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/fPCfHEiLS3iPInAepWPWi1I9eFo.jpg"
     },
     {
@@ -883,6 +962,7 @@
       "country": "Brasil, Portugal",
       "duration": 125,
       "director": "Eduardo Nunes",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3o9cMXI7fx9lts7aLFCwHnMBXNt.jpg"
     },
     {
@@ -894,6 +974,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/imfGMQkG1BP5O5bjQyWKiB0J1jA.jpg"
     },
     {
@@ -905,6 +986,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -916,6 +998,7 @@
       "country": "Brasil",
       "duration": 130,
       "director": "Fernando Meirelles, Kátia Lund",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": "https://image.tmdb.org/t/p/w500/gfnXixcGC060QcG6JPxN6AMdVsq.jpg"
     },
     {
@@ -927,6 +1010,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/khMIfRCgsMMqjxuGtJ2dUfJ551R.jpg"
     },
     {
@@ -938,6 +1022,7 @@
       "country": "Itália, França",
       "duration": 205,
       "director": "Luchino Visconti",
+      "mostra": "SESSÃO ESPECIAL - RESTAURADO 4K",
       "poster": "https://image.tmdb.org/t/p/w500/a3zvKpjkI1sInsjCdVx7yZ5iZFE.jpg"
     },
     {
@@ -949,6 +1034,7 @@
       "country": "EUA",
       "duration": 87,
       "director": "Fritz Lang",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/4SQgosmWzGph8v983wUfPR8R2kL.jpg"
     },
     {
@@ -960,6 +1046,7 @@
       "country": "EUA",
       "duration": 126,
       "director": "John Huston",
+      "mostra": "CAÇA AO TESURO",
       "poster": "https://image.tmdb.org/t/p/w500/aDx0b64VlRJt36kpDwx5CqAY2tg.jpg"
     },
     {
@@ -971,6 +1058,7 @@
       "country": "França",
       "duration": 78,
       "director": "Maïlys Vallade e Liane-Cho Han Jin Kuang",
+      "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/fSGMCWbFXzfWHLnoaJBnm74viGo.jpg"
     },
     {
@@ -982,6 +1070,7 @@
       "country": "Brasil",
       "duration": 70,
       "director": "Tuca Siqueira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/hCXdZXcNdgFwjmQ4iK75Mkt1UuJ.jpg"
     },
     {
@@ -993,6 +1082,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/3YX2WS2QqoirzOPvLwKg4N4biLc.jpg"
     },
     {
@@ -1004,6 +1094,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/jnrMxSGHRXJYDIke83fTE9T4xVX.jpg"
     },
     {
@@ -1015,6 +1106,7 @@
       "country": "Espanha",
       "duration": 128,
       "director": "Julio Medem",
+      "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/k2cSUupLrRKCDSUocPpclspvkSd.jpg"
     },
     {
@@ -1026,6 +1118,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Bruno Murtinho",
+      "mostra": "CINE DE QUARTA",
       "poster": "https://image.tmdb.org/t/p/w500/tNomILGgyF8u2fKcFGUyFUSWESc.jpg"
     },
     {
@@ -1037,6 +1130,7 @@
       "country": "Argentina, Espanha",
       "duration": 90,
       "director": "Juan José Campanella",
+      "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/tVn6BQ3vsY1YqOmeTHUSF9Tr2i0.jpg"
     },
     {
@@ -1048,6 +1142,7 @@
       "country": "Brasil",
       "duration": 93,
       "director": "Claudio Torres",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1059,6 +1154,7 @@
       "country": "Brasil",
       "duration": 83,
       "director": "Lucia Murat",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1070,6 +1166,7 @@
       "country": "Brasil",
       "duration": 126,
       "director": "Daniel Rezende",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1081,6 +1178,7 @@
       "country": "Brasil",
       "duration": 103,
       "director": "Ícaro Martins, José Antônio Garcia",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1092,6 +1190,7 @@
       "country": "França",
       "duration": 103,
       "director": "Robin Campillo",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1103,6 +1202,7 @@
       "country": "Reino Unido, Irlanda",
       "duration": 106,
       "director": "Harry Lighton",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1114,6 +1214,7 @@
       "country": "Itália",
       "duration": 100,
       "director": "Nanni Moretti",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1125,6 +1226,7 @@
       "country": "Itália, EUA, Reino Unido, Hungria",
       "duration": 114,
       "director": "Johnny Depp",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1136,6 +1238,7 @@
       "country": "Itália, Espanha",
       "duration": 122,
       "director": "Isabel Coixet",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1147,6 +1250,7 @@
       "country": "França",
       "duration": 91,
       "director": "Emmanuel Poulain-Arnaud",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1158,6 +1262,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1169,6 +1274,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1180,6 +1286,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1191,6 +1298,7 @@
       "country": "França, Alemanha",
       "duration": 91,
       "director": "Jacques Demy",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -1202,6 +1310,7 @@
       "country": "Bélgica, França",
       "duration": 195,
       "director": "Chantal Akerman",
+      "mostra": "SESSÕES ESPECIAIS FILMICCA | CHANTAL AKERMAN",
       "poster": ""
     },
     {
@@ -1213,6 +1322,7 @@
       "country": "Brasil",
       "duration": 73,
       "director": "Marília Rocha",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": ""
     },
     {
@@ -1224,6 +1334,7 @@
       "country": "Brasil",
       "duration": 101,
       "director": "Gabriel Mascaro",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": ""
     },
     {
@@ -1235,6 +1346,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1246,6 +1358,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1257,6 +1370,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1268,6 +1382,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "João Batista de Andrade",
+      "mostra": "CINEMA BRASILEIRO DE A A Z",
       "poster": ""
     },
     {
@@ -1279,6 +1394,7 @@
       "country": "EUA",
       "duration": 87,
       "director": "Fritz Lang",
+      "mostra": "CAÇA AO TESOURO",
       "poster": ""
     },
     {
@@ -1290,6 +1406,7 @@
       "country": "França, Itália, Brasil",
       "duration": 117,
       "director": "Philippe de Broca",
+      "mostra": "CAÇA AO TESOURO",
       "poster": ""
     },
     {
@@ -1301,6 +1418,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1312,6 +1430,7 @@
       "country": "Brasil",
       "duration": 70,
       "director": "Tuca Siqueira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1323,6 +1442,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1334,6 +1454,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1345,6 +1466,7 @@
       "country": "Canadá, França, Luxemburgo",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1356,6 +1478,7 @@
       "country": "Brasil",
       "duration": 76,
       "director": "Alê Abreu",
+      "mostra": "CINEMA NO SESC SANTANA",
       "poster": ""
     },
     {
@@ -1367,6 +1490,7 @@
       "country": "Brasil",
       "duration": 75,
       "director": "Sérgio Machado",
+      "mostra": "CINEMA NO SESC SANTANA",
       "poster": ""
     },
     {
@@ -1378,6 +1502,7 @@
       "country": "Brasil",
       "duration": 110,
       "director": "Flavia Moraes",
+      "mostra": "CINEMA NO SESC SANTANA",
       "poster": ""
     },
     {
@@ -1389,6 +1514,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Douglas Soares",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1400,6 +1526,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Daniel Lieff",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1411,6 +1538,7 @@
       "country": "Estádio de New Jersey",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "JOGOS DA COPA",
       "poster": ""
     },
     {
@@ -1422,6 +1550,7 @@
       "country": "Itália",
       "duration": 114,
       "director": "Margherita Ferri",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1433,6 +1562,7 @@
       "country": "Itália, Alemanha",
       "duration": 98,
       "director": "Francesco Sossai",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1444,6 +1574,7 @@
       "country": "Suiça, França, Bélgica",
       "duration": 87,
       "director": "Claude Barras",
+      "mostra": "HORA DO CINEMA!",
       "poster": ""
     },
     {
@@ -1455,6 +1586,7 @@
       "country": "Brasil",
       "duration": 96,
       "director": "Sérgio Machado",
+      "mostra": "CINE FÉRIAS",
       "poster": ""
     },
     {
@@ -1466,6 +1598,7 @@
       "country": "França",
       "duration": 122,
       "director": "Katell Quillévéré",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1477,6 +1610,7 @@
       "country": "Brasil",
       "duration": 103,
       "director": "Ícaro Martins, José Antônio Garcia",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1488,6 +1622,7 @@
       "country": "Alemanha",
       "duration": 95,
       "director": "Leonie Krippendorff",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1499,6 +1634,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Gabriel Mascaro",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1510,6 +1646,7 @@
       "country": "Brasil",
       "duration": 121,
       "director": "Eduardo Nunes",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1521,6 +1658,7 @@
       "country": "Brasil, Itália",
       "duration": 78,
       "director": "Frederico Ferrone e Michele Manzolini",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1532,6 +1670,7 @@
       "country": "Itália, França",
       "duration": 111,
       "director": "Damiano Michieletto",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1543,6 +1682,7 @@
       "country": "Itália, Bélgica",
       "duration": 108,
       "director": "Alessandro Tonda",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1554,6 +1694,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1565,6 +1706,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1576,6 +1718,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1587,6 +1730,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1598,6 +1742,7 @@
       "country": "Brasil",
       "duration": 88,
       "director": "Laís Bodanzky",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": ""
     },
     {
@@ -1609,6 +1754,7 @@
       "country": "Brasil",
       "duration": 87,
       "director": "Beto Brant",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": ""
     },
     {
@@ -1620,6 +1766,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1631,6 +1778,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1642,6 +1790,7 @@
       "country": "Reino Unido",
       "duration": 90,
       "director": "James Erskine e Rachel Ramsay",
+      "mostra": "ESPECIAL COPA",
       "poster": ""
     },
     {
@@ -1653,6 +1802,7 @@
       "country": "Japão",
       "duration": 102,
       "director": "Hayao Miyazaki",
+      "mostra": "CAÇA AO TESOURO",
       "poster": ""
     },
     {
@@ -1664,6 +1814,7 @@
       "country": "EUA",
       "duration": 87,
       "director": "Fritz Lang",
+      "mostra": "CAÇA AO TESOURO",
       "poster": ""
     },
     {
@@ -1675,6 +1826,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1686,6 +1838,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1697,6 +1850,7 @@
       "country": "Brasil",
       "duration": 89,
       "director": "Dandara Ferreira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1708,6 +1862,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1719,6 +1874,7 @@
       "country": "Brasil",
       "duration": 109,
       "director": "Ursula Rösele",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1730,6 +1886,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Daniel Lieff",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1741,6 +1898,7 @@
       "country": "EUA",
       "duration": 101,
       "director": "Tina Romero",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1752,6 +1910,7 @@
       "country": "Brasil",
       "duration": 73,
       "director": "Ricardo Alves Jr.",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -1763,6 +1922,7 @@
       "country": "Brasil",
       "duration": 99,
       "director": "Pedro Antonio",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1774,6 +1934,7 @@
       "country": "Portugal",
       "duration": 87,
       "director": "Paolo Marinou Blanco",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1785,6 +1946,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Fabio Meira",
+      "mostra": "MOSTRA PRÊMIO GRANDE OTELO",
       "poster": ""
     },
     {
@@ -1796,6 +1958,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Daniel Lieff",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1807,6 +1970,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1818,6 +1982,7 @@
       "country": "Itália",
       "duration": 73,
       "director": "Massimiliano Camaiti",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1829,6 +1994,7 @@
       "country": "Itália, França",
       "duration": 117,
       "director": "Mario Martone",
+      "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": ""
     },
     {
@@ -1840,6 +2006,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1851,6 +2018,7 @@
       "country": "França",
       "duration": 91,
       "director": "Emmanuel Poulain-Arnaud",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1862,6 +2030,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1873,6 +2042,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1884,6 +2054,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1895,6 +2066,7 @@
       "country": "Bélgica, França",
       "duration": 82,
       "director": "Chantal Akerman",
+      "mostra": "SESSÕES ESPECIAIS FILMICCA | CHANTAL AKERMAN",
       "poster": ""
     },
     {
@@ -1906,6 +2078,7 @@
       "country": "Brasil",
       "duration": 75,
       "director": "Karim Aïnouz",
+      "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
       "poster": ""
     },
     {
@@ -1917,6 +2090,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1928,6 +2102,7 @@
       "country": "Turquia, França, Holanda, Grécia, Suécia, Arábia Saudita",
       "duration": 120,
       "director": "Emin Alper",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1939,6 +2114,7 @@
       "country": "Irã",
       "duration": 93,
       "director": "Jafar Panahi",
+      "mostra": "ESPECIAL COPA",
       "poster": ""
     },
     {
@@ -1950,6 +2126,7 @@
       "country": "EUA",
       "duration": 96,
       "director": "Ron Clements, John Musker",
+      "mostra": "CAÇA AO TESOURO",
       "poster": ""
     },
     {
@@ -1961,6 +2138,7 @@
       "country": "França",
       "duration": 129,
       "director": "Jacques Rivette",
+      "mostra": "CAÇA AO TESOURO",
       "poster": ""
     },
     {
@@ -1972,6 +2150,7 @@
       "country": "Brasil",
       "duration": 70,
       "director": "Tuca Siqueira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1983,6 +2162,7 @@
       "country": "Bélgica",
       "duration": 78,
       "director": "Charlotte Devillers e Arnaud Dufeys",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -1994,6 +2174,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2005,6 +2186,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2016,6 +2198,7 @@
       "country": "Espanha",
       "duration": 108,
       "director": "Julio Medem",
+      "mostra": "FOCO JULIO MEDEM",
       "poster": ""
     },
     {
@@ -2027,6 +2210,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2038,6 +2222,7 @@
       "country": "EUA, Canadá",
       "duration": 111,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2049,6 +2234,7 @@
       "country": "Estádio de Houston",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "JOGOS DA COPA",
       "poster": ""
     },
     {
@@ -2060,6 +2246,7 @@
       "country": "Itália",
       "duration": 96,
       "director": "Carlo Lizzani",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": ""
     },
     {
@@ -2071,6 +2258,7 @@
       "country": "Estádio de Houston",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "COPA DO MUNDO 2026",
       "poster": ""
     },
     {
@@ -2082,6 +2270,7 @@
       "country": "Itália",
       "duration": 114,
       "director": "Margherita Ferri",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2093,6 +2282,7 @@
       "country": "Itália, Alemanha",
       "duration": 100,
       "director": "Francesco Sossai",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2104,6 +2294,7 @@
       "country": "Reino Unido, Itália, Hungria",
       "duration": 114,
       "director": "Johnny Depp",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2115,6 +2306,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Fábio Meira",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2126,6 +2318,7 @@
       "country": "Brasil",
       "duration": 145,
       "director": "Adão Mota e Emerson Ghaspar",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2137,6 +2330,7 @@
       "country": "Brasil",
       "duration": 71,
       "director": "Juliana Curi",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2148,6 +2342,7 @@
       "country": "EUA, Canadá",
       "duration": 111,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2159,6 +2354,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2170,6 +2366,7 @@
       "country": "EUA",
       "duration": 124,
       "director": "Bob Fosse",
+      "mostra": "SESSÃO 35MM",
       "poster": ""
     },
     {
@@ -2181,6 +2378,7 @@
       "country": "Nova Zelândia, EUA",
       "duration": 107,
       "director": "Steven Spielberg",
+      "mostra": "CAÇA AO TESURO",
       "poster": ""
     },
     {
@@ -2192,6 +2390,7 @@
       "country": "Reino Unido",
       "duration": 91,
       "director": "Terry Gilliam, Terry Jones",
+      "mostra": "CAÇA AO TESURO",
       "poster": ""
     },
     {
@@ -2203,6 +2402,7 @@
       "country": "EUA",
       "duration": 126,
       "director": "John Huston",
+      "mostra": "CAÇA AO TESURO",
       "poster": ""
     },
     {
@@ -2214,6 +2414,7 @@
       "country": "Itália",
       "duration": 73,
       "director": "Massimiliano Camaiti",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2225,6 +2426,7 @@
       "country": "Itália, Espanha",
       "duration": 120,
       "director": "Isabel Coixet",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2236,6 +2438,7 @@
       "country": "Itália",
       "duration": 100,
       "director": "Nanni Moretti",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2247,6 +2450,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2258,6 +2462,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2269,6 +2474,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2280,6 +2486,7 @@
       "country": "Brasil",
       "duration": 78,
       "director": "Adriana Yañez",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -2291,6 +2498,7 @@
       "country": "Brasil",
       "duration": 71,
       "director": "Juliana Curi",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2302,6 +2510,7 @@
       "country": "Brasil",
       "duration": 109,
       "director": "Ursula Rösele",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2313,6 +2522,7 @@
       "country": "Árabe",
       "duration": 109,
       "director": "Cyril Aris",
+      "mostra": "SESSÃO-DEBATE",
       "poster": ""
     },
     {
@@ -2324,6 +2534,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2335,6 +2546,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2346,6 +2558,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2357,6 +2570,7 @@
       "country": "EUA, Canadá",
       "duration": 111,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2368,6 +2582,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Cao Hamburger",
+      "mostra": "SESSÃO 35MM",
       "poster": ""
     },
     {
@@ -2379,6 +2594,7 @@
       "country": "França, Itália, Brasil",
       "duration": 117,
       "director": "Phillipe de Broca",
+      "mostra": "CAÇA AO TESURO",
       "poster": ""
     },
     {
@@ -2390,6 +2606,7 @@
       "country": "Reino Unido, França",
       "duration": 104,
       "director": "Paul King",
+      "mostra": "CAÇA AO TESURO",
       "poster": ""
     },
     {
@@ -2401,6 +2618,7 @@
       "country": "Reino Unido, Itália, Hungria",
       "duration": 114,
       "director": "Johnny Depp",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2412,6 +2630,7 @@
       "country": "Itália",
       "duration": 114,
       "director": "Margherita Ferri",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2423,6 +2642,7 @@
       "country": "Itália, França",
       "duration": 117,
       "director": "Mario Martone",
+      "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": ""
     },
     {
@@ -2434,6 +2654,7 @@
       "country": "Espanha",
       "duration": 126,
       "director": "Julio Medem",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2445,6 +2666,7 @@
       "country": "Brasil",
       "duration": 70,
       "director": "Tuca Siqueira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2456,6 +2678,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2467,6 +2690,7 @@
       "country": "Brasil",
       "duration": 110,
       "director": "Flávia Moraes",
+      "mostra": "CINE DE QUARTA",
       "poster": ""
     },
     {
@@ -2478,6 +2702,7 @@
       "country": "EUA, Reino Unido",
       "duration": 117,
       "director": "John Huston",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -2489,6 +2714,7 @@
       "country": "Brasil",
       "duration": 77,
       "director": "João Nascimento",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2500,6 +2726,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Ana Rieper",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2511,6 +2738,7 @@
       "country": "Suíça, Alemanha",
       "duration": 87,
       "director": "Georges Gachot",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2522,6 +2750,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Fábio Meira",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2533,6 +2762,7 @@
       "country": "EUA",
       "duration": 101,
       "director": "Tina Romero",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2544,6 +2774,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2555,6 +2786,7 @@
       "country": "Espanha",
       "duration": 90,
       "director": "María Valverde",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2566,6 +2798,7 @@
       "country": "EUA",
       "duration": 84,
       "director": "Christine Turner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2577,6 +2810,7 @@
       "country": "Espanha, Colômbia",
       "duration": 120,
       "director": "JuanMa V. Betancort",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2588,6 +2822,7 @@
       "country": "EUA",
       "duration": 88,
       "director": "Robert Clem",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2599,6 +2834,7 @@
       "country": "México, Espanha",
       "duration": 107,
       "director": "Fabien Pisani",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2610,6 +2846,7 @@
       "country": "EUA",
       "duration": 82,
       "director": "Rob Reiner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2621,6 +2858,7 @@
       "country": "EUA",
       "duration": 84,
       "director": "Andrew Reich",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2632,6 +2870,7 @@
       "country": "EUA",
       "duration": 83,
       "director": "Rob Reiner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2643,6 +2882,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2654,6 +2894,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2665,6 +2906,7 @@
       "country": "França, Itália, Alemanhã Ocidental",
       "duration": 118,
       "director": "Louis Malle",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -2676,6 +2918,7 @@
       "country": "Brasil",
       "duration": 87,
       "director": "Bruno Levinson",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2687,6 +2930,7 @@
       "country": "Brasil",
       "duration": 71,
       "director": "André Weller",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2698,6 +2942,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Cacá Diegues",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2709,6 +2954,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Lírio Ferreira",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2720,6 +2966,7 @@
       "country": "EUA",
       "duration": 95,
       "director": "Lola Rocknrolla",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2731,6 +2978,7 @@
       "country": "Estados Unidos",
       "duration": 84,
       "director": "Chuck Smith",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2742,6 +2990,7 @@
       "country": "Canadá",
       "duration": 82,
       "director": "Ryan Marley",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2753,6 +3002,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2764,6 +3014,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Rodrigo Pinto",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2775,6 +3026,7 @@
       "country": "Brasil",
       "duration": 78,
       "director": "Vânia Lima",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2786,6 +3038,7 @@
       "country": "Brasil",
       "duration": 119,
       "director": "Eduardo Coutinho",
+      "mostra": "CINEMA BRASILEIRO DE A A Z",
       "poster": ""
     },
     {
@@ -2797,6 +3050,7 @@
       "country": "EUA",
       "duration": 89,
       "director": "David Lynch",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -2808,6 +3062,7 @@
       "country": "Reino Unido",
       "duration": 103,
       "director": "Ken Russell",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -2819,6 +3074,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa, Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2830,6 +3086,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2841,6 +3098,7 @@
       "country": "Alemanha Ocidental, Irã",
       "duration": 91,
       "director": "Sohrab Shahid-Saless",
+      "mostra": "SESSÃO MUTUAL FILMS",
       "poster": ""
     },
     {
@@ -2852,6 +3110,7 @@
       "country": "Irã",
       "duration": 91,
       "director": "Marva Nabili",
+      "mostra": "SESSÃO MUTUAL FILMS",
       "poster": ""
     },
     {
@@ -2863,6 +3122,7 @@
       "country": "Brasil, Espanha",
       "duration": 78,
       "director": "Virginia Curiá",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -2874,6 +3134,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Paula Severo",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2885,6 +3146,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Dandara Ferreira",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2896,6 +3158,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Rodrigo Pinto",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2907,6 +3170,7 @@
       "country": "EUA",
       "duration": 100,
       "director": "James Sweeney",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2918,6 +3182,7 @@
       "country": "",
       "duration": 0,
       "director": "Diego Céspedes",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2929,6 +3194,7 @@
       "country": "Alemanha",
       "duration": 95,
       "director": "Leonie Krippendorff",
+      "mostra": "TERRITÓRIO QUEER 3",
       "poster": ""
     },
     {
@@ -2940,6 +3206,7 @@
       "country": "Hong Kong",
       "duration": 103,
       "director": "Wong Kar-Wai",
+      "mostra": "BELAS SONORIZA",
       "poster": ""
     },
     {
@@ -2951,6 +3218,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Daniel Lieff",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2962,6 +3230,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -2973,6 +3242,7 @@
       "country": "República Dominicana",
       "duration": 91,
       "director": "José María Cabral",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2984,6 +3254,7 @@
       "country": "México, Espanha",
       "duration": 107,
       "director": "Fabien Pisani",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -2995,6 +3266,7 @@
       "country": "Brasil",
       "duration": 88,
       "director": "Betão Aguiar",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3006,6 +3278,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Cristiano Burlan",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3017,6 +3290,7 @@
       "country": "Estados Unidos",
       "duration": 120,
       "director": "David Bushell",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3028,6 +3302,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3039,6 +3314,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3050,6 +3326,7 @@
       "country": "França, Itália, Alemanhã Ocidental",
       "duration": 118,
       "director": "Louis Malle",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -3061,6 +3338,7 @@
       "country": "EUA",
       "duration": 92,
       "director": "James Szalapski",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3072,6 +3350,7 @@
       "country": "Brasil",
       "duration": 78,
       "director": "Vânia Lima",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3083,6 +3362,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Cláudia Dias Perez Machado e Shinji Shiozaki",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3094,6 +3374,7 @@
       "country": "Brasil",
       "duration": 83,
       "director": "Matty Wishnow",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3105,6 +3386,7 @@
       "country": "EUA, Austrália, Indonésia, Tailândia",
       "duration": 84,
       "director": "Tamra Davis",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3116,6 +3398,7 @@
       "country": "Japão",
       "duration": 103,
       "director": "Hayao Miyazaki",
+      "mostra": "CINECLUBINHO",
       "poster": ""
     },
     {
@@ -3127,6 +3410,7 @@
       "country": "França, EUA",
       "duration": 140,
       "director": "Oliver Stone",
+      "mostra": "RESTAURADO EM 4K",
       "poster": ""
     },
     {
@@ -3138,6 +3422,7 @@
       "country": "Polônia",
       "duration": 124,
       "director": "Wojciech Has",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3149,6 +3434,7 @@
       "country": "Japão",
       "duration": 169,
       "director": "Nobuhiko Obayashi",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3160,6 +3446,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3171,6 +3458,7 @@
       "country": "EUA",
       "duration": 155,
       "director": "Paul Thomas Anderson",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -3182,6 +3470,7 @@
       "country": "Brasil, Espanha",
       "duration": 78,
       "director": "Virginia Curiá",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -3193,6 +3482,7 @@
       "country": "Suiça, França, Bélgica",
       "duration": 87,
       "director": "Claude Barras",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -3204,6 +3494,7 @@
       "country": "Brasil",
       "duration": 72,
       "director": "Ricardo Alves Jr.",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -3215,6 +3506,7 @@
       "country": "EUA",
       "duration": 100,
       "director": "James Sweeney",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -3226,6 +3518,7 @@
       "country": "Chile, França",
       "duration": 104,
       "director": "Diego Céspedes",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -3237,6 +3530,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Marcelo Gomes e Maria Clara Escobar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3248,6 +3542,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3259,6 +3554,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Cassu, Lucas Weglinski e Pedro Dumans",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3270,6 +3566,7 @@
       "country": "EUA, Reino Unido",
       "duration": 97,
       "director": "Wes Orshoski",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3281,6 +3578,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Paulo Severo",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3292,6 +3590,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Ivan de Angelis",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3303,6 +3602,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Mini Kerti",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3314,6 +3614,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Ana Rieper",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3325,6 +3626,7 @@
       "country": "EUA",
       "duration": 117,
       "director": "Dan Geller, Dayna Goldfine",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3336,6 +3638,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3347,6 +3650,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3358,6 +3662,7 @@
       "country": "EUA",
       "duration": 102,
       "director": "Darren Aronofsky",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -3369,6 +3674,7 @@
       "country": "Japão",
       "duration": 129,
       "director": "Ryosuke Hashiguchi",
+      "mostra": "EDIÇÃO COMEMORATIVA MÊS DO ORGULHO",
       "poster": ""
     },
     {
@@ -3380,6 +3686,7 @@
       "country": "Itália",
       "duration": 89,
       "director": "Nanni Moretti",
+      "mostra": "CINECLUBE FGV APRESENTA",
       "poster": ""
     },
     {
@@ -3391,6 +3698,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Ivan de Angelis",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3402,6 +3710,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Mini Kerti",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3413,6 +3722,7 @@
       "country": "Brasil",
       "duration": 110,
       "director": "Rafael Saar",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3424,6 +3734,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Christine Turner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3435,6 +3746,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Christine Turner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3446,6 +3758,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3457,6 +3770,7 @@
       "country": "EUA, Canadá",
       "duration": 111,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3468,6 +3782,7 @@
       "country": "EUA, Reino Unido",
       "duration": 95,
       "director": "Alison Ellwood",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3479,6 +3794,7 @@
       "country": "EUA",
       "duration": 135,
       "director": "Lily Wachowski, Lana Wachowski",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3490,6 +3806,7 @@
       "country": "Japão",
       "duration": 121,
       "director": "Hideaki Anno",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3501,6 +3818,7 @@
       "country": "Holanda",
       "duration": 91,
       "director": "Frank Scheffer",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3512,6 +3830,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3523,6 +3842,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3534,6 +3854,7 @@
       "country": "Brasil, Itália, França",
       "duration": 108,
       "director": "Eryk Rocha, Gabriela Carneiro da Cunha",
+      "mostra": "LANGSDORFF 200",
       "poster": ""
     },
     {
@@ -3545,6 +3866,7 @@
       "country": "Brasil",
       "duration": 89,
       "director": "Bruna Laboissière",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -3556,6 +3878,7 @@
       "country": "França",
       "duration": 100,
       "director": "André Techiné",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -3567,6 +3890,7 @@
       "country": "Itália, França",
       "duration": 104,
       "director": "Robin Campillo",
+      "mostra": "TERRITÓRIO QUEER",
       "poster": ""
     },
     {
@@ -3578,6 +3902,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3589,6 +3914,7 @@
       "country": "Brasil",
       "duration": 125,
       "director": "Eduardo Nunes",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3600,6 +3926,7 @@
       "country": "EUA, República Dominicana",
       "duration": 98,
       "director": "Frank Pavich",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3611,6 +3938,7 @@
       "country": "Brasil, Alemanha",
       "duration": 86,
       "director": "Dácio Pinheiro",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3622,6 +3950,7 @@
       "country": "Brasil",
       "duration": 73,
       "director": "Petrônio Lorena",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3633,6 +3962,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Ivan de Angelis",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3644,6 +3974,7 @@
       "country": "Holanda",
       "duration": 91,
       "director": "Frank Scheffer",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3655,6 +3986,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Lírio Ferreira",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3666,6 +3998,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3677,6 +4010,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3688,6 +4022,7 @@
       "country": "EUA",
       "duration": 93,
       "director": "Adrew Reissiger",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3699,6 +4034,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Jom Tob Azulay",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3710,6 +4046,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Paula Severo",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3721,6 +4058,7 @@
       "country": "Canadá",
       "duration": 91,
       "director": "Larry Weinstein",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3732,6 +4070,7 @@
       "country": "Brasil",
       "duration": 25,
       "director": "ACNUR Brasil",
+      "mostra": "SESSAO ESPECIAL",
       "poster": ""
     },
     {
@@ -3743,6 +4082,7 @@
       "country": "Dinamarca, Finlândia, França, Alemanha",
       "duration": 178,
       "director": "Lars Von Trier",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3754,6 +4094,7 @@
       "country": "Alemanha",
       "duration": 72,
       "director": "Karlheinz Martin",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3765,6 +4106,7 @@
       "country": "Brasil",
       "duration": 77,
       "director": "Matheus Borges",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3776,6 +4118,7 @@
       "country": "Canadá, França, Luxemburgo",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3787,6 +4130,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3798,6 +4142,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Daniel Nolasco",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3809,6 +4154,7 @@
       "country": "França, Bélgica",
       "duration": 120,
       "director": "Agnès Varda",
+      "mostra": "AGNÈS VARDA CINEMA",
       "poster": ""
     },
     {
@@ -3820,6 +4166,7 @@
       "country": "URSS",
       "duration": 95,
       "director": "Andrei Tarkovski",
+      "mostra": "NÁSTIENKA CINECLUBE RUSSO APRESENTA",
       "poster": ""
     },
     {
@@ -3831,6 +4178,7 @@
       "country": "Brasil",
       "duration": 77,
       "director": "João Nascimento",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -3842,6 +4190,7 @@
       "country": "EUA",
       "duration": 99,
       "director": "Samuel Fuller",
+      "mostra": "SESSÃO DO COMODORO",
       "poster": ""
     },
     {
@@ -3853,6 +4202,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3864,6 +4214,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -3875,6 +4226,7 @@
       "country": "",
       "duration": 0,
       "director": "Cláudia Dias Perez Machado e Shinji Shiozaki",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3886,6 +4238,7 @@
       "country": "Estados Unidos",
       "duration": 117,
       "director": "Dan Geller & Dayna Goldfine",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3897,6 +4250,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Jom Tob Azulay",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3908,6 +4262,7 @@
       "country": "Itália",
       "duration": 107,
       "director": "Carlo Lizzani",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": ""
     },
     {
@@ -3919,6 +4274,7 @@
       "country": "Polônia",
       "duration": 124,
       "director": "Wojciech Has",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3930,6 +4286,7 @@
       "country": "Reino Unido",
       "duration": 103,
       "director": "Ken Russell",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -3941,6 +4298,7 @@
       "country": "Brasil",
       "duration": 73,
       "director": "Petrônio Lorena",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3952,6 +4310,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Liliane Mutti",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3963,6 +4322,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Cristiano Burlan",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3974,6 +4334,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Cassu, Lucas Weglinski e Pedro Dumans",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -3985,6 +4346,7 @@
       "country": "EUA",
       "duration": 145,
       "director": "Steven Spielberg",
+      "mostra": "CIÊNCIA NO CINEMA",
       "poster": ""
     },
     {
@@ -3996,6 +4358,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4007,6 +4370,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Juliana Borgues",
+      "mostra": "SESSÃO NOTURNA",
       "poster": ""
     },
     {
@@ -4018,6 +4382,7 @@
       "country": "Brasil",
       "duration": 87,
       "director": "Bruno Levinson",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4029,6 +4394,7 @@
       "country": "Brasil",
       "duration": 60,
       "director": "Vladimir Cunha",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4040,6 +4406,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Lírio Ferreira",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4051,6 +4418,7 @@
       "country": "Japão",
       "duration": 169,
       "director": "Nobuhiko Obayashi",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -4062,6 +4430,7 @@
       "country": "EUA",
       "duration": 89,
       "director": "David Lynch",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -4073,6 +4442,7 @@
       "country": "Espanha e Colômbia",
       "duration": 120,
       "director": "JuanMa V. Betancort",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4084,6 +4454,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4095,6 +4466,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4106,6 +4478,7 @@
       "country": "Estádio de Miami",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "JOGOS DA COPA",
       "poster": ""
     },
     {
@@ -4117,6 +4490,7 @@
       "country": "França, Canadá",
       "duration": 99,
       "director": "Pascal Laugier",
+      "mostra": "PORÃO DO BELAS",
       "poster": ""
     },
     {
@@ -4128,6 +4502,7 @@
       "country": "País",
       "duration": 93,
       "director": "Andrew Reissiger",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4139,6 +4514,7 @@
       "country": "Suíça, Áustria",
       "duration": 80,
       "director": "Pipilotti Rist",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -4150,6 +4526,7 @@
       "country": "Estádio de Miami",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "COPA DO MUNDO 2026",
       "poster": ""
     },
     {
@@ -4161,6 +4538,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa, Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4172,6 +4550,7 @@
       "country": "Espanha",
       "duration": 95,
       "director": "Antón Álvarez",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4183,6 +4562,7 @@
       "country": "Espanha",
       "duration": 75,
       "director": "Roberto López Buschbeck",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4194,6 +4574,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Mini Kerti",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4205,6 +4586,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4216,6 +4598,7 @@
       "country": "Brasil",
       "duration": 82,
       "director": "Matheus Marchetti",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4227,6 +4610,7 @@
       "country": "Brasil",
       "duration": 110,
       "director": "Rafael Saar",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4238,6 +4622,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Christine Turner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4249,6 +4634,7 @@
       "country": "Brasil",
       "duration": 78,
       "director": "Vânia Lima",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4260,6 +4646,7 @@
       "country": "",
       "duration": 0,
       "director": "Cláudia Dias Perez Machado e Shinji Shiozaki",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4271,6 +4658,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4282,6 +4670,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4293,6 +4682,7 @@
       "country": "França, Itália",
       "duration": 90,
       "director": "Jacques Demy",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -4304,6 +4694,7 @@
       "country": "Estados Unidos",
       "duration": 82,
       "director": "Rob Reiner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4315,6 +4706,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Ana Rieper",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4326,6 +4718,7 @@
       "country": "Estado Unidos",
       "duration": 88,
       "director": "Robert Clem",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4337,6 +4730,7 @@
       "country": "Estados Unidos",
       "duration": 83,
       "director": "Rob Reiner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4348,6 +4742,7 @@
       "country": "Estados Unidos",
       "duration": 97,
       "director": "Wes Orshoski",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4359,6 +4754,7 @@
       "country": "Brasil, Alemanha",
       "duration": 86,
       "director": "Dácio Pinheiro",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4370,6 +4766,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Liliane Mutti",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4381,6 +4778,7 @@
       "country": "Brasil",
       "duration": 88,
       "director": "Betão Aguiar",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4392,6 +4790,7 @@
       "country": "Brasil",
       "duration": 78,
       "director": "Rogério de Moura",
+      "mostra": "CINEMA BRASILEIRO DE A A Z",
       "poster": ""
     },
     {
@@ -4403,6 +4802,7 @@
       "country": "Alemanha",
       "duration": 72,
       "director": "Karlheinz Martin",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -4414,6 +4814,7 @@
       "country": "Brasil",
       "duration": 135,
       "director": "Andrea Tonacci",
+      "mostra": "SESSÃO PARA QUE SERVE O CINEMA?",
       "poster": ""
     },
     {
@@ -4425,6 +4826,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4436,6 +4838,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4447,6 +4850,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4458,6 +4862,7 @@
       "country": "Suécia, EUA",
       "duration": 94,
       "director": "Sara Jordenö",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -4469,6 +4874,7 @@
       "country": "Brasil",
       "duration": 60,
       "director": "Vladimir Cunha",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4480,6 +4886,7 @@
       "country": "Brasil",
       "duration": 71,
       "director": "André Weller",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4491,6 +4898,7 @@
       "country": "Estados Unidos",
       "duration": 83,
       "director": "Matty Wishnow",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4502,6 +4910,7 @@
       "country": "Brasil",
       "duration": 60,
       "director": "Carlos Juliano Barros, Caue Angeli e Maurício Monteiro Filho",
+      "mostra": "CINECLUBE A CLASSE TRABALHADORA VAI AO CINEMA",
       "poster": ""
     },
     {
@@ -4513,6 +4922,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Marcelo Gomes, Maria Clara Escobar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4524,6 +4934,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Daniel Lieff",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4535,6 +4946,7 @@
       "country": "Canadá",
       "duration": 82,
       "director": "Ryan Marley",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4546,6 +4958,7 @@
       "country": "Estados Unidos",
       "duration": 120,
       "director": "David Bushell",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4557,6 +4970,7 @@
       "country": "Brasil",
       "duration": 77,
       "director": "João Nascimento",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4568,6 +4982,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Dandara Ferreira",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4579,6 +4994,7 @@
       "country": "Estados Unidos",
       "duration": 97,
       "director": "Wes Orshoski",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4590,6 +5006,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4601,6 +5018,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4612,6 +5030,7 @@
       "country": "França, Itália",
       "duration": 90,
       "director": "Jacques Demy",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -4623,6 +5042,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Rodrigo Pinto",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4634,6 +5054,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Márcio Crux",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4645,6 +5066,7 @@
       "country": "Espanha",
       "duration": 75,
       "director": "Roberto López Buschbeck",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4656,6 +5078,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Jairo Costa",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4667,6 +5090,7 @@
       "country": "Brasil",
       "duration": 75,
       "director": "Gastão Moreira",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4678,6 +5102,7 @@
       "country": "Brasil",
       "duration": 104,
       "director": "Luiz Eduardo Ozório",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4689,6 +5114,7 @@
       "country": "EUA, Austrália, Indonésia, Tailândia",
       "duration": 84,
       "director": "Tamra Davis",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4700,6 +5126,7 @@
       "country": "Tchecoslováquia",
       "duration": 84,
       "director": "Karel Zeman",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -4711,6 +5138,7 @@
       "country": "Suíça, Áustria",
       "duration": 80,
       "director": "Pipilotti Rist",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -4722,6 +5150,7 @@
       "country": "França, Bélgica",
       "duration": 78,
       "director": "Rémi Bezançon, Jean-Christophe Lie",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -4733,6 +5162,7 @@
       "country": "Estados Unidos, República Dominicana",
       "duration": 98,
       "director": "Frank Pavich",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4744,6 +5174,7 @@
       "country": "Espanha",
       "duration": 90,
       "director": "María Valverde",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4755,6 +5186,7 @@
       "country": "Alemanha Ocidental",
       "duration": 92,
       "director": "Rainer Werner Fassbinder",
+      "mostra": "CINECLUBE LACAN",
       "poster": ""
     },
     {
@@ -4766,6 +5198,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4777,6 +5210,7 @@
       "country": "Canadá",
       "duration": 98,
       "director": "Larry Weinstein",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -4788,6 +5222,7 @@
       "country": "Estados Unidos",
       "duration": 95,
       "director": "Lola Rocknrolla",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -4799,6 +5234,7 @@
       "country": "Brasil",
       "duration": 77,
       "director": "Matheus Borges",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -4810,6 +5246,7 @@
       "country": "Brasil",
       "duration": 87,
       "director": "Bruno Levinson",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -4821,6 +5258,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4832,6 +5270,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4843,6 +5282,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Ivan de Angelis",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4854,6 +5294,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Mini Kerti",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4865,6 +5306,7 @@
       "country": "Brasil",
       "duration": 110,
       "director": "Rafael Saar",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4876,6 +5318,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Christine Turner",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4887,6 +5330,7 @@
       "country": "Holanda",
       "duration": 91,
       "director": "Frank Scheffer",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4898,6 +5342,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Paulo Severo",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4909,6 +5354,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Cristiano Burlan",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4920,6 +5366,7 @@
       "country": "Brasil",
       "duration": 108,
       "director": "Cao Hamburger",
+      "mostra": "MUNDOS DE PLÁSTICOS",
       "poster": ""
     },
     {
@@ -4931,6 +5378,7 @@
       "country": "EUA",
       "duration": 110,
       "director": "Nicholas Ray",
+      "mostra": "MUNDOS DE PLÁSTICOS",
       "poster": ""
     },
     {
@@ -4942,6 +5390,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4953,6 +5402,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -4964,6 +5414,7 @@
       "country": "EUA",
       "duration": 156,
       "director": "Paul Thomas Anderson",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -4975,6 +5426,7 @@
       "country": "Espanha",
       "duration": 92,
       "director": "Ramón Tort",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4986,6 +5438,7 @@
       "country": "Espanha, França, Itália",
       "duration": 96,
       "director": "Pablo Gil Rituerto",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -4997,6 +5450,7 @@
       "country": "Estádio de Filadélfia",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "JOGOS DA COPA",
       "poster": ""
     },
     {
@@ -5008,6 +5462,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5019,6 +5474,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Marcelo Gomes, Maria Clara Escobar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5030,6 +5486,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Daniel Lieff",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5041,6 +5498,7 @@
       "country": "Estados Unidos",
       "duration": 92,
       "director": "James Szalapski",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -5052,6 +5510,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Márcio Crux",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -5063,6 +5522,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Jairo Costa",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -5074,6 +5534,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Cassu, Lucas Weglinski e Pedro Dumans",
+      "mostra": "IN-EDIT 2026",
       "poster": ""
     },
     {
@@ -5085,6 +5546,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5096,6 +5558,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Dandara Ferreira",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -5107,6 +5570,7 @@
       "country": "Brasil",
       "duration": 71,
       "director": "André Weller",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -5118,6 +5582,7 @@
       "country": "Espanha",
       "duration": 90,
       "director": "María Valverde",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -5129,6 +5594,7 @@
       "country": "República Dominicana",
       "duration": 91,
       "director": "José María Cabral",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -5140,6 +5606,7 @@
       "country": "Tchecoslováquia",
       "duration": 84,
       "director": "Karel Zeman",
+      "mostra": "MUNDOS DE PLÁSTICOS",
       "poster": ""
     },
     {
@@ -5151,6 +5618,7 @@
       "country": "EUA, França",
       "duration": 83,
       "director": "Gregg Araki",
+      "mostra": "MUNDOS DE PLÁSTICOS",
       "poster": ""
     },
     {
@@ -5162,6 +5630,7 @@
       "country": "Estádio de Filadélfia",
       "duration": 90,
       "director": "Carlo Ancelotti",
+      "mostra": "COPA DO MUNDO 2026",
       "poster": ""
     },
     {
@@ -5173,6 +5642,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5184,6 +5654,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5195,6 +5666,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5206,6 +5678,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5217,6 +5690,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5228,6 +5702,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5239,6 +5714,7 @@
       "country": "Itália",
       "duration": 60,
       "director": "Elvira Notari",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": ""
     },
     {
@@ -5250,6 +5726,7 @@
       "country": "Japão",
       "duration": 121,
       "director": "Hideaki Anno",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5261,6 +5738,7 @@
       "country": "Japão",
       "duration": 169,
       "director": "Nobuhiko Obayashi",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5272,6 +5750,7 @@
       "country": "Brasil",
       "duration": 119,
       "director": "Eduardo Coutinho",
+      "mostra": "CINECLUBE MERTEN À LA CARTE",
       "poster": ""
     },
     {
@@ -5283,6 +5762,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5294,6 +5774,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5305,6 +5786,7 @@
       "country": "EUA",
       "duration": 110,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5316,6 +5798,7 @@
       "country": "Alemanha",
       "duration": 72,
       "director": "Karlheinz Martin",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5327,6 +5810,7 @@
       "country": "Suíça, Áustria",
       "duration": 80,
       "director": "Pipilotti Rist",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5338,6 +5822,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5349,6 +5834,7 @@
       "country": "Irã",
       "duration": 91,
       "director": "Marva Nabili",
+      "mostra": "SESSÃO MUTUAL FILMS",
       "poster": ""
     },
     {
@@ -5360,6 +5846,7 @@
       "country": "Alemanha Ocidental, Irã",
       "duration": 91,
       "director": "Sohrab Shahid-Saless",
+      "mostra": "SESSÃO MUTUAL FILMS",
       "poster": ""
     },
     {
@@ -5371,6 +5858,7 @@
       "country": "Itália",
       "duration": 110,
       "director": "Paolo Sorrentino",
+      "mostra": "CICLO DE CINEMA E PSICANÁLISE",
       "poster": ""
     },
     {
@@ -5382,6 +5870,7 @@
       "country": "Brasil",
       "duration": 99,
       "director": "Ana Carolina",
+      "mostra": "CINECLUBE PINHEIROS",
       "poster": ""
     },
     {
@@ -5393,6 +5882,7 @@
       "country": "Brasil",
       "duration": 103,
       "director": "Ícaro Martins, José Antonio Garcia",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -5404,6 +5894,7 @@
       "country": "França, Bélgica, Luxemburgo",
       "duration": 89,
       "director": "Fabrice Du Welz",
+      "mostra": "PORÃO DO BELAS",
       "poster": ""
     },
     {
@@ -5415,6 +5906,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5426,6 +5918,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5437,6 +5930,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5448,6 +5942,7 @@
       "country": "EUA",
       "duration": 84,
       "director": "Chuck Smith",
+      "mostra": "IN-EDIT BRASIL 2026",
       "poster": ""
     },
     {
@@ -5459,6 +5954,7 @@
       "country": "",
       "duration": 0,
       "director": "Ken Russell",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5470,6 +5966,7 @@
       "country": "EUA",
       "duration": 99,
       "director": "Francis Ford Coppola",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5481,6 +5978,7 @@
       "country": "",
       "duration": 0,
       "director": "Keisuke Kinoshita",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5492,6 +5990,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5503,6 +6002,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5514,6 +6014,7 @@
       "country": "Brasil",
       "duration": 97,
       "director": "Erico Rassi",
+      "mostra": "PROJETO CINESESC",
       "poster": ""
     },
     {
@@ -5525,6 +6026,7 @@
       "country": "Brasil",
       "duration": 78,
       "director": "Adriana Yañez",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -5536,6 +6038,7 @@
       "country": "Brasil",
       "duration": 32,
       "director": "Maurice Capovilla",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -5547,6 +6050,7 @@
       "country": "Brasil",
       "duration": 150,
       "director": "Cao Hamburger",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -5558,6 +6062,7 @@
       "country": "Irã, França",
       "duration": 123,
       "director": "Asghar Farhadi",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -5569,6 +6074,7 @@
       "country": "Coreia do Sul",
       "duration": 92,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -5580,6 +6086,7 @@
       "country": "Brasil",
       "duration": 83,
       "director": "Gustavo Vinagre",
+      "mostra": "FESTIVAL P-REC SP",
       "poster": ""
     },
     {
@@ -5591,6 +6098,7 @@
       "country": "EUA",
       "duration": 71,
       "director": "Todd Verow",
+      "mostra": "FESTIVAL P-REC SP",
       "poster": ""
     },
     {
@@ -5602,6 +6110,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5613,6 +6122,7 @@
       "country": "França",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5624,6 +6134,7 @@
       "country": "Brasil",
       "duration": 76,
       "director": "Milena Times",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5635,6 +6146,7 @@
       "country": "Tchecoslováquia",
       "duration": 85,
       "director": "Martin Frič",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -5646,6 +6158,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5657,6 +6170,7 @@
       "country": "Brasil",
       "duration": 84,
       "director": "Xavier de Oliveira",
+      "mostra": "2ª MOSTRA CINEMA BRASILEIRO DE A A Z",
       "poster": ""
     },
     {
@@ -5668,6 +6182,7 @@
       "country": "EUA, França",
       "duration": 83,
       "director": "Gregg Araki",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5679,6 +6194,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5690,6 +6206,7 @@
       "country": "Coreia do Sul, França",
       "duration": 69,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -5701,6 +6218,7 @@
       "country": "Brasil",
       "duration": 82,
       "director": "Matheus Marchetti",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5712,6 +6230,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5723,6 +6242,7 @@
       "country": "Brasil",
       "duration": 76,
       "director": "Milena Times",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5734,6 +6254,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5745,6 +6266,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5756,6 +6278,7 @@
       "country": "Tchecoslováquia",
       "duration": 80,
       "director": "Marie Poledňáková",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -5767,6 +6290,7 @@
       "country": "Tchecoslováquia",
       "duration": 81,
       "director": "Věra Chytilová",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -5778,6 +6302,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Gabriel Mascaro",
+      "mostra": "SESSÃO UNIVERCINE",
       "poster": ""
     },
     {
@@ -5789,6 +6314,7 @@
       "country": "Japão",
       "duration": 101,
       "director": "Hayao Miyazaki",
+      "mostra": "CINECLUBINHO",
       "poster": ""
     },
     {
@@ -5800,6 +6326,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5811,6 +6338,7 @@
       "country": "EUA",
       "duration": 110,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5822,6 +6350,7 @@
       "country": "EUA",
       "duration": 110,
       "director": "Nicholas Ray",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5833,6 +6362,7 @@
       "country": "Japão",
       "duration": 98,
       "director": "Keisuke Kinoshita",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -5844,6 +6374,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5855,6 +6386,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5866,6 +6398,7 @@
       "country": "Suécia",
       "duration": 97,
       "director": "Benjamin Christense",
+      "mostra": "CINEMATOGRAPHO",
       "poster": ""
     },
     {
@@ -5877,6 +6410,7 @@
       "country": "",
       "duration": 0,
       "director": "Leona Jhovs",
+      "mostra": "TRANSAR - VIVÊNCIAS TRANS E INVISIBILIDADE DA INFÂNCIA TRANS",
       "poster": ""
     },
     {
@@ -5888,6 +6422,7 @@
       "country": "EUA",
       "duration": 90,
       "director": "Joe Swanberg",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -5899,6 +6434,7 @@
       "country": "Coreia do Sul",
       "duration": 121,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -5910,6 +6446,7 @@
       "country": "EUA",
       "duration": 101,
       "director": "Harold Ramis",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -5921,6 +6458,7 @@
       "country": "EUA",
       "duration": 101,
       "director": "Harold Ramis",
+      "mostra": "SESSÕES VERGUEIRO AO AR LIVRE",
       "poster": ""
     },
     {
@@ -5932,6 +6470,7 @@
       "country": "EUA",
       "duration": 71,
       "director": "Charles Lum e Todd Verow",
+      "mostra": "FESTIVAL P-REC SP",
       "poster": ""
     },
     {
@@ -5943,6 +6482,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5954,6 +6494,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5965,6 +6506,7 @@
       "country": "Tchecoslováquia",
       "duration": 100,
       "director": "Dusan Hanak",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -5976,6 +6518,7 @@
       "country": "Tchecoslováquia",
       "duration": 92,
       "director": "Juraj Herz",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -5987,6 +6530,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -5998,6 +6542,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6009,6 +6554,7 @@
       "country": "EUA",
       "duration": 110,
       "director": "Kane Parsons",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6020,6 +6566,7 @@
       "country": "",
       "duration": 0,
       "director": "Keisuke Kinoshita",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6031,6 +6578,7 @@
       "country": "Polônia",
       "duration": 124,
       "director": "Wojciech Has",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6042,6 +6590,7 @@
       "country": "França",
       "duration": 38,
       "director": "Jean Renoir",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6053,6 +6602,7 @@
       "country": "Nigéria, Reino Unido",
       "duration": 94,
       "director": "Akinola Davies Jr.",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6064,6 +6614,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6075,6 +6626,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Tata Amaral",
+      "mostra": "PERIFERIAS - DO TAMBOR AO SISTEMA DE SOM",
       "poster": ""
     },
     {
@@ -6086,6 +6638,7 @@
       "country": "Coreia do Sul",
       "duration": 108,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6097,6 +6650,7 @@
       "country": "EUA",
       "duration": 137,
       "director": "Hal Hartley",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6108,6 +6662,7 @@
       "country": "EUA,Japão",
       "duration": 102,
       "director": "Sofia Coppola",
+      "mostra": "SESSÕES VERGUEIRO AO AR LIVRE",
       "poster": ""
     },
     {
@@ -6119,6 +6674,7 @@
       "country": "EUA",
       "duration": 92,
       "director": "Todd Verow",
+      "mostra": "FESTIVAL P-REC SP",
       "poster": ""
     },
     {
@@ -6130,6 +6686,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6141,6 +6698,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6152,6 +6710,7 @@
       "country": "Tchecoslováquia",
       "duration": 94,
       "director": "Jiří Menzel",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -6163,6 +6722,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6174,6 +6734,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6185,6 +6746,7 @@
       "country": "EUA",
       "duration": 99,
       "director": "Francis Ford Coppola",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6196,6 +6758,7 @@
       "country": "EUA",
       "duration": 135,
       "director": "Lily Wachowski e Lana Wachowski",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6207,6 +6770,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6218,6 +6782,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6229,6 +6794,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Carol Rodrigues",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6240,6 +6806,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6251,6 +6818,7 @@
       "country": "EUA",
       "duration": 113,
       "director": "Slava Tsukerman",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -6262,6 +6830,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6273,6 +6842,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6284,6 +6854,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6295,6 +6866,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6306,6 +6878,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6317,6 +6890,7 @@
       "country": "Itália",
       "duration": 98,
       "director": "Sergio Martino",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": ""
     },
     {
@@ -6328,6 +6902,7 @@
       "country": "EUA",
       "duration": 89,
       "director": "David Lynch",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6339,6 +6914,7 @@
       "country": "Tchecoslováquia",
       "duration": 84,
       "director": "Karel Zeman",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6350,6 +6926,7 @@
       "country": "França",
       "duration": 98,
       "director": "Éric Rohmer",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6361,6 +6938,7 @@
       "country": "Coreia do Sul",
       "duration": 101,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6372,6 +6950,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6383,6 +6962,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6394,6 +6974,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6405,6 +6986,7 @@
       "country": "EUA",
       "duration": 110,
       "director": "Nicholas Ray",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6416,6 +6998,7 @@
       "country": "Dinamarca, Finlândia, França, Alemanha, Países Baixos, Suécia, Reino Unido",
       "duration": 178,
       "director": "Lars von Trier",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6427,6 +7010,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6438,6 +7022,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6449,6 +7034,7 @@
       "country": "Coreia do Sul",
       "duration": 96,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6460,6 +7046,7 @@
       "country": "Japão",
       "duration": 136,
       "director": "Yasujirō Ozu",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6471,6 +7058,7 @@
       "country": "França, Romênia",
       "duration": 77,
       "director": "David Moreau, Xavier Palud",
+      "mostra": "PORÃO DO BELAS",
       "poster": ""
     },
     {
@@ -6482,6 +7070,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6493,6 +7082,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6504,6 +7094,7 @@
       "country": "Irã",
       "duration": 93,
       "director": "Jafar Panahi",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -6515,6 +7106,7 @@
       "country": "Tchecoslováquia",
       "duration": 77,
       "director": "Miloš Forman",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -6526,6 +7118,7 @@
       "country": "Tchecoslováquia",
       "duration": 89,
       "director": "Karel Kachyna",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -6537,6 +7130,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6548,6 +7142,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6559,6 +7154,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6570,6 +7166,7 @@
       "country": "EUA, França",
       "duration": 83,
       "director": "Gregg Araki",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6581,6 +7178,7 @@
       "country": "Brasil",
       "duration": 108,
       "director": "Cao Hamburger",
+      "mostra": "MUNDOS DE PLÁSTICO",
       "poster": ""
     },
     {
@@ -6592,6 +7190,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6603,6 +7202,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6614,6 +7214,7 @@
       "country": "Brasil",
       "duration": 8,
       "director": "Luciano Vidigal",
+      "mostra": "CURTA, COMENTE E COMPARTILHE",
       "poster": ""
     },
     {
@@ -6625,6 +7226,7 @@
       "country": "Brasil",
       "duration": 95,
       "director": "Luciano Vidigal",
+      "mostra": "SESC MESA BRASIL",
       "poster": ""
     },
     {
@@ -6636,6 +7238,7 @@
       "country": "Alemanha",
       "duration": 148,
       "director": "Fritz Lang",
+      "mostra": "CINE-RECITAL",
       "poster": ""
     },
     {
@@ -6647,6 +7250,7 @@
       "country": "Brasil",
       "duration": 114,
       "director": "Flávia Lacerda, Guel Arraes",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -6658,6 +7262,7 @@
       "country": "Coreia do Sul",
       "duration": 66,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6669,6 +7274,7 @@
       "country": "Coreia do Sul",
       "duration": 77,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6680,6 +7286,7 @@
       "country": "Japão",
       "duration": 121,
       "director": "Ryusuke Hamaguchi",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6691,6 +7298,7 @@
       "country": "Canadá, França, Luxemburgo",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6702,6 +7310,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6713,6 +7322,7 @@
       "country": "Brasil",
       "duration": 109,
       "director": "Djin Sganzerla",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6724,6 +7334,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6735,6 +7346,7 @@
       "country": "França",
       "duration": 103,
       "director": "Claude Lelouch",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -6746,6 +7358,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6757,6 +7370,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6768,6 +7382,7 @@
       "country": "Tchecoslováquia",
       "duration": 80,
       "director": "Věra Plívová-Šimková",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -6779,6 +7394,7 @@
       "country": "Tchecoslováquia",
       "duration": 115,
       "director": "Irena Pavlásková",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -6790,6 +7406,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6801,6 +7418,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6812,6 +7430,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6823,6 +7442,7 @@
       "country": "Bélgica, França, Holanda",
       "duration": 150,
       "director": "Johan Grimonprez",
+      "mostra": "2ª MOSTRA CONTOS DE RESISTÊNCIA",
       "poster": ""
     },
     {
@@ -6834,6 +7454,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6845,6 +7466,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6856,6 +7478,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6867,6 +7490,7 @@
       "country": "Itália",
       "duration": 99,
       "director": "Dario Argento",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6878,6 +7502,7 @@
       "country": "EUA",
       "duration": 105,
       "director": "Fritz Lang",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -6889,6 +7514,7 @@
       "country": "EUA",
       "duration": 84,
       "director": "Joseph M. Newman",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -6900,6 +7526,7 @@
       "country": "EUA",
       "duration": 112,
       "director": "John Huston",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -6911,6 +7538,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "David Miller",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -6922,6 +7550,7 @@
       "country": "EUA",
       "duration": 124,
       "director": "John Huston",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -6933,6 +7562,7 @@
       "country": "Brasil",
       "duration": 73,
       "director": "Igor Amin",
+      "mostra": "CINE CALEIDOSCÓPIO",
       "poster": ""
     },
     {
@@ -6944,6 +7574,7 @@
       "country": "EUA, Japão",
       "duration": 102,
       "director": "Sofia Coppola",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6955,6 +7586,7 @@
       "country": "Japão, Uzbequistão, Catar",
       "duration": 120,
       "director": "Kiyoshi Kurosawa",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6966,6 +7598,7 @@
       "country": "Coreia do Sul",
       "duration": 90,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -6977,6 +7610,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6988,6 +7622,7 @@
       "country": "Brasil",
       "duration": 82,
       "director": "Matheus Marchetti",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -6999,6 +7634,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7010,6 +7646,7 @@
       "country": "França",
       "duration": 103,
       "director": "Claude Lelouch",
+      "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": ""
     },
     {
@@ -7021,6 +7658,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7032,6 +7670,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7043,6 +7682,7 @@
       "country": "Tchecoslováquia",
       "duration": 83,
       "director": "Elo Havetta",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -7054,6 +7694,7 @@
       "country": "Tchecoslováquia",
       "duration": 82,
       "director": "Gustav Machatý",
+      "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": ""
     },
     {
@@ -7065,6 +7706,7 @@
       "country": "Japão, EUA",
       "duration": 98,
       "director": "Aaron Horvath, Michael Jelenic",
+      "mostra": "CINECLUBINHO",
       "poster": ""
     },
     {
@@ -7076,6 +7718,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7087,6 +7730,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7098,6 +7742,7 @@
       "country": "EUA",
       "duration": 124,
       "director": "John Huston",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7109,6 +7754,7 @@
       "country": "EUA",
       "duration": 105,
       "director": "Fritz Lang",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7120,6 +7766,7 @@
       "country": "França, Bélgica",
       "duration": 78,
       "director": "Rémi Bezançon, Jean-Christophe Lie",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -7131,6 +7778,7 @@
       "country": "EUA",
       "duration": 90,
       "director": "Joe Swanberg",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7142,6 +7790,7 @@
       "country": "EUA",
       "duration": 101,
       "director": "Harold Ramis",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7153,6 +7802,7 @@
       "country": "Coreia do Sul",
       "duration": 121,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7164,6 +7814,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7175,6 +7826,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7186,6 +7838,7 @@
       "country": "Brasil",
       "duration": 82,
       "director": "Matheus Marchetti",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7197,6 +7850,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7208,6 +7862,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7219,6 +7874,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7230,6 +7886,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7241,6 +7898,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7252,6 +7910,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7263,6 +7922,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7274,6 +7934,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7285,6 +7946,7 @@
       "country": "EUA",
       "duration": 86,
       "director": "Edmund Goulding",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7296,6 +7958,7 @@
       "country": "EUA",
       "duration": 112,
       "director": "John Huston",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7307,6 +7970,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "Otto Preminger",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7318,6 +7982,7 @@
       "country": "EUA",
       "duration": 117,
       "director": "Henry Hathaway, Howard Hawks, Henry King, Henry Koster, Jean Negulesco",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7329,6 +7994,7 @@
       "country": "EUA",
       "duration": 124,
       "director": "John Huston",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7340,6 +8006,7 @@
       "country": "Japão",
       "duration": 136,
       "director": "Yasujirō Ozu",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7351,6 +8018,7 @@
       "country": "Coreia do Sul",
       "duration": 96,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7362,6 +8030,7 @@
       "country": "Brasil, França",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7373,6 +8042,7 @@
       "country": "Brasil",
       "duration": 96,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7384,6 +8054,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7395,6 +8066,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7406,6 +8078,7 @@
       "country": "EUA",
       "duration": 127,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7417,6 +8090,7 @@
       "country": "EUA, Catar, Iraque",
       "duration": 106,
       "director": "Hasan Hadi",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7428,6 +8102,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7439,6 +8114,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7450,6 +8126,7 @@
       "country": "Canadá, França, Luxemburgo",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7461,6 +8138,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7472,6 +8150,7 @@
       "country": "EUA, Suécia",
       "duration": 94,
       "director": "Sara Jordenö",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7483,6 +8162,7 @@
       "country": "França, Bélgica",
       "duration": 128,
       "director": "Julia Ducournau",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7494,6 +8174,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "David Miller",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7505,6 +8186,7 @@
       "country": "EUA",
       "duration": 61,
       "director": "Phil Karson",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7516,6 +8198,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "Otto Preminger",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7527,6 +8210,7 @@
       "country": "EUA",
       "duration": 76,
       "director": "Roy Ward Baker",
+      "mostra": "MARILYN MONROE 100 ANOS",
       "poster": ""
     },
     {
@@ -7538,6 +8222,7 @@
       "country": "Brasil",
       "duration": 110,
       "director": "Cao Hamburger",
+      "mostra": "INFÂNCIAS REPRIMIDAS",
       "poster": ""
     },
     {
@@ -7549,6 +8234,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7560,6 +8246,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 128,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7571,6 +8258,7 @@
       "country": "Itália, França",
       "duration": 151,
       "director": "Roberto Rossellini",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": ""
     },
     {
@@ -7582,6 +8270,7 @@
       "country": "EUA",
       "duration": 103,
       "director": "Stephen Chbosky",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -7593,6 +8282,7 @@
       "country": "EUA",
       "duration": 99,
       "director": "Ernst Lubitsch",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -7604,6 +8294,7 @@
       "country": "Brasil",
       "duration": 52,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA UGO GIORGETTI",
       "poster": ""
     },
     {
@@ -7615,6 +8306,7 @@
       "country": "Brasil",
       "duration": 115,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA UGO GIORGETTI",
       "poster": ""
     },
     {
@@ -7626,6 +8318,7 @@
       "country": "França",
       "duration": 78,
       "director": "Maïlys Vallade, Liane-Cho Han Jin Kuang",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7637,6 +8330,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7648,6 +8342,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7659,6 +8354,7 @@
       "country": "Coréia do Sul",
       "duration": 77,
       "director": "Hong Sag-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7670,6 +8366,7 @@
       "country": "Japão",
       "duration": 121,
       "director": "Ryusuke Hamaguchi",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7681,6 +8378,7 @@
       "country": "Austrália",
       "duration": 98,
       "director": "Adam Elliot",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -7692,6 +8390,7 @@
       "country": "França",
       "duration": 100,
       "director": "Chris Marker",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -7703,6 +8402,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7714,6 +8414,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7725,6 +8426,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7736,6 +8438,7 @@
       "country": "França",
       "duration": 78,
       "director": "Maïlys Vallade, Liane-Cho Han Jin Kuang",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7747,6 +8450,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7758,6 +8462,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7769,6 +8474,7 @@
       "country": "EUA",
       "duration": 137,
       "director": "Hal Hartley",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7780,6 +8486,7 @@
       "country": "Coréia do Sul",
       "duration": 108,
       "director": "Hong Sang-soo",
+      "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": ""
     },
     {
@@ -7791,6 +8498,7 @@
       "country": "Iraque, Catar, EUA",
       "duration": 106,
       "director": "Hasah Nadi",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -7802,6 +8510,7 @@
       "country": "França, Japão",
       "duration": 101,
       "director": "Claire Denis",
+      "mostra": "PORÃO DO BELAS: NOVO HORROR FRANCÊS",
       "poster": ""
     },
     {
@@ -7813,6 +8522,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7824,6 +8534,7 @@
       "country": "França",
       "duration": 108,
       "director": "François Ozon",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7835,6 +8546,7 @@
       "country": "EUA",
       "duration": 106,
       "director": "Kristoffer Borgli",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -7846,6 +8558,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7857,6 +8570,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 128,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7868,6 +8582,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7879,6 +8594,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7890,6 +8606,7 @@
       "country": "Cuba, Espanha, México",
       "duration": 108,
       "director": "Tomás Gutiérrez Alea, Juan Carlos Tabío",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7901,6 +8618,7 @@
       "country": "Reino Unido",
       "duration": 116,
       "director": "Joseph Losey",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -7912,6 +8630,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7923,6 +8642,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -7934,6 +8654,7 @@
       "country": "Reino Unido",
       "duration": 12,
       "director": "Akinola Davies Jr.",
+      "mostra": "FOCO AKINOLA DAVIES JR.",
       "poster": ""
     },
     {
@@ -7945,6 +8666,7 @@
       "country": "Brasil",
       "duration": 95,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA UGO GIORGETTI",
       "poster": ""
     },
     {
@@ -7956,6 +8678,7 @@
       "country": "Brasil",
       "duration": 76,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA UGO GIORGETTI",
       "poster": ""
     },
     {
@@ -7967,6 +8690,7 @@
       "country": "Brasil",
       "duration": 114,
       "director": "Antônio Pitanga",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -7978,6 +8702,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Luciana Bezerra e Gustavo Melo",
+      "mostra": "",
       "poster": ""
     },
     {
@@ -7989,6 +8714,7 @@
       "country": "EUA",
       "duration": 106,
       "director": "Jared Bush e Byron Howard",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -8000,6 +8726,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8011,6 +8738,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8022,6 +8750,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8033,6 +8762,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8044,6 +8774,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8055,6 +8786,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 128,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8066,6 +8798,7 @@
       "country": "Brasil",
       "duration": 158,
       "director": "Kleber Mendonça Filho",
+      "mostra": "SESSÃO ESPECIAL VITRINE FILMES",
       "poster": ""
     },
     {
@@ -8077,6 +8810,7 @@
       "country": "Brasil",
       "duration": 96,
       "director": "Maureen Bisilliat",
+      "mostra": "HOMENAGEM A MAUREEN BISLLIAT",
       "poster": ""
     },
     {
@@ -8088,6 +8822,7 @@
       "country": "Reino Unido",
       "duration": 73,
       "director": "Isaac Julien",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8099,6 +8834,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8110,6 +8846,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8121,6 +8858,7 @@
       "country": "Tailândia, Alemanha, Reino Unido",
       "duration": 18,
       "director": "Apichatpong Weerasethakul",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8132,6 +8870,7 @@
       "country": "EUA",
       "duration": 135,
       "director": "Clint Eastwood",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8143,6 +8882,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8154,6 +8894,7 @@
       "country": "Brasil",
       "duration": 60,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8165,6 +8906,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8176,6 +8918,7 @@
       "country": "Reino Unido",
       "duration": 12,
       "director": "Akinola Davies Jr.",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8187,6 +8930,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8198,6 +8942,7 @@
       "country": "México",
       "duration": 90,
       "director": "Carlos Enrique Taboada",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8209,6 +8954,7 @@
       "country": "Taiwan",
       "duration": 88,
       "director": "Huang Hui-chen",
+      "mostra": "CINE SAPATÃO",
       "poster": ""
     },
     {
@@ -8220,6 +8966,7 @@
       "country": "França, Japão",
       "duration": 92,
       "director": "Thaís Vila Nova",
+      "mostra": "BELAS SONORIZA",
       "poster": ""
     },
     {
@@ -8231,6 +8978,7 @@
       "country": "EUA",
       "duration": 128,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8242,6 +8990,7 @@
       "country": "Palestina, Alemanha, França, Qatar",
       "duration": 107,
       "director": "Kamal Aljafari",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -8253,6 +9002,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Flávio Federico",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -8264,6 +9014,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -8275,6 +9026,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -8286,6 +9038,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8297,6 +9050,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8308,6 +9062,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 128,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8319,6 +9074,7 @@
       "country": "Senegal, França",
       "duration": 80,
       "director": "Ousmane Sembène",
+      "mostra": "SESSÃO ESPECIAL | CINE 16",
       "poster": ""
     },
     {
@@ -8330,6 +9086,7 @@
       "country": "Brasil",
       "duration": 101,
       "director": "Ruy Guerra, Luciana Mazzotti",
+      "mostra": "SESSÃO ESPECIAL PANDORA FILMES",
       "poster": ""
     },
     {
@@ -8341,6 +9098,7 @@
       "country": "EUA",
       "duration": 98,
       "director": "Aaron Horvath, Michael Jelenic, Pierre Leduc",
+      "mostra": "CINECLUBINHO",
       "poster": ""
     },
     {
@@ -8352,6 +9110,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8363,6 +9122,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8374,6 +9134,7 @@
       "country": "França",
       "duration": 92,
       "director": "Henri-Georges Clouzot",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8385,6 +9146,7 @@
       "country": "Brasil",
       "duration": 83,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8396,6 +9158,7 @@
       "country": "Brasil",
       "duration": 95,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8407,6 +9170,7 @@
       "country": "Nigéria, Reino Unido, Irlanda",
       "duration": 93,
       "director": "Akinola Davies Jr.",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8418,6 +9182,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8429,6 +9194,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8440,6 +9206,7 @@
       "country": "Espanha",
       "duration": 100,
       "director": "Eva Libertad",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8451,6 +9218,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Igor Bastos",
+      "mostra": "SEMANA S",
       "poster": ""
     },
     {
@@ -8462,6 +9230,7 @@
       "country": "EUA",
       "duration": 92,
       "director": "Pete Docter",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -8473,6 +9242,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Thaís Vila Nova",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -8484,6 +9254,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8495,6 +9266,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Regis Faria",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8506,6 +9278,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8517,6 +9290,7 @@
       "country": "França",
       "duration": 117,
       "director": "Raúl Ruiz",
+      "mostra": "CINECLUBE DIURNO",
       "poster": ""
     },
     {
@@ -8528,6 +9302,7 @@
       "country": "Itália",
       "duration": 101,
       "director": "Dario Argento",
+      "mostra": "CINECLUBE FGV APRESENTA",
       "poster": ""
     },
     {
@@ -8539,6 +9314,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8550,6 +9326,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 109,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8561,6 +9338,7 @@
       "country": "Brasil",
       "duration": 86,
       "director": "Gabriel Mascaro",
+      "mostra": "SESSÃO ESPECIAL CINEMA E FINITUDE",
       "poster": ""
     },
     {
@@ -8572,6 +9350,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8583,6 +9362,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8594,6 +9374,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8605,6 +9386,7 @@
       "country": "EUA",
       "duration": 87,
       "director": "Max Ophüls",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8616,6 +9398,7 @@
       "country": "EUA",
       "duration": 76,
       "director": "Arthur J. Bressan Jr.",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8627,6 +9410,7 @@
       "country": "Cinematic Correspondences: Jonas Mekas - J.L. Guerin",
       "duration": 111,
       "director": "Jonas Mekas, J. L. Guerín",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8638,6 +9422,7 @@
       "country": "Brasil",
       "duration": 72,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8649,6 +9434,7 @@
       "country": "Brasil",
       "duration": 97,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8660,6 +9446,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8671,6 +9458,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8682,6 +9470,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8693,6 +9482,7 @@
       "country": "EUA",
       "duration": 108,
       "director": "Byron Howard, Rich Moore",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -8704,6 +9494,7 @@
       "country": "França, Grécia, Irlanda, Países Baixos, Reino Unido",
       "duration": 119,
       "director": "Yorgos Lanthimos",
+      "mostra": "CINECLUBE LACAN",
       "poster": ""
     },
     {
@@ -8715,6 +9506,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "NOITÃO ALMODÓVAR: DO AGRIDOCE AO MEIO AMARGO",
       "poster": ""
     },
     {
@@ -8726,6 +9518,7 @@
       "country": "Espanha",
       "duration": 101,
       "director": "Pedro Almodóvar",
+      "mostra": "NOITÃO ALMODÓVAR: DO AGRIDOCE AO MEIO AMARGO",
       "poster": ""
     },
     {
@@ -8737,6 +9530,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "NOITÃO ALMODÓVAR: DO AGRIDOCE AO MEIO AMARGO",
       "poster": ""
     },
     {
@@ -8748,6 +9542,7 @@
       "country": "Espanha",
       "duration": 88,
       "director": "Pedro Almodóvar",
+      "mostra": "NOITÃO ALMODÓVAR: DO AGRIDOCE AO MEIO AMARGO",
       "poster": ""
     },
     {
@@ -8759,6 +9554,7 @@
       "country": "Espanha",
       "duration": 100,
       "director": "Eva Libertad",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8770,6 +9566,7 @@
       "country": "Brasil",
       "duration": 119,
       "director": "Djin Sganzerla",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8781,6 +9578,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8792,6 +9590,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8803,6 +9602,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 109,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8814,6 +9614,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Walter Rogério",
+      "mostra": "REVISÃO CRÍTICA DO CINEMA BRASILEIRO",
       "poster": ""
     },
     {
@@ -8825,6 +9626,7 @@
       "country": "Espanha",
       "duration": 111,
       "director": "Pedro Almodóvar",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8836,6 +9638,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8847,6 +9650,7 @@
       "country": "Japão",
       "duration": 117,
       "director": "Shunji Iwai",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8858,6 +9662,7 @@
       "country": "Cinematic Correspondences: Jonas Mekas - J.L. Guerin",
       "duration": 96,
       "director": "Victor Erice, Abbas Kiarostami",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -8869,6 +9674,7 @@
       "country": "Brasil",
       "duration": 76,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8880,6 +9686,7 @@
       "country": "Brasil",
       "duration": 88,
       "director": "Ugo Giorgetti",
+      "mostra": "MOSTRA HUGO GIORGETTI",
       "poster": ""
     },
     {
@@ -8891,6 +9698,7 @@
       "country": "França",
       "duration": 133,
       "director": "Jean-Claude Barny",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8902,6 +9710,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8913,6 +9722,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8924,6 +9734,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8935,6 +9746,7 @@
       "country": "Polônia",
       "duration": 15,
       "director": "Krzysztof Kieślowski",
+      "mostra": "SESSÃO NASTIENKA COM CONVIDADO",
       "poster": ""
     },
     {
@@ -8946,6 +9758,7 @@
       "country": "Argentina",
       "duration": 112,
       "director": "Benjamín Ávila",
+      "mostra": "INFÂNCIAS REPRIMIDAS",
       "poster": ""
     },
     {
@@ -8957,6 +9770,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "PRÉ-ESTREIA",
       "poster": ""
     },
     {
@@ -8968,6 +9782,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8979,6 +9794,7 @@
       "country": "França",
       "duration": 108,
       "director": "François Ozon",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -8990,6 +9806,7 @@
       "country": "EUA",
       "duration": 107,
       "director": "Karyn Kusama",
+      "mostra": "CINECLUBE NOTURNO",
       "poster": ""
     },
     {
@@ -9001,6 +9818,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9012,6 +9830,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9023,6 +9842,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9034,6 +9854,7 @@
       "country": "Itália",
       "duration": 132,
       "director": "Roberto Rossellini",
+      "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": ""
     },
     {
@@ -9045,6 +9866,7 @@
       "country": "França",
       "duration": 100,
       "director": "Chris Marker",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9056,6 +9878,7 @@
       "country": "França",
       "duration": 92,
       "director": "Henri-Georges Clouzot",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9067,6 +9890,7 @@
       "country": "Brasil, EUA",
       "duration": 75,
       "director": "Alê Abreu",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -9078,6 +9902,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Daniel Chong",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -9089,6 +9914,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9100,6 +9926,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9111,6 +9938,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9122,6 +9950,7 @@
       "country": "EUA",
       "duration": 135,
       "director": "Ron Howard",
+      "mostra": "CIÊNCIA NO CINEMA",
       "poster": ""
     },
     {
@@ -9133,6 +9962,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9144,6 +9974,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9155,6 +9986,7 @@
       "country": "EUA, Polônia",
       "duration": 71,
       "director": "Pete Ohs",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9166,6 +9998,7 @@
       "country": "Brasil",
       "duration": 111,
       "director": "Walter Salles",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9177,6 +10010,7 @@
       "country": "Austrália",
       "duration": 98,
       "director": "Adam Elliot",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9188,6 +10022,7 @@
       "country": "Brasil",
       "duration": 97,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9199,6 +10034,7 @@
       "country": "Espanha",
       "duration": 99,
       "director": "Eva Libertad",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9210,6 +10046,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9221,6 +10058,7 @@
       "country": "França",
       "duration": 45,
       "director": "Agnès Varda",
+      "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": ""
     },
     {
@@ -9232,6 +10070,7 @@
       "country": "Brasil, EUA",
       "duration": 75,
       "director": "Alê Abreu",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -9243,6 +10082,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Daniel Chong",
+      "mostra": "SEMANA DO BRINCAR",
       "poster": ""
     },
     {
@@ -9254,6 +10094,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9265,6 +10106,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9276,6 +10118,7 @@
       "country": "Bélgica, França, Alemanha Ocidental",
       "duration": 87,
       "director": "Harry Kümel",
+      "mostra": "PORÃO DO BELAS: VAMPIRAS SEDENTAS",
       "poster": ""
     },
     {
@@ -9287,6 +10130,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9298,6 +10142,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Flávio Federico",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9309,6 +10154,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": ""
     },
     {
@@ -9320,6 +10166,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9331,6 +10178,7 @@
       "country": "França",
       "duration": 108,
       "director": "François Ozon",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9342,6 +10190,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Carine Wallauer",
+      "mostra": "SESSÃO ESPECIAL DE PRÉ-ESTREIA",
       "poster": ""
     },
     {
@@ -9353,6 +10202,7 @@
       "country": "EUA, Polônia",
       "duration": 71,
       "director": "Pete Ohs",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9364,6 +10214,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9375,6 +10226,7 @@
       "country": "EUA",
       "duration": 119,
       "director": "David Frankel",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9386,6 +10238,7 @@
       "country": "França, Índia",
       "duration": 99,
       "director": "Payal Kapadia",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9397,6 +10250,7 @@
       "country": "Tailândia, Alemanha, Reino Unido",
       "duration": 18,
       "director": "Apichatpong Weerasethakul",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9408,6 +10262,7 @@
       "country": "Brasil",
       "duration": 85,
       "director": "Miguel Antunes Ramos",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9419,6 +10274,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9430,6 +10286,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9441,6 +10298,7 @@
       "country": "França",
       "duration": 45,
       "director": "Agnès Varda",
+      "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": ""
     },
     {
@@ -9452,6 +10310,7 @@
       "country": "China, França, Luxemburgo, Mauritânia, Taiwan",
       "duration": 110,
       "director": "Abderrahmane Sissako",
+      "mostra": "SESSÃO ESPECIAL",
       "poster": ""
     },
     {
@@ -9463,6 +10322,7 @@
       "country": "Brasil, EUA",
       "duration": 75,
       "director": "Alê Abreu",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9474,6 +10334,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Daniel Chong",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9485,6 +10346,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Monica Demes",
+      "mostra": "MESTRAS DO MACABRO — AS CINEASTAS AO REDOR DO MUNDO",
       "poster": ""
     },
     {
@@ -9496,6 +10358,7 @@
       "country": "EUA, França, Reino Unido.",
       "duration": 110,
       "director": "Jim Jarmusch",
+      "mostra": "ESPECIAL JIM JARMUSCH NO CINE NA PRAÇA",
       "poster": ""
     },
     {
@@ -9507,6 +10370,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9518,6 +10382,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9529,6 +10394,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9540,6 +10406,7 @@
       "country": "Rússia",
       "duration": 102,
       "director": "Igor Voloshin",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9551,6 +10418,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9562,6 +10430,7 @@
       "country": "Reino Unido, Estados Unidos",
       "duration": 109,
       "director": "Antoine Fuqua",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9573,6 +10442,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9584,6 +10454,7 @@
       "country": "Brasil",
       "duration": 105,
       "director": "Regis Faria",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9595,6 +10466,7 @@
       "country": "Espanha",
       "duration": 98,
       "director": "Eva Libertad",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9606,6 +10478,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Flávio Federico",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9617,6 +10490,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9628,6 +10502,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Flávio Federico",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9639,6 +10514,7 @@
       "country": "Espanha",
       "duration": 99,
       "director": "Eva Libertad",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9650,6 +10526,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9661,6 +10538,7 @@
       "country": "França",
       "duration": 108,
       "director": "François Ozon",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9672,6 +10550,7 @@
       "country": "Brasil",
       "duration": 107,
       "director": "Luiz Sergio Person",
+      "mostra": "ESPECIAL VIRADA",
       "poster": ""
     },
     {
@@ -9683,6 +10562,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Susan Seidelman",
+      "mostra": "VIRADA NOS 80",
       "poster": ""
     },
     {
@@ -9694,6 +10574,7 @@
       "country": "Brasil",
       "duration": 74,
       "director": "Lael Rodrigues",
+      "mostra": "VIRADA NOS 80",
       "poster": ""
     },
     {
@@ -9705,6 +10586,7 @@
       "country": "EUA",
       "duration": 146,
       "director": "Stanley Kubrick",
+      "mostra": "VIRADA NOS 80",
       "poster": ""
     },
     {
@@ -9716,6 +10598,7 @@
       "country": "Brasil",
       "duration": 90,
       "director": "Odilon Lopez",
+      "mostra": "2ª MOSTRA CONTOS DE RESISTÊNCIA",
       "poster": ""
     },
     {
@@ -9727,6 +10610,7 @@
       "country": "Japão",
       "duration": 117,
       "director": "Shunji Iwai",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9738,6 +10622,7 @@
       "country": "Austrália",
       "duration": 92,
       "director": "Adam Elliot",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -9749,6 +10634,7 @@
       "country": "Brasil, França, Portugal, Romênia",
       "duration": 216,
       "director": "Pedro Pinho",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9760,6 +10646,7 @@
       "country": "Reino Unido",
       "duration": 12,
       "director": "Akinola Davies Jr.",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9771,6 +10658,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9782,6 +10670,7 @@
       "country": "México",
       "duration": 90,
       "director": "Carlos Enrique Taboada",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9793,6 +10682,7 @@
       "country": "França",
       "duration": 94,
       "director": "Agnès Varda",
+      "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": ""
     },
     {
@@ -9804,6 +10694,7 @@
       "country": "Brasil",
       "duration": 98,
       "director": "Luca Amberg",
+      "mostra": "MOSTRA FUTMIS - 2ª EDIÇÃO",
       "poster": ""
     },
     {
@@ -9815,6 +10706,7 @@
       "country": "Uruguai",
       "duration": 102,
       "director": "Carlos Andrés Morelli",
+      "mostra": "MOSTRA FUTMIS - 2ª EDIÇÃO",
       "poster": ""
     },
     {
@@ -9826,6 +10718,7 @@
       "country": "Brasil, EUA",
       "duration": 75,
       "director": "Alê Abreu",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9837,6 +10730,7 @@
       "country": "EUA",
       "duration": 104,
       "director": "Daniel Chong",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9848,6 +10742,7 @@
       "country": "Brasil",
       "duration": 88,
       "director": "Cíntia Domit Bittar",
+      "mostra": "MESTRAS DO MACABRO — AS CINEASTAS DO HORROR AO REDOR DO MUNDO",
       "poster": ""
     },
     {
@@ -9859,6 +10754,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9870,6 +10766,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9881,6 +10778,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9892,6 +10790,7 @@
       "country": "Rússia",
       "duration": 102,
       "director": "Igor Voloshin",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9903,6 +10802,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9914,6 +10814,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Carol Durão",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9925,6 +10826,7 @@
       "country": "Brasil",
       "duration": 109,
       "director": "Djin Sganzerla",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9936,6 +10838,7 @@
       "country": "Brasil",
       "duration": 65,
       "director": "Denise Szabo",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9947,6 +10850,7 @@
       "country": "EUA",
       "duration": 128,
       "director": "Antoine Fuqua",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9958,6 +10862,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -9969,6 +10874,7 @@
       "country": "Brasil",
       "duration": 102,
       "director": "Flávio Federico",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9980,6 +10886,7 @@
       "country": "Brasil",
       "duration": 81,
       "director": "Teresa Eça, Pedro Gorski",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -9991,6 +10898,7 @@
       "country": "EUA",
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
+      "mostra": "ESPECIAL VIRADA CULTURAL",
       "poster": ""
     },
     {
@@ -10002,6 +10910,7 @@
       "country": "Espanha",
       "duration": 99,
       "director": "Eva Libertad",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10013,6 +10922,7 @@
       "country": "Bélgica, França, Luxemburgo",
       "duration": 92,
       "director": "Joachim Lafosse",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10024,6 +10934,7 @@
       "country": "França",
       "duration": 108,
       "director": "François Ozon",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10035,6 +10946,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Roberto Santos",
+      "mostra": "SESSÃO UNIVERCINE",
       "poster": ""
     },
     {
@@ -10046,6 +10958,7 @@
       "country": "EUA",
       "duration": 91,
       "director": "Wes Craven",
+      "mostra": "VIRADA NOS 80",
       "poster": ""
     },
     {
@@ -10057,6 +10970,7 @@
       "country": "EUA",
       "duration": 115,
       "director": "Steven Spielberg",
+      "mostra": "VIRADA NOS 80",
       "poster": ""
     },
     {
@@ -10068,6 +10982,7 @@
       "country": "Reino Unido, EUA",
       "duration": 101,
       "director": "Jim Henson",
+      "mostra": "VIRADA NOS 80",
       "poster": ""
     },
     {
@@ -10079,6 +10994,7 @@
       "country": "",
       "duration": 0,
       "director": "Max Ophüls",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -10090,6 +11006,7 @@
       "country": "",
       "duration": 0,
       "director": "Payal Kapadia",
+      "mostra": "CORRESPONDÊNCIAS",
       "poster": ""
     },
     {
@@ -10101,6 +11018,7 @@
       "country": "Brasil",
       "duration": 79,
       "director": "Karol Maia",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10112,6 +11030,7 @@
       "country": "Itália",
       "duration": 95,
       "director": "Dario Argento",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10123,6 +11042,7 @@
       "country": "Brasil",
       "duration": 94,
       "director": "Fabio Meira",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10134,6 +11054,7 @@
       "country": "Brasil",
       "duration": 100,
       "director": "Ary Rosa e Glenda Nicácio",
+      "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": ""
     },
     {
@@ -10145,6 +11066,7 @@
       "country": "Argentina",
       "duration": 105,
       "director": "Marcos Carnevale",
+      "mostra": "MOSTRA FUTMIS - 2ª EDIÇÃO",
       "poster": ""
     },
     {
@@ -10156,6 +11078,7 @@
       "country": "Argentina",
       "duration": 100,
       "director": "Jesús Braceras",
+      "mostra": "MOSTRA FUTMIS - 2ª EDIÇÃO",
       "poster": ""
     },
     {
@@ -10167,6 +11090,7 @@
       "country": "Argentina",
       "duration": 108,
       "director": "Juan Taratuto",
+      "mostra": "MOSTRA FUTMIS - 2ª EDIÇÃO",
       "poster": ""
     },
     {
@@ -10178,6 +11102,7 @@
       "country": "Alemanha",
       "duration": 107,
       "director": "Wolfgang Petersen",
+      "mostra": "SESC NA VIRADA",
       "poster": ""
     }
   ]

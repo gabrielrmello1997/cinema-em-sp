@@ -14,6 +14,7 @@ export function decodeHtml(text: string): string {
 
 export function htmlToText(html: string): string {
   return decodeHtml(html
+    .replace(/<h5>(.*?)<\/h5>/gi, "\n◆ $1\n")
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/<\/h[1-6]>/gi, "\n")
     .replace(/<\/p>/gi, "\n\n")

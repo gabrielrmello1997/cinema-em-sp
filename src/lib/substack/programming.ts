@@ -7,6 +7,7 @@ export interface Session {
   country: string;
   duration: number;
   director: string;
+  mostra: string;
   poster: string;
 }
 
@@ -94,16 +95,25 @@ export function extractSessions(text: string): Session[] {
     .map((l) => l.replace(/^•\s*/, ""))
     .filter(Boolean);
 
+  let currentMostra = "";
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
+    if (line.startsWith("◆ ")) {
+      currentMostra = line.slice(2);
+      continue;
+    }
+
     if (DAYS.some((d) => line.startsWith(d))) {
       currentDay = line;
+      currentMostra = "";
       continue;
     }
 
     if (CINEMAS.includes(line)) {
       currentCinema = line;
+      currentMostra = "";
       continue;
     }
 
@@ -140,7 +150,7 @@ export function extractSessions(text: string): Session[] {
       }
     }
 
-    const session: Session = { cinema: currentCinema, day: currentDay, time, title, year, country, duration, director, poster: "" };
+    const session: Session = { cinema: currentCinema, day: currentDay, time, title, year, country, duration, director, mostra: currentMostra, poster: "" };
     validateSession(session, i);
     sessions.push(session);
   }
