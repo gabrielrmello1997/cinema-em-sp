@@ -6,14 +6,22 @@ export interface FeedData {
   html: string;
 }
 
-export async function fetchFeed(): Promise<FeedData> {
-  const response = await fetch("https://cinemaemsp.substack.com/feed", {
-    cache: "no-store",
-  });
+async function fetchWithRetry(url: string, retries = 3): Promise<Response> {
+  for (let attempt = 0; attempt < retries; attempt++) {
+    const response = await fetch(url, { cache: "no-store" });
 
-  if (!response.ok) {
-    throw new Error(`Erro ao baixar o feed (${response.status})`);
+    if (response.ok) return response;
+
+    if (attempt < retries - 1) {
+      await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
+    }
   }
+
+  throw new Error(`Erro ao baixar o feed após ${retries} tentativas`);
+}
+
+export async function fetchFeed(): Promise<FeedData> {
+  const response = await fetchWithRetry("https://cinemaemsp.substack.com/feed", 3);
 
   const xml = await response.text();
 
@@ -27,7 +35,7 @@ export async function fetchFeed(): Promise<FeedData> {
 
   const rss = parser.parse(xml);
 
-  const item = rss?.rss?.channel?.item?.[17] ?? rss?.rss?.channel?.item;
+  const item = rss?.rss?.channel?.item?.[0] ?? rss?.rss?.channel?.item;
 
   if (!item) {
     throw new Error("Nenhum item encontrado no feed.");

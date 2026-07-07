@@ -71,6 +71,7 @@ export function extractSessions(text: string): Session[] {
   const lines = text
     .split("\n")
     .map((l) => l.trim())
+    .map((l) => l.replace(/^•\s*/, ""))
     .filter(Boolean);
 
   for (let i = 0; i < lines.length; i++) {
@@ -102,7 +103,7 @@ export function extractSessions(text: string): Session[] {
       const next = lines[j];
 
       if (!country) {
-        const m = next.replace(/^•\s*/, "").match(/^(.+?)[,\s]+(\d+)’/);
+        const m = next.match(/^(.+?)[,\s]+(\d+)’/);
         if (m) {
           country = m[1].trim();
           duration = Number(m[2]);
