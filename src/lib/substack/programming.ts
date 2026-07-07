@@ -63,10 +63,29 @@ const DAYS = [
   "DOMINGO",
 ];
 
+function validateSession(s: Session, lineIndex: number) {
+  const issues: string[] = [];
+
+  if (!s.cinema) issues.push("cinema vazio");
+  if (!s.day) issues.push("day vazio");
+  if (!s.time) issues.push("time vazio");
+  if (!s.title) issues.push("title vazio");
+  if (!s.year || s.year < 1900) issues.push(`year inválido (${s.year})`);
+  if (!s.country) issues.push("country vazio");
+  if (!s.duration) issues.push("duration zero");
+  if (!s.director) issues.push("director vazio");
+
+  if (issues.length) {
+    console.warn(`[parser] sessão na linha ${lineIndex} com problemas: ${issues.join(", ")}`);
+    console.warn(`  → "${s.title}" (${s.year}) @ ${s.cinema}, ${s.day} ${s.time}`);
+  }
+}
+
 export function extractSessions(text: string): Session[] {
   const sessions: Session[] = [];
   let currentDay = "";
   let currentCinema = "";
+  let totalSkipped = 0;
 
   const lines = text
     .split("\n")
@@ -89,7 +108,10 @@ export function extractSessions(text: string): Session[] {
 
     const match = line.match(/^(.*?)\s*\((\d{4})\).*?\|\s*([0-9]{1,2}h[0-9]{0,2})/);
 
-    if (!match) continue;
+    if (!match) {
+      totalSkipped++;
+      continue;
+    }
 
     const title = match[1].trim();
     const year = Number(match[2]);
@@ -117,8 +139,12 @@ export function extractSessions(text: string): Session[] {
       }
     }
 
-    sessions.push({ cinema: currentCinema, day: currentDay, time, title, year, country, duration, director });
+    const session: Session = { cinema: currentCinema, day: currentDay, time, title, year, country, duration, director };
+    validateSession(session, i);
+    sessions.push(session);
   }
+
+  console.log(`[parser] ${sessions.length} sessões extraídas, ${totalSkipped} linhas ignoradas`);
 
   return sessions;
 }

@@ -12,6 +12,8 @@ export async function GET() {
 
     const sessions = extractSessions(text);
 
+    console.log(`[api] feed: "${feed.title}" (${feed.date}) — ${sessions.length} sessões`);
+
     return NextResponse.json({
       title: feed.title,
       date: feed.date,
