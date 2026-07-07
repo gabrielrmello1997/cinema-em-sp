@@ -5,6 +5,7 @@ import { fetchAllItems } from "@/lib/substack/rss";
 import { htmlToText } from "@/lib/substack/parser";
 import { extractSessions } from "@/lib/substack/programming";
 import { loadStored, saveStored, isNewerFeed } from "@/lib/substack/store";
+import { searchMovie } from "@/lib/tmdb";
 import type { Session } from "@/lib/substack/programming";
 
 export async function GET() {
@@ -42,6 +43,27 @@ async function handleRefresh() {
     const text = htmlToText(latest.html);
     const latestSessions = extractSessions(text);
     const stored = await loadStored();
+
+    const posterCache = new Map<string, string>();
+    for (const s of stored?.allSessions ?? []) {
+      if (s.poster) posterCache.set(sessionKey(s), s.poster);
+    }
+
+    for (const s of allSessions) {
+      const cached = posterCache.get(sessionKey(s));
+      if (cached) s.poster = cached;
+    }
+
+    for (const s of latestSessions) {
+      if (!s.poster) {
+        const poster = await searchMovie(s.title, s.year);
+        s.poster = poster ?? "";
+
+        const match = allSessions.find((a) => sessionKey(a) === sessionKey(s));
+        if (match) match.poster = s.poster;
+      }
+    }
+
     const changed = isNewerFeed(latest.date, stored);
 
     if (changed) {

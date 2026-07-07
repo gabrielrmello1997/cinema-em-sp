@@ -7,6 +7,7 @@ export interface Session {
   country: string;
   duration: number;
   director: string;
+  poster: string;
 }
 
 const CINEMAS = [
@@ -139,7 +140,7 @@ export function extractSessions(text: string): Session[] {
       }
     }
 
-    const session: Session = { cinema: currentCinema, day: currentDay, time, title, year, country, duration, director };
+    const session: Session = { cinema: currentCinema, day: currentDay, time, title, year, country, duration, director, poster: "" };
     validateSession(session, i);
     sessions.push(session);
   }

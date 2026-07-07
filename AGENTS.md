@@ -24,9 +24,13 @@ The main endpoint is **`GET /api/test-substack`** — triggers the full pipeline
 - `src/lib/substack/rss.ts` — fetches and parses Substack RSS/XML
 - `src/lib/substack/parser.ts` — HTML→text conversion, HTML entity decoding
 - `src/lib/substack/programming.ts` — session parser (cinema names, days, film metadata)
-- `src/app/api/test-substack/route.ts` — API handler wiring the pipeline
+- `src/lib/tmdb.ts` — TMDB API client (search movie by title+year, returns poster URL)
+- `src/lib/substack/store.ts` — save/load sessions to/from `public/data/sessions.json`
+- `src/app/api/refresh/route.ts` — main refresh endpoint (fetches RSS, parses, fetches posters, saves)
+- `src/app/api/sessions/route.ts` — serves stored sessions (supports `?from=` and `?to=` date filters)
+- `src/app/api/test-substack/route.ts` — legacy debug endpoint (latest post only)
 
 ## Notes
-- `.env` files are gitignored but no `.env.example` exists — add one if env vars are introduced
+- `.env` files are gitignored — copy `.env.example` to `.env.local` and add `TMDB_API_KEY=your_key`
 - RSS URL is hardcoded (`https://cinemaemsp.substack.com/feed`)
 - `sharp` and `unrs-resolver` are listed as ignored built dependencies in pnpm config
