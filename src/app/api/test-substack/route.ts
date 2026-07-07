@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 
-import { fetchFeed } from "@/lib/substack/rss";
+import { fetchAllItems } from "@/lib/substack/rss";
 import { htmlToText } from "@/lib/substack/parser";
 import { extractSessions } from "@/lib/substack/programming";
 
 export async function GET() {
   try {
-    const feed = await fetchFeed();
+    const items = await fetchAllItems();
+    const feed = items[0];
 
     const text = htmlToText(feed.html);
 

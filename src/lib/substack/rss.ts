@@ -1,6 +1,6 @@
 import { XMLParser } from "fast-xml-parser";
 
-export interface FeedData {
+export interface FeedItem {
   title: string;
   date: string;
   html: string;
@@ -20,7 +20,28 @@ async function fetchWithRetry(url: string, retries = 3): Promise<Response> {
   throw new Error(`Erro ao baixar o feed após ${retries} tentativas`);
 }
 
-export async function fetchFeed(): Promise<FeedData> {
+function parseItem(item: Record<string, unknown>): FeedItem {
+  let html = "";
+
+  if (typeof item["content:encoded"] === "string") {
+    html = item["content:encoded"];
+  } else if ((item["content:encoded"] as { cdata?: string })?.cdata) {
+    html = (item["content:encoded"] as { cdata: string }).cdata;
+  }
+
+  return {
+    title:
+      typeof item.title === "string"
+        ? item.title
+        : (item.title as { cdata?: string })?.cdata ?? "",
+
+    date: (item.pubDate as string) ?? "",
+
+    html,
+  };
+}
+
+export async function fetchAllItems(): Promise<FeedItem[]> {
   const response = await fetchWithRetry("https://cinemaemsp.substack.com/feed", 3);
 
   const xml = await response.text();
@@ -35,28 +56,13 @@ export async function fetchFeed(): Promise<FeedData> {
 
   const rss = parser.parse(xml);
 
-  const item = rss?.rss?.channel?.item?.[0] ?? rss?.rss?.channel?.item;
+  const rawItems = rss?.rss?.channel?.item;
 
-  if (!item) {
+  if (!rawItems) {
     throw new Error("Nenhum item encontrado no feed.");
   }
 
-  let html = "";
+  const items = Array.isArray(rawItems) ? rawItems : [rawItems];
 
-  if (typeof item["content:encoded"] === "string") {
-    html = item["content:encoded"];
-  } else if (item["content:encoded"]?.cdata) {
-    html = item["content:encoded"].cdata;
-  }
-
-  return {
-    title:
-      typeof item.title === "string"
-        ? item.title
-        : item.title?.cdata ?? "",
-
-    date: item.pubDate ?? "",
-
-    html,
-  };
+  return items.map(parseItem);
 }
