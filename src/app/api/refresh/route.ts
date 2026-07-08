@@ -2,8 +2,7 @@ import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 
 import { fetchAllItems } from "@/lib/substack/rss";
-import { htmlToText } from "@/lib/substack/parser";
-import { extractSessions } from "@/lib/substack/programming";
+import { extractSessionsDom } from "@/lib/substack/programming-dom";
 import { loadStored, saveStored, isNewerFeed } from "@/lib/substack/store";
 import { searchMovie } from "@/lib/tmdb";
 import type { Session } from "@/lib/substack/programming";
@@ -27,8 +26,7 @@ async function handleRefresh() {
     const allSessions: Session[] = [];
 
     for (const item of items) {
-      const text = htmlToText(item.html);
-      const sessions = extractSessions(text);
+      const sessions = extractSessionsDom(item.html);
 
       for (const s of sessions) {
         const key = sessionKey(s);
@@ -40,8 +38,7 @@ async function handleRefresh() {
     }
 
     const latest = items[0];
-    const text = htmlToText(latest.html);
-    const latestSessions = extractSessions(text);
+    const latestSessions = extractSessionsDom(latest.html);
     const stored = await loadStored();
 
     const posterCache = new Map<string, string>();
@@ -55,7 +52,7 @@ async function handleRefresh() {
     }
 
     for (const s of latestSessions) {
-      if (!s.poster) {
+      if (!s.poster && s.year > 1900) {
         const poster = await searchMovie(s.title, s.year);
         s.poster = poster ?? "";
 
@@ -66,23 +63,21 @@ async function handleRefresh() {
 
     const changed = isNewerFeed(latest.date, stored);
 
+    await saveStored({
+      feedDate: latest.date,
+      feedTitle: latest.title,
+      refreshedAt: new Date().toISOString(),
+      sessions: latestSessions,
+      allSessions,
+    });
+
     if (changed) {
-      await saveStored({
-        feedDate: latest.date,
-        feedTitle: latest.title,
-        refreshedAt: new Date().toISOString(),
-        sessions: latestSessions,
-        allSessions,
-      });
-
       revalidatePath("/");
-
-      console.log(
-        `[refresh] dados atualizados: ${items.length} posts, ${latestSessions.length} na semana, ${allSessions.length} no total (${latest.date})`,
-      );
-    } else {
-      console.log(`[refresh] sem novidades (${latest.date})`);
     }
+
+    console.log(
+      `[refresh] ${items.length} posts, ${latestSessions.length} na semana, ${allSessions.length} no total${changed ? ` (${latest.date})` : " (mesmo feed)"}`,
+    );
 
     return NextResponse.json({
       changed,

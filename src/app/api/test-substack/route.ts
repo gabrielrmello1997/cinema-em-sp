@@ -1,17 +1,14 @@
 import { NextResponse } from "next/server";
 
 import { fetchAllItems } from "@/lib/substack/rss";
-import { htmlToText } from "@/lib/substack/parser";
-import { extractSessions } from "@/lib/substack/programming";
+import { extractSessionsDom } from "@/lib/substack/programming-dom";
 
 export async function GET() {
   try {
     const items = await fetchAllItems();
     const feed = items[0];
 
-    const text = htmlToText(feed.html);
-
-    const sessions = extractSessions(text);
+    const sessions = extractSessionsDom(feed.html);
 
     console.log(`[api] feed: "${feed.title}" (${feed.date}) — ${sessions.length} sessões`);
 

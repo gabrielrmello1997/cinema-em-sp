@@ -14,16 +14,16 @@
 - TypeScript strict mode on
 
 ## Purpose & Flow
-Fetches the latest post from `cinemaemsp.substack.com` RSS feed via `src/lib/substack/rss.ts`, converts HTML to text (`src/lib/substack/parser.ts`), extracts structured sessions (cinema, day, time, title, year, country, duration, director) from the programming grid (`src/lib/substack/programming.ts`).
+Fetches the latest post from `cinemaemsp.substack.com` RSS feed via `src/lib/substack/rss.ts`, extracts structured sessions (cinema, day, time, title, year, country, duration, director) from the programming HTML using JSDOM (`src/lib/substack/programming-dom.ts`).
 
-The main endpoint is **`GET /api/test-substack`** — triggers the full pipeline and returns JSON.
+The main endpoint is **`GET /api/refresh`** — triggers the full pipeline, fetches TMDB posters, caches to JSON, and revalidates the frontend.
 
-`src/app/page.tsx` is still the boilerplate create-next-app page; real output is through the API route.
+`src/app/page.tsx` loads cached data and renders the session table component.
 
 ## Key Files
 - `src/lib/substack/rss.ts` — fetches and parses Substack RSS/XML
-- `src/lib/substack/parser.ts` — HTML→text conversion, HTML entity decoding
-- `src/lib/substack/programming.ts` — session parser (cinema names, days, film metadata)
+- `src/lib/substack/programming-dom.ts` — session parser (cinema names, days, film metadata) using JSDOM
+- `src/lib/substack/programming.ts` — cinema/day constants shared across modules
 - `src/lib/tmdb.ts` — TMDB API client (search movie by title+year, returns poster URL)
 - `src/lib/substack/store.ts` — save/load sessions to/from `public/data/sessions.json`
 - `src/app/api/refresh/route.ts` — main refresh endpoint (fetches RSS, parses, fetches posters, saves)

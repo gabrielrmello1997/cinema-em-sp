@@ -57,6 +57,8 @@ function sessionsInWeek(sessions: Session[], monday: Date): Session[] {
   return sessions.filter((s) => {
     const d = parseDate(s);
     if (!d) return true;
+    d.setFullYear(mon.getFullYear());
+    if (d < mon) d.setFullYear(mon.getFullYear() + 1);
     return d >= mon && d <= sun;
   });
 }
@@ -70,6 +72,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
   const [query, setQuery] = useState("");
   const [cinemaFilter, setCinemaFilter] = useState("");
   const [dayFilter, setDayFilter] = useState("");
+  const [mostraFilter, setMostraFilter] = useState("");
   const [weekKey, setWeekKey] = useState("");
 
   const weeks = useMemo(() => {
@@ -80,6 +83,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
       const d = parseDate(s);
       if (!d) continue;
       const mon = mondayOf(d);
+      mon.setFullYear(2000);
       const key = formatKey(mon);
 
       if (!seen.has(key)) {
@@ -113,6 +117,11 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
     );
   }, [resolvedSessions]);
 
+  const mostras = useMemo(() => {
+    const unique = new Set(resolvedSessions.map((s) => s.mostra).filter(Boolean));
+    return Array.from(unique).sort();
+  }, [resolvedSessions]);
+
   const filtered = useMemo(() => {
     const normalize = (s: string) =>
       s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -129,9 +138,10 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
       }
       if (cinemaFilter && s.cinema !== cinemaFilter) return false;
       if (dayFilter && s.day !== dayFilter) return false;
+      if (mostraFilter && s.mostra !== mostraFilter) return false;
       return true;
     });
-  }, [resolvedSessions, query, cinemaFilter, dayFilter]);
+  }, [resolvedSessions, query, cinemaFilter, dayFilter, mostraFilter]);
 
   const grouped: Record<string, Session[]> = {};
   for (const s of filtered) {
@@ -193,6 +203,18 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
           {days.map((d) => (
             <option key={d} value={d}>
               {d}
+            </option>
+          ))}
+        </select>
+        <select
+          className={`${inputClass} w-56`}
+          value={mostraFilter}
+          onChange={(e) => setMostraFilter(e.target.value)}
+        >
+          <option value="">Todas as mostras</option>
+          {mostras.map((m) => (
+            <option key={m} value={m}>
+              {m}
             </option>
           ))}
         </select>

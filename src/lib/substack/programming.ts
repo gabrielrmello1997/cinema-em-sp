@@ -11,7 +11,7 @@ export interface Session {
   poster: string;
 }
 
-const CINEMAS = [
+export const CINEMAS = [
   "BIBLIOTECA ROBERTO SANTOS",
   "BIBLIOTECINE",
   "CASA DE FRANCISCA",
@@ -55,7 +55,7 @@ const CINEMAS = [
   "SOBERANO",
 ];
 
-const DAYS = [
+export const DAYS = [
   "SEGUNDA-FEIRA",
   "TERÇA-FEIRA",
   "QUARTA-FEIRA",
@@ -64,98 +64,3 @@ const DAYS = [
   "SÁBADO",
   "DOMINGO",
 ];
-
-function validateSession(s: Session, lineIndex: number) {
-  const issues: string[] = [];
-
-  if (!s.cinema) issues.push("cinema vazio");
-  if (!s.day) issues.push("day vazio");
-  if (!s.time) issues.push("time vazio");
-  if (!s.title) issues.push("title vazio");
-  if (!s.year || s.year < 1900) issues.push(`year inválido (${s.year})`);
-  if (!s.country) issues.push("country vazio");
-  if (!s.duration) issues.push("duration zero");
-  if (!s.director) issues.push("director vazio");
-
-  if (issues.length) {
-    console.warn(`[parser] sessão na linha ${lineIndex} com problemas: ${issues.join(", ")}`);
-    console.warn(`  → "${s.title}" (${s.year}) @ ${s.cinema}, ${s.day} ${s.time}`);
-  }
-}
-
-export function extractSessions(text: string): Session[] {
-  const sessions: Session[] = [];
-  let currentDay = "";
-  let currentCinema = "";
-  let totalSkipped = 0;
-
-  const lines = text
-    .split("\n")
-    .map((l) => l.trim())
-    .map((l) => l.replace(/^•\s*/, ""))
-    .filter(Boolean);
-
-  let currentMostra = "";
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-
-    if (line.startsWith("◆ ")) {
-      currentMostra = line.slice(2);
-      continue;
-    }
-
-    if (DAYS.some((d) => line.startsWith(d))) {
-      currentDay = line;
-      currentMostra = "";
-      continue;
-    }
-
-    if (CINEMAS.includes(line)) {
-      currentCinema = line;
-      currentMostra = "";
-      continue;
-    }
-
-    const match = line.match(/^(.*?)\s*\((\d{4})\).*?\|\s*([0-9]{1,2}h[0-9]{0,2})/);
-
-    if (!match) {
-      totalSkipped++;
-      continue;
-    }
-
-    const title = match[1].trim();
-    const year = Number(match[2]);
-    const time = match[3];
-
-    let country = "";
-    let duration = 0;
-    let director = "";
-
-    for (let j = i + 1; j < Math.min(i + 8, lines.length); j++) {
-      const next = lines[j];
-
-      if (!country) {
-        const m = next.match(/^(.+?)[,\s]+(\d+)’/);
-        if (m) {
-          country = m[1].trim();
-          duration = Number(m[2]);
-          continue;
-        }
-      }
-
-      if (next.startsWith("Direção:")) {
-        director = next.replace("Direção:", "").trim();
-        break;
-      }
-    }
-
-    const session: Session = { cinema: currentCinema, day: currentDay, time, title, year, country, duration, director, mostra: currentMostra, poster: "" };
-    validateSession(session, i);
-    sessions.push(session);
-  }
-
-  console.log(`[parser] ${sessions.length} sessões extraídas, ${totalSkipped} linhas ignoradas`);
-
-  return sessions;
-}
