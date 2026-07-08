@@ -23,7 +23,11 @@ interface Props {
 function parseDate(s: Session): Date | null {
   const m = s.day.match(/\((\d{2})\/(\d{2})\)/);
   if (!m) return null;
-  return new Date(s.year, Number(m[2]) - 1, Number(m[1]));
+  const d = new Date(new Date().getFullYear(), Number(m[2]) - 1, Number(m[1]));
+  if (d.getTime() > Date.now() + 90 * 24 * 60 * 60 * 1000) {
+    d.setFullYear(d.getFullYear() - 1);
+  }
+  return d;
 }
 
 function mondayOf(d: Date): Date {
@@ -83,7 +87,6 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
       const d = parseDate(s);
       if (!d) continue;
       const mon = mondayOf(d);
-      mon.setFullYear(2000);
       const key = formatKey(mon);
 
       if (!seen.has(key)) {
