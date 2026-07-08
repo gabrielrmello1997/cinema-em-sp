@@ -39,7 +39,14 @@ function parseMetadata(text: string): { country?: string; duration?: number; dir
     return result;
   }
 
-  const m = text.match(/^(.+),\s*(\d+)['’]\s*$/);
+  const dirMatch = text.match(/^(.+),\s*Dir[ecç]?\.?\s*:\s*(.+)$/);
+  if (dirMatch) {
+    result.country = dirMatch[1].trim();
+    result.director = dirMatch[2].trim();
+    return result;
+  }
+
+  const m = text.match(/^(.+),\s*[^\d]*(\d+)\s*['’]?\s*$/);
   if (m) {
     result.country = m[1].trim();
     result.duration = Number(m[2]);
@@ -55,10 +62,58 @@ function extractFromP(p: HTMLElement): string[] {
 }
 
 function extractFilm(firstText: string):
-  | { ok: true; title: string; year: number; director: string; duration: number }
+  | { ok: true; title: string; year: number; director: string; duration: number; country: string }
   | { ok: false } {
 
-  const filmMatch = firstText.match(/^(.*?)\s*\((\d{4})\)(?:[,，]\s*(.*?)(?:\s*[,，]?\s*(\d+)’(?:\d+["”])?)?)?\s*$/);
+  const parenBlock = firstText.match(/^(.*?)\s*\((\d{4}),\s*(\d+)\s*['’],\s*Dir[ecç]?\.?\s*:\s*(.+)\);?\s*$/);
+  if (parenBlock) {
+    return {
+      ok: true,
+      title: parenBlock[1].trim(),
+      year: Number(parenBlock[2]),
+      duration: Number(parenBlock[3]),
+      director: parenBlock[4].trim(),
+      country: "",
+    };
+  }
+
+  const yearDurParen = firstText.match(/^(.*?)\s*\((\d{4}),\s*(\d+)\s*['’]\)\s*$/);
+  if (yearDurParen) {
+    return {
+      ok: true,
+      title: yearDurParen[1].trim(),
+      year: Number(yearDurParen[2]),
+      director: "",
+      duration: Number(yearDurParen[3]),
+      country: "",
+    };
+  }
+
+  const dirYearParen = firstText.match(/^(.*?)\s*\((.+),\s*(\d{4}),\s*(.+),\s*(\d+)\s*['’]\)\s*$/);
+  if (dirYearParen) {
+    return {
+      ok: true,
+      title: dirYearParen[1].trim(),
+      year: Number(dirYearParen[3]),
+      director: dirYearParen[2].trim(),
+      duration: Number(dirYearParen[5]),
+      country: dirYearParen[4].trim(),
+    };
+  }
+
+  const dirYearNoCountry = firstText.match(/^(.*?)\s*\((.+),\s*(\d{4}),\s*(\d+)\s*['’]\)\s*$/);
+  if (dirYearNoCountry) {
+    return {
+      ok: true,
+      title: dirYearNoCountry[1].trim(),
+      year: Number(dirYearNoCountry[3]),
+      director: dirYearNoCountry[2].trim(),
+      duration: Number(dirYearNoCountry[4]),
+      country: "",
+    };
+  }
+
+  const filmMatch = firstText.match(/^(.*?)\s*\((\d{4})\)(?:[,，]\s*(.*?)(?:\s*[,，]?\s*(\d+)\s*['’](?:\d+["”])?)?)?\s*$/);
   if (filmMatch) {
     return {
       ok: true,
@@ -66,6 +121,31 @@ function extractFilm(firstText: string):
       year: Number(filmMatch[2]),
       director: (filmMatch[3] || "").replace(/[,\s]+$/, ""),
       duration: Number(filmMatch[4]) || 0,
+      country: "",
+    };
+  }
+
+  const yearDur = firstText.match(/^(.+),\s*(\d{4}),\s*(\d+)\s*['’]\s*$/);
+  if (yearDur) {
+    return {
+      ok: true,
+      title: yearDur[1].trim(),
+      year: Number(yearDur[2]),
+      director: "",
+      duration: Number(yearDur[3]),
+      country: "",
+    };
+  }
+
+  const durOnly = firstText.match(/^(.+),\s*(\d+)\s*['’]\s*$/);
+  if (durOnly && !/,\s*\d{4}\s*,/.test(firstText)) {
+    return {
+      ok: true,
+      title: durOnly[1].trim(),
+      year: 0,
+      director: "",
+      duration: Number(durOnly[2]),
+      country: "",
     };
   }
 
@@ -88,6 +168,7 @@ function extractFilm(firstText: string):
         year: 0,
         director,
         duration: 0,
+        country: "",
       };
     }
   }
@@ -172,6 +253,40 @@ function walkTree(
   }
 }
 
+function extractShowcase(text: string): Array<{ title: string; director: string }> | null {
+  const prefix = "Exibição dos filmes:";
+  const idx = text.indexOf(prefix);
+  if (idx === -1) return null;
+
+  const list = text.slice(idx + prefix.length).replace(/^\s+/, "").replace(/\.\s*$/, "");
+  const items: string[] = [];
+
+  for (const part of list.split("; ")) {
+    const trimmed = part.trim();
+    if (!trimmed) continue;
+    const segments = trimmed.split(/\be\b(?=.*,\s*de\s)/);
+    for (const seg of segments) {
+      const s = seg.trim();
+      if (s) items.push(s);
+    }
+  }
+
+  const result: Array<{ title: string; director: string }> = [];
+  for (const item of items) {
+    const withComma = item.match(/^(.+),\s*de\s+(.+)$/);
+    if (withComma) {
+      result.push({ title: withComma[1].trim(), director: withComma[2].trim() });
+      continue;
+    }
+    const plain = item.match(/^(.+)\s+de\s+(.+)$/);
+    if (plain) {
+      result.push({ title: plain[1].trim(), director: plain[2].trim() });
+    }
+  }
+
+  return result.length > 0 ? result : null;
+}
+
 function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: string }, sessions: Session[]) {
   if (!ctx.cinema || !ctx.day) return;
 
@@ -215,6 +330,27 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
     validateSession(session, sessions.length);
     sessions.push(session);
   } else {
+    const firstLi = lis[0];
+    if (firstLi) {
+      const showcasePs = firstLi.querySelectorAll("p");
+      if (showcasePs.length > 0) {
+        const showcaseFilms = extractShowcase(rawText(showcasePs[0]));
+        if (showcaseFilms) {
+          let totalDuration = 0;
+          if (showcasePs.length > 1) {
+            const durMatch = rawText(showcasePs[1]).match(/Duração total:\s*(\d+)\s*['’]/);
+            if (durMatch) totalDuration = Number(durMatch[1]);
+          }
+          for (const film of showcaseFilms) {
+            const session: Session = { cinema: ctx.cinema, day: ctx.day, time, title: film.title, year: 0, country: "", duration: totalDuration, director: film.director, mostra: ctx.mostra, poster: "" };
+            validateSession(session, sessions.length);
+            sessions.push(session);
+          }
+          return;
+        }
+      }
+    }
+
     for (const li of lis) {
       const ps = li.querySelectorAll("p");
       if (ps.length === 0) continue;
@@ -222,8 +358,7 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
       const first = extractFilm(rawText(ps[0]));
       if (!first.ok) continue;
 
-      let { title, year, director, duration } = first;
-      let country = "";
+      let { title, year, director, duration, country = "" } = first;
 
       for (let i = 1; i < ps.length; i++) {
         for (const part of extractFromP(ps[i])) {
