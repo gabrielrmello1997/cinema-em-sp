@@ -1,7 +1,7 @@
 {
   "feedDate": "Thu, 09 Jul 2026 14:16:11 GMT",
   "feedTitle": "Programação qui 09/07 e sex 10/07",
-  "refreshedAt": "2026-07-09T16:09:21.931Z",
+  "refreshedAt": "2026-07-09T22:21:46.076Z",
   "sessions": [
     {
       "cinema": "CCSP",
@@ -13767,7 +13767,7 @@
       "duration": 48,
       "director": "Marguerite Duras",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": ""
+      "poster": "https://image.tmdb.org/t/p/w500/eGgttENgVGBrftSNrNel3BtO4HT.jpg"
     },
     {
       "cinema": "CINUSP",
@@ -13779,7 +13779,7 @@
       "duration": 28,
       "director": "Marguerite Duras",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": ""
+      "poster": "https://image.tmdb.org/t/p/w500/nnavm1gZp42lIpKrr4VmXDSLtYA.jpg"
     },
     {
       "cinema": "CINUSP",
