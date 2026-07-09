@@ -4,8 +4,9 @@ import { revalidatePath } from "next/cache";
 import { fetchAllItems } from "@/lib/substack/rss";
 import { extractSessionsDom } from "@/lib/substack/programming-dom";
 import { loadStored, saveStored, isNewerFeed } from "@/lib/substack/store";
-import { searchMovie } from "@/lib/tmdb";
+import { searchMovie, tmdbKey } from "@/lib/tmdb";
 import type { Session } from "@/lib/substack/programming";
+import { CINEMAS_DATA } from "@/lib/substack/programming";
 
 export async function GET() {
   return handleRefresh();
@@ -43,25 +44,41 @@ async function handleRefresh() {
 
     const posterCache = new Map<string, string>();
     for (const s of stored?.allSessions ?? []) {
-      if (s.poster) posterCache.set(sessionKey(s), s.poster);
-    }
-
-    for (const s of allSessions) {
-      const cached = posterCache.get(sessionKey(s));
-      if (cached) s.poster = cached;
-    }
-
-    for (const s of latestSessions) {
-      if (!s.poster && s.year > 1900) {
-        const poster = await searchMovie(s.title, s.year);
-        s.poster = poster ?? "";
-
-        const match = allSessions.find((a) => sessionKey(a) === sessionKey(s));
-        if (match) match.poster = s.poster;
+      const key = tmdbKey(s.title, s.year);
+      if (s.poster && !posterCache.has(key)) {
+        posterCache.set(key, s.poster);
       }
     }
 
     const changed = isNewerFeed(latest.date, stored);
+
+    const tmdbQueried = new Set<string>();
+
+    for (const s of allSessions) {
+      if (s.year <= 1900) continue;
+      const key = tmdbKey(s.title, s.year);
+      if (tmdbQueried.has(key)) continue;
+
+      const cached = posterCache.get(key);
+      if (cached) {
+        s.poster = cached;
+        continue;
+      }
+
+      if (!changed) continue;
+
+      tmdbQueried.add(key);
+      const poster = await searchMovie(s.title, s.year);
+      s.poster = poster ?? "";
+      posterCache.set(key, s.poster);
+    }
+
+    for (const s of latestSessions) {
+      if (s.poster) continue;
+      const key = tmdbKey(s.title, s.year);
+      const cached = posterCache.get(key);
+      if (cached) s.poster = cached;
+    }
 
     await saveStored({
       feedDate: latest.date,
@@ -69,6 +86,7 @@ async function handleRefresh() {
       refreshedAt: new Date().toISOString(),
       sessions: latestSessions,
       allSessions,
+      cinemas: CINEMAS_DATA,
     });
 
     if (changed) {
@@ -86,6 +104,7 @@ async function handleRefresh() {
       totalItems: items.length,
       sessions: latestSessions,
       allSessions,
+      cinemas: CINEMAS_DATA,
     });
   } catch (error) {
     console.error("[refresh] erro:", error);

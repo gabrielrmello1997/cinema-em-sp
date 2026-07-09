@@ -89,6 +89,18 @@ function extractFilm(firstText: string):
     };
   }
 
+  const yearParenExtra = firstText.match(/^(.*?)\s*\((\d{4})\).*$/);
+  if (yearParenExtra) {
+    return {
+      ok: true,
+      title: yearParenExtra[1].trim(),
+      year: Number(yearParenExtra[2]),
+      director: "",
+      duration: 0,
+      country: "",
+    };
+  }
+
   const dirYearParen = firstText.match(/^(.*?)\s*\((.+),\s*(\d{4}),\s*(.+),\s*(\d+)\s*['’]\)\s*$/);
   if (dirYearParen) {
     return {
@@ -291,7 +303,7 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
   if (!ctx.cinema || !ctx.day) return;
 
   const text = rawText(h4);
-  const timeMatch = text.match(/\|\s*([0-9]{1,2}h[0-9]{0,2})\s*$/);
+  const timeMatch = text.match(/\|\s*([0-9]{1,2}h[0-9]{0,2})/);
   if (!timeMatch) return;
   const time = timeMatch[1];
 
@@ -355,17 +367,20 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
       const ps = li.querySelectorAll("p");
       if (ps.length === 0) continue;
 
-      const first = extractFilm(rawText(ps[0]));
+      const parts: string[] = [];
+      for (const p of ps) {
+        parts.push(...extractFromP(p));
+      }
+
+      const first = extractFilm(parts[0]);
       if (!first.ok) continue;
 
       let { title, year, director, duration, country = "" } = first;
 
-      for (let i = 1; i < ps.length; i++) {
-        for (const part of extractFromP(ps[i])) {
-          const meta = parseMetadata(part);
-          if (meta.director && !director) director = meta.director;
-          if (meta.country && !country) { country = meta.country; duration = meta.duration ?? duration; }
-        }
+      for (let i = 1; i < parts.length; i++) {
+        const meta = parseMetadata(parts[i]);
+        if (meta.director && !director) director = meta.director;
+        if (meta.country && !country) { country = meta.country; duration = meta.duration ?? duration; }
       }
 
       const session: Session = { cinema: ctx.cinema, day: ctx.day, time, title, year, country, duration, director, mostra: ctx.mostra, poster: "" };

@@ -1,6 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import type { Session } from "./programming";
+import type { CinemaInfo, Session } from "./programming";
 
 export interface StoredData {
   feedDate: string;
@@ -8,6 +8,7 @@ export interface StoredData {
   refreshedAt: string;
   sessions: Session[];
   allSessions: Session[];
+  cinemas: CinemaInfo[];
 }
 
 const DATA_FILE = path.join(process.cwd(), "public", "data", "sessions.json");
