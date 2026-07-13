@@ -1,7 +1,7 @@
 {
   "feedDate": "Mon, 13 Jul 2026 13:18:43 GMT",
   "feedTitle": "Programação seg 13/07 a qua 15/07",
-  "refreshedAt": "2026-07-13T17:31:04.035Z",
+  "refreshedAt": "2026-07-13T20:46:20.235Z",
   "sessions": [
     {
       "cinema": "CINE SEGALL",
@@ -14,6 +14,7 @@
       "director": "Fatih Akin",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/z87OLGYXojP3bJjp0EpbutpvGTy.jpg",
+      "originalTitle": "Amrum",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -27,6 +28,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -53,6 +55,7 @@
       "director": "Joel Schumacher",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/nH1lvyQvfbL5GKScTtT6zkIvDEn.jpg",
+      "originalTitle": "The Lost Boys",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -66,6 +69,7 @@
       "director": "Guillaume Nicloux",
       "mostra": "PRÉ-ESTREIA",
       "poster": "https://image.tmdb.org/t/p/w500/pC6muFFqI58gsImo3Rhd8HkkPAI.jpg",
+      "originalTitle": "Sarah Bernhardt, La Divine",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -79,6 +83,7 @@
       "director": "Mario Monicelli",
       "mostra": "MOSTRA",
       "poster": "https://image.tmdb.org/t/p/w500/f5OxD8Nl0pR3DcYHtYhHRfpsmjl.jpg",
+      "originalTitle": "I soliti ignoti",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -92,6 +97,7 @@
       "director": "Jacques Rivette",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/olNvDYC1SyZXxMaa4IayWj7Sq4K.jpg",
+      "originalTitle": "Le Pont du Nord",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -105,6 +111,7 @@
       "director": "Philippe de Broca",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/AhaUqqHTIMSXG6WOMRCreitQ1ZX.jpg",
+      "originalTitle": "L’Homme de Rio",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -118,6 +125,7 @@
       "director": "Albert Hughes, Allen Hughes",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/eGfsSXizR11tTHVo0kuOOFPAxZt.jpg",
+      "originalTitle": "Dead Presidents",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -131,6 +139,7 @@
       "director": "Martin Scorsese",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
+      "originalTitle": "Raging Bull",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -157,6 +166,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -169,7 +179,8 @@
       "duration": 113,
       "director": "Stephen Frears",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+      "originalTitle": "High Fidelity",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -183,6 +194,7 @@
       "director": "James Gray",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/8SxHVNk6tqXYwygmDzz1YuJEm2J.jpg",
+      "originalTitle": "The Lost City of Z",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -195,7 +207,8 @@
       "duration": 96,
       "director": "Ron Clements, John Musker",
       "mostra": "CAÇA AO TESOURO",
-      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/kNhZkR3UNbXfvESQo7mJpOi4tGd.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/kNhZkR3UNbXfvESQo7mJpOi4tGd.jpg",
+      "originalTitle": "Treasure Planet",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -209,6 +222,7 @@
       "director": "Aaron Horvath e Michael Jelenic",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "originalTitle": "The Super Mario Galaxy Movie",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -248,6 +262,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -287,6 +302,7 @@
       "director": "",
       "mostra": "CIRCUITO CINEFOOT",
       "poster": "",
+      "originalTitle": "Boca de Fogo,",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -313,6 +329,7 @@
       "director": "Stanley Tong",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1nAfchiXHQB3iyhK8fCJJEnNs5A.jpg",
+      "originalTitle": "Rumble in the Bronx",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -352,6 +369,7 @@
       "director": "Fatih Akin",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/z87OLGYXojP3bJjp0EpbutpvGTy.jpg",
+      "originalTitle": "Amrum",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -365,6 +383,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -378,6 +397,7 @@
       "director": "Damián Szifron",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/bU7IUeTdYFOgeUPtwpWKQNhORMC.jpg",
+      "originalTitle": "Relatos Salvajes",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -404,6 +424,7 @@
       "director": "Federico Fellini",
       "mostra": "RETROSPECTIVA JOAQUIM PEDRO DE ANDRADE E FEDERICO FELLINI",
       "poster": "https://image.tmdb.org/t/p/w500/dZ2v0DAX4aCZartCzZdg4ZinSW2.jpg",
+      "originalTitle": "La Dolce Vita",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -443,6 +464,7 @@
       "director": "Joel Schumacher",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/nH1lvyQvfbL5GKScTtT6zkIvDEn.jpg",
+      "originalTitle": "The Lost Boys",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -456,6 +478,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -469,6 +492,7 @@
       "director": "Terry Gilliam, Terry Jones",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
+      "originalTitle": "Monthy Python and The Holy Grail",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -482,6 +506,7 @@
       "director": "David Zellner",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/wZU05LeIZE6azWUCnjYhEHeCDHB.jpg",
+      "originalTitle": "Kumiko, the treasure hunter",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -495,6 +520,7 @@
       "director": "Michel Gondry",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/l7QkwlxzU4VV40gVws4rlHpWp6A.jpg",
+      "originalTitle": "Maya, donne-moi un titre",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -534,6 +560,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -585,7 +612,7 @@
       "duration": 90,
       "director": "Tatá Amaral",
       "mostra": "CINE DE QUARTA",
-      "poster": "https://image.tmdb.org/t/p/w500/nUCVi6bBIL7LGC61nYaCqikAhIA.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/lNIuQa0BaCvMfA8dujdEHZpwrYG.jpg",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -599,6 +626,7 @@
       "director": "Gurinder Chadha",
       "mostra": "MOSTRA",
       "poster": "https://image.tmdb.org/t/p/w500/2dzSBmFWWqt8NbnubJKIWU21Y86.jpg",
+      "originalTitle": "Bend It Like Beckham",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     }
   ],
@@ -614,6 +642,7 @@
       "director": "Fatih Akin",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/z87OLGYXojP3bJjp0EpbutpvGTy.jpg",
+      "originalTitle": "Amrum",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -627,6 +656,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -653,6 +683,7 @@
       "director": "Joel Schumacher",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/nH1lvyQvfbL5GKScTtT6zkIvDEn.jpg",
+      "originalTitle": "The Lost Boys",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -666,6 +697,7 @@
       "director": "Guillaume Nicloux",
       "mostra": "PRÉ-ESTREIA",
       "poster": "https://image.tmdb.org/t/p/w500/pC6muFFqI58gsImo3Rhd8HkkPAI.jpg",
+      "originalTitle": "Sarah Bernhardt, La Divine",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -679,6 +711,7 @@
       "director": "Mario Monicelli",
       "mostra": "MOSTRA",
       "poster": "https://image.tmdb.org/t/p/w500/f5OxD8Nl0pR3DcYHtYhHRfpsmjl.jpg",
+      "originalTitle": "I soliti ignoti",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -692,6 +725,7 @@
       "director": "Jacques Rivette",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/olNvDYC1SyZXxMaa4IayWj7Sq4K.jpg",
+      "originalTitle": "Le Pont du Nord",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -705,6 +739,7 @@
       "director": "Philippe de Broca",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/AhaUqqHTIMSXG6WOMRCreitQ1ZX.jpg",
+      "originalTitle": "L’Homme de Rio",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -718,6 +753,7 @@
       "director": "Albert Hughes, Allen Hughes",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/eGfsSXizR11tTHVo0kuOOFPAxZt.jpg",
+      "originalTitle": "Dead Presidents",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -731,6 +767,7 @@
       "director": "Martin Scorsese",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
+      "originalTitle": "Raging Bull",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -757,6 +794,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -769,7 +807,8 @@
       "duration": 113,
       "director": "Stephen Frears",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+      "originalTitle": "High Fidelity",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -783,19 +822,21 @@
       "director": "James Gray",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/8SxHVNk6tqXYwygmDzz1YuJEm2J.jpg",
+      "originalTitle": "The Lost City of Z",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
       "cinema": "CINUSP",
       "day": "TERÇA-FEIRA (14/07)",
       "time": "19h",
-      "title": "Planeta do Tesuro",
+      "title": "Planeta do Tesouro",
       "year": 2002,
       "country": "EUA",
       "duration": 96,
       "director": "Ron Clements, John Musker",
       "mostra": "CAÇA AO TESOURO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/kNhZkR3UNbXfvESQo7mJpOi4tGd.jpg",
+      "originalTitle": "Treasure Planet",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -809,6 +850,7 @@
       "director": "Aaron Horvath e Michael Jelenic",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "originalTitle": "The Super Mario Galaxy Movie",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -848,6 +890,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -887,6 +930,7 @@
       "director": "",
       "mostra": "CIRCUITO CINEFOOT",
       "poster": "",
+      "originalTitle": "Boca de Fogo,",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -913,6 +957,7 @@
       "director": "Stanley Tong",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1nAfchiXHQB3iyhK8fCJJEnNs5A.jpg",
+      "originalTitle": "Rumble in the Bronx",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -952,6 +997,7 @@
       "director": "Fatih Akin",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/z87OLGYXojP3bJjp0EpbutpvGTy.jpg",
+      "originalTitle": "Amrum",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -965,6 +1011,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -978,6 +1025,7 @@
       "director": "Damián Szifron",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/bU7IUeTdYFOgeUPtwpWKQNhORMC.jpg",
+      "originalTitle": "Relatos Salvajes",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1004,6 +1052,7 @@
       "director": "Federico Fellini",
       "mostra": "RETROSPECTIVA JOAQUIM PEDRO DE ANDRADE E FEDERICO FELLINI",
       "poster": "https://image.tmdb.org/t/p/w500/dZ2v0DAX4aCZartCzZdg4ZinSW2.jpg",
+      "originalTitle": "La Dolce Vita",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1043,6 +1092,7 @@
       "director": "Joel Schumacher",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/nH1lvyQvfbL5GKScTtT6zkIvDEn.jpg",
+      "originalTitle": "The Lost Boys",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1056,6 +1106,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1069,6 +1120,7 @@
       "director": "Terry Gilliam, Terry Jones",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
+      "originalTitle": "Monthy Python and The Holy Grail",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1082,6 +1134,7 @@
       "director": "David Zellner",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/wZU05LeIZE6azWUCnjYhEHeCDHB.jpg",
+      "originalTitle": "Kumiko, the treasure hunter",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1095,6 +1148,7 @@
       "director": "Michel Gondry",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/l7QkwlxzU4VV40gVws4rlHpWp6A.jpg",
+      "originalTitle": "Maya, donne-moi un titre",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1134,6 +1188,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1185,7 +1240,7 @@
       "duration": 90,
       "director": "Tatá Amaral",
       "mostra": "CINE DE QUARTA",
-      "poster": "https://image.tmdb.org/t/p/w500/nUCVi6bBIL7LGC61nYaCqikAhIA.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/lNIuQa0BaCvMfA8dujdEHZpwrYG.jpg",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1199,6 +1254,7 @@
       "director": "Gurinder Chadha",
       "mostra": "MOSTRA",
       "poster": "https://image.tmdb.org/t/p/w500/2dzSBmFWWqt8NbnubJKIWU21Y86.jpg",
+      "originalTitle": "Bend It Like Beckham",
       "feedTitle": "Programação seg 13/07 a qua 15/07"
     },
     {
@@ -1212,6 +1268,7 @@
       "director": "Robert De Niro",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+      "originalTitle": "A Bronx Tale",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1225,6 +1282,7 @@
       "director": "Spike Lee",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/yvGGA2CbT6xyFVTZUA9f2ok0q5V.jpg",
+      "originalTitle": "Summer of Sam",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1238,6 +1296,7 @@
       "director": "Francesco Sossai",
       "mostra": "FESTIVAL DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/b0oS5FReEJ3rhGzGKY16Qz0Q7w1.jpg",
+      "originalTitle": "Le Città di Pianura",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1251,6 +1310,7 @@
       "director": "Isabel Coixet",
       "mostra": "FESTIVAL DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/xveTFM80yTfN1lYQibdqQE0Kc8C.jpg",
+      "originalTitle": "Tre ciotole",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1264,6 +1324,7 @@
       "director": "Nanni Moretti",
       "mostra": "FESTIVAL DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/fpuOq1YN7LHjctGFniOK8OPnwgs.jpg",
+      "originalTitle": "Caro Diario",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1277,6 +1338,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1303,6 +1365,7 @@
       "director": "Diane Kurys",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/9IwLq57nfP1wqLH5s1uTaS7PBRY.jpg",
+      "originalTitle": "Moi qui t’aimais",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1316,6 +1379,7 @@
       "director": "Huo Meng",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/u2U7fOk4886MVx1CYh8VHN3xOxC.jpg",
+      "originalTitle": "生息之地",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1329,6 +1393,7 @@
       "director": "Emmanuel Poulain-Arnaud",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/80XxGJZJNryIfffPF1g2iv6Vcgt.jpg",
+      "originalTitle": "Regarde",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1342,6 +1407,7 @@
       "director": "Giuseppe Tornatore",
       "mostra": "CLÁSSICOS NO MARQUISE",
       "poster": "https://image.tmdb.org/t/p/w500/gCI2AeMV4IHSewhJkzsur5MEp6R.jpg",
+      "originalTitle": "Nuovo Cinema Paradiso",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1355,6 +1421,7 @@
       "director": "Fatih Akin",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/z87OLGYXojP3bJjp0EpbutpvGTy.jpg",
+      "originalTitle": "Amrum",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1368,6 +1435,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1419,7 +1487,8 @@
       "duration": 113,
       "director": "Stephen Frears",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/e2LZGB62GMhv3Fo8tDZjY87I81a.jpg",
+      "originalTitle": "High Fidelity",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1433,6 +1502,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1457,8 +1527,9 @@
       "country": "Nova Zelândia, EUA",
       "duration": 107,
       "director": "Steven Spielberg",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/fQZ3sLR1Fi63NMsNRbjm9q5qODJ.jpg",
+      "originalTitle": "The Adventures of Tintin",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1470,7 +1541,7 @@
       "country": "Reino Unido, França",
       "duration": 104,
       "director": "Paul King",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/1OJ9vkD5xPt3skC6KguyXAgagRZ.jpg",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
@@ -1485,6 +1556,7 @@
       "director": "Michel Gondry",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/l7QkwlxzU4VV40gVws4rlHpWp6A.jpg",
+      "originalTitle": "Maya, donne-moi un titre",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1537,6 +1609,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1563,6 +1636,7 @@
       "director": "Paul Mazursky",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/g0zh75AWArVtadhaNKZjs231TwF.jpg",
+      "originalTitle": "Enemies",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1576,6 +1650,7 @@
       "director": "Woody Allen",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/6vC6MLYUICH57MmEVi1UaNaj2Qs.jpg",
+      "originalTitle": "Crimes and Misdemeanors",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1589,6 +1664,7 @@
       "director": "Woody Allen",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/zrzBIlMyAP7Ac9W5qAy5ssAUdK4.jpg",
+      "originalTitle": "Manhattan Murder Mystery",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1602,6 +1678,7 @@
       "director": "Francis Ford Coppola",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/bptiOG8kCoq1WUpWEwMyAIaMED4.jpg",
+      "originalTitle": "Gardens of Stone",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1628,6 +1705,7 @@
       "director": "Gints Zilbalodis",
       "mostra": "MOSTRA",
       "poster": "https://image.tmdb.org/t/p/w500/z2sG41PxfL1hnL1mHbxzSREUtOf.jpg",
+      "originalTitle": "Straume",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1654,6 +1732,7 @@
       "director": "Martin Scorsese",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
+      "originalTitle": "Raging Bull",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1667,6 +1746,7 @@
       "director": "Abel Ferrara",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/mVJ2mXykqq3t2v1nuouf1P10g0d.jpg",
+      "originalTitle": "Bad Lieutenant",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1680,6 +1760,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1706,6 +1787,7 @@
       "director": "Cyril Aris",
       "mostra": "ESTREIA",
       "poster": "https://image.tmdb.org/t/p/w500/cOJkkfI9SzXxqoPjc3MttsqGsxr.jpg",
+      "originalTitle": "نجوم الأمل و الألم",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1719,6 +1801,7 @@
       "director": "Emin Alper",
       "mostra": "ESTREIA",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1745,6 +1828,7 @@
       "director": "Dominik Moll",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/t93h1ptV098Q6vzl9gfEymJQ6Qp.jpg",
+      "originalTitle": "Dossier 137",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1758,6 +1842,7 @@
       "director": "Giuseppe Tornatore",
       "mostra": "CLÁSSICOS NO MARQUISE",
       "poster": "https://image.tmdb.org/t/p/w500/gCI2AeMV4IHSewhJkzsur5MEp6R.jpg",
+      "originalTitle": "Nuovo Cinema Paradiso",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1771,6 +1856,7 @@
       "director": "Fatih Akin",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/z87OLGYXojP3bJjp0EpbutpvGTy.jpg",
+      "originalTitle": "Amrum",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1784,6 +1870,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1849,6 +1936,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1862,6 +1950,7 @@
       "director": "Terry Gilliam, Terry Jones",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
+      "originalTitle": "Monthy Python and The Holy Grail",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1875,6 +1964,7 @@
       "director": "Jacques Rivette",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/olNvDYC1SyZXxMaa4IayWj7Sq4K.jpg",
+      "originalTitle": "Le Pont du Nord",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1888,6 +1978,7 @@
       "director": "Julio Medem",
       "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/1hUFwXtUIJQdayIkaTR835QyaKT.jpg",
+      "originalTitle": "Los amantes del Círculo Polar",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1901,6 +1992,7 @@
       "director": "Julio Medem",
       "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/gvErAg9bv7xOO3B40gottv6Bqip.jpg",
+      "originalTitle": "Lucía y el sexo",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1914,6 +2006,7 @@
       "director": "Julio Medem",
       "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1939,7 +2032,8 @@
       "duration": 183,
       "director": "Uli Edel",
       "mostra": "ANJELICA HUSTON 75 ANOS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/zBGfZGKX3KJnljxsX6r24lzRe0i.jpg",
+      "originalTitle": "The Mists of Avalon",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1953,6 +2047,7 @@
       "director": "John Lasseter, Andrew Stanton",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/Ah3J9OJVc2CNCuH2zMydXy9fmIC.jpg",
+      "originalTitle": "Bug Life",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1966,6 +2061,7 @@
       "director": "Tania Vincent",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/toBN1A9AnhoUzXyu9gaVyQVJehp.jpg",
+      "originalTitle": "The Sloth Lane",
       "feedTitle": "Programação sáb 11/07 e dom 12/07"
     },
     {
@@ -1979,6 +2075,7 @@
       "director": "Spike Lee",
       "mostra": "BEM VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/yvGGA2CbT6xyFVTZUA9f2ok0q5V.jpg",
+      "originalTitle": "Summer of Sam",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2018,6 +2115,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2030,7 +2128,8 @@
       "duration": 114,
       "director": "Margherita Ferri",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/2UI9pOCyvn7ibrFHleOo0PceAyD.jpg",
+      "originalTitle": "Il ragazzo dai pantaloni rosa",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2044,6 +2143,7 @@
       "director": "Valeria Parisi",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/kJwPFeJRigreFdSTVWkdkVRAGwq.jpg",
+      "originalTitle": "Maledetto Modigliani",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2057,6 +2157,7 @@
       "director": "Michele Mally",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/s7MnqY9BSOrZJ6V8YayMzovVnkl.jpg",
+      "originalTitle": "Munch - Amori, fantasmi e donne vampiro",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2070,6 +2171,7 @@
       "director": "Simona Risi",
       "mostra": "AUTORAL FILMES",
       "poster": "https://image.tmdb.org/t/p/w500/zU6QcDKL321VYDrL1ElR9iSejji.jpg",
+      "originalTitle": "Picasso a Parigi - Storia di una vita e di un museo",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2083,6 +2185,7 @@
       "director": "Giuseppe Tornatore",
       "mostra": "CLÁSSICOS NO MARQUISE",
       "poster": "https://image.tmdb.org/t/p/w500/gCI2AeMV4IHSewhJkzsur5MEp6R.jpg",
+      "originalTitle": "Nuovo Cinema Paradiso",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2135,6 +2238,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2148,6 +2252,7 @@
       "director": "Allan Dwan",
       "mostra": "CLÁSSICOS DO CINEMA DE RUA",
       "poster": "https://image.tmdb.org/t/p/w500/l711nus4DPVRdk9Hdeph22iHY2K.jpg",
+      "originalTitle": "Stage Struck",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2161,6 +2266,7 @@
       "director": "Michel Gondry",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/l7QkwlxzU4VV40gVws4rlHpWp6A.jpg",
+      "originalTitle": "Maya, donne-moi un titre",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2174,6 +2280,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2213,6 +2320,7 @@
       "director": "Stephen Frears",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/zMpGfkiDIdg5bB7WGcAT3Fdrfpt.jpg",
+      "originalTitle": "The Grifters",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2226,6 +2334,7 @@
       "director": "Anjelica Huston",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/bgZ0lDvN0W8OLjPki1Me1JhtBrH.jpg",
+      "originalTitle": "Agnes Browne",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2239,6 +2348,7 @@
       "director": "John Huston",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/hFLUqiwvvtcUqA5NZNejaaNpTv0.jpg",
+      "originalTitle": "The Dead",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2252,6 +2362,7 @@
       "director": "John Huston",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/5azGfZXuUFYjYfz6etYOdlyLXwL.jpg",
+      "originalTitle": "Prizzi’s Honor",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2317,6 +2428,7 @@
       "director": "Abel Ferrara",
       "mostra": "BEM VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/mVJ2mXykqq3t2v1nuouf1P10g0d.jpg",
+      "originalTitle": "Bad Lieutenant",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2330,6 +2442,7 @@
       "director": "Albert Hughes, Allen Hughes",
       "mostra": "BEM VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/eGfsSXizR11tTHVo0kuOOFPAxZt.jpg",
+      "originalTitle": "Dead Presidents",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2369,6 +2482,7 @@
       "director": "Julio Medem",
       "mostra": "ESTREIA",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2382,6 +2496,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2407,7 +2522,8 @@
       "duration": 104,
       "director": "Ľubomír Slivka",
       "mostra": "AUTORAL FILMES",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/x78x7epMWT8hIVTgbgmSHgCpOf5.jpg",
+      "originalTitle": "Andy Warhol: Americký sen",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2420,7 +2536,8 @@
       "duration": 108,
       "director": "Patricia Mazuy",
       "mostra": "AUTORAL FILMES",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/wr8i5zOkT8c4VPKYcqhwWNlsLId.jpg",
+      "originalTitle": "La prisonnière de Bordeaux",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2434,6 +2551,7 @@
       "director": "Giuseppe Tornatore",
       "mostra": "CLÁSSICOS NO MARQUISE",
       "poster": "https://image.tmdb.org/t/p/w500/gCI2AeMV4IHSewhJkzsur5MEp6R.jpg",
+      "originalTitle": "Nuovo Cinema Paradiso",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2486,6 +2604,7 @@
       "director": "Olivia Wilde",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "originalTitle": "The Invite",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2525,6 +2644,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2590,6 +2710,7 @@
       "director": "Anjelica Huston",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/bgZ0lDvN0W8OLjPki1Me1JhtBrH.jpg",
+      "originalTitle": "Agnes Browne",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2603,6 +2724,7 @@
       "director": "Manhattan Murder Mystery",
       "mostra": "ANJELICA HUSTON 75 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/zrzBIlMyAP7Ac9W5qAy5ssAUdK4.jpg",
+      "originalTitle": "Manhattan Murder Mystery",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2616,6 +2738,7 @@
       "director": "Ridley Scott",
       "mostra": "CINE-CONCERTO",
       "poster": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+      "originalTitle": "Blade Runner",
       "feedTitle": "Programação qui 09/07 e sex 10/07"
     },
     {
@@ -2655,6 +2778,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2668,6 +2792,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2681,6 +2806,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2694,6 +2820,7 @@
       "director": "Emin Alper",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2707,6 +2834,7 @@
       "director": "Ken Loach",
       "mostra": "ESPECIAL COPA",
       "poster": "https://image.tmdb.org/t/p/w500/fTHUY0E1FYMFKiQ8UDKx793LtW0.jpg",
+      "originalTitle": "Looking for Eric",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2720,6 +2848,7 @@
       "director": "Mario Monicelli",
       "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/7iML7nTQ7uZTaZQlkZwdNcCLLm5.jpg",
+      "originalTitle": "Brancaleone alle Crociate",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2733,6 +2862,7 @@
       "director": "David Zellner",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/wZU05LeIZE6azWUCnjYhEHeCDHB.jpg",
+      "originalTitle": "Kumiko, the treasure hunter",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2746,6 +2876,7 @@
       "director": "Don Chaffey",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/xHVxIgqD5CxlOI5GHxvVSt5Zh5Y.jpg",
+      "originalTitle": "Jason and the Argonauts",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2772,6 +2903,7 @@
       "director": "Martin Scorsese",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
+      "originalTitle": "Raging Bull",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2824,6 +2956,7 @@
       "director": "Joseph L. Mankiewicz",
       "mostra": "CINECLUBE MERTEN À LA CARTE",
       "poster": "https://image.tmdb.org/t/p/w500/blBzZaatPWVuWpXEnPscMA4Xp6m.jpg",
+      "originalTitle": "All About Eve",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2837,6 +2970,7 @@
       "director": "Emin Alper",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2850,6 +2984,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2874,7 +3009,7 @@
       "country": "Brasil",
       "duration": 80,
       "director": "Maurício de Souza",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/4gtgUYAngSN6NlFX2ybJSDKCSVE.jpg",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
@@ -2887,8 +3022,9 @@
       "country": "Japão",
       "duration": 102,
       "director": "Hayao Miyazaki",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/p7xL3WYeclgtGCLrWfBrXKdBV7d.jpg",
+      "originalTitle": "ルパン三世 カリオストロの城",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2900,8 +3036,9 @@
       "country": "EUA",
       "duration": 141,
       "director": "James Gray",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/8SxHVNk6tqXYwygmDzz1YuJEm2J.jpg",
+      "originalTitle": "The Lost City of Z",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2915,6 +3052,7 @@
       "director": "Aaron Horvath e Michael Jelenic",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "originalTitle": "The Super Mario Galaxy Movie",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2928,6 +3066,7 @@
       "director": "Julio Medem",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2954,6 +3093,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2966,7 +3106,7 @@
       "duration": 88,
       "director": "Ugo Bienvenu, Gilles Cazaux",
       "mostra": "EM EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/g2HROHxg6wTXyjjaii1S1NSl4dp.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/A5Ct2Ndped8jMpltMtPUxnBARvH.jpg",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2980,6 +3120,7 @@
       "director": "Robert De Niro",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg",
+      "originalTitle": "A Bronx Tale",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -2993,6 +3134,7 @@
       "director": "Stanley Tong",
       "mostra": "BEM-VINDO AO BRONX",
       "poster": "https://image.tmdb.org/t/p/w500/1nAfchiXHQB3iyhK8fCJJEnNs5A.jpg",
+      "originalTitle": "Rumble in the Bronx",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3045,6 +3187,7 @@
       "director": "Mark Herrier",
       "mostra": "PORÃO DO BELAS: POLTRONA ENSANGUENTADA",
       "poster": "https://image.tmdb.org/t/p/w500/o6peTotMLdRLQ5Hq2oJI5EYurIR.jpg",
+      "originalTitle": "Popcorn",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3084,6 +3227,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3097,6 +3241,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3109,7 +3254,7 @@
       "duration": 32,
       "director": "Zezinho Yube",
       "mostra": "CINEMA BRASILEIRO NO SÉCULO XXI",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/aDDOW2gtKBaOvZ2i6dJd84pnmUN.jpg",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3149,6 +3294,7 @@
       "director": "Emin Alper",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3162,6 +3308,7 @@
       "director": "Luchino Visconti",
       "mostra": "SESSÃO ESPECIAL - RESTAURADO 4K",
       "poster": "https://image.tmdb.org/t/p/w500/riSUxwoK3xjkOgy6YJSvPhi7cO6.jpg",
+      "originalTitle": "Il gattopardo",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3173,7 +3320,7 @@
       "country": "EUA",
       "duration": 87,
       "director": "Fritz Lang",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/dkbpCz2IqeQDg4eomCkezCH99Ff.jpg",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
@@ -3186,8 +3333,9 @@
       "country": "EUA",
       "duration": 126,
       "director": "John Huston",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/pWcst7zVbi8Z8W6GFrdNE7HHRxL.jpg",
+      "originalTitle": "The Treasure of Sierra Madre",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3201,6 +3349,7 @@
       "director": "Maïlys Vallade e Liane-Cho Han Jin Kuang",
       "mostra": "FÉRIAS NO CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/qoqDvTUVPoZJWw24AjGDt3J4tZN.jpg",
+      "originalTitle": "Amélie et la métaphysique des tubes",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3227,6 +3376,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3240,6 +3390,7 @@
       "director": "Julio Medem",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3253,6 +3404,7 @@
       "director": "Julio Medem",
       "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/gvErAg9bv7xOO3B40gottv6Bqip.jpg",
+      "originalTitle": "Lucía y el sexo",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3279,6 +3431,7 @@
       "director": "Juan José Campanella",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/tJL0oyVmrwSpULCAGaTqs9VMTdM.jpg",
+      "originalTitle": "Metegol",
       "feedTitle": "Programação segunda 06/07 a quarta 08/07"
     },
     {
@@ -3356,7 +3509,7 @@
       "duration": 106,
       "director": "Harry Lighton",
       "mostra": "TERRITÓRIO QUEER",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3382,7 +3535,8 @@
       "duration": 114,
       "director": "Johnny Depp",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/AmZqMwCvdlqFTOWHObsDYxS06J0.jpg",
+      "originalTitle": "Modi, Three Days on the Wing of Madness",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3396,6 +3550,7 @@
       "director": "Isabel Coixet",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": "https://image.tmdb.org/t/p/w500/xveTFM80yTfN1lYQibdqQE0Kc8C.jpg",
+      "originalTitle": "Tre ciotole",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3409,6 +3564,7 @@
       "director": "Emmanuel Poulain-Arnaud",
       "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/80XxGJZJNryIfffPF1g2iv6Vcgt.jpg",
+      "originalTitle": "Regarde",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3422,6 +3578,7 @@
       "director": "Emin Alper",
       "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3435,6 +3592,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3448,6 +3606,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3461,6 +3620,7 @@
       "director": "Jacques Demy",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/tAgTf64XKK5ir7w5C7dnB53jWWG.jpg",
+      "originalTitle": "Les Parapluies de Cherbourg",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3500,6 +3660,7 @@
       "director": "Chantal Akerman",
       "mostra": "SESSÕES ESPECIAIS FILMICCA | CHANTAL AKERMAN",
       "poster": "https://image.tmdb.org/t/p/w500/rnbW5VtVxVQVx9ad70SuMbU0Biv.jpg",
+      "originalTitle": "Jeanne Dielman, 23, Quai du Commerce, 1080 Bruxelles",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3538,7 +3699,8 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "originalTitle": "Disclosure Day",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3552,6 +3714,7 @@
       "director": "Emin Alper",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3565,6 +3728,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3604,6 +3768,7 @@
       "director": "Philippe de Broca",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/AhaUqqHTIMSXG6WOMRCreitQ1ZX.jpg",
+      "originalTitle": "L’Homme de Rio",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3643,6 +3808,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3759,7 +3925,8 @@
       "duration": 114,
       "director": "Margherita Ferri",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/2UI9pOCyvn7ibrFHleOo0PceAyD.jpg",
+      "originalTitle": "Il ragazzo dai pantaloni rosa",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3773,6 +3940,7 @@
       "director": "Francesco Sossai",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": "https://image.tmdb.org/t/p/w500/b0oS5FReEJ3rhGzGKY16Qz0Q7w1.jpg",
+      "originalTitle": "Le città di pianura",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3785,7 +3953,8 @@
       "duration": 87,
       "director": "Claude Barras",
       "mostra": "HORA DO CINEMA!",
-      "poster": "https://image.tmdb.org/t/p/w500/8Ic4cgoD5BAum9Y5qU5lVldlsd7.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qC6yrKvmIEnkFVjpp0U7u02SiDQ.jpg",
+      "originalTitle": "Sauvages",
       "feedTitle": "Programação sáb 04/07 e dom 05/07"
     },
     {
@@ -3811,7 +3980,8 @@
       "duration": 122,
       "director": "Katell Quillévéré",
       "mostra": "TERRITÓRIO QUEER",
-      "poster": "https://image.tmdb.org/t/p/w500/qi5ggloH11ERWaNN69XbNADLPUg.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/8NomjkG8UyFoZzKgTaeSOUnCWQJ.jpg",
+      "originalTitle": "Le Temps D'Aimer",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3837,7 +4007,8 @@
       "duration": 95,
       "director": "Leonie Krippendorff",
       "mostra": "TERRITÓRIO QUEER",
-      "poster": "https://image.tmdb.org/t/p/w500/jCoxMTbDhbfGzfV8QGwwD9XCuj6.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/aeHG93SFqSXxubrAoVuhNZzShVJ.jpg",
+      "originalTitle": "Kokon",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3876,7 +4047,8 @@
       "duration": 78,
       "director": "Frederico Ferrone e Michele Manzolini",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/akg3a4UBQVnsek7X2bodS36Po0h.jpg",
+      "originalTitle": "I Fratelli Segreto",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3903,6 +4075,7 @@
       "director": "Alessandro Tonda",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
       "poster": "https://image.tmdb.org/t/p/w500/ns0qUI7Y8cK5g6XSvRHmNANAN99.jpg",
+      "originalTitle": "Il Nibbio",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3916,6 +4089,7 @@
       "director": "Emin Alper",
       "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3942,6 +4116,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3955,6 +4130,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -3994,6 +4170,7 @@
       "director": "Emin Alper",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4007,6 +4184,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4033,6 +4211,7 @@
       "director": "Hayao Miyazaki",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/p7xL3WYeclgtGCLrWfBrXKdBV7d.jpg",
+      "originalTitle": "ルパン三世 カリオストロの城",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4059,6 +4238,7 @@
       "director": "Julio Medem",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4098,6 +4278,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4240,7 +4421,7 @@
       "duration": 117,
       "director": "Mario Martone",
       "mostra": "FESTA DO CINEMA ITALIANO 2026",
-      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/gxSkBOfTEOX2f6KhqMFSXf24nMo.jpg",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4254,6 +4435,7 @@
       "director": "Emin Alper",
       "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4267,6 +4449,7 @@
       "director": "Emmanuel Poulain-Arnaud",
       "mostra": "EM EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/80XxGJZJNryIfffPF1g2iv6Vcgt.jpg",
+      "originalTitle": "Regarde",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4293,6 +4476,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4306,6 +4490,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4331,7 +4516,7 @@
       "duration": 44,
       "director": "Chantal Akerman, Samy Szlingerbaum",
       "mostra": "SESSÕES ESPECIAIS FILMICCA | CHANTAL AKERMAN",
-      "poster": "https://image.tmdb.org/t/p/w500/5N9VwgIv3LCCCPasNm3pp9Q1AzX.jpg",
+      "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/A0z1snS6Wk3bv3OU4NoDY4P6yhl.jpg",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4345,6 +4530,7 @@
       "director": "Chantal Akerman",
       "mostra": "SESSÕES ESPECIAIS FILMICCA | CHANTAL AKERMAN",
       "poster": "https://image.tmdb.org/t/p/w500/4arnTs41WSLWsnENWdljFKo0pu1.jpg",
+      "originalTitle": "Je, tu, il, elle",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4371,6 +4557,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4384,6 +4571,7 @@
       "director": "Emin Alper",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/sMaKK8HAWfyp8vOyxFWUKgSPDKg.jpg",
+      "originalTitle": "Kurtuluş",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4397,19 +4585,21 @@
       "director": "Jafar Panahi",
       "mostra": "ESPECIAL COPA",
       "poster": "https://image.tmdb.org/t/p/w500/rEGhQ8uD9FqaItpPMFKgdwZ8ROo.jpg",
+      "originalTitle": "آفساید",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
       "cinema": "CINUSP",
       "day": "SEXTA-FEIRA (03/07)",
       "time": "16h",
-      "title": "Planeta do Tesuro",
+      "title": "Planeta do Tesouro",
       "year": 2002,
       "country": "EUA",
       "duration": 96,
       "director": "Ron Clements, John Musker",
       "mostra": "CAÇA AO TESOURO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/kNhZkR3UNbXfvESQo7mJpOi4tGd.jpg",
+      "originalTitle": "Treasure Planet",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4423,6 +4613,7 @@
       "director": "Jacques Rivette",
       "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/olNvDYC1SyZXxMaa4IayWj7Sq4K.jpg",
+      "originalTitle": "Le Pont du Nord",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4449,6 +4640,7 @@
       "director": "Charlotte Devillers e Arnaud Dufeys",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aBYQhsh65AZqEfPiDy3Z7AGbsw.jpg",
+      "originalTitle": "On vous croit (We Believe You)",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4462,6 +4654,7 @@
       "director": "Julio Medem",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4488,6 +4681,7 @@
       "director": "Julio Medem",
       "mostra": "FOCO JULIO MEDEM",
       "poster": "https://image.tmdb.org/t/p/w500/1hUFwXtUIJQdayIkaTR835QyaKT.jpg",
+      "originalTitle": "Los amantes del Círculo Polar",
       "feedTitle": "Programação quinta 02/07 e sexta 03/07"
     },
     {
@@ -4500,7 +4694,8 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "originalTitle": "Disclosure Day",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4514,6 +4709,7 @@
       "director": "Kane Parsons",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "originalTitle": "Backrooms",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4539,7 +4735,8 @@
       "duration": 96,
       "director": "Carlo Lizzani",
       "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/iyY8HP46X8k8qLCzHaOFV00Ir8z.jpg",
+      "originalTitle": "Ai Margini Della Metropoli",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4565,7 +4762,8 @@
       "duration": 114,
       "director": "Margherita Ferri",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/2UI9pOCyvn7ibrFHleOo0PceAyD.jpg",
+      "originalTitle": "Il ragazzo dai pantaloni rosa",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4579,6 +4777,7 @@
       "director": "Francesco Sossai",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": "https://image.tmdb.org/t/p/w500/b0oS5FReEJ3rhGzGKY16Qz0Q7w1.jpg",
+      "originalTitle": "Le città di pianura",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4591,7 +4790,8 @@
       "duration": 114,
       "director": "Johnny Depp",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/AmZqMwCvdlqFTOWHObsDYxS06J0.jpg",
+      "originalTitle": "Modi, Three Days on the Wing of Madness",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4644,6 +4844,7 @@
       "director": "Kane Parsons",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "originalTitle": "Backrooms",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4656,7 +4857,8 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "originalTitle": "Disclosure Day",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4681,8 +4883,9 @@
       "country": "Nova Zelândia, EUA",
       "duration": 107,
       "director": "Steven Spielberg",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/fQZ3sLR1Fi63NMsNRbjm9q5qODJ.jpg",
+      "originalTitle": "The Adventures of Tintin",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4694,8 +4897,9 @@
       "country": "Reino Unido",
       "duration": 91,
       "director": "Terry Gilliam, Terry Jones",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
+      "originalTitle": "Monthy Python and The Holy Grail",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4707,8 +4911,9 @@
       "country": "EUA",
       "duration": 126,
       "director": "John Huston",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/pWcst7zVbi8Z8W6GFrdNE7HHRxL.jpg",
+      "originalTitle": "The Treasure of the Sierra Madre",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4735,6 +4940,7 @@
       "director": "Isabel Coixet",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": "https://image.tmdb.org/t/p/w500/xveTFM80yTfN1lYQibdqQE0Kc8C.jpg",
+      "originalTitle": "Tre ciotole",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4748,6 +4954,7 @@
       "director": "Nanni Moretti",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
       "poster": "https://image.tmdb.org/t/p/w500/fpuOq1YN7LHjctGFniOK8OPnwgs.jpg",
+      "originalTitle": "Caro Diario",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4839,6 +5046,7 @@
       "director": "Cyril Aris",
       "mostra": "SESSÃO-DEBATE",
       "poster": "https://image.tmdb.org/t/p/w500/cOJkkfI9SzXxqoPjc3MttsqGsxr.jpg",
+      "originalTitle": "A Sad and Beautiful World",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4852,6 +5060,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4865,6 +5074,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4877,7 +5087,8 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "originalTitle": "Disclosure Day",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4891,6 +5102,7 @@
       "director": "Kane Parsons",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "originalTitle": "Backrooms",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4915,8 +5127,9 @@
       "country": "França, Itália, Brasil",
       "duration": 117,
       "director": "Phillipe de Broca",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/AhaUqqHTIMSXG6WOMRCreitQ1ZX.jpg",
+      "originalTitle": "L’Homme de Rio",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4928,7 +5141,7 @@
       "country": "Reino Unido, França",
       "duration": 104,
       "director": "Paul King",
-      "mostra": "CAÇA AO TESURO",
+      "mostra": "CAÇA AO TESOURO",
       "poster": "https://image.tmdb.org/t/p/w500/1OJ9vkD5xPt3skC6KguyXAgagRZ.jpg",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
@@ -4942,7 +5155,8 @@
       "duration": 114,
       "director": "Johnny Depp",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/AmZqMwCvdlqFTOWHObsDYxS06J0.jpg",
+      "originalTitle": "Modi, Three Days on the Wing of Madness",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4955,7 +5169,8 @@
       "duration": 114,
       "director": "Margherita Ferri",
       "mostra": "8½ FESTA DO CINEMA ITALIANO NO BRASIL",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/2UI9pOCyvn7ibrFHleOo0PceAyD.jpg",
+      "originalTitle": "Il ragazzo dai pantaloni rosa",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -4982,6 +5197,7 @@
       "director": "Julio Medem",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/g8kbvp90eiFd5eCqN3w3hYwcVRP.jpg",
+      "originalTitle": "8",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -5034,6 +5250,7 @@
       "director": "John Huston",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/3j6H0dnbvjNXLK1l9nKguXw5vvO.jpg",
+      "originalTitle": "Escape to Victory",
       "feedTitle": "Programação segunda 29/06 a quarta 01/07"
     },
     {
@@ -5229,6 +5446,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5242,6 +5460,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5255,6 +5474,7 @@
       "director": "Louis Malle",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/gJt4ojBYsaUDGnKqnIqGvQOLpjh.jpg",
+      "originalTitle": "Le Souffle au cœur",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5345,7 +5565,7 @@
       "duration": 82,
       "director": "Ryan Marley",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/y1wpJPywWAPaSlTN440auW94y8N.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5358,7 +5578,8 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "originalTitle": "Disclosure Day",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5397,7 +5618,7 @@
       "duration": 119,
       "director": "Eduardo Coutinho",
       "mostra": "CINEMA BRASILEIRO DE A A Z",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/gqLIvOGAUQOIQh6PEbkL6yz00Ch.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5463,6 +5684,7 @@
       "director": "Sohrab Shahid-Saless",
       "mostra": "SESSÃO MUTUAL FILMS",
       "poster": "https://image.tmdb.org/t/p/w500/mJNPgaym1Er1vtmtB8DzrWTTNAd.jpg",
+      "originalTitle": "Dar Ghorbat/In der Fremde",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5476,6 +5698,7 @@
       "director": "Marva Nabili",
       "mostra": "SESSÃO MUTUAL FILMS",
       "poster": "https://image.tmdb.org/t/p/w500/9klV30BhcR5GglG2AJebJgVi2B2.jpg",
+      "originalTitle": "Khake sar beh morh",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5488,7 +5711,7 @@
       "duration": 12,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/mqTFhLpdyMNLBvmN5KFhCOFWWIp.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5540,7 +5763,7 @@
       "duration": 84,
       "director": "Dandara Ferreira",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/cS3b0k2mAwTjfhjVlIh5QAiqfZX.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5567,6 +5790,7 @@
       "director": "James Sweeney",
       "mostra": "TERRITÓRIO QUEER 3",
       "poster": "https://image.tmdb.org/t/p/w500/9vaw9Az5tPLMjNLj426KgKsp0k8.jpg",
+      "originalTitle": "Twinless",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5580,6 +5804,7 @@
       "director": "Diego Céspedes",
       "mostra": "TERRITÓRIO QUEER 3",
       "poster": "https://image.tmdb.org/t/p/w500/xfPhni21LIEmuV8HiDfrLhcmTwr.jpg",
+      "originalTitle": "La misteriosa mirada del flamenco",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5592,7 +5817,8 @@
       "duration": 95,
       "director": "Leonie Krippendorff",
       "mostra": "TERRITÓRIO QUEER 3",
-      "poster": "https://image.tmdb.org/t/p/w500/aeHG93SFqSXxubrAoVuhNZzShVJ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ik5hG3HJWIjmS2HChi9DLvpQrHB.jpg",
+      "originalTitle": "Kokon",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5606,6 +5832,7 @@
       "director": "Wong Kar-Wai",
       "mostra": "BELAS SONORIZA",
       "poster": "https://image.tmdb.org/t/p/w500/43I9DcNoCzpyzK8JCkJYpHqHqGG.jpg",
+      "originalTitle": "重慶森林",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5683,7 +5910,7 @@
       "duration": 86,
       "director": "Cristiano Burlan",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/szamCpxiuFnxt8EG6rCTPC135Cl.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5710,6 +5937,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5723,6 +5951,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5736,6 +5965,7 @@
       "director": "Louis Malle",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/gJt4ojBYsaUDGnKqnIqGvQOLpjh.jpg",
+      "originalTitle": "Le Souffle au cœur",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5814,6 +6044,7 @@
       "director": "Hayao Miyazaki",
       "mostra": "CINECLUBINHO",
       "poster": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
+      "originalTitle": "魔女の宅急便",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5840,6 +6071,7 @@
       "director": "Wojciech Has",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/wV6LsDuRHPGbQqRsaAAu3xHgflW.jpg",
+      "originalTitle": "Sanatorium pod Klepsydrą",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5853,6 +6085,7 @@
       "director": "Nobuhiko Obayashi",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/gk6q7uRWKHgHEnqQLttKy7Bqhee.jpg",
+      "originalTitle": "花筐",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5878,7 +6111,7 @@
       "duration": 2,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/azTpxHHruFZlroxfcYir9ESpcAK.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5891,7 +6124,7 @@
       "duration": 8,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/3h4QpWt1x56eqeTo4cKk9WtEQFx.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5956,7 +6189,7 @@
       "duration": 26,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/hmfyf1qlkSigmiJf3c7Wu0528vt.jpg",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5970,6 +6203,7 @@
       "director": "Paul Thomas Anderson",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/wnE24UPCPQsQnbBOu4zVE2qaDNm.jpg",
+      "originalTitle": "Boogie Nights",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -5995,7 +6229,8 @@
       "duration": 87,
       "director": "Claude Barras",
       "mostra": "SESSÃO ESPECIAL",
-      "poster": "https://image.tmdb.org/t/p/w500/8Ic4cgoD5BAum9Y5qU5lVldlsd7.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qC6yrKvmIEnkFVjpp0U7u02SiDQ.jpg",
+      "originalTitle": "Sauvages",
       "feedTitle": "Programação sáb 27/06 e dom 28/06"
     },
     {
@@ -6035,6 +6270,7 @@
       "director": "Diego Céspedes",
       "mostra": "TERRITÓRIO QUEER",
       "poster": "https://image.tmdb.org/t/p/w500/xfPhni21LIEmuV8HiDfrLhcmTwr.jpg",
+      "originalTitle": "La Misteriosa Mirada del Flamenco",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6087,6 +6323,7 @@
       "director": "Wes Orshoski",
       "mostra": "IN-EDIT 2026",
       "poster": "https://image.tmdb.org/t/p/w500/glDy0M6fN6iFH4WkEK5exsvZXi2.jpg",
+      "originalTitle": "Sessão seguida de bate-papo com participação da plateia",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6099,7 +6336,7 @@
       "duration": 85,
       "director": "Paulo Severo",
       "mostra": "IN-EDIT 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/3nhLMkGcvEXwyMRw2bariUIFq4P.jpg",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6165,6 +6402,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6178,6 +6416,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6191,6 +6430,7 @@
       "director": "Darren Aronofsky",
       "mostra": "",
       "poster": "https://image.tmdb.org/t/p/w500/9BTwsLaMVHOGFlmsSlx5QYCaXb.jpg",
+      "originalTitle": "Requiem for a Dream",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6204,6 +6444,7 @@
       "director": "Ryosuke Hashiguchi",
       "mostra": "EDIÇÃO COMEMORATIVA MÊS DO ORGULHO",
       "poster": "https://image.tmdb.org/t/p/w500/h2ofrgLOB0eXaLlqnL6nIG4gxzr.jpg",
+      "originalTitle": "渚のシンドバッド",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6281,7 +6522,7 @@
       "duration": 84,
       "director": "Christine Turner",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/v7G51NBRNmguMZAXwVB38Hclb9Y.jpg",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6294,7 +6535,7 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qpJy61BvWPjBMkQb6HxrkE5BG64.jpg",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6347,6 +6588,7 @@
       "director": "Hideaki Anno",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/9dTO2RygcDT0cQkawABw4QkDegN.jpg",
+      "originalTitle": "シン・仮面ライダー",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6425,6 +6667,7 @@
       "director": "André Techiné",
       "mostra": "TERRITÓRIO QUEER",
       "poster": "https://image.tmdb.org/t/p/w500/hC5cEEXTFg0pYvuqAfckP8EWR6G.jpg",
+      "originalTitle": "Quand on a 17 ans",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6555,6 +6798,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6568,6 +6812,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6593,7 +6838,7 @@
       "duration": 86,
       "director": "Jom Tob Azulay",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/ds1Q6NO35ig2VgeWYvpBZ1NdTKh.jpg",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6658,7 +6903,8 @@
       "duration": 72,
       "director": "Karlheinz Martin",
       "mostra": "MUNDOS DE PLÁSTICO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/phrxYtv83YAgN2G2QKUKHOAZ37w.jpg",
+      "originalTitle": "Von morgens bis mitternachts",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6724,6 +6970,7 @@
       "director": "Agnès Varda",
       "mostra": "AGNÈS VARDA CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/b3YTxT8LM1AWeWyrAXd3b0kjjzz.jpg",
+      "originalTitle": "L’une chante, l’autre pas",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6737,6 +6984,7 @@
       "director": "Andrei Tarkovski",
       "mostra": "NÁSTIENKA CINECLUBE RUSSO APRESENTA",
       "poster": "https://image.tmdb.org/t/p/w500/trY9ADhXgSExH3DLlFhV5C8aDtw.jpg",
+      "originalTitle": "Иваново детство",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6763,6 +7011,7 @@
       "director": "Samuel Fuller",
       "mostra": "SESSÃO DO COMODORO",
       "poster": "https://image.tmdb.org/t/p/w500/xPlQikmoHV1Rt1n0lwVYXkbWR0I.jpg",
+      "originalTitle": "Underworld U.S.A.",
       "feedTitle": "Programação quinta 25/06 e sexta 26/06"
     },
     {
@@ -6776,6 +7025,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6789,6 +7039,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6827,7 +7078,7 @@
       "duration": 86,
       "director": "Jom Tob Azulay",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/ds1Q6NO35ig2VgeWYvpBZ1NdTKh.jpg",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6841,6 +7092,7 @@
       "director": "Carlo Lizzani",
       "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/ahZ8PpY0PApMjhFbjiIP8zF2oPu.jpg",
+      "originalTitle": "Cronache di poveri amanti",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6854,6 +7106,7 @@
       "director": "Wojciech Has",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/wV6LsDuRHPGbQqRsaAAu3xHgflW.jpg",
+      "originalTitle": "Sanatorium pod Klepsydrą",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6906,6 +7159,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Ressonâncias,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6919,6 +7173,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Silêncio Na Boiada,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6932,6 +7187,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Uma Orquestra No Contrabaixo,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6944,7 +7200,7 @@
       "duration": 86,
       "director": "Cristiano Burlan",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/szamCpxiuFnxt8EG6rCTPC135Cl.jpg",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6970,7 +7226,8 @@
       "duration": 145,
       "director": "Steven Spielberg",
       "mostra": "CIÊNCIA NO CINEMA",
-      "poster": "https://image.tmdb.org/t/p/w500/bWpBIuyeLJAlGXNmEnh6VunlLAx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "originalTitle": "Disclosure Day",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -6984,6 +7241,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7049,6 +7307,7 @@
       "director": "Nobuhiko Obayashi",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/gk6q7uRWKHgHEnqQLttKy7Bqhee.jpg",
+      "originalTitle": "花筐",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7153,6 +7412,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Bárbara - A Força Da Ancestralidade,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7166,6 +7426,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Batuques Da Fêra,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7179,6 +7440,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Bira Rasta, Eu Sou A Onda,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7192,6 +7454,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Bregueragem,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7218,6 +7481,7 @@
       "director": "Pascal Laugier",
       "mostra": "PORÃO DO BELAS",
       "poster": "https://image.tmdb.org/t/p/w500/sT5ITTlTcnPOeFzHEu5j0hTZUvD.jpg",
+      "originalTitle": "Martyrs",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7231,6 +7495,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Duque De Caxias, O Albergue Do Rock,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7244,6 +7509,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Nação Hip Hop: Cultura de Rua,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7257,6 +7523,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Não Quero Ser Capeta, Não,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7270,6 +7537,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "O Carnaval É de Pelé,",
       "feedTitle": "Programação seg 22/06 a qua 24/06"
     },
     {
@@ -7426,6 +7694,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Duque De Caxias, O Albergue Do Rock,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7439,6 +7708,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Nação Hip Hop: Cultura de Rua,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7452,6 +7722,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Não Quero Ser Capeta, Não,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7465,6 +7736,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "O Carnaval É de Pelé,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7478,6 +7750,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Ressonâncias,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7491,6 +7764,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Silêncio Na Boiada,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7504,6 +7778,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Uma Orquestra No Contrabaixo,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7517,6 +7792,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Bárbara - A Força Da Ancestralidade,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7530,6 +7806,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Batuques Da Fêra,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7543,6 +7820,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Bira Rasta, Eu Sou A Onda,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7556,6 +7834,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Bregueragem,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7621,6 +7900,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7634,6 +7914,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7647,6 +7928,7 @@
       "director": "Jacques Demy",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/uVLkdkTVV10fLrTPyOCBE6alwLD.jpg",
+      "originalTitle": "Lola",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7776,7 +8058,8 @@
       "duration": 72,
       "director": "Karlheinz Martin",
       "mostra": "MUNDOS DE PLÁSTICO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/phrxYtv83YAgN2G2QKUKHOAZ37w.jpg",
+      "originalTitle": "Von morgens bis mitternachts",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7841,7 +8124,7 @@
       "duration": 94,
       "director": "Sara Jordenö",
       "mostra": "SESSÃO ESPECIAL",
-      "poster": "https://image.tmdb.org/t/p/w500/16LZn5Z6QZ1gWmLQQn4EcdnV9q6.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/8zduTqlE1BKIFDwp5hxR4Ajcbwm.jpg",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7855,6 +8138,7 @@
       "director": "",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/wKvmXHLTh2RBb1ck3QY76C2Xlc5.jpg",
+      "originalTitle": "Resposta das mulheres: nosso corpo, nosso sexo,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7868,6 +8152,7 @@
       "director": "",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/hxz3xHtDoV5K4UJA5x8HNnSTtN0.jpg",
+      "originalTitle": "Os amantes da ponte Mac Donald,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7881,6 +8166,7 @@
       "director": "",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": "",
+      "originalTitle": "Algumas viúvas de Noirmoutier,",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -7997,7 +8283,7 @@
       "duration": 82,
       "director": "Ryan Marley",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/y1wpJPywWAPaSlTN440auW94y8N.jpg",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -8036,7 +8322,7 @@
       "duration": 84,
       "director": "Dandara Ferreira",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/cS3b0k2mAwTjfhjVlIh5QAiqfZX.jpg",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -8063,6 +8349,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -8076,6 +8363,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -8089,6 +8377,7 @@
       "director": "Jacques Demy",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/uVLkdkTVV10fLrTPyOCBE6alwLD.jpg",
+      "originalTitle": "Lola",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -8193,6 +8482,7 @@
       "director": "Karel Zeman",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/s7s1tbAeEd3oHvgWh6mCi50m6nR.jpg",
+      "originalTitle": "Ukradená vzducholoď",
       "feedTitle": "Programação sáb 20/06 e dom 21/06"
     },
     {
@@ -8231,7 +8521,8 @@
       "duration": 111,
       "director": "Akira Kurosawa",
       "mostra": "MOSTRA ENCENAÇÕES DA VIOLÊNCIA PARA ENTENDER O FASCIMO CONTEMPORÂNEO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/2NEgykELHbMdyDzGSsbUIGZsN9k.jpg",
+      "originalTitle": "Juventude Sem Arrependimentos (1946) わが青春に悔なし",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8258,6 +8549,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Duque De Caxias, O Albergue Do Rock,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8271,6 +8563,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Nação Hip Hop: Cultura de Rua,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8284,6 +8577,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "Não Quero Ser Capeta, Não,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8297,6 +8591,7 @@
       "director": "",
       "mostra": "IN-EDIT BRASIL 2026",
       "poster": "",
+      "originalTitle": "O Carnaval É de Pelé,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8336,6 +8631,7 @@
       "director": "Rainer Werner Fassbinder",
       "mostra": "CINECLUBE LACAN",
       "poster": "https://image.tmdb.org/t/p/w500/cRL8j5RhL4YUviwcfTiCVHfrBFM.jpg",
+      "originalTitle": "Angst Essen Selle auf",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8388,6 +8684,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Bárbara - A Força Da Ancestralidade,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8401,6 +8698,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Batuques Da Fêra,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8414,6 +8712,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Bira Rasta, Eu Sou A Onda,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8427,6 +8726,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Bregueragem,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8440,6 +8740,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Ressonâncias,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8453,6 +8754,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Silêncio Na Boiada,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8466,6 +8768,7 @@
       "director": "",
       "mostra": "IN-EDIT 2026",
       "poster": "",
+      "originalTitle": "Uma Orquestra No Contrabaixo,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8505,6 +8808,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8518,6 +8822,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8608,7 +8913,7 @@
       "duration": 86,
       "director": "Cristiano Burlan",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/szamCpxiuFnxt8EG6rCTPC135Cl.jpg",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8817,6 +9122,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8829,7 +9135,7 @@
       "duration": 84,
       "director": "Dandara Ferreira",
       "mostra": "IN-EDIT BRASIL 2026",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/cS3b0k2mAwTjfhjVlIh5QAiqfZX.jpg",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8882,6 +9188,7 @@
       "director": "Karel Zeman",
       "mostra": "MUNDOS DE PLÁSTICOS",
       "poster": "https://image.tmdb.org/t/p/w500/s7s1tbAeEd3oHvgWh6mCi50m6nR.jpg",
+      "originalTitle": "Ukradená vzducholoď",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -8986,6 +9293,7 @@
       "director": "",
       "mostra": "15ª MOSTRA CINEMA E DIREITOS HUMANOS - CAPS AD III PRATERS NO SOBERANO",
       "poster": "",
+      "originalTitle": "Mostra Cinema e Direitos Humanos no Sistema Prisional,",
       "feedTitle": "Programação qui 18/06 e sex 19/06"
     },
     {
@@ -9012,6 +9320,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9038,6 +9347,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9077,6 +9387,7 @@
       "director": "Hideaki Anno",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/9dTO2RygcDT0cQkawABw4QkDegN.jpg",
+      "originalTitle": "シン・仮面ライダー",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9090,6 +9401,7 @@
       "director": "Nobuhiko Obayashi",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/gk6q7uRWKHgHEnqQLttKy7Bqhee.jpg",
+      "originalTitle": "花筐",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9116,6 +9428,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9129,6 +9442,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9154,7 +9468,8 @@
       "duration": 72,
       "director": "Karlheinz Martin",
       "mostra": "MUNDOS DE PLÁSTICO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/phrxYtv83YAgN2G2QKUKHOAZ37w.jpg",
+      "originalTitle": "Von morgens bis mitternachts",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9194,6 +9509,7 @@
       "director": "Marva Nabili",
       "mostra": "SESSÃO MUTUAL FILMS",
       "poster": "https://image.tmdb.org/t/p/w500/9klV30BhcR5GglG2AJebJgVi2B2.jpg",
+      "originalTitle": "Khake sar beh morh",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9207,6 +9523,7 @@
       "director": "Sohrab Shahid-Saless",
       "mostra": "SESSÃO MUTUAL FILMS",
       "poster": "https://image.tmdb.org/t/p/w500/mJNPgaym1Er1vtmtB8DzrWTTNAd.jpg",
+      "originalTitle": "Dar Ghorbat/In der Fremde",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9220,6 +9537,7 @@
       "director": "Paolo Sorrentino",
       "mostra": "CICLO DE CINEMA E PSICANÁLISE",
       "poster": "https://image.tmdb.org/t/p/w500/lnPGzi7BNc17WtxXso16CjNjT5K.jpg",
+      "originalTitle": "La Graza",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9259,6 +9577,7 @@
       "director": "Fabrice Du Welz",
       "mostra": "PORÃO DO BELAS",
       "poster": "https://image.tmdb.org/t/p/w500/hltXrB6dsx4gjKgOxr9XGZqntRE.jpg",
+      "originalTitle": "Calvaire",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9272,6 +9591,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9298,6 +9618,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9337,6 +9658,7 @@
       "director": "Francis Ford Coppola",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/5EyIQksa8C9tm82rHIJYGQXZ5Vs.jpg",
+      "originalTitle": "One from the Heart",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9350,6 +9672,7 @@
       "director": "Keisuke Kinoshita",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/kwvNyyXFsVAPg9PYQsogcXj99lV.jpg",
+      "originalTitle": "楢山節考",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9388,7 +9711,8 @@
       "duration": 12,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/mqTFhLpdyMNLBvmN5KFhCOFWWIp.jpg",
+      "originalTitle": "Les Justes au Panthéon",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9402,6 +9726,7 @@
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
       "poster": "https://image.tmdb.org/t/p/w500/azTpxHHruFZlroxfcYir9ESpcAK.jpg",
+      "originalTitle": "Les Glaneurs et la glaneuse: deux ans après",
       "feedTitle": "Programação seg 15/06 e qua 17/06"
     },
     {
@@ -9467,6 +9792,7 @@
       "director": "Asghar Farhadi",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/xQadpnoLokxzN3hRpCPbBGpxsiz.jpg",
+      "originalTitle": "Jodaeiye Nader az Simin",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9480,6 +9806,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/AjOe8RrgFOqWvHE5YuPcB0tl0pR.jpg",
+      "originalTitle": "Geu-hu",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9506,6 +9833,7 @@
       "director": "Iris Van Kalsbeek",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Mannemmelk, Iris Van Kalsbeek",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9519,6 +9847,7 @@
       "director": "Ari Sinn",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Crip Pleasure Power, Ari Sinn",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9545,6 +9874,7 @@
       "director": "Kiki Kazimi",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Acts of The Sacred Heart (HOL 2025), Kiki Kazimi",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9558,6 +9888,7 @@
       "director": "Cristina Castalla",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Pleasure Engineer, Cristina Castalla",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9571,6 +9902,7 @@
       "director": "Ella Hebendanz e Pamela Varela",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Re-c(O)unting, Ella Hebendanz e Pamela Varela",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9583,7 +9915,7 @@
       "duration": 71,
       "director": "Todd Verow",
       "mostra": "FESTIVAL P-REC SP",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/lj3ZLLq2pFLkpMNcpCnVQZrZ6r6.jpg",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9636,6 +9968,7 @@
       "director": "Martin Frič",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/cxWhn3b5ApBURR41y9gBP7eFK0L.jpg",
+      "originalTitle": "Eva tropí hlouposti",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9649,6 +9982,7 @@
       "director": "Dagmar Bučanová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "",
+      "originalTitle": "Balada em Renda (1981)",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9662,6 +9996,7 @@
       "director": "Eva Sadková",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/xsDNWbmEqh1TkE5zK0dgwOqvgL.jpg",
+      "originalTitle": "Romanetto (1970)",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9675,6 +10010,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9727,6 +10063,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/kzQQgLsP6rDS5eUubG5xqvi4Ro4.jpg",
+      "originalTitle": "La caméra de Claire",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9740,6 +10077,7 @@
       "director": "Tais Lobo",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Onira Vira Rio, Tais Lobo",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9753,6 +10091,7 @@
       "director": "Lyngar Dalu",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Ten of Feathers, Lyngar Dalu",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9779,6 +10118,7 @@
       "director": "Kano",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Amigas Por Siempre, Kano",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9792,6 +10132,7 @@
       "director": "Daniela Weiss",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Polyamorous Allotment Gardens, Daniela Weiss",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9805,6 +10146,7 @@
       "director": "Tais Lobo",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Ancorando Navio - Descolonizando Paixões Coletivo, Tais Lobo",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9818,6 +10160,7 @@
       "director": "Ediy Porn",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Mar de Dentro, Ediy Porn",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9831,6 +10174,7 @@
       "director": "Liv Massei",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Carnival Dream, Liv Massei",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9857,6 +10201,7 @@
       "director": "Liv Massei",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Catperson, Liv Massei",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9883,6 +10228,7 @@
       "director": "Marcus Quillan",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Dance Destroy Create, Marcus Quillan",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9896,6 +10242,7 @@
       "director": "Del LaGrace Volcano",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Pansexual Public Porn (aka The Adventures of Hans & Del), Del LaGrace Volcano",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9909,6 +10256,7 @@
       "director": "Lucie Babayan & La Fille Renne",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Nos Fins Joyeuses, Lucie Babayan & La Fille Renne",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9935,6 +10283,7 @@
       "director": "Ediy Porn",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Cyberpets, Ediy Porn",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9948,6 +10297,7 @@
       "director": "Nightly Disturbance",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Nächtliche Ruhestörung, Nightly Disturbance",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -9961,6 +10311,7 @@
       "director": "Cássio Kelm",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "A Mudança (Xconfessions Volume 15), Cássio Kelm",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10013,6 +10364,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10091,6 +10443,7 @@
       "director": "Marie Poledňáková",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/bUU0tpIaTnNP5w0sUxMgUDayToc.jpg",
+      "originalTitle": "S tebou mě baví svět",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10104,6 +10457,7 @@
       "director": "Věra Chytilová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/nBKohra6KzHXo4Bxi83amaOrxPT.jpg",
+      "originalTitle": "O nečem jiném",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10208,6 +10562,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10247,6 +10602,7 @@
       "director": "Keisuke Kinoshita",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/kwvNyyXFsVAPg9PYQsogcXj99lV.jpg",
+      "originalTitle": "楢山節考",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10286,6 +10642,7 @@
       "director": "Benjamin Christense",
       "mostra": "CINEMATOGRAPHO",
       "poster": "https://image.tmdb.org/t/p/w500/3LtaPLlwlA5HX2FjqAb8lsaBI8P.jpg",
+      "originalTitle": "Haxan",
       "feedTitle": "Programação sab 13/06 e dom 14/06"
     },
     {
@@ -10312,6 +10669,7 @@
       "director": "Joe Swanberg",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/iunbsMWtkwfrtRzU7hdCHhPjjJf.jpg",
+      "originalTitle": "Drinking Buddies",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10325,6 +10683,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/hATTFb4eTiEWfKK6e1mX0zcfSLb.jpg",
+      "originalTitle": "Jigeumeun matgo geuttaeneun teullida",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10338,6 +10697,7 @@
       "director": "Harold Ramis",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
+      "originalTitle": "Groundhog Day",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10351,6 +10711,7 @@
       "director": "Harold Ramis",
       "mostra": "SESSÕES VERGUEIRO AO AR LIVRE",
       "poster": "https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
+      "originalTitle": "Groundhog Day",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10364,6 +10725,7 @@
       "director": "Shine Louise Houston",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Tertiary, Shine Louise Houston",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10377,6 +10739,7 @@
       "director": "Frédéric Moffet",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "The Job, Frédéric Moffet",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10403,6 +10766,7 @@
       "director": "Amber Bemak e Nadia Granados",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Goodbye Fantasy, Amber Bemak e Nadia Granados",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10416,6 +10780,7 @@
       "director": "Rafael Rudolf",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Homem de Verdade, Rafael Rudolf",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10429,6 +10794,7 @@
       "director": "Charles Lum e Todd Verow",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Secret Santa Sex Party, Charles Lum e Todd Verow",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10442,6 +10808,7 @@
       "director": "Jiz Lee",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Hand Me Down, Jiz Lee",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10455,6 +10822,7 @@
       "director": "Jiz Lee",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Transit, Jiz Lee",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10468,6 +10836,7 @@
       "director": "Everton Melo",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Pés Descalços, Everton Melo",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10494,6 +10863,7 @@
       "director": "Todd Verow",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Use Destroy Repeat, Todd Verow",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10507,6 +10877,7 @@
       "director": "Juan Saez",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "None But The Fearless, Juan Saez",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10520,6 +10891,7 @@
       "director": "Iris Glitzer",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "How to Eat aWhole Watermelon and Get Away With It, Iris Glitzer",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10546,6 +10918,7 @@
       "director": "Lina Bembe",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Silver V, Lina Bembe",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10559,6 +10932,7 @@
       "director": "Beyon Deep",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Eat Me Outside, Beyon Deep",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10611,6 +10985,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10636,7 +11011,8 @@
       "duration": 100,
       "director": "Dusan Hanak",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/5Nw8pqCvYR7wrf1EHjRw4QIzE9S.jpg",
+      "originalTitle": "Tichá radost",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10727,7 +11103,8 @@
       "duration": 119,
       "director": "David Frankel",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/grTJpqC5pfGfjWmrgBVvPHYMq5K.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "originalTitle": "The Devil Wears Prada 2",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10741,6 +11118,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10767,6 +11145,7 @@
       "director": "Keisuke Kinoshita",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/kwvNyyXFsVAPg9PYQsogcXj99lV.jpg",
+      "originalTitle": "楢山節考",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10780,6 +11159,7 @@
       "director": "Wojciech Has",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/wV6LsDuRHPGbQqRsaAAu3xHgflW.jpg",
+      "originalTitle": "Sanatorium pod Klepsydrą",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10792,7 +11172,8 @@
       "duration": 38,
       "director": "Jean Renoir",
       "mostra": "MUNDOS DE PLÁSTICO",
-      "poster": "https://image.tmdb.org/t/p/w500/pcnzNWKsL4yf4QHB2pgNCLpJlUV.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/aGvx4Lqhir9xCtfY36z1PmpiePU.jpg",
+      "originalTitle": "La Petite Marchande d'allumettes",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10806,6 +11187,7 @@
       "director": "Akinola Davies Jr.",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aF8AFFh3LJpF8An0KUM8SdTwfVt.jpg",
+      "originalTitle": "My Father’s Shadow",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10857,7 +11239,7 @@
       "duration": 90,
       "director": "Tata Amaral",
       "mostra": "PERIFERIAS - DO TAMBOR AO SISTEMA DE SOM",
-      "poster": "https://image.tmdb.org/t/p/w500/nUCVi6bBIL7LGC61nYaCqikAhIA.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/lNIuQa0BaCvMfA8dujdEHZpwrYG.jpg",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10871,6 +11253,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/uGeXezCeU8oxJlA1p8xhAywCC2r.jpg",
+      "originalTitle": "Geu jayeoni nege mworago hani",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10883,7 +11266,8 @@
       "duration": 137,
       "director": "Hal Hartley",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/qBif2VpGXDVJsQOuI3VVbIMaDMR.jpg",
+      "originalTitle": "Henry Fool",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10897,6 +11281,7 @@
       "director": "Sofia Coppola",
       "mostra": "SESSÕES VERGUEIRO AO AR LIVRE",
       "poster": "https://image.tmdb.org/t/p/w500/3jCLmYDIIiSMPujbwygNpqdpM8N.jpg",
+      "originalTitle": "Lost in Translation",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10923,6 +11308,7 @@
       "director": "Almeida Prado",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Império de Thais, Almeida Prado",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10936,6 +11322,7 @@
       "director": "Eri Samet",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Latifúndio, Eri Samet",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10962,6 +11349,7 @@
       "director": "Perre+",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Self-Reflections, Perre+",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10975,6 +11363,7 @@
       "director": "Paulita Pappel e Rod Wyler",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Bang Mirror, Paulita Pappel e Rod Wyler",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -10988,6 +11377,7 @@
       "director": "Frédéric Moffet",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Fever Freaks, Frédéric Moffet",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11001,6 +11391,7 @@
       "director": "Lufe Steffen",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "A Cama do Tesão, Lufe Steffen",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11014,6 +11405,7 @@
       "director": "Gustavo Vinagre",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Cucumber/knife, Gustavo Vinagre",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11040,6 +11432,7 @@
       "director": "Lyngar Daluz",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Na Toca, Lyngar Daluz",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11066,6 +11459,7 @@
       "director": "Iris Glitzer",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Your Real Companion, Iris Glitzer",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11079,6 +11473,7 @@
       "director": "Isa",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Vives, Isa",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11092,6 +11487,7 @@
       "director": "Teo Garrel",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Malamente, Teo Garrel",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11118,6 +11514,7 @@
       "director": "Juan Saez",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Heavy Load, Juan Saez",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11131,6 +11528,7 @@
       "director": "Alexandres Medeiros e Xplastic",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Kinky 69, Alexandres Medeiros e Xplastic",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11144,6 +11542,7 @@
       "director": "Juan Saez",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Top Secret, Juan Saez",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11157,6 +11556,7 @@
       "director": "Jeff Grochovsky",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Putos do Centro, Jeff Grochovsky",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11170,6 +11570,7 @@
       "director": "Princess, Tristan Scott",
       "mostra": "FESTIVAL P-REC SP",
       "poster": "",
+      "originalTitle": "Suck Me Off, Princess",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11183,6 +11584,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11273,7 +11675,7 @@
       "duration": 0,
       "director": "",
       "mostra": "",
-      "poster": "https://image.tmdb.org/t/p/w500/bsUqE8WKbiDr9XcWKG1MnyQAc9i.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/bVQ8wEdZyp5iP5i6WWzZx6Krg1.jpg",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11287,6 +11689,7 @@
       "director": "Helena Slavíková-Rabarová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/dNZxjsJwmKorpPvd0kquJffYROr.jpg",
+      "originalTitle": "Slncová panna",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11300,6 +11703,7 @@
       "director": "Viktor Kubal",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/9CzP8B29C6I3SA5p8emBL00kyNC.jpg",
+      "originalTitle": "Krvavá paní",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11313,6 +11717,7 @@
       "director": "Jiří Menzel",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/1C1oGhqssgiUSxVwGSvbn3jDZD.jpg",
+      "originalTitle": "Postrižiny",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11391,6 +11796,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11404,6 +11810,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação qui 11/06 e sex 12/06"
     },
     {
@@ -11521,6 +11928,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11533,7 +11941,8 @@
       "duration": 119,
       "director": "David Frankel",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/grTJpqC5pfGfjWmrgBVvPHYMq5K.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "originalTitle": "The Devil Wears Prada 2",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11547,6 +11956,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11560,6 +11970,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11599,6 +12010,7 @@
       "director": "Karel Zeman",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/s7s1tbAeEd3oHvgWh6mCi50m6nR.jpg",
+      "originalTitle": "Ukradená vzducholoď",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11612,6 +12024,7 @@
       "director": "Éric Rohmer",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/1E3pliSC7lXWw6zJhMvG6ba0UNX.jpg",
+      "originalTitle": "Le Rayon Vert",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11625,6 +12038,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/mprIyn1rl5ukAVP9Vi9ZaRKtKkw.jpg",
+      "originalTitle": "Beondeulgi",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11638,6 +12052,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11650,7 +12065,8 @@
       "duration": 119,
       "director": "David Frankel",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/grTJpqC5pfGfjWmrgBVvPHYMq5K.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "originalTitle": "The Devil Wears Prada 2",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11664,6 +12080,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11754,7 +12171,7 @@
       "duration": 72,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/7aTa9LjYQwFKQ7jnBm80bid7nJ4.jpg",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11768,6 +12185,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/aJTWDnOjD7BDQmWnhFb7LPHlk0I.jpg",
+      "originalTitle": "Gangbyeon Hotel",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11781,6 +12199,7 @@
       "director": "Yasujirō Ozu",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+      "originalTitle": "Tōkyō Monogatari",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11794,6 +12213,7 @@
       "director": "David Moreau, Xavier Palud",
       "mostra": "PORÃO DO BELAS",
       "poster": "https://image.tmdb.org/t/p/w500/wqVy00nBhJRiHvlb3lFbmg6uEjj.jpg",
+      "originalTitle": "Ils",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11820,6 +12240,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11833,6 +12254,7 @@
       "director": "Jafar Panahi",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/tLS7dbm8Rx8gvOw0k1ty7kgwQLQ.jpg",
+      "originalTitle": "آفساید",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11846,6 +12268,7 @@
       "director": "Miloš Forman",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/fyRg6Qh4oN1KRfkx8Q3DFzA642P.jpg",
+      "originalTitle": "Lásky jedné plavovlásky",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11858,7 +12281,8 @@
       "duration": 89,
       "director": "Karel Kachyna",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/pHtUVROi1JizYoClbjs8YWJ7m7D.jpg",
+      "originalTitle": "Noc nevěsty",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11937,6 +12361,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11950,6 +12375,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -11989,6 +12415,7 @@
       "director": "Cao Hamburger",
       "mostra": "MUNDOS DE PLÁSTICO",
       "poster": "https://image.tmdb.org/t/p/w500/9BmTv2Q2bHjJUlcMKrXwdTh5z17.jpg",
+      "originalTitle": "Sessão seguida de debate com Vera Hamburger, diretora de arte.",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -12093,6 +12520,7 @@
       "director": "Luciano Vidigal",
       "mostra": "CURTA, COMENTE E COMPARTILHE",
       "poster": "https://image.tmdb.org/t/p/w500/2WpIrUxQSJ6jxWEAOCDrzG9cjix.jpg",
+      "originalTitle": "Sessão seguida de debate com mediação da educadora Cecília Franco",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -12119,6 +12547,7 @@
       "director": "Fritz Lang",
       "mostra": "CINE-RECITAL",
       "poster": "https://image.tmdb.org/t/p/w500/kr9wXRN23zLuWJIelahas1mtnYj.jpg",
+      "originalTitle": "Sessão sonorizada ao vivo no piano por Paulinho Leme",
       "feedTitle": "Programação seg 08/06 e qua 10/06"
     },
     {
@@ -12144,7 +12573,8 @@
       "duration": 66,
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
-      "poster": "https://image.tmdb.org/t/p/w500/a9aTkREV7ZbwMzgHaknjqWZUtUG.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/hRWdnZ8dB1nDLlmUUnc5GM4Gmnr.jpg",
+      "originalTitle": "Inteurodeoksyeon",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12158,6 +12588,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/uAxE3xIGDAlqQXGtOgLKaBADVHh.jpg",
+      "originalTitle": "Domangchin yeoja",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12171,6 +12602,7 @@
       "director": "Ryusuke Hamaguchi",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/z3xqVWOsetW6pSEgx1uiqXfzRet.jpg",
+      "originalTitle": "Guzen to Sozo",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12210,6 +12642,7 @@
       "director": "Djin Sganzerla",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/7bkbh2CvU7hvPcsFcHZKZgiuOh8.jpg",
+      "originalTitle": "Sessão seguida de debate com a diretora Djin Sganzerla.",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12236,6 +12669,7 @@
       "director": "Claude Lelouch",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/boDZQiubhyhksN8fcgM4sXZ2btW.jpg",
+      "originalTitle": "Un homme et une femme",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12262,6 +12696,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12326,7 +12761,7 @@
       "duration": 8,
       "director": "Hermína Týrlová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/rKL6Yp3CcyVmGCiY4fYc9JmYlOe.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12340,6 +12775,7 @@
       "director": "Věra Plívová-Šimková",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/xGtToHVgmupkZO5sA0hDtX357AS.jpg",
+      "originalTitle": "Krakonoš a lyžníci",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12352,7 +12788,8 @@
       "duration": 4,
       "director": "Jana Blechová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "https://image.tmdb.org/t/p/w500/dVdnHmdQu3JtLAAksjTmTEF76gD.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ycvnKivsX5raJX1zEcg5jubbz2g.jpg",
+      "originalTitle": "Prachy",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12366,6 +12803,7 @@
       "director": "Peter Solan",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/wGjtg404bZeopsDUwm9qTUYt4vz.jpg",
+      "originalTitle": "Kým sa skončí táto noc",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12379,6 +12817,7 @@
       "director": "Irena Pavlásková",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/8LupSpnrmb2v85LcbE7ZbNV5dLL.jpg",
+      "originalTitle": "Čas sluhů",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12392,6 +12831,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12404,7 +12844,8 @@
       "duration": 119,
       "director": "David Frankel",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/grTJpqC5pfGfjWmrgBVvPHYMq5K.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "originalTitle": "The Devil Wears Prada 2",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12418,6 +12859,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12431,6 +12873,7 @@
       "director": "Johan Grimonprez",
       "mostra": "2ª MOSTRA CONTOS DE RESISTÊNCIA",
       "poster": "https://image.tmdb.org/t/p/w500/eZOB9UurVQjpdIp72L49pyd3anw.jpg",
+      "originalTitle": "Soundtrack to a Coup d’État",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12495,7 +12938,7 @@
       "duration": 11,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/tuBpts0kN1l5zvwHc73EfjpP9lA.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12535,6 +12978,7 @@
       "director": "Fritz Lang",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/zhGWvfuKUSeOZZaHJrIGyluGLZY.jpg",
+      "originalTitle": "Clash by Night",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12548,6 +12992,7 @@
       "director": "Joseph M. Newman",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/baFv5L12aDMLB5OTmyjDXy34TbM.jpg",
+      "originalTitle": "Love Nest",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12561,6 +13006,7 @@
       "director": "John Huston",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/8xsUnT0P2fJWQv9jGDhs3i9Zx2l.jpg",
+      "originalTitle": "The Asphalt Jungle",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12587,6 +13033,7 @@
       "director": "John Huston",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/rkIkyPhT5oetT463HxpdIuct30l.jpg",
+      "originalTitle": "The Misfits",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12613,6 +13060,7 @@
       "director": "Sofia Coppola",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/3jCLmYDIIiSMPujbwygNpqdpM8N.jpg",
+      "originalTitle": "Lost in Translation",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12626,6 +13074,7 @@
       "director": "Kiyoshi Kurosawa",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/8xpueztJlNihvAnMyxqc15iYanv.jpg",
+      "originalTitle": "Tabi no Owari Sekai no Hajimari",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12639,6 +13088,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/eDimH4UKv1qsXdnFePXuDZb3cA4.jpg",
+      "originalTitle": "Yeohaengjaui Pilyo",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12691,6 +13141,7 @@
       "director": "Claude Lelouch",
       "mostra": "AMOR DO TIPO FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/boDZQiubhyhksN8fcgM4sXZ2btW.jpg",
+      "originalTitle": "Un homme et une femme",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12717,6 +13168,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12729,7 +13181,7 @@
       "duration": 10,
       "director": "Irena Dodalová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/zPTKpwl7uLIoxw6GRpOGc9Rl5yy.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12781,7 +13233,7 @@
       "duration": 4,
       "director": "",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "https://image.tmdb.org/t/p/w500/vQFaYy3LMISAzWTo0WpxQzr6oL9.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/hZvvfGRy3nNoqncdDodtL6Y5AQK.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12794,7 +13246,7 @@
       "duration": 6,
       "director": "",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "https://image.tmdb.org/t/p/w500/6IJEfd4rU0wfuf8GF59XUY42CC1.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/sBMFTviUDt6bm8LROkAWAvw1Ts5.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12820,7 +13272,7 @@
       "duration": 10,
       "director": "",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "https://image.tmdb.org/t/p/w500/meFScFK963HZDwrQMfsJD7XdJKh.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/4cMifNThaElUJYxcY5PIvxekvGL.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12872,7 +13324,7 @@
       "duration": 10,
       "director": "Jaroslava Havettová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
-      "poster": "https://image.tmdb.org/t/p/w500/eWoknMQeY1uMseww4ggyZ87u4Q5.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/bhIpeb6sacnS8INaBYUJgtGMKqk.jpg",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12886,6 +13338,7 @@
       "director": "Elo Havetta",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/zvJezzlV1iv1Gt5vCuZpqgDz3ji.jpg",
+      "originalTitle": "Slávnosť v botanickej záhrade",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12899,6 +13352,7 @@
       "director": "Gustav Machatý",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/nwCNnXnw0iYsMdWqp4qyGrzHTh0.jpg",
+      "originalTitle": "Extase",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12925,6 +13379,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12938,6 +13393,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12951,6 +13407,7 @@
       "director": "John Huston",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/rkIkyPhT5oetT463HxpdIuct30l.jpg",
+      "originalTitle": "The Misfits",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12964,6 +13421,7 @@
       "director": "Fritz Lang",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/zhGWvfuKUSeOZZaHJrIGyluGLZY.jpg",
+      "originalTitle": "Clash by Night",
       "feedTitle": "Programação sáb 06/06 e dom 07/06"
     },
     {
@@ -12990,6 +13448,7 @@
       "director": "Joe Swanberg",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/iunbsMWtkwfrtRzU7hdCHhPjjJf.jpg",
+      "originalTitle": "Drinking Buddies",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13003,6 +13462,7 @@
       "director": "Harold Ramis",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
+      "originalTitle": "Groundhog Day",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13016,6 +13476,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/hATTFb4eTiEWfKK6e1mX0zcfSLb.jpg",
+      "originalTitle": "Jigeumeun matgo geuttaeneun teullida",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13081,6 +13542,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13120,6 +13582,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13133,6 +13596,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13172,6 +13636,7 @@
       "director": "Akinola Davies Jr.",
       "mostra": "FOCO AKINOLA DAVIES JR.",
       "poster": "https://image.tmdb.org/t/p/w500/eNaoRtdPuEZDTO3efYZnBGDGNEm.jpg",
+      "originalTitle": "Lizard",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13185,6 +13650,7 @@
       "director": "Akinola Davies Jr.",
       "mostra": "FOCO AKINOLA DAVIES JR.",
       "poster": "https://image.tmdb.org/t/p/w500/aF8AFFh3LJpF8An0KUM8SdTwfVt.jpg",
+      "originalTitle": "My Father’s Shadow",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13262,7 +13728,7 @@
       "duration": 26,
       "director": "Agnès Varda",
       "mostra": "FOTOGRAFIA AGNÈS VARDA CINEMA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/hmfyf1qlkSigmiJf3c7Wu0528vt.jpg",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13275,7 +13741,8 @@
       "duration": 86,
       "director": "Edmund Goulding",
       "mostra": "MARILYN MONROE 100 ANOS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/sxgqy0ZdpZ1cWjHFIO4DH8TRaLD.jpg",
+      "originalTitle": "We’re Not Married!",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13289,6 +13756,7 @@
       "director": "John Huston",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/8xsUnT0P2fJWQv9jGDhs3i9Zx2l.jpg",
+      "originalTitle": "The Asphalt Jungle",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13302,6 +13770,7 @@
       "director": "Otto Preminger",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/jXYjgPad6IIfZfCtzLuWTnJdijo.jpg",
+      "originalTitle": "River of No Return",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13315,6 +13784,7 @@
       "director": "Henry Hathaway, Howard Hawks, Henry King, Henry Koster, Jean Negulesco",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/vznk8LPE5nRRbNjeTG20P42yy2l.jpg",
+      "originalTitle": "O. Henry’s Full House",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13328,6 +13798,7 @@
       "director": "John Huston",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/rkIkyPhT5oetT463HxpdIuct30l.jpg",
+      "originalTitle": "The Misfits",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13341,6 +13812,7 @@
       "director": "Yasujirō Ozu",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
+      "originalTitle": "Tōkyō Monogatari",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13354,6 +13826,7 @@
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/aJTWDnOjD7BDQmWnhFb7LPHlk0I.jpg",
+      "originalTitle": "Gangbyeon Hotel",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13379,7 +13852,7 @@
       "duration": 96,
       "director": "Luiza Shelling Tubaldini",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bRXZ0cnjWaJSnYjDfzgZiG69tje.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/tNDQmXduXUXKq07mVrCTM2tBaRZ.jpg",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13406,6 +13879,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13432,6 +13906,7 @@
       "director": "Ester Krumbachová",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "https://image.tmdb.org/t/p/w500/h0YDsCfsRJybUZnvCixcsnDKfSr.jpg",
+      "originalTitle": "Vražda ing. Čerta",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13445,6 +13920,7 @@
       "director": "Zlatica Vejchodská",
       "mostra": "MULHERES DO CINEMA TCHECOSLOVACO",
       "poster": "",
+      "originalTitle": "Obyčajný príbeh",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13458,6 +13934,7 @@
       "director": "Hasan Hadi",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "The President’s Cake",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13471,6 +13948,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13522,7 +14000,7 @@
       "duration": 94,
       "director": "Sara Jordenö",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/16LZn5Z6QZ1gWmLQQn4EcdnV9q6.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/8zduTqlE1BKIFDwp5hxR4Ajcbwm.jpg",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13561,7 +14039,8 @@
       "duration": 61,
       "director": "Phil Karson",
       "mostra": "MARILYN MONROE 100 ANOS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/j6BT1TpxHPlhZlGn7dC09JnYdsV.jpg",
+      "originalTitle": "Ladies of the Chorus",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13575,6 +14054,7 @@
       "director": "Otto Preminger",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/jXYjgPad6IIfZfCtzLuWTnJdijo.jpg",
+      "originalTitle": "River of No Return",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13588,6 +14068,7 @@
       "director": "Roy Ward Baker",
       "mostra": "MARILYN MONROE 100 ANOS",
       "poster": "https://image.tmdb.org/t/p/w500/btbTidQlmg8brVHC7tN0HnAy8Dm.jpg",
+      "originalTitle": "Don’t Bother to Knock",
       "feedTitle": "Programação qui 04/06 e sex 05/06"
     },
     {
@@ -13614,6 +14095,7 @@
       "director": "Joachim Lafosse",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/mKs3ijMcarpT5mGt3hb7xjZz9Uu.jpg",
+      "originalTitle": "Six jours, ce printemps-là",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13640,6 +14122,7 @@
       "director": "Roberto Rossellini",
       "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO",
       "poster": "https://image.tmdb.org/t/p/w500/f6Hnb5rhmlhG8dN6sGvvAZuy6FY.jpg",
+      "originalTitle": "Era Notte a Roma",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13653,6 +14136,7 @@
       "director": "Stephen Chbosky",
       "mostra": "CORRESPONDÊNCIAS",
       "poster": "https://image.tmdb.org/t/p/w500/aKCvdFFF5n80P2VdS7d8YBwbCjh.jpg",
+      "originalTitle": "The Perks of Being a Wallflower",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13666,6 +14150,7 @@
       "director": "Ernst Lubitsch",
       "mostra": "CORRESPONDÊNCIAS",
       "poster": "https://image.tmdb.org/t/p/w500/dZ1aEzGYRiqJwPfjS6VL7wUkHmF.jpg",
+      "originalTitle": "The Shop Around the Corner",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13705,6 +14190,7 @@
       "director": "Maïlys Vallade, Liane-Cho Han Jin Kuang",
       "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": "https://image.tmdb.org/t/p/w500/qoqDvTUVPoZJWw24AjGDt3J4tZN.jpg",
+      "originalTitle": "Amélie et la métaphysique des tubes",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13744,6 +14230,7 @@
       "director": "Hong Sag-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/uAxE3xIGDAlqQXGtOgLKaBADVHh.jpg",
+      "originalTitle": "도망친 여자",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13757,6 +14244,7 @@
       "director": "Ryusuke Hamaguchi",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
       "poster": "https://image.tmdb.org/t/p/w500/z3xqVWOsetW6pSEgx1uiqXfzRet.jpg",
+      "originalTitle": "偶然と想像",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13835,6 +14323,7 @@
       "director": "Maïlys Vallade, Liane-Cho Han Jin Kuang",
       "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": "https://image.tmdb.org/t/p/w500/qoqDvTUVPoZJWw24AjGDt3J4tZN.jpg",
+      "originalTitle": "Amélie et la métaphysique des tubes",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13873,7 +14362,8 @@
       "duration": 137,
       "director": "Hal Hartley",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/qBif2VpGXDVJsQOuI3VVbIMaDMR.jpg",
+      "originalTitle": "Henry Fool",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13886,7 +14376,8 @@
       "duration": 108,
       "director": "Hong Sang-soo",
       "mostra": "OS DUPLOS DE HONG SANG-SOO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/uGeXezCeU8oxJlA1p8xhAywCC2r.jpg",
+      "originalTitle": "그 자연이 네게 뭐라고 하니",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13900,6 +14391,7 @@
       "director": "Hasah Nadi",
       "mostra": "SESSÃO ESPECIAL",
       "poster": "https://image.tmdb.org/t/p/w500/abdw51gf1oy3UWllAwqGl6WdkiS.jpg",
+      "originalTitle": "مملكة القصب",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13913,6 +14405,7 @@
       "director": "Claire Denis",
       "mostra": "PORÃO DO BELAS: NOVO HORROR FRANCÊS",
       "poster": "https://image.tmdb.org/t/p/w500/jn4799m6uB5P6ZUarlnxvZEZDFp.jpg",
+      "originalTitle": "Trouble Every Day",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13938,7 +14431,8 @@
       "duration": 108,
       "director": "François Ozon",
       "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
-      "poster": "https://image.tmdb.org/t/p/w500/MK6ImoGdnF1PC3LoU81HbGR7qt.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/c7p06jlv8Lp2B5HjUhmFRTRaqJS.jpg",
+      "originalTitle": "L’inconnu",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13952,6 +14446,7 @@
       "director": "Kristoffer Borgli",
       "mostra": "JANELA DE EXIBIÇÃO CIRCUITO SPCINE",
       "poster": "https://image.tmdb.org/t/p/w500/qhGCY6DIemLoCi7x1GuEt98m4JF.jpg",
+      "originalTitle": "The Drama",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -13965,6 +14460,7 @@
       "director": "Joachim Lafosse",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/mKs3ijMcarpT5mGt3hb7xjZz9Uu.jpg",
+      "originalTitle": "Six jours, ce printemps-là",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14069,6 +14565,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14082,6 +14579,7 @@
       "director": "Tomás Gutiérrez Alea, Juan Carlos Tabío",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/8riS2hGneWg78MHuhP7NqvLERRy.jpg",
+      "originalTitle": "Fresa y Chocolate",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14095,6 +14593,7 @@
       "director": "Jean-Luc Godard, Jean-Pierre Gorin",
       "mostra": "CORRESPONDÊNCIAS",
       "poster": "",
+      "originalTitle": "Letter to Jane: An Investigation About a Still",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14107,7 +14606,8 @@
       "duration": 11,
       "director": "Jean-Luc Godard",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/hQ1zhDRbuNkN63eWTSKuHLKM6gs.jpg",
+      "originalTitle": "Lettre à Freddy Buache",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14120,7 +14620,8 @@
       "duration": 10,
       "director": "Jean-Luc Godard",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/jAvUP1gniy6jL4sGhicouLHJX51.jpg",
+      "originalTitle": "Changer d’image: Lettre à la bien-aimée",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14133,7 +14634,8 @@
       "duration": 9,
       "director": "Jean-Luc Godard",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/1PDRFTDucTrz66N7CT7SLbjQiFf.jpg",
+      "originalTitle": "Khan Khanne, sélection naturelle",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14147,6 +14649,7 @@
       "director": "Joseph Losey",
       "mostra": "CORRESPONDÊNCIAS",
       "poster": "https://image.tmdb.org/t/p/w500/61dXOIpDaiWCp7aIjBYkd6ujdXZ.jpg",
+      "originalTitle": "The Go-Between",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14185,7 +14688,8 @@
       "duration": 12,
       "director": "Akinola Davies Jr.",
       "mostra": "FOCO AKINOLA DAVIES JR.",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/aF8AFFh3LJpF8An0KUM8SdTwfVt.jpg",
+      "originalTitle": "X Us",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14224,7 +14728,7 @@
       "duration": 114,
       "director": "Antônio Pitanga",
       "mostra": "",
-      "poster": "https://image.tmdb.org/t/p/w500/lNPr5PpCj8jJ2GFBDIGGkktlpNB.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/zqqMdCnQfVuhAyxNI5Pxr2gt6b3.jpg",
       "feedTitle": "Programação seg 01/06 a qua 03/06"
     },
     {
@@ -14263,7 +14767,7 @@
       "duration": 21,
       "director": "Kerexu Martim",
       "mostra": "CINECLUBE VIVA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/bQJKawmrJjiTwOCH95njJ64mr7z.jpg",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14315,7 +14819,7 @@
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "https://image.tmdb.org/t/p/w500/bRXZ0cnjWaJSnYjDfzgZiG69tje.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/tNDQmXduXUXKq07mVrCTM2tBaRZ.jpg",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14342,6 +14846,7 @@
       "director": "Joachim Lafosse",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/mKs3ijMcarpT5mGt3hb7xjZz9Uu.jpg",
+      "originalTitle": "Six jours, ce printemps-là",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14393,7 +14898,8 @@
       "duration": 73,
       "director": "Isaac Julien",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/xHA9kv3qMoX8gejMEXaTwYhIO1J.jpg",
+      "originalTitle": "Frantz Fanon: Black Skin, White Mask",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14420,6 +14926,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14432,7 +14939,7 @@
       "duration": 45,
       "director": "Djibril Diop Mambéty",
       "mostra": "2ª MOSTRA CONTOS DE RESISTÊNCIA",
-      "poster": "https://image.tmdb.org/t/p/w500/a0qUWUddEMySjvvOUpAAlXWNrZt.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ayYsC7Jp2BxhCLWghOBWzZlO4FI.jpg",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14445,7 +14952,7 @@
       "duration": 45,
       "director": "Djibril Diop Mambéty",
       "mostra": "2ª MOSTRA CONTOS DE RESISTÊNCIA",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/7GRjr9ygPP3SR3C22Vwoel70wE7.jpg",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14484,7 +14991,8 @@
       "duration": 18,
       "director": "Apichatpong Weerasethakul",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/cOJBeS4R0SrqvSWpcO0sDhpaKDp.jpg",
+      "originalTitle": "จดหมายถึงลุงบุญมี",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14498,6 +15006,7 @@
       "director": "Clint Eastwood",
       "mostra": "CORRESPONDÊNCIAS",
       "poster": "https://image.tmdb.org/t/p/w500/aCBrhOQjhG397GLkEZ49zReQEKX.jpg",
+      "originalTitle": "The Bridges of Madison County",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14549,7 +15058,8 @@
       "duration": 12,
       "director": "Akinola Davies Jr.",
       "mostra": "EM JANELA DE EXIBIÇÃO",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/aF8AFFh3LJpF8An0KUM8SdTwfVt.jpg",
+      "originalTitle": "X Us",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14576,6 +15086,7 @@
       "director": "Carlos Enrique Taboada",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/wnuqTxv4G9mj4Q27ayoZowu4IwU.jpg",
+      "originalTitle": "Veneno para las hadas",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14641,6 +15152,7 @@
       "director": "Thaís Vila Nova",
       "mostra": "BELAS SONORIZA",
       "poster": "https://image.tmdb.org/t/p/w500/zieczjWnvalaxwX5EQASEx0on5f.jpg",
+      "originalTitle": "Hiroshima mon amour",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14666,7 +15178,8 @@
       "duration": 107,
       "director": "Kamal Aljafari",
       "mostra": "SESSÃO ESPECIAL",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/yQXvnbzchPPJYSKJqYp8Ecjio68.jpg",
+      "originalTitle": "مع حسن في غزّة",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14770,7 +15283,7 @@
       "duration": 97,
       "director": "Luiza Shelling Tubaldini",
       "mostra": "ESPECIAL VIRADA CULTURAL",
-      "poster": "https://image.tmdb.org/t/p/w500/bRXZ0cnjWaJSnYjDfzgZiG69tje.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/tNDQmXduXUXKq07mVrCTM2tBaRZ.jpg",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14797,6 +15310,7 @@
       "director": "Joachim Lafosse",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/mKs3ijMcarpT5mGt3hb7xjZz9Uu.jpg",
+      "originalTitle": "Six jours, ce printemps-là",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14823,6 +15337,7 @@
       "director": "Ousmane Sembène",
       "mostra": "SESSÃO ESPECIAL | CINE 16",
       "poster": "https://image.tmdb.org/t/p/w500/hYYAk9I9KkscSr8DC30KyDjzsVu.jpg",
+      "originalTitle": "La Noire De",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14849,6 +15364,7 @@
       "director": "Aaron Horvath, Michael Jelenic, Pierre Leduc",
       "mostra": "CINECLUBINHO",
       "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "originalTitle": "A Nightmare on Elm Street",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14862,6 +15378,7 @@
       "director": "Pedro Almodóvar",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/q030Fi4tubXBJKg3D9otPDgGP2o.jpg",
+      "originalTitle": "Amarga Navidad",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14875,6 +15392,7 @@
       "director": "Joachim Lafosse",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/mKs3ijMcarpT5mGt3hb7xjZz9Uu.jpg",
+      "originalTitle": "Six jours, ce printemps-là",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14901,6 +15419,7 @@
       "director": "Jean-Luc Godard, Jean-Pierre Gorin",
       "mostra": "CORRESPONDÊNCIAS",
       "poster": "",
+      "originalTitle": "Letter to Jane: An Investigation About a Still",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14913,7 +15432,8 @@
       "duration": 11,
       "director": "Jean-Luc Godard",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/hQ1zhDRbuNkN63eWTSKuHLKM6gs.jpg",
+      "originalTitle": "Lettre à Freddy Buache",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14926,7 +15446,8 @@
       "duration": 10,
       "director": "Jean-Luc Godard",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/jAvUP1gniy6jL4sGhicouLHJX51.jpg",
+      "originalTitle": "Changer d’image: Lettre à la bien-aimée",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14939,7 +15460,8 @@
       "duration": 9,
       "director": "Jean-Luc Godard",
       "mostra": "CORRESPONDÊNCIAS",
-      "poster": "",
+      "poster": "https://image.tmdb.org/t/p/w500/1PDRFTDucTrz66N7CT7SLbjQiFf.jpg",
+      "originalTitle": "Khan Khanne, sélection naturelle",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -14979,6 +15501,7 @@
       "director": "Akinola Davies Jr.",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/aF8AFFh3LJpF8An0KUM8SdTwfVt.jpg",
+      "originalTitle": "My Father’s Shadow",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {
@@ -15018,6 +15541,7 @@
       "director": "Eva Libertad",
       "mostra": "EM JANELA DE EXIBIÇÃO",
       "poster": "https://image.tmdb.org/t/p/w500/ykB9bwUHT1AV04KjYPLhfgMwYdD.jpg",
+      "originalTitle": "Sorda",
       "feedTitle": "Programação sáb 30/05 e dom 31/05"
     },
     {

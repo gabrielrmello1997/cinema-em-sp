@@ -10,6 +10,7 @@ export interface Session {
   mostra: string;
   poster: string;
   feedTitle?: string;
+  originalTitle?: string;
 }
 
 export interface CinemaInfo {

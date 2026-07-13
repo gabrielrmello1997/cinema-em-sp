@@ -44,6 +44,8 @@ function cleanTitle(raw: string): string {
 }
 
 type TmdbResult = { poster_path?: string | null; release_date?: string; original_title?: string; title?: string };
+type TmdbPerson = { id: number; name: string };
+type TmdbCredit = { id: number; title?: string; original_title?: string; release_date?: string; poster_path?: string | null; job?: string; department?: string };
 
 async function tmdbFetch(url: string): Promise<{ results?: TmdbResult[] } | null> {
   const res = await fetch(url);
@@ -51,11 +53,33 @@ async function tmdbFetch(url: string): Promise<{ results?: TmdbResult[] } | null
   return res.json();
 }
 
-function findYearMatch(results: TmdbResult[], year: number): TmdbResult | undefined {
+function findYearMatch(results: TmdbResult[], year: number, title: string): TmdbResult | undefined {
+  const clean = cleanTitle(title).toLowerCase();
+  let best: TmdbResult | undefined;
+  let bestDist = Infinity;
+
   for (const r of results) {
     if (!r.poster_path) continue;
     const ry = r.release_date ? parseInt(r.release_date.slice(0, 4)) : 0;
-    if (ry === year) return r;
+    if (ry !== year) continue;
+
+    const rTitle = cleanTitle(r.title || "").toLowerCase();
+    const rOrig = cleanTitle(r.original_title || "").toLowerCase();
+    const rClean = rOrig || rTitle;
+
+    const dist = Math.min(
+      rTitle ? levenshtein(clean, rTitle) : Infinity,
+      rOrig ? levenshtein(clean, rOrig) : Infinity,
+    );
+
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = r;
+    }
+  }
+
+  if (best && bestDist <= Math.max(2, Math.floor(clean.length * 0.25))) {
+    return best;
   }
 }
 
@@ -63,6 +87,7 @@ export async function searchMovie(
   title: string,
   year: number,
   director?: string,
+  originalTitle?: string,
 ): Promise<string | null> {
   const key = process.env.TMDB_API_KEY;
   if (!key) return null;
@@ -75,9 +100,11 @@ export async function searchMovie(
   const base = encodeURIComponent(clean);
   const dir = director ? encodeURIComponent(cleanTitle(director)) : "";
 
-  const queries: { q: string; strict: boolean }[] = [
+  const queries: { q: string; strict: boolean }[] = [];
+
+  queries.push(
     { q: `${base}&year=${year}`, strict: true },
-  ];
+  );
 
   if (dir) {
     queries.push(
@@ -89,15 +116,39 @@ export async function searchMovie(
   queries.push({ q: `${base}`, strict: false });
 
   try {
+    if (originalTitle) {
+      await rateLimit();
+      const origClean = encodeURIComponent(cleanTitle(originalTitle));
+      const url = `${BASE}/search/movie?query=${origClean}&year=${year}&api_key=${key}`;
+      const data = await tmdbFetch(url);
+      if (data?.results?.length) {
+        const match = findYearMatch(data.results, year, originalTitle);
+        if (match) return `${IMAGE}${match.poster_path}`;
+      }
+    }
+
     for (const { q, strict } of queries) {
       const url = `${BASE}/search/movie?query=${q}&api_key=${key}`;
       const data = await tmdbFetch(url);
       if (!data?.results?.length) continue;
 
       if (strict) {
-        const match = findYearMatch(data.results, year);
+        const match = findYearMatch(data.results, year, title);
         if (match) return `${IMAGE}${match.poster_path}`;
       } else {
+        const margin = 3;
+        let best: TmdbResult | null = null;
+        let bestDiff = Infinity;
+        for (const r of data.results) {
+          if (!r.poster_path) continue;
+          const ry = r.release_date ? parseInt(r.release_date.slice(0, 4)) : 0;
+          const diff = ry ? Math.abs(ry - year) : Infinity;
+          if (diff <= margin && diff < bestDiff) {
+            best = r;
+            bestDiff = diff;
+          }
+        }
+        if (best) return `${IMAGE}${best.poster_path}`;
         const first = data.results.find((r) => r.poster_path);
         if (first) return `${IMAGE}${first.poster_path}`;
       }
@@ -125,6 +176,57 @@ export async function searchMovie(
       }
     }
 
+    // person credits fallback: search by director name, match by year + title overlap
+    if (director && year > 1900) {
+      await rateLimit();
+      const personUrl = `${BASE}/search/person?query=${encodeURIComponent(cleanTitle(director))}&api_key=${key}`;
+      const personData = await tmdbFetch(personUrl) as { results?: TmdbPerson[] } | null;
+      const personId = personData?.results?.[0]?.id;
+      if (personId) {
+        await rateLimit();
+        const creditsUrl = `${BASE}/person/${personId}/movie_credits?api_key=${key}`;
+        const creditsData = await tmdbFetch(creditsUrl) as { crew?: TmdbCredit[] } | null;
+        const crewFilms = creditsData?.crew?.filter(c => c.job === "Director" && c.poster_path) ?? [];
+
+        if (crewFilms.length > 0) {
+          const cleanWords = clean.toLowerCase().split(/\s+/).filter(w => w.length > 0);
+          const numTokens = cleanWords.filter(w => /^\d+$/.test(w));
+
+          let best: { credit: TmdbCredit; score: number } | null = null;
+
+          for (const c of crewFilms) {
+            const cy = c.release_date ? parseInt(c.release_date.slice(0, 4)) : 0;
+            if (!cy || Math.abs(cy - year) > 2) continue;
+
+            let score = 0;
+            score += Math.max(0, (3 - Math.abs(cy - year)) * 10);
+
+            const cTitle = cleanTitle(c.title || "");
+            const cOrig = cleanTitle(c.original_title || "");
+            const cWords = (cTitle + " " + cOrig).toLowerCase().split(/\s+/);
+
+            for (const n of numTokens) {
+              if (cWords.includes(n)) score += 20;
+            }
+
+            const cClean = cTitle || cOrig;
+            if (cClean) {
+              const dist = levenshtein(clean, cClean);
+              score += Math.max(0, (10 - dist) * 2);
+            }
+
+            if (!best || score > best.score) {
+              best = { credit: c, score };
+            }
+          }
+
+          if (best && best.score > 0) {
+            return `${IMAGE}${best.credit.poster_path}`;
+          }
+        }
+      }
+    }
+
     return null;
   } catch (err) {
     console.warn(`[tmdb] falha ao buscar "${title}":`, err);
@@ -138,6 +240,8 @@ export function getTMDBCache(): Map<string, string> {
   return tmdbCache;
 }
 
-export function tmdbKey(title: string, year: number): string {
-  return `${title.toLowerCase().trim()}|${year}`;
+export function tmdbKey(title: string, year: number, director?: string, originalTitle?: string): string {
+  const dir = director ? `|${cleanTitle(director).toLowerCase()}` : "";
+  const orig = originalTitle ? `|${cleanTitle(originalTitle).toLowerCase()}` : "";
+  return `${title.toLowerCase().trim()}|${year}${dir}${orig}`;
 }

@@ -413,7 +413,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                           )}
                           {group.map((s, fi) => (
                             <div key={fi}>
-                              {fi > 0 && <div className="border-t border-dashed my-6" style={{ borderColor: "#23211D", strokeDasharray: "4 4" }} />}
+                              {fi > 0 && <div className={"border-t border-dashed " + (group.length > 1 && group.some(s => s.poster) ? "my-20" : "my-6")} style={{ borderColor: "#23211D", strokeDasharray: "4 4" }} />}
                               <div className="font-bold leading-snug text-xl">
                                 {s.title}{s.year > 0 ? ` (${s.year})` : ""}
                               </div>
@@ -432,7 +432,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                         <div className="w-[400px] shrink-0 pt-1 pl-[56px]">
                           {group.map((s, fi) => (
                             s.poster ? (
-                              <div key={fi} className={fi > 0 ? "mt-6" : ""}>
+                              <div key={fi} className={fi > 0 ? (group.length > 1 && group.some(s => s.poster) ? "mt-10" : "mt-20") : ""}>
                                 <div className="w-[140px] h-[210px]" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
                                   <img src={s.poster} alt={s.title} className="w-[140px] h-[210px] object-cover cursor-pointer" onClick={() => setFullscreenPoster(s.poster)} />
                                 </div>

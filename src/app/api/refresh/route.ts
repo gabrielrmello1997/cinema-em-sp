@@ -48,7 +48,7 @@ async function handleRefresh() {
 
     const posterCache = new Map<string, string>();
     for (const s of stored?.allSessions ?? []) {
-      const key = tmdbKey(s.title, s.year);
+      const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       if (s.poster && !posterCache.has(key)) {
         posterCache.set(key, s.poster);
       }
@@ -60,18 +60,18 @@ async function handleRefresh() {
 
     for (const s of allSessions) {
       if (s.year <= 1900) continue;
-      const key = tmdbKey(s.title, s.year);
-      if (tmdbQueried.has(key)) continue;
-
+      const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       const cached = posterCache.get(key);
       if (cached) {
         s.poster = cached;
         continue;
       }
 
-      if (!cached && !s.poster) {
+      if (tmdbQueried.has(key)) continue;
+
+      if (!s.poster) {
         tmdbQueried.add(key);
-        const poster = await searchMovie(s.title, s.year, s.director);
+        const poster = await searchMovie(s.title, s.year, s.director, s.originalTitle);
         s.poster = poster ?? "";
         posterCache.set(key, s.poster);
       }
@@ -79,7 +79,7 @@ async function handleRefresh() {
 
     for (const s of latestSessions) {
       if (s.poster) continue;
-      const key = tmdbKey(s.title, s.year);
+      const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       const cached = posterCache.get(key);
       if (cached) s.poster = cached;
     }
