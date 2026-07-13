@@ -401,13 +401,13 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
 
                     <div className="flex-1 min-w-0 pl-[48px]">
                       <div className="flex" style={{ gap: '0px' }}>
-                        <div className="w-[100px] shrink-0 pt-1">
+                        <div className="w-[130px] shrink-0 pt-1">
                           <div className="text-3xl font-bold leading-tight" style={{ color: "#B18A3A" }}>{first.time}</div>
                         </div>
 
-                        <div className="w-[360px] shrink-0">
+                        <div className="w-[360px] shrink-0 mt-2">
                           {first.mostra && (
-                            <div className="text-base font-semibold uppercase tracking-wider mb-3 leading-snug" style={{ color: "#B18A3A" }}>
+                            <div className="text-base font-semibold uppercase mb-3 leading-snug" style={{ color: "#B18A3A" }}>
                               {first.mostra}
                             </div>
                           )}
@@ -421,7 +421,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                                 {s.country}{s.country && s.duration > 0 ? ", " : ""}{s.duration > 0 ? `${s.duration}'` : ""}
                               </div>
                               {s.director && (
-                                <div className="text-[15px] leading-snug" style={{ color: "#66625D" }}>
+                                <div className="text-[15px] mt-1 leading-snug" style={{ color: "#66625D" }}>
                                   Direção: {s.director}
                                 </div>
                               )}
@@ -442,7 +442,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                         </div>
 
                         <div className="w-[280px] shrink-0 pt-1 ml-[256px]">
-                          <div className="font-bold text-[16px] uppercase tracking-wider leading-tight">{first.cinema}</div>
+                          <div className="font-bold text-[16px] uppercase leading-tight">{first.cinema}</div>
                           {(() => {
                             const info = cinemaMap.get(first.cinema);
                             return info?.address ? (
