@@ -33,6 +33,7 @@ async function handleRefresh() {
         const key = sessionKey(s);
         if (!seen.has(key)) {
           seen.add(key);
+          s.feedTitle = item.title;
           allSessions.push(s);
         }
       }
@@ -40,6 +41,9 @@ async function handleRefresh() {
 
     const latest = items[0];
     const latestSessions = extractSessionsDom(latest.html);
+    for (const s of latestSessions) {
+      s.feedTitle = latest.title;
+    }
     const stored = await loadStored();
 
     const posterCache = new Map<string, string>();
@@ -65,12 +69,12 @@ async function handleRefresh() {
         continue;
       }
 
-      if (!changed) continue;
-
-      tmdbQueried.add(key);
-      const poster = await searchMovie(s.title, s.year);
-      s.poster = poster ?? "";
-      posterCache.set(key, s.poster);
+      if (!cached && !s.poster) {
+        tmdbQueried.add(key);
+        const poster = await searchMovie(s.title, s.year, s.director);
+        s.poster = poster ?? "";
+        posterCache.set(key, s.poster);
+      }
     }
 
     for (const s of latestSessions) {
