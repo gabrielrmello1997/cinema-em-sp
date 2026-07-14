@@ -3,7 +3,7 @@
 :root {
   --bg: #F3F2ED;
   --ink: #23211D;
-  --accent: #B18A3A;
+  --accent: #A52323;
   --line: #66625D;
 }
 
@@ -40,8 +40,26 @@ body {
   border-color: var(--line);
 }
 
-.dash-4 {
-  stroke-dasharray: 4 4;
+.dash-ink {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--ink) 0,
+    var(--ink) 4px,
+    transparent 4px,
+    transparent 6px
+  );
+}
+
+.dash-ink-v {
+  width: 1px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0,
+    var(--ink) 4px,
+    transparent 4px,
+    transparent 6px
+  );
 }
 
 .mini-ticket {

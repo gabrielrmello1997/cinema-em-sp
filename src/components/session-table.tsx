@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, useEffect, useCallback } from "react";
+import { useMemo, useState, useEffect, useCallback, Fragment } from "react";
 import type { Session, CinemaInfo } from "@/lib/substack/programming";
 
 const DAY_ORDER: Record<string, number> = {
@@ -96,8 +96,8 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
       let label: string;
       if (diff === 0) label = "HOJE";
       else if (diff === 1) label = "AMANHÃ";
-      else label = d.date.toLocaleDateString("pt-BR", { weekday: "long" }).toUpperCase();
-      return { ...d, label, dayNum: d.date.getDate(), month: MONTHS[d.date.getMonth()], isToday: diff === 0, index: i };
+      else label = d.date.toLocaleDateString("pt-BR", { weekday: "long" }).replace("-feira", "").toUpperCase();
+      return { ...d, label, dayNum: d.date.getDate(), month: MONTHS[d.date.getMonth() + 1], isToday: diff === 0, index: i };
     });
   }, [daysOut]);
 
@@ -151,6 +151,20 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
     return Array.from(map.values());
   }, [filtered]);
 
+  const dayGroups = useMemo(() => {
+    const result: { day: string; groups: Session[][] }[] = [];
+    for (const g of groups) {
+      const day = g[0].day;
+      const last = result[result.length - 1];
+      if (last && last.day === day) {
+        last.groups.push(g);
+      } else {
+        result.push({ day, groups: [g] });
+      }
+    }
+    return result;
+  }, [groups]);
+
   const cinemaMap = useMemo(() => {
     const map = new Map<string, CinemaInfo>();
     for (const c of cinemas) map.set(c.name, c);
@@ -179,36 +193,36 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
     <div className="min-h-screen bg-bg text-ink">
       <div className="flex">
         {/* ─── Sidebar ─── */}
-        <aside className="w-[240px] shrink-0 border-r border-ink/15 pt-0 pb-0 px-[36px] sticky top-0 self-start min-h-screen">
+        <aside className="w-[240px] shrink-0 border-r pt-0 pb-0 px-[36px] sticky top-0 self-start min-h-screen">
           <div className="flex flex-col">
             <a href="/" className="mt-[-16px]">
               <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "30rem", height: "14.4rem" }} />
             </a>
-            <div className="border-t border-dashed mb-10" style={{ borderColor: "#23211D", borderTopWidth: 1, strokeDasharray: "4 4" }} />
-            <nav className="flex flex-col text-sm uppercase tracking-[0.1em]">
-              <button onClick={() => scrollTo("agenda")} className="text-left text-ink/60 hover:text-accent transition-colors font-semibold mb-8">
+            <div className="dash-ink mb-10" />
+            <nav className="flex flex-col text-sm uppercase">
+              <button onClick={() => scrollTo("agenda")} className="text-left hover:text-accent transition-colors font-semibold mb-8">
                 PROGRAMAÇÃO
               </button>
-              <button onClick={() => scrollTo("about")} className="text-left text-ink/60 hover:text-accent transition-colors font-semibold mb-10">
+              <button onClick={() => scrollTo("about")} className="text-left hover:text-accent transition-colors font-semibold mb-10">
                 SOBRE
               </button>
             </nav>
-            <div className="border-t border-dashed mb-10" style={{ borderColor: "#23211D", borderTopWidth: 1, strokeDasharray: "4 4" }} />
-            <div className="flex flex-col text-sm uppercase tracking-[0.1em]">
-              <a href="https://cinemaemsp.substack.com" target="_blank" rel="noopener noreferrer" className="text-ink/60 hover:text-accent transition-colors flex items-center gap-1.5 font-semibold mb-8">
-                <img src="/assets/substack.svg" alt="" className="w-3.5 h-3.5" />
-                SUBSTACK <img src="/assets/arrow-right-up.svg" alt="" className="w-3 h-3 inline" />
+            <div className="dash-ink mb-10" />
+            <div className="flex flex-col text-sm uppercase">
+              <a href="https://cinemaemsp.substack.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex items-center gap-2.5 font-semibold mb-8">
+                <img src="/assets/substack.svg" alt="" className="w-5 h-5" />
+                SUBSTACK <img src="/assets/arrow-right-up.svg" alt="" className="w-2 h-2 inline" />
               </a>
-              <a href="https://instagram.com/cinemaemsp" target="_blank" rel="noopener noreferrer" className="text-ink/60 hover:text-accent transition-colors flex items-center gap-1.5 font-semibold mb-8">
-                <img src="/assets/contato-instagram.svg" alt="" className="w-3.5 h-3.5" />
-                INSTAGRAM <img src="/assets/arrow-right-up.svg" alt="" className="w-3 h-3 inline" />
+              <a href="https://instagram.com/cinemaemsp" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex items-center gap-2.5 font-semibold mb-8">
+                <img src="/assets/contato-instagram.svg" alt="" className="w-5 h-5" />
+                INSTAGRAM <img src="/assets/arrow-right-up.svg" alt="" className="w-2 h-2 inline" />
               </a>
-              <a href="mailto:cinemaemsaopaulo@gmail.com" className="text-ink/60 hover:text-accent transition-colors flex items-center gap-1.5 font-semibold mb-10">
-                <img src="/assets/email.svg" alt="" className="w-3.5 h-3.5" />
-                E-MAIL <img src="/assets/arrow-right-up.svg" alt="" className="w-3 h-3 inline" />
+              <a href="mailto:cinemaemsaopaulo@gmail.com" className="hover:text-accent transition-colors flex items-center gap-2.5 font-semibold mb-10">
+                <img src="/assets/email.svg" alt="" className="w-5 h-5" />
+                E-MAIL <img src="/assets/arrow-right-up.svg" alt="" className="w-2 h-2 inline" />
               </a>
             </div>
-            <div className="border-t border-dashed" style={{ borderColor: "#23211D", borderTopWidth: 1, strokeDasharray: "4 4" }} />
+            <div className="dash-ink" />
           </div>
         </aside>
 
@@ -217,10 +231,10 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
           {/* ═══════ HERO ═══════ */}
           <div className="relative bg-ink text-bg" style={{ height: 317 }}>
             <div className="px-12 pt-18 pb-0 h-full flex flex-col justify-start">
-              <h1 className="font-sora text-[54px] leading-none font-bold" style={{ color: "#F3F2ED" }}>
+              <h1 className="font-sora text-[54px] leading-none font-bold mt-4" style={{ color: "#F3F2ED" }}>
                 Cinema em São Paulo
               </h1>
-              <p className="mt-3 text-[20px]" style={{ color: "#F3F2ED", opacity: 0.7 }}>
+              <p className="mt-10 text-[20px]" style={{ color: "#F3F2ED", opacity: 0.7 }}>
                 Acompanhe a programação de cineclubes<br />
                 e cinemas pela cidade.
               </p>
@@ -293,7 +307,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                   className="flex-1 flex flex-col items-center justify-center transition-colors relative"
                   style={{
                     borderRight: "1px dashed #66625D",
-                    background: activeDayIndex >= 0 && d.index === activeDayIndex ? "#B18A3A" : "#F3F2ED",
+                    background: activeDayIndex >= 0 && d.index === activeDayIndex ? "#A52323" : "#F3F2ED",
                   }}
                 >
                   <span className="text-[11px] uppercase tracking-[0.15em] font-semibold"
@@ -301,7 +315,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                     {d.label}
                   </span>
                   <span className="text-[20px] font-bold" style={{
-                    color: activeDayIndex >= 0 && d.index === activeDayIndex ? "#FFFFFF" : "#B18A3A"
+                    color: activeDayIndex >= 0 && d.index === activeDayIndex ? "#FFFFFF" : "#A52323"
                   }}>
                     {String(d.dayNum).padStart(2, "0")}
                   </span>
@@ -358,108 +372,111 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
             )}
             <div className="relative">
               <div className="absolute top-0 bottom-0" style={{ left: 90, borderLeft: "1px dashed #23211D" }} />
-              {groups.map((group, gi) => {
-              const first = group[0];
-              const dayInfo = dayTabs.find((d) => d.day === first.day);
-              const prevGroup = gi > 0 ? groups[gi - 1] : null;
-              const prevDay = prevGroup ? dayTabs.find((d) => d.day === prevGroup[0].day) : null;
-              const isNewDay = prevDay && prevDay.day !== dayInfo?.day;
-
+              {dayGroups.map((dg, dgi) => {
+              const dayInfo = dayTabs.find((d) => d.day === dg.day);
               return (
-                <div key={gi}>
-                  {gi > 0 && (
-                    isNewDay ? (
-                      <div className="border-t border-dashed -mx-12" style={{
-                        borderColor: "#23211D",
-                        strokeDasharray: "4 4",
-                        marginTop: 48,
-                        marginBottom: 48,
-                      }} />
-                    ) : (
-                      <div className="border-t border-dashed" style={{
-                        borderColor: "#23211D",
-                        strokeDasharray: "4 4",
-                        marginTop: 48,
-                        marginBottom: 48,
-                        marginLeft: 120,
-                      }} />
-                    )
+                <div key={dg.day}>
+                  {dgi > 0 && (
+                    <div className="dash-ink -mx-12" style={{
+                      marginTop: 48,
+                      marginBottom: 48,
+                    }} />
                   )}
-
                   <div className="flex gap-0">
-                    <div className={"w-[90px] shrink-0 pt-1 text-center " + (gi > 0 && !isNewDay ? "invisible" : "")}>
-                      <div className="text-sm font-semibold uppercase tracking-wider leading-tight" style={{ color: "#23211D" }}>
+                    <div className="w-[90px] shrink-0 pr-8 text-center sticky top-6 self-start">
+                      <div className="text-[18px] font-semibold uppercase leading-tight" style={{ color: "#23211D" }}>
                         {dayInfo?.label || ""}
                       </div>
-                      <div className="text-4xl font-bold leading-tight mt-1" style={{ color: "#B18A3A" }}>
+                      <div className="text-[56px] font-bold leading-tight mt-1" style={{ color: "#A52323" }}>
                         {dayInfo?.dayNum ?? ""}
                       </div>
-                      <div className="text-xs uppercase tracking-wider mt-0.5" style={{ color: "#66625D" }}>
+                      <div className="text-[18px] font-semibold uppercase mt-0.5" style={{ color: "#23211D" }}>
                         {dayInfo?.month || ""}
                       </div>
                     </div>
 
                     <div className="flex-1 min-w-0 pl-[48px]">
-                      <div className="flex" style={{ gap: '0px' }}>
-                        <div className="w-[130px] shrink-0 pt-1">
-                          <div className="text-3xl font-bold leading-tight" style={{ color: "#B18A3A" }}>{first.time}</div>
-                        </div>
-
-                        <div className="w-[360px] shrink-0 mt-2">
-                          {first.mostra && (
-                            <div className="text-base font-semibold uppercase mb-3 leading-snug" style={{ color: "#B18A3A" }}>
-                              {first.mostra}
-                            </div>
+                      {dg.groups.map((group, gi) => {
+                      const first = group[0];
+                      return (
+                        <Fragment key={gi}>
+                          {gi > 0 && (
+                            <div className="dash-ink" style={{
+                              marginTop: 48,
+                              marginBottom: 48,
+                              marginLeft: 0,
+                            }} />
                           )}
-                          {group.map((s, fi) => (
-                            <div key={fi}>
-                              {fi > 0 && <div className={"border-t border-dashed " + (group.length > 1 && group.some(s => s.poster) ? "my-20" : "my-6")} style={{ borderColor: "#23211D", strokeDasharray: "4 4" }} />}
-                              <div className="font-bold leading-snug text-xl">
-                                {s.title}{s.year > 0 ? ` (${s.year})` : ""}
-                              </div>
-                              <div className="text-[15px] mt-1 leading-snug" style={{ color: "#66625D" }}>
-                                {s.country}{s.country && s.duration > 0 ? ", " : ""}{s.duration > 0 ? `${s.duration}'` : ""}
-                              </div>
-                              {s.director && (
-                                <div className="text-[15px] mt-1 leading-snug" style={{ color: "#66625D" }}>
-                                  Direção: {s.director}
+                          <div className="flex" style={{ gap: '0px' }}>
+                            <div className="w-[130px] shrink-0 pt-1">
+                              <div className="text-[26px] font-bold leading-tight" style={{ color: "#A52323" }}>{first.time}</div>
+                            </div>
+
+                            <div className="flex-1 min-w-0 mt-2">
+                              {first.mostra && (
+                                <div className="text-base font-semibold uppercase mb-3 leading-snug break-words max-w-[400px]" style={{ color: "#A52323" }}>
+                                  {first.mostra}
                                 </div>
                               )}
-                            </div>
-                          ))}
-                        </div>
-
-                        <div className="w-[400px] shrink-0 pt-1 pl-[56px]">
-                          {group.map((s, fi) => (
-                            s.poster ? (
-                              <div key={fi} className={fi > 0 ? (group.length > 1 && group.some(s => s.poster) ? "mt-10" : "mt-20") : ""}>
-                                <div className="w-[140px] h-[210px]" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
-                                  <img src={s.poster} alt={s.title} className="w-[140px] h-[210px] object-cover cursor-pointer" onClick={() => setFullscreenPoster(s.poster)} />
-                                </div>
+                              <div className="grid grid-cols-[minmax(auto,400px)_150px] gap-x-2 gap-y-6">
+                                {group.map((s, fi) => (
+                                  <Fragment key={fi}>
+                                    {fi > 0 && (
+                                      <div className="dash-ink col-span-2" />
+                                    )}
+                                    <div>
+                                      <div className="font-bold leading-snug text-xl">
+                                        {s.title}{s.year > 0 ? ` (${s.year})` : ""}
+                                      </div>
+                                      {s.originalTitle && s.originalTitle !== s.title &&
+                                        !s.originalTitle.toLowerCase().includes(s.title.toLowerCase()) && (
+                                        <div className="text-[15px] italic mt-0.5 leading-snug" style={{ color: "#66625D" }}>
+                                          {s.originalTitle}
+                                        </div>
+                                      )}
+                                      {s.director && (
+                                        <div className="text-[15px] mt-4 leading-snug">
+                                          Direção: {s.director}
+                                        </div>
+                                      )}
+                                      <div className="text-[15px] mt-1 leading-snug">
+                                        {s.country}{s.country && s.duration > 0 ? ", " : ""}{s.duration > 0 ? `${s.duration}'` : ""}
+                                      </div>
+                                    </div>
+                                    <div>
+                                      {s.poster && (
+                                        <div className="w-[150px] h-[220px]" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
+                                          <img src={s.poster} alt={s.title} className="w-[150px] h-[220px] object-cover cursor-pointer" onClick={() => setFullscreenPoster(s.poster)} />
+                                        </div>
+                                      )}
+                                    </div>
+                                  </Fragment>
+                                ))}
                               </div>
-                            ) : null
-                          ))}
-                        </div>
+                            </div>
 
-                        <div className="w-[280px] shrink-0 pt-1 ml-[256px]">
-                          <div className="font-bold text-[16px] uppercase leading-tight">{first.cinema}</div>
-                          {(() => {
-                            const info = cinemaMap.get(first.cinema);
-                            return info?.address ? (
-                              <div className="text-sm mt-1 leading-snug" style={{ color: "#66625D" }}>{info.address}</div>
-                            ) : null;
-                          })()}
-                          {(() => {
-                            const info = cinemaMap.get(first.cinema);
-                            return info?.infoUrl ? (
-                              <a href={info.infoUrl} target="_blank" rel="noopener noreferrer"
-                                className="text-sm mt-2 inline-block" style={{ color: "#23211D" }}>
-                                <span style={{ textDecoration: "underline" }}>Mais informações</span> <img src="/assets/arrow-right-up.svg" alt="" className="ml-1 w-2 h-2 inline"/>
-                              </a>
-                            ) : null;
-                          })()}
-                        </div>
-                      </div>
+                            <div className="w-[300px] shrink-0 pt-1 ml-[48px] mr-20">
+                              <div className="font-bold text-[20px] uppercase leading-tight">{first.cinema}</div>
+                              {(() => {
+                                const info = cinemaMap.get(first.cinema);
+                                return info?.address ? (
+                                  <div className="text-sm mt-1 leading-snug">{info.address}</div>
+                                ) : null;
+                              })()}
+                              {(() => {
+                                const info = cinemaMap.get(first.cinema);
+                                return info?.infoUrl ? (
+                                  <a href={info.infoUrl} target="_blank" rel="noopener noreferrer"
+                                    className="text-sm mt-2 inline-block" style={{ color: "#23211D" }}>
+                                    <span style={{ textDecoration: "underline" }}>Mais informações</span> <img src="/assets/arrow-right-up.svg" alt="" className="ml-1 w-2 h-2 inline"/>
+                                  </a>
+                                ) : null;
+                              })()}
+                            </div>
+                          </div>
+                        </Fragment>
+                      );
+                    })}
                     </div>
                   </div>
                 </div>
@@ -469,7 +486,8 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
           </section>
 
           {/* ═══════ SOBRE ═══════ */}
-          <section id="about" className="px-12 py-16 border-t border-dashed" style={{ borderColor: "#23211D", strokeDasharray: "4 4" }}>
+          <div className="dash-ink mx-12" />
+          <section id="about" className="px-12 py-16">
             <div className="flex gap-0">
               <div className="w-[280px] shrink-0">
                 <h2 className="text-sm uppercase tracking-[0.15em] font-semibold mb-8" style={{ color: "#66625D" }}>SOBRE</h2>
@@ -480,13 +498,13 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                   href="https://cinemaemsp.substack.com"
                   target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center justify-center mt-8 text-sm uppercase tracking-wider font-semibold"
-                  style={{ width: 280, height: 57, border: "1px solid #B18A3A", color: "#B18A3A" }}
+                  style={{ width: 280, height: 57, border: "1px solid #A52323", color: "#A52323" }}
                 >
                   ASSINAR NEWSLETTER <img src="/assets/arrow-right-up.svg" alt="" className="w-3 h-3 inline" />
                 </a>
               </div>
 
-              <div className="w-px mx-[31px]" style={{ borderLeft: "1px dashed #23211D" }} />
+              <div className="dash-ink-v mx-[31px]" />
 
               <div className="flex-1 max-w-[600px] text-sm leading-relaxed space-y-4" style={{ color: "#23211D" }}>
                 <p>Divulgamos a programação das salas de repertório e dos cineclubes da cidade de São Paulo.</p>
@@ -506,12 +524,12 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                 </h2>
               </div>
 
-              <div className="w-px mx-[31px] my-6" style={{ borderLeft: "1px dashed #F3F2ED" }} />
+              <div className="w-px mx-[31px] my-6" style={{ backgroundImage: "repeating-linear-gradient(to bottom, #F3F2ED 0, #F3F2ED 4px, transparent 4px, transparent 6px)" }} />
 
               <div className="flex-1 max-w-[500px] text-sm leading-relaxed space-y-2 pt-6" style={{ color: "#F3F2ED", opacity: 0.7 }}>
                 <p>A ajuda dos programadores é central para mantermos o nosso trabalho.</p>
                 <p>Se você é programador, curador ou membro de um cineclube, por favor, entre em contato conosco e compartilhe a sua programação via email:</p>
-                <a href="mailto:cinemaemsaopaulo@gmail.com" className="inline-block mt-2 font-semibold text-base" style={{ color: "#B18A3A", textDecoration: "underline" }}>
+                <a href="mailto:cinemaemsaopaulo@gmail.com" className="inline-block mt-2 font-semibold text-base" style={{ color: "#A52323", textDecoration: "underline" }}>
                   cinemaemsaopaulo@gmail.com
                 </a>
               </div>
