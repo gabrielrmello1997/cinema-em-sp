@@ -12,6 +12,7 @@ type Props = {
   onToggle: () => void;
   onSelectLatest: () => void;
   onSelectOlder: (t: string) => void;
+  fullWidth?: boolean;
 };
 
 export default function PostSelector({
@@ -24,15 +25,16 @@ export default function PostSelector({
   onToggle,
   onSelectLatest,
   onSelectOlder,
+  fullWidth,
 }: Props) {
   return (
-    <div className="absolute" style={{ right: "clamp(16px,3vw,42px)", top: "33%" }} ref={postRef}>
+    <div className={fullWidth ? "relative" : "absolute"} style={fullWidth ? {} : { right: "clamp(16px,3vw,42px)", top: "33%" }} ref={postRef}>
       <div className="relative">
         <button
           onClick={onToggle}
           className="flex items-center gap-2 tracking-wider"
           style={{
-            width: "clamp(280px,30vw,403px)",
+            width: fullWidth ? "100%" : "clamp(280px,30vw,403px)",
             height: "clamp(40px,4vw,55px)",
             fontSize: "clamp(11px,1vw,14px)",
             border: "1px solid #66625D",
@@ -47,7 +49,7 @@ export default function PostSelector({
           </svg>
         </button>
         {postOpen && (
-          <div className="absolute right-0 mt-1 bg-[#F3F2ED] text-ink shadow-md border border-ink/10 z-20 max-h-60 overflow-y-auto" style={{ width: "clamp(280px,30vw,403px)" }}>
+          <div className="absolute right-0 mt-1 bg-[#F3F2ED] text-ink shadow-md border border-ink/10 z-20 max-h-60 overflow-y-auto" style={{ width: fullWidth ? "100%" : "clamp(280px,30vw,403px)" }}>
             <div style={{ fontSize: "clamp(9px,0.8vw,11px)" }} className="uppercase tracking-wider px-4 pt-4 pb-1">
               Programação mais recente
             </div>

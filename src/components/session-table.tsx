@@ -4,6 +4,7 @@ import { useMemo, useState, useEffect, useCallback, useRef } from "react";
 import type { Session, CinemaInfo } from "@/lib/substack/programming";
 import { DAY_ORDER, parseDate, todayDate } from "@/lib/session-utils";
 import Sidebar from "@/components/sidebar";
+import MobileHeader from "@/components/mobile-header";
 import Hero from "@/components/hero";
 import Toolbar from "@/components/toolbar";
 import Agenda from "@/components/agenda";
@@ -29,6 +30,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
   const [activeDayIndex, setActiveDayIndex] = useState(-1);
   const [postOpen, setPostOpen] = useState(false);
   const [fullscreenPoster, setFullscreenPoster] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
   const postRef = useRef<HTMLDivElement>(null);
 
   const postTitles = useMemo(() => {
@@ -218,8 +220,11 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
 
   return (
     <div className="min-h-screen bg-bg text-ink">
+      <MobileHeader menuOpen={menuOpen} onToggle={() => setMenuOpen((v) => !v)} scrollTo={scrollTo} onClose={() => setMenuOpen(false)} />
       <div className="flex">
-        <Sidebar scrollTo={scrollTo} />
+        <div className="max-lg:hidden">
+          <Sidebar scrollTo={scrollTo} />
+        </div>
         <main className="flex-1 min-w-0">
           <Hero
             currentPostTitle={currentPostTitle}

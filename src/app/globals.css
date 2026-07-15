@@ -156,3 +156,19 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
+@media (max-width: 1023px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+.days-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.days-scroll::-webkit-scrollbar {
+  display: none;
+}

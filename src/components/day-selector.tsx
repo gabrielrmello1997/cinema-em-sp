@@ -13,6 +13,7 @@ export type DaySelectorProps = {
   selectedDayId: string;
   onDayChange: (dayId: string) => void;
   className?: string;
+  scrollable?: boolean;
 };
 
 const LINE = "#66625D";
@@ -24,6 +25,7 @@ export default function DaySelector({
   selectedDayId,
   onDayChange,
   className = "",
+  scrollable,
 }: DaySelectorProps) {
   const outerBorder = useMemo(
     () => ({ background: LINE, padding: "1px" }),
@@ -32,10 +34,9 @@ export default function DaySelector({
 
   if (days.length === 0) return null;
 
-  return (
-    <div className={className}>
-      <div style={{ filter: "drop-shadow(4px 4px 10px rgba(35,33,29,0.12))" }}>
-        <div className="ticket-shape" style={outerBorder}>
+  const inner = (
+    <div style={{ filter: "drop-shadow(4px 4px 10px rgba(35,33,29,0.12))" }}>
+      <div className="ticket-shape" style={outerBorder}>
         <div className="ticket-shape-inner overflow-hidden" style={{ background: BG }}>
           <div className="flex" style={{ height: "clamp(54px,4.5vw,72px)" }}>
             {days.map((day, i) => {
@@ -47,11 +48,12 @@ export default function DaySelector({
                   type="button"
                   aria-pressed={selected}
                   onClick={() => onDayChange(day.id)}
-                  className="flex-1 flex flex-col items-center justify-center transition-colors relative cursor-pointer tracking-wide"
+                  className={"flex flex-col items-center justify-center transition-colors relative cursor-pointer tracking-wide" + (scrollable ? "" : " flex-1")}
                   style={{
                     background: selected ? ACCENT : BG,
-                    borderRight: last ? "none" : `1px dashed ${LINE}`,
-                    minWidth: "clamp(120px, 11vw, 185px)",
+                    borderRight: last ? "none" : "1px dashed " + LINE,
+                    minWidth: scrollable ? "112px" : "clamp(120px, 11vw, 185px)",
+                    width: scrollable ? "112px" : "auto",
                   }}
                 >
                   <span
@@ -71,8 +73,25 @@ export default function DaySelector({
             })}
           </div>
         </div>
+      </div>
+    </div>
+  );
+
+  if (scrollable) {
+    return (
+      <div className={className}>
+        <div className="days-scroll">
+          <div style={{ display: "inline-flex" }}>
+            {inner}
+          </div>
         </div>
       </div>
+    );
+  }
+
+  return (
+    <div className={className}>
+      {inner}
     </div>
   );
 }
