@@ -46,14 +46,14 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
               }} />
             )}
             <div className="flex gap-0">
-              <div className="w-[90px] shrink-0 pr-8 text-center sticky top-6 self-start">
+              <div className="w-[90px] shrink-0 text-center sticky top-6 self-start -ml-2">
                 <div className="text-[18px] font-semibold uppercase leading-tight " style={{ color: "#23211D" }}>
                   {dayInfo?.label || ""}
                 </div>
-                <div className="text-[56px] font-bold leading-tight mt-1" style={{ color: "#A52323" }}>
+                <div className="text-[56px] font-bold leading-tight mt-0" style={{ color: "#A52323" }}>
                   {dayInfo?.dayNum ?? ""}
                 </div>
-                <div className="text-[18px] font-semibold uppercase mt-0.5" style={{ color: "#23211D" }}>
+                <div className="text-[18px] font-semibold uppercase mt-0" style={{ color: "#23211D" }}>
                   {dayInfo?.month || ""}
                 </div>
               </div>
@@ -79,10 +79,8 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                         <div className="grid grid-cols-[minmax(auto,400px)_150px] gap-x-12 gap-y-6">
                           {group.map((s, fi) => (
                             <Fragment key={fi}>
-                              {fi > 0 && (
-                                <div className="dash-ink col-span-2" />
-                              )}
                               <div>
+                                {fi > 0 && <div className="dash-ink mb-10" />}
                                 {fi === 0 && first.mostra && (
                                   <div className="text-base font-semibold uppercase mb-2 leading-snug break-words max-w-[400px]" style={{ color: "#A52323" }}>
                                     {first.mostra}
@@ -107,6 +105,7 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                                 </div>
                               </div>
                               <div>
+                                {fi > 0 && <div className="h-[41px]" />}
                                 {s.poster && (
                                   <div className="w-[150px] h-[220px]" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
                                     <img src={s.poster} alt={s.title} className="w-[150px] h-[220px] object-cover cursor-pointer" onClick={() => onPosterClick(s.poster)} />

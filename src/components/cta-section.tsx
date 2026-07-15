@@ -2,10 +2,10 @@ import PoltronasSVG from "@/components/poltronas-svg";
 
 export default function CtaSection() {
   return (
-    <section className="relative bg-ink text-white overflow-visible" style={{ height: 306 }}>
+    <section className="relative bg-ink text-white overflow-visible" style={{ height: 280 }}>
       <div className="px-12 py-12 flex gap-0 h-full">
         <div className="w-[340px] shrink-0">
-          <h2 className="text-[40px] font-bold leading-[64px] font-sora" style={{ color: "#F3F2ED" }}>
+          <h2 className="text-[38px] font-bold leading-[64px] font-sora" style={{ color: "#F3F2ED" }}>
             É programador<br />de cinema?
           </h2>
         </div>
@@ -21,7 +21,7 @@ export default function CtaSection() {
         </div>
       </div>
 
-      <div className="absolute" style={{ right: 42, top: 261, width: 446, height: 74 }}>
+      <div className="absolute" style={{ right: 42, top: 235, width: 446, height: 74 }}>
         <PoltronasSVG />
       </div>
     </section>

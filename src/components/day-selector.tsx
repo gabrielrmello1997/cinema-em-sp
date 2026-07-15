@@ -54,13 +54,13 @@ export default function DaySelector({
                 >
                   <span
                     className="text-[18px] font-semibold uppercase"
-                    style={{ color: "#23211D" }}
+                    style={{ color: selected ? "#F3F2ED" : "#23211D" }}
                   >
                     {day.label}
                   </span>
                   <span
                     className="text-[18px]"
-                    style={{ color: "#23211D" }}
+                    style={{ color: selected ? "#F3F2ED" : "#23211D" }}
                   >
                     {day.dateLabel}
                   </span>

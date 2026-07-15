@@ -6,13 +6,13 @@ type Props = {
 
 export default function Sidebar({ scrollTo }: Props) {
   return (
-    <aside className="w-[220px] shrink-0 border-r pt-0 pb-0 px-[36px] sticky top-0 self-start min-h-screen">
+    <aside className="w-[220px] shrink-0 border-r py-0 px-[32px] sticky top-0 self-start min-h-screen">
       <div className="flex flex-col">
         <a href="/" className="mt-[-16px]">
-          <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "30rem", height: "14.4rem" }} />
+          <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "32rem", height: "16rem" }} />
         </a>
         <div className="dash-ink mb-10" />
-        <nav className="flex flex-col text-sm uppercase">
+        <nav className="flex flex-col text-[16px] uppercase">
           <button onClick={() => scrollTo("agenda")} className="text-left hover:text-accent transition-colors font-semibold mb-8 cursor-pointer">
             PROGRAMAÇÃO
           </button>

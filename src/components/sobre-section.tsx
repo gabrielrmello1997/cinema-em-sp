@@ -6,7 +6,7 @@ export default function SobreSection() {
         <h2 className="text-[18px] uppercase font-semibold mb-8" style={{ color: "#A52323" }}>SOBRE</h2>
         <div className="flex gap-0">
           <div className="w-[480px] shrink-0">
-            <p className="text-[54px] font-bold leading-tight font-sora">
+            <p className="text-[52px] font-bold leading-tight font-sora">
               Não perca<br />mais nenhuma<br />sessão.
             </p>
             <div className="ticket-shape mt-8 inline-block group" style={{ background: "#A52323", padding: "1px" }}>
