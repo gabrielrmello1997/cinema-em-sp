@@ -445,7 +445,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
                                     </div>
                                     <div>
                                       {s.poster && (
-                                        <div className="w-[150px] h-[220px]" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
+                                        <div className="w-[150px] h-[220px] mb-10" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
                                           <img src={s.poster} alt={s.title} className="w-[150px] h-[220px] object-cover cursor-pointer" onClick={() => setFullscreenPoster(s.poster)} />
                                         </div>
                                       )}
