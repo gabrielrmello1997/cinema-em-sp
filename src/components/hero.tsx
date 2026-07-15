@@ -30,7 +30,7 @@ export default function Hero({
   return (
     <div className="relative bg-ink text-bg" style={{ height: "clamp(220px,20vw,317px)" }}>
       <div className="px-12 pb-0 h-full flex flex-col justify-start" style={{ paddingTop: "clamp(32px,4vw,72px)" }}>
-        <h1 className="font-sora leading-none font-bold mt-4" style={{ color: "#F3F2ED", fontSize: "clamp(32px,3.5vw,54px)" }}>
+        <h1 className="font-sora leading-none font-bold mt-4 tracking-wide" style={{ color: "#F3F2ED", fontSize: "clamp(32px,3.5vw,54px)" }}>
           Cinema em São Paulo
         </h1>
         <p className="mt-10" style={{ color: "#F3F2ED", opacity: 0.7, fontSize: "clamp(14px,1.3vw,20px)" }}>

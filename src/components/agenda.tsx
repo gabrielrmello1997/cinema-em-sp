@@ -47,13 +47,13 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
             )}
             <div className="flex gap-0">
               <div className="w-[90px] shrink-0 text-center sticky top-6 self-start -ml-2">
-                <div className="font-semibold uppercase leading-tight" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
+                <div className="font-semibold uppercase leading-tight font-sora" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
                   {dayInfo?.label || ""}
                 </div>
-                <div className="font-bold leading-tight mt-0" style={{ color: "#A52323", fontSize: "clamp(38px,3.8vw,56px)" }}>
+                <div className="font-bold leading-tight mt-0 font-sora" style={{ color: "#A52323", fontSize: "clamp(38px,3.8vw,56px)" }}>
                   {dayInfo?.dayNum ?? ""}
                 </div>
-                <div className="font-semibold uppercase mt-0" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
+                <div className="font-semibold uppercase mt-0 font-sora" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
                   {dayInfo?.month || ""}
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                     )}
                     <div className="flex" style={{ gap: "clamp(4px,1vw,16px)" }}>
                       <div className="shrink-0 pt-1" style={{ width: "clamp(100px,7.5vw,130px)" }}>
-                        <div className="text-[26px] font-bold leading-tight" style={{ color: "#A52323" }}>{first.time}</div>
+                        <div className="text-[26px] font-bold leading-tight font-sora tracking-wide" style={{ color: "#A52323" }}>{first.time}</div>
                       </div>
 
                         <div className="flex-1 min-w-0 pt-1">
@@ -82,16 +82,16 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                               <div>
                                 {fi > 0 && <div className="dash-ink mb-10" />}
                                 {fi === 0 && first.mostra && (
-                                  <div className="font-semibold uppercase mb-2 leading-snug break-words max-w-[400px]" style={{ fontSize: "clamp(13px,1vw,16px)", color: "#A52323" }}>
+                                  <div className="font-semibold tracking-wide uppercase mb-2 leading-snug break-words max-w-[400px] font-sora" style={{ fontSize: "clamp(13px,1vw,16px)", color: "#A52323" }}>
                                     {first.mostra}
                                   </div>
                                 )}
-                                <div className="font-bold leading-snug" style={{ fontSize: "clamp(16px,1.4vw,20px)" }}>
+                                <div className="font-bold tracking-wide leading-snug font-sora" style={{ fontSize: "clamp(16px,1.4vw,20px)" }}>
                                   {s.title}{s.year > 0 ? ` (${s.year})` : ""}
                                 </div>
                                 {s.originalTitle && s.originalTitle !== s.title &&
                                   !s.originalTitle.toLowerCase().includes(s.title.toLowerCase()) && (
-                                  <div className="text-[15px] italic mt-0.5 leading-snug" style={{ color: "#66625D" }}>
+                                  <div className="text-[15px] italic mt-0.5 leading-snug" style={{ color: "#4A4742" }}>
                                     {s.originalTitle}
                                   </div>
                                 )}
@@ -118,11 +118,11 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                       </div>
 
                       <div className="shrink-0 pt-1" style={{ width: "clamp(140px,16vw,300px)", marginLeft: "clamp(12px,2vw,48px)", marginRight: "clamp(16px,3vw,80px)" }}>
-                        <div className="font-bold uppercase leading-tight" style={{ fontSize: "clamp(15px,1.3vw,20px)" }}>{first.cinema}</div>
+                        <div className="font-bold leading-tight tracking-wide font-sora" style={{ fontSize: "clamp(15px,1.3vw,20px)" }}>{first.cinema}</div>
                         {(() => {
                           const info = cinemaMap.get(first.cinema);
                           return info?.address ? (
-                            <div className="text-sm mt-1 leading-snug">{info.address}</div>
+                            <div className="text-sm mt-2 leading-snug">{info.address}</div>
                           ) : null;
                         })()}
                         {(() => {

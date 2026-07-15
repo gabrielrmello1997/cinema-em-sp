@@ -3,7 +3,7 @@ export default function SobreSection() {
     <>
       <div className="dash-ink mx-12" />
       <section id="about" className="px-12 py-12">
-        <h2 className="text-[18px] uppercase font-semibold mb-8" style={{ color: "#A52323" }}>SOBRE</h2>
+        <h2 className="text-[18px] uppercase font-semibold mb-8 tracking-wide" style={{ color: "#A52323" }}>SOBRE</h2>
         <div className="flex gap-0">
           <div className="shrink-0" style={{ width: "clamp(300px,35vw,480px)" }}>
             <p className="font-bold leading-tight font-sora" style={{ fontSize: "clamp(40px,3.2vw,52px)" }}>

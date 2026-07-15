@@ -5,6 +5,7 @@
   --ink: #23211D;
   --accent: #A52323;
   --line: #66625D;
+  --font-sora: "forma-djr-banner", sans-serif;
 }
 
 @theme inline {

@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Sora, Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-
-const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin"],
-});
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
@@ -23,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${sora.variable} ${sourceSans.variable}`}
-    >
+    <html lang="pt-BR" className={sourceSans.variable}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/vxw7knc.css" />
+      </head>
       <body>{children}</body>
     </html>
   );

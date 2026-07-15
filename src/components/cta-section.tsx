@@ -5,7 +5,7 @@ export default function CtaSection() {
     <section className="relative bg-ink text-white overflow-visible" style={{ height: "clamp(220px,20vw,317px)" }}>
       <div className="px-12 flex gap-0 h-full" style={{ paddingTop: "clamp(32px,4vw,56px)", paddingBottom: "clamp(32px,4vw,56px)" }}>
         <div className="shrink-0" style={{ width: "clamp(240px,22vw,340px)" }}>
-          <h2 className="font-bold leading-tight font-sora" style={{ color: "#F3F2ED", fontSize: "clamp(26px,2.8vw,38px)" }}>
+          <h2 className="font-bold leading-tight font-sora tracking-wide" style={{ color: "#F3F2ED", fontSize: "clamp(26px,2.8vw,38px)" }}>
             É programador<br />de cinema?
           </h2>
         </div>
