@@ -62,8 +62,84 @@ body {
   );
 }
 
-.mini-ticket {
-  position: relative;
+.ticket-shape {
+  --ticket-shape: polygon(
+    10px 0,
+    calc(100% - 10px) 0,
+
+    calc(100% - 10px) 7px,
+    100% 7px,
+
+    100% calc(50% - 8px),
+    calc(100% - 7px) 50%,
+    100% calc(50% + 8px),
+
+    100% calc(100% - 7px),
+    calc(100% - 10px) calc(100% - 7px),
+
+    calc(100% - 10px) 100%,
+    10px 100%,
+
+    10px calc(100% - 7px),
+    0 calc(100% - 7px),
+
+    0 calc(50% + 8px),
+    7px 50%,
+    0 calc(50% - 8px),
+
+    0 7px,
+    10px 7px
+  );
+
+  -webkit-clip-path: var(--ticket-shape);
+  clip-path: var(--ticket-shape);
+}
+
+.ticket-shape-inner {
+  --ticket-shape-inner: polygon(
+    10px 0,
+    calc(100% - 10px) 0,
+
+    calc(100% - 10px) 7px,
+    100% 7px,
+
+    100% calc(50% - 8.4px),
+    calc(100% - 7.35px) 50%,
+    100% calc(50% + 8.4px),
+
+    100% calc(100% - 7px),
+    calc(100% - 10px) calc(100% - 7px),
+
+    calc(100% - 10px) 100%,
+    10px 100%,
+
+    10px calc(100% - 7px),
+    0 calc(100% - 7px),
+
+    0 calc(50% + 8.4px),
+    7.35px 50%,
+    0 calc(50% - 8.4px),
+
+    0 7px,
+    10px 7px
+  );
+
+  -webkit-clip-path: var(--ticket-shape-inner);
+  clip-path: var(--ticket-shape-inner);
+}
+
+.mini-ticket::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .mini-ticket::before {
