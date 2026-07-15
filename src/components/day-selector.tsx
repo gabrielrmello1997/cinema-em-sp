@@ -34,7 +34,8 @@ export default function DaySelector({
 
   return (
     <div className={className}>
-      <div className="ticket-shape" style={outerBorder}>
+      <div style={{ filter: "drop-shadow(4px 4px 10px rgba(35,33,29,0.12))" }}>
+        <div className="ticket-shape" style={outerBorder}>
         <div className="ticket-shape-inner overflow-hidden" style={{ background: BG }}>
           <div className="flex" style={{ height: "clamp(54px,4.5vw,72px)" }}>
             {days.map((day, i) => {
@@ -46,7 +47,7 @@ export default function DaySelector({
                   type="button"
                   aria-pressed={selected}
                   onClick={() => onDayChange(day.id)}
-                  className="flex-1 flex flex-col items-center justify-center transition-colors relative cursor-pointer"
+                  className="flex-1 flex flex-col items-center justify-center transition-colors relative cursor-pointer tracking-wide"
                   style={{
                     background: selected ? ACCENT : BG,
                     borderRight: last ? "none" : `1px dashed ${LINE}`,
@@ -54,7 +55,7 @@ export default function DaySelector({
                   }}
                 >
                   <span
-                    className="font-sora font-semibold uppercase tracking-wide"
+                    className="font-sora font-bold uppercase tracking-wide"
                     style={{ fontSize: "clamp(11px,1vw,16px)", color: selected ? "#F3F2ED" : "#23211D" }}
                   >
                     {day.label}
@@ -69,6 +70,7 @@ export default function DaySelector({
               );
             })}
           </div>
+        </div>
         </div>
       </div>
     </div>

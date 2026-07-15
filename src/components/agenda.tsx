@@ -47,13 +47,13 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
             )}
             <div className="flex gap-0">
               <div className="w-[90px] shrink-0 text-center sticky top-6 self-start -ml-2">
-                <div className="font-semibold uppercase leading-tight font-sora" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
+                <div className="font-medium uppercase leading-tight font-sora" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
                   {dayInfo?.label || ""}
                 </div>
                 <div className="font-bold leading-tight mt-0 font-sora" style={{ color: "#A52323", fontSize: "clamp(38px,3.8vw,56px)" }}>
                   {dayInfo?.dayNum ?? ""}
                 </div>
-                <div className="font-semibold uppercase mt-0 font-sora" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
+                <div className="font-medium uppercase mt-0 font-sora" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
                   {dayInfo?.month || ""}
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                               <div>
                                 {fi > 0 && <div className="dash-ink mb-10" />}
                                 {fi === 0 && first.mostra && (
-                                  <div className="font-semibold tracking-wide uppercase mb-2 leading-snug break-words max-w-[400px] font-sora" style={{ fontSize: "clamp(13px,1vw,16px)", color: "#A52323" }}>
+                                  <div className="font-medium tracking-wide uppercase mb-2 leading-snug break-words max-w-[400px] font-sora" style={{ fontSize: "clamp(13px,1vw,16px)", color: "#A52323" }}>
                                     {first.mostra}
                                   </div>
                                 )}

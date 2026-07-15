@@ -3,12 +3,13 @@ export default function SobreSection() {
     <>
       <div className="dash-ink mx-12" />
       <section id="about" className="px-12 py-12">
-        <h2 className="text-[18px] uppercase font-semibold mb-8 tracking-wide" style={{ color: "#A52323" }}>SOBRE</h2>
+        <h2 className="text-[18px] uppercase font-medium mb-8 tracking-wide font-sora" style={{ color: "#A52323" }}>SOBRE</h2>
         <div className="flex gap-0">
           <div className="shrink-0" style={{ width: "clamp(300px,35vw,480px)" }}>
             <p className="font-bold leading-tight font-sora" style={{ fontSize: "clamp(40px,3.2vw,52px)" }}>
               Não perca<br />mais nenhuma<br />sessão.
             </p>
+            <div style={{ filter: "drop-shadow(4px 4px 10px rgba(35,33,29,0.3))" }}>
             <div className="ticket-shape mt-8 inline-block group" style={{ background: "#A52323", padding: "1px" }}>
               <div className="ticket-shape-inner bg-[#A52323] group-hover:bg-[#F3F2ED] transition-colors">
                 <a
@@ -23,6 +24,7 @@ export default function SobreSection() {
                   </svg>
                 </a>
               </div>
+            </div>
             </div>
           </div>
 

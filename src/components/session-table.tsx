@@ -8,6 +8,7 @@ import Hero from "@/components/hero";
 import Toolbar from "@/components/toolbar";
 import Agenda from "@/components/agenda";
 import SobreSection from "@/components/sobre-section";
+import TextosSection from "@/components/textos-section";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import FullscreenPoster from "@/components/fullscreen-poster";
@@ -250,6 +251,7 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
             cinemaMap={cinemaMap}
             onPosterClick={setFullscreenPoster}
           />
+          <TextosSection />
           <SobreSection />
           <CtaSection />
           <Footer />
