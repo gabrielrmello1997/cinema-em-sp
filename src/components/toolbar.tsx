@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import DaySelector from "@/components/day-selector";
 
 type ProgrammingDay = {
@@ -33,9 +34,19 @@ export default function Toolbar({
   onTimeFilterChange,
   onDayChange,
 }: Props) {
+  const [isNarrow, setIsNarrow] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1270px)");
+    setIsNarrow(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsNarrow(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
   return (
-    <div className="px-12 pt-[30px]">
-      <div className="flex items-center gap-4">
+    <div className="pl-12 pt-[40px]" style={{ paddingRight: "clamp(16px,3vw,42px)" }}>
+      <div className="flex items-center gap-4 flex-wrap">
         <div className="mr-4">
           <DaySelector
             days={daySelectorDays}
@@ -43,51 +54,53 @@ export default function Toolbar({
             onDayChange={onDayChange}
           />
         </div>
-        <div className="flex-1 min-w-[220px] flex items-center" style={{ border: "1px solid #66625D", height: 49 }}>
-          <svg className="w-4 h-4 ml-3 shrink-0" viewBox="0 0 20 20" fill="none">
-            <circle cx="9" cy="9" r="6.5" stroke="#23211D" strokeWidth="1.5"/>
-            <path d="M14 14L18 18" stroke="#23211D" strokeWidth="1.5" strokeLinecap="round"/>
-          </svg>
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => onQueryChange(e.target.value)}
-            placeholder="Buscar filme, diretor, cinema..."
-            className="flex-1 px-2 text-sm bg-transparent text-ink placeholder:text-ink/30 outline-none"
-            style={{ height: 49 }}
-          />
-        </div>
-        <div className="relative shrink-0" style={{ width: 210 }}>
-          <select
-            value={cinemaFilter}
-            onChange={(e) => onCinemaFilterChange(e.target.value)}
-            className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
-            style={{ height: 49, border: "1px solid #66625D" }}
-          >
-            <option value="">Todos os cinemas</option>
-            {availableCinemas.map((c) => (
-              <option key={c} value={c}>{c}</option>
-            ))}
-          </select>
-          <svg style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, pointerEvents: 'none' }} viewBox="0 0 10 6" fill="none">
-            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
-        <div className="relative shrink-0" style={{ width: 180 }}>
-          <select
-            value={timeFilter}
-            onChange={(e) => onTimeFilterChange(e.target.value)}
-            className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
-            style={{ height: 49, border: "1px solid #66625D" }}
-          >
-            <option value="">Qualquer horário</option>
-            <option value="manha">Manhã (até 12h)</option>
-            <option value="tarde">Tarde (12h–18h)</option>
-            <option value="noite">Noite (após 18h)</option>
-          </select>
-          <svg style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, pointerEvents: 'none' }} viewBox="0 0 10 6" fill="none">
-            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+        <div className="flex items-center gap-4 ml-auto flex-shrink-0">
+          <div className="flex items-center" style={{ border: "1px solid #66625D", height: 49, width: "clamp(220px,22vw,380px)" }}>
+            <svg className="w-4 h-4 ml-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <circle cx="9" cy="9" r="6.5" stroke="#23211D" strokeWidth="1.5"/>
+              <path d="M14 14L18 18" stroke="#23211D" strokeWidth="1.5" strokeLinecap="round"/>
+            </svg>
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => onQueryChange(e.target.value)}
+              placeholder="Buscar filme, diretor, cinema..."
+              className="flex-1 px-2 text-sm bg-transparent text-ink placeholder:text-ink/30 outline-none"
+              style={{ height: 49 }}
+            />
+          </div>
+          <div className="relative flex-shrink-0" style={{ width: "clamp(90px,10vw,190px)" }}>
+            <select
+              value={cinemaFilter}
+              onChange={(e) => onCinemaFilterChange(e.target.value)}
+              className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
+              style={{ height: 49, border: "1px solid #66625D" }}
+            >
+              <option value="">{isNarrow ? "Cinemas" : "Todos os cinemas"}</option>
+              {availableCinemas.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+            <svg style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, pointerEvents: 'none' }} viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div className="relative flex-shrink-0" style={{ width: "clamp(80px,10vw,180px)" }}>
+            <select
+              value={timeFilter}
+              onChange={(e) => onTimeFilterChange(e.target.value)}
+              className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
+              style={{ height: 49, border: "1px solid #66625D" }}
+            >
+              <option value="">{isNarrow ? "Horário" : "Qualquer horário"}</option>
+              <option value="manha">Manhã (até 12h)</option>
+              <option value="tarde">Tarde (12h–18h)</option>
+              <option value="noite">Noite (após 18h)</option>
+            </select>
+            <svg style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, pointerEvents: 'none' }} viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
         </div>
       </div>
     </div>

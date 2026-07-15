@@ -36,7 +36,7 @@ export default function DaySelector({
     <div className={className}>
       <div className="ticket-shape" style={outerBorder}>
         <div className="ticket-shape-inner overflow-hidden" style={{ background: BG }}>
-          <div className="flex" style={{ height: 85 }}>
+          <div className="flex" style={{ height: "clamp(54px,4.5vw,72px)" }}>
             {days.map((day, i) => {
               const selected = day.id === selectedDayId && selectedDayId !== "";
               const last = i === days.length - 1;
@@ -46,21 +46,21 @@ export default function DaySelector({
                   type="button"
                   aria-pressed={selected}
                   onClick={() => onDayChange(day.id)}
-                  className="min-w-[220px] flex-1 flex flex-col items-center justify-center transition-colors relative cursor-pointer"
+                  className="flex-1 flex flex-col items-center justify-center transition-colors relative cursor-pointer"
                   style={{
                     background: selected ? ACCENT : BG,
                     borderRight: last ? "none" : `1px dashed ${LINE}`,
+                    minWidth: "clamp(120px, 11vw, 185px)",
                   }}
                 >
                   <span
-                    className="text-[18px] font-semibold uppercase"
-                    style={{ color: selected ? "#F3F2ED" : "#23211D" }}
+                    className="font-semibold uppercase"
+                    style={{ fontSize: "clamp(11px,1vw,16px)", color: selected ? "#F3F2ED" : "#23211D" }}
                   >
                     {day.label}
                   </span>
                   <span
-                    className="text-[18px]"
-                    style={{ color: selected ? "#F3F2ED" : "#23211D" }}
+                    style={{ fontSize: "clamp(10px,0.9vw,15px)", color: selected ? "#F3F2ED" : "#23211D" }}
                   >
                     {day.dateLabel}
                   </span>

@@ -47,18 +47,18 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
             )}
             <div className="flex gap-0">
               <div className="w-[90px] shrink-0 text-center sticky top-6 self-start -ml-2">
-                <div className="text-[18px] font-semibold uppercase leading-tight " style={{ color: "#23211D" }}>
+                <div className="font-semibold uppercase leading-tight" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
                   {dayInfo?.label || ""}
                 </div>
-                <div className="text-[56px] font-bold leading-tight mt-0" style={{ color: "#A52323" }}>
+                <div className="font-bold leading-tight mt-0" style={{ color: "#A52323", fontSize: "clamp(38px,3.8vw,56px)" }}>
                   {dayInfo?.dayNum ?? ""}
                 </div>
-                <div className="text-[18px] font-semibold uppercase mt-0" style={{ color: "#23211D" }}>
+                <div className="font-semibold uppercase mt-0" style={{ color: "#23211D", fontSize: "clamp(14px,1.2vw,18px)" }}>
                   {dayInfo?.month || ""}
                 </div>
               </div>
 
-              <div className="flex-1 min-w-0 pl-[48px]">
+              <div className="flex-1 min-w-0" style={{ paddingLeft: "clamp(24px,3vw,48px)" }}>
                 {dg.groups.map((group, gi) => {
                 const first = group[0];
                 return (
@@ -70,23 +70,23 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                         marginLeft: 0,
                       }} />
                     )}
-                    <div className="flex" style={{ gap: '0px' }}>
-                      <div className="w-[130px] shrink-0 pt-1">
+                    <div className="flex" style={{ gap: "clamp(4px,1vw,16px)" }}>
+                      <div className="shrink-0 pt-1" style={{ width: "clamp(100px,7.5vw,130px)" }}>
                         <div className="text-[26px] font-bold leading-tight" style={{ color: "#A52323" }}>{first.time}</div>
                       </div>
 
                         <div className="flex-1 min-w-0 pt-1">
-                        <div className="grid grid-cols-[minmax(auto,400px)_150px] gap-x-12 gap-y-6">
+                        <div className="grid gap-x-12 gap-y-6" style={{ gridTemplateColumns: "minmax(auto,480px) clamp(80px,8vw,150px)" }}>
                           {group.map((s, fi) => (
                             <Fragment key={fi}>
                               <div>
                                 {fi > 0 && <div className="dash-ink mb-10" />}
                                 {fi === 0 && first.mostra && (
-                                  <div className="text-base font-semibold uppercase mb-2 leading-snug break-words max-w-[400px]" style={{ color: "#A52323" }}>
+                                  <div className="font-semibold uppercase mb-2 leading-snug break-words max-w-[400px]" style={{ fontSize: "clamp(13px,1vw,16px)", color: "#A52323" }}>
                                     {first.mostra}
                                   </div>
                                 )}
-                                <div className="font-bold leading-snug text-xl">
+                                <div className="font-bold leading-snug" style={{ fontSize: "clamp(16px,1.4vw,20px)" }}>
                                   {s.title}{s.year > 0 ? ` (${s.year})` : ""}
                                 </div>
                                 {s.originalTitle && s.originalTitle !== s.title &&
@@ -107,8 +107,8 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                               <div>
                                 {fi > 0 && <div className="h-[41px]" />}
                                 {s.poster && (
-                                  <div className="w-[150px] h-[220px]" style={{ border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
-                                    <img src={s.poster} alt={s.title} className="w-[150px] h-[220px] object-cover cursor-pointer" onClick={() => onPosterClick(s.poster)} />
+                                  <div className="w-full" style={{ aspectRatio: "150/220", maxWidth: 150, border: "1px solid rgba(35,33,29,0.3)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
+                                    <img src={s.poster} alt={s.title} className="w-full h-full object-cover cursor-pointer" onClick={() => onPosterClick(s.poster)} />
                                   </div>
                                 )}
                               </div>
@@ -117,8 +117,8 @@ export default function Agenda({ groups, dayGroups, dayTabs, cinemaMap, onPoster
                         </div>
                       </div>
 
-                      <div className="w-[300px] shrink-0 pt-1 ml-[48px] mr-20">
-                        <div className="font-bold text-[20px] uppercase leading-tight">{first.cinema}</div>
+                      <div className="shrink-0 pt-1" style={{ width: "clamp(140px,16vw,300px)", marginLeft: "clamp(12px,2vw,48px)", marginRight: "clamp(16px,3vw,80px)" }}>
+                        <div className="font-bold uppercase leading-tight" style={{ fontSize: "clamp(15px,1.3vw,20px)" }}>{first.cinema}</div>
                         {(() => {
                           const info = cinemaMap.get(first.cinema);
                           return info?.address ? (

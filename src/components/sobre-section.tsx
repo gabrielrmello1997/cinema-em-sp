@@ -5,8 +5,8 @@ export default function SobreSection() {
       <section id="about" className="px-12 py-12">
         <h2 className="text-[18px] uppercase font-semibold mb-8" style={{ color: "#A52323" }}>SOBRE</h2>
         <div className="flex gap-0">
-          <div className="w-[480px] shrink-0">
-            <p className="text-[52px] font-bold leading-tight font-sora">
+          <div className="shrink-0" style={{ width: "clamp(300px,35vw,480px)" }}>
+            <p className="font-bold leading-tight font-sora" style={{ fontSize: "clamp(40px,3.2vw,52px)" }}>
               Não perca<br />mais nenhuma<br />sessão.
             </p>
             <div className="ticket-shape mt-8 inline-block group" style={{ background: "#A52323", padding: "1px" }}>
@@ -26,9 +26,9 @@ export default function SobreSection() {
             </div>
           </div>
 
-          <div className="dash-ink-v mx-[48px]" />
+          <div className="dash-ink-v" style={{ marginLeft: "clamp(24px,3vw,48px)", marginRight: "clamp(24px,3vw,48px)" }} />
 
-          <div className="flex-1 max-w-[480px] text-[18px] leading-relaxed space-y-4" style={{ color: "#23211D" }}>
+          <div className="flex-1 leading-relaxed space-y-4" style={{ color: "#23211D", maxWidth: "clamp(280px,32vw,480px)", fontSize: "clamp(16px,1.2vw,18px)" }}>
             <p>Divulgamos a programação das salas de repertório e dos cineclubes da cidade de São Paulo.</p>
             <p>Organizamos e enviamos por email os horários e principais informações das sessões programadas por salas de cinema como as do Cinesesc, do IMS, do CINUSP, do CCSP e outras.</p>
             <p>Focamos sempre nos filmes que já não estão mais na sua janela de exibição, mas são programados em sessões especiais.</p>

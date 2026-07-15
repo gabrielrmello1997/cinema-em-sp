@@ -6,13 +6,13 @@ type Props = {
 
 export default function Sidebar({ scrollTo }: Props) {
   return (
-    <aside className="w-[220px] shrink-0 border-r py-0 px-[32px] sticky top-0 self-start min-h-screen">
+    <aside className="shrink-0 border-r py-0 px-[clamp(16px,2vw,32px)] sticky top-0 self-start min-h-screen" style={{ width: "clamp(140px,14vw,220px)" }}>
       <div className="flex flex-col">
         <a href="/" className="mt-[-16px]">
-          <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "32rem", height: "16rem" }} />
+          <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "100%", maxWidth: "32rem" }} />
         </a>
         <div className="dash-ink mb-10" />
-        <nav className="flex flex-col text-[16px] uppercase">
+        <nav className="flex flex-col uppercase" style={{ fontSize: "clamp(11px,1.1vw,16px)" }}>
           <button onClick={() => scrollTo("agenda")} className="text-left hover:text-accent transition-colors font-semibold mb-8 cursor-pointer">
             PROGRAMAÇÃO
           </button>
@@ -21,7 +21,7 @@ export default function Sidebar({ scrollTo }: Props) {
           </button>
         </nav>
         <div className="dash-ink mb-10" />
-        <div className="flex flex-col text-sm uppercase">
+        <div className="flex flex-col uppercase" style={{ fontSize: "clamp(10px,1vw,14px)" }}>
           <a href="https://cinemaemsp.substack.com" target="_blank" rel="noopener noreferrer" className="group hover:text-accent transition-colors flex items-center gap-2.5 font-semibold mb-8">
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-[#23211D] group-hover:fill-[#A52323] transition-colors">
               <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>

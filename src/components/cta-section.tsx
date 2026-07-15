@@ -2,26 +2,26 @@ import PoltronasSVG from "@/components/poltronas-svg";
 
 export default function CtaSection() {
   return (
-    <section className="relative bg-ink text-white overflow-visible" style={{ height: 280 }}>
-      <div className="px-12 py-12 flex gap-0 h-full">
-        <div className="w-[340px] shrink-0">
-          <h2 className="text-[38px] font-bold leading-[64px] font-sora" style={{ color: "#F3F2ED" }}>
+    <section className="relative bg-ink text-white overflow-visible" style={{ height: "clamp(220px,20vw,317px)" }}>
+      <div className="px-12 flex gap-0 h-full" style={{ paddingTop: "clamp(32px,4vw,56px)", paddingBottom: "clamp(32px,4vw,56px)" }}>
+        <div className="shrink-0" style={{ width: "clamp(240px,22vw,340px)" }}>
+          <h2 className="font-bold leading-tight font-sora" style={{ color: "#F3F2ED", fontSize: "clamp(26px,2.8vw,38px)" }}>
             É programador<br />de cinema?
           </h2>
         </div>
 
-        <div className="w-px mx-[60px]" style={{ backgroundImage: "repeating-linear-gradient(to bottom, #F3F2ED 0, #F3F2ED 4px, transparent 4px, transparent 6px)" }} />
+        <div className="w-px" style={{ marginLeft: "clamp(24px,4vw,60px)", marginRight: "clamp(24px,4vw,60px)", backgroundImage: "repeating-linear-gradient(to bottom, #F3F2ED 0, #F3F2ED 4px, transparent 4px, transparent 6px)" }} />
 
-        <div className="flex-1 max-w-[600px] text-[18px] leading-relaxed space-y-2 pt-3" style={{ color: "#F3F2ED", opacity: 0.7 }}>
-          <p>A ajuda dos programadores é central para mantermos o nosso trabalho.</p>
-          <p>Se você é programador, curador ou membro de um cineclube, por favor, entre em contato conosco e compartilhe a sua programação via email:
-          <a href="mailto:cinemaemsaopaulo@gmail.com" className="inline-block font-semibold underline text-[#F3F2ED] hover:text-[#A52323] transition-colors">
+        <div className="flex-1 max-w-[600px] leading-relaxed space-y-2 pt-3" style={{ color: "#F3F2ED", opacity: 0.7, fontSize: "clamp(16px,1.2vw,18px)" }}>
+          <p>A ajuda dos programadores é central para o nosso trabalho.</p>
+          <p>Se você é programador, curador ou membro de um cineclube, entre em contato conosco e compartilhe a sua programação via email:</p>
+           <a href="mailto:cinemaemsaopaulo@gmail.com" className="inline-block font-semibold underline text-[#F3F2ED] hover:text-[#A52323] transition-colors">
             cinemaemsaopaulo@gmail.com
-          </a>.</p>
+          </a>.
         </div>
       </div>
 
-      <div className="absolute" style={{ right: 42, top: 235, width: 446, height: 74 }}>
+      <div className="absolute" style={{ right: "clamp(16px,3vw,36px)", top: "calc(clamp(220px,20vw,317px) - min(45px, 2.5vw))", width: "clamp(280px,25vw,446px)" }}>
         <PoltronasSVG />
       </div>
     </section>
