@@ -1,26 +1,234 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #F3F2ED;
+  --ink: #23211D;
+  --accent: #A52323;
+  --line: #66625D;
+  --font-sora: "forma-djr-banner", sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: var(--bg);
+  --color-ink: var(--ink);
+  --color-accent: var(--accent);
+  --color-line: var(--line);
+  --font-sora: var(--font-sora);
+  --font-source-sans: var(--font-source-sans);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-source-sans);
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.border-dash-ink {
+  border-style: dashed;
+  border-color: var(--ink);
+}
+
+.border-dash-line {
+  border-style: dashed;
+  border-color: var(--line);
+}
+
+.dash-ink {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--ink) 0,
+    var(--ink) 4px,
+    transparent 4px,
+    transparent 6px
+  );
+}
+
+.dash-ink-v {
+  width: 1px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--ink) 0,
+    var(--ink) 4px,
+    transparent 4px,
+    transparent 6px
+  );
+}
+
+.ticket-shape {
+  --ticket-shape: polygon(
+    10px 0,
+    calc(100% - 10px) 0,
+    calc(100% - 10px) 7px,
+    100% 7px,
+    100% calc(50% - 8px),
+    calc(100% - 7px) 50%,
+    100% calc(50% + 8px),
+    100% calc(100% - 7px),
+    calc(100% - 10px) calc(100% - 7px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    10px calc(100% - 7px),
+    0 calc(100% - 7px),
+    0 calc(50% + 8px),
+    7px 50%,
+    0 calc(50% - 8px),
+    0 7px,
+    10px 7px
+  );
+
+  -webkit-clip-path: var(--ticket-shape);
+  clip-path: var(--ticket-shape);
+}
+
+.ticket-shape-inner {
+  --ticket-shape-inner: polygon(
+    10px 0,
+    calc(100% - 10px) 0,
+    calc(100% - 10px) 7px,
+    100% 7px,
+    100% calc(50% - 8.4px),
+    calc(100% - 7.35px) 50%,
+    100% calc(50% + 8.4px),
+    100% calc(100% - 7px),
+    calc(100% - 10px) calc(100% - 7px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    10px calc(100% - 7px),
+    0 calc(100% - 7px),
+    0 calc(50% + 8.4px),
+    7.35px 50%,
+    0 calc(50% - 8.4px),
+    0 7px,
+    10px 7px
+  );
+
+  -webkit-clip-path: var(--ticket-shape-inner);
+  clip-path: var(--ticket-shape-inner);
+}
+
+.mini-ticket::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@keyframes text-card-enter {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1023px) {
+  .text-card-enter {
+    animation: text-card-enter 400ms ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-card-enter {
+    animation: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .session-mobile-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .mobile-film-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 112px;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .mobile-film-row.no-poster {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-film-poster {
+    width: 112px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+
+  .mobile-session {
+    padding-block: 28px;
+  }
+
+  .mobile-film-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  .mobile-film-item + .mobile-film-item {
+    padding-top: 20px;
+    border-top: 1px dashed rgba(35, 33, 29, 0.28);
+  }
+
+  .mobile-cinema-inline {
+    margin-top: 18px;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .mobile-cinema-divider {
+    width: 44px;
+    border-top: 1px solid var(--line);
+    margin-bottom: 14px;
+    opacity: 0.75;
+  }
+
+  .mobile-cinema {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(35, 33, 29, 0.16);
+  }
+}
+
+@media (max-width: 389px) {
+  .mobile-film-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-film-poster {
+    width: 118px;
+    justify-self: end;
+  }
+}
+
+.days-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.days-scroll::-webkit-scrollbar {
+  display: none;
 }

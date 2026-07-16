@@ -299,6 +299,16 @@ function extractShowcase(text: string): Array<{ title: string; director: string 
   return result.length > 0 ? result : null;
 }
 
+function extractOriginalTitle(li: HTMLElement, sessionTitle: string): string | undefined {
+  for (const p of li.querySelectorAll("p")) {
+    const em = p.querySelector("em") || p.querySelector("i");
+    if (!em) continue;
+    const text = decodeHtmlEntities(em.textContent.trim()).replace(/\n/g, " ").replace(/\s+/g, " ").trim();
+    if (!text) continue;
+    if (text.toLowerCase() !== sessionTitle.toLowerCase()) return text;
+  }
+}
+
 function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: string }, sessions: Session[]) {
   if (!ctx.cinema || !ctx.day) return;
 
@@ -327,6 +337,7 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
     let country = "";
     let duration = 0;
     let director = "";
+    let originalTitle: string | undefined;
 
     for (const li of lis) {
       for (const p of li.querySelectorAll("p")) {
@@ -336,9 +347,10 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
           if (meta.country && !country) { country = meta.country; duration = meta.duration ?? duration; }
         }
       }
+      if (!originalTitle) originalTitle = extractOriginalTitle(li, title);
     }
 
-    const session: Session = { cinema: ctx.cinema, day: ctx.day, time, title, year, country, duration, director, mostra: ctx.mostra, poster: "" };
+    const session: Session = { cinema: ctx.cinema, day: ctx.day, time, title, year, country, duration, director, mostra: ctx.mostra, poster: "", originalTitle };
     validateSession(session, sessions.length);
     sessions.push(session);
   } else {
@@ -383,7 +395,9 @@ function processH4(h4: HTMLElement, ctx: { day: string; cinema: string; mostra: 
         if (meta.country && !country) { country = meta.country; duration = meta.duration ?? duration; }
       }
 
-      const session: Session = { cinema: ctx.cinema, day: ctx.day, time, title, year, country, duration, director, mostra: ctx.mostra, poster: "" };
+      const originalTitle = extractOriginalTitle(li, title);
+
+      const session: Session = { cinema: ctx.cinema, day: ctx.day, time, title, year, country, duration, director, mostra: ctx.mostra, poster: "", originalTitle };
       validateSession(session, sessions.length);
       sessions.push(session);
     }

@@ -1,267 +1,630 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import type { Session } from "@/lib/substack/programming";
-
-const DAY_ORDER: Record<string, number> = {
-  "SEGUNDA-FEIRA": 1,
-  "TERÇA-FEIRA": 2,
-  "QUARTA-FEIRA": 3,
-  "QUINTA-FEIRA": 4,
-  "SEXTA-FEIRA": 5,
-  "SÁBADO": 6,
-  "DOMINGO": 7,
-};
+import {
+  useMemo,
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+} from "react";
+import type { Session, CinemaInfo } from "@/lib/substack/programming";
+import { DAY_ORDER, parseDate, todayDate } from "@/lib/session-utils";
+import Sidebar from "@/components/sidebar";
+import MobileHeader from "@/components/mobile-header";
+import Hero from "@/components/hero";
+import Toolbar from "@/components/toolbar";
+import Agenda from "@/components/agenda";
+import SobreSection from "@/components/sobre-section";
+import TextosSection from "@/components/textos-section";
+import CtaSection from "@/components/cta-section";
+import Footer from "@/components/footer";
+import FullscreenPoster from "@/components/fullscreen-poster";
+import DayStickyNav from "@/components/day-sticky-nav";
 
 interface Props {
   sessions: Session[];
   allSessions: Session[];
   feedTitle: string;
   refreshedAt: string;
+  cinemas: CinemaInfo[];
 }
 
-function parseDate(s: Session): Date | null {
-  const m = s.day.match(/\((\d{2})\/(\d{2})\)/);
-  if (!m) return null;
-  const d = new Date(new Date().getFullYear(), Number(m[2]) - 1, Number(m[1]));
-  if (d.getTime() > Date.now() + 90 * 24 * 60 * 60 * 1000) {
-    d.setFullYear(d.getFullYear() - 1);
+type PostDay = {
+  day: string;
+};
+
+type PostNavigationItem = {
+  title: string;
+  days: PostDay[];
+};
+
+type PendingPostNavigation = {
+  postTitle: string;
+  dayId: string;
+} | null;
+
+function getOrderedDays(postSessions: Session[]): PostDay[] {
+  const uniqueDays = new Set<string>();
+
+  for (const session of postSessions) {
+    if (session.day) uniqueDays.add(session.day);
   }
-  return d;
+
+  return Array.from(uniqueDays)
+    .sort((a, b) => (DAY_ORDER[a] ?? 99) - (DAY_ORDER[b] ?? 99))
+    .map((day) => ({ day }));
 }
 
-function mondayOf(d: Date): Date {
-  const day = d.getDay();
-  const diff = day === 0 ? -6 : 1 - day;
-  const m = new Date(d);
-  m.setDate(d.getDate() + diff);
-  return m;
+function getVisibleElementById(id: string): HTMLElement | null {
+  const elements = document.querySelectorAll<HTMLElement>(`[id="${id}"]`);
+
+  for (const element of elements) {
+    if (element.offsetParent !== null) return element;
+  }
+
+  return null;
 }
 
-function formatDDMM(d: Date): string {
-  const dd = String(d.getDate()).padStart(2, "0");
-  const mm = String(d.getMonth() + 1).padStart(2, "0");
-  return `${dd}/${mm}`;
-}
-
-function formatKey(d: Date): string {
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-}
-
-function parseKey(key: string): Date {
-  const [y, m, dd] = key.split("-").map(Number);
-  return new Date(y, m - 1, dd);
-}
-
-function sessionsInWeek(sessions: Session[], monday: Date): Session[] {
-  const mon = new Date(monday);
-  const sun = new Date(monday);
-  sun.setDate(mon.getDate() + 6);
-
-  return sessions.filter((s) => {
-    const d = parseDate(s);
-    if (!d) return true;
-    d.setFullYear(mon.getFullYear());
-    if (d < mon) d.setFullYear(mon.getFullYear() + 1);
-    return d >= mon && d <= sun;
-  });
-}
-
-interface WeekOption {
-  label: string;
-  monday: Date;
-}
-
-export default function SessionTable({ sessions, allSessions, feedTitle, refreshedAt }: Props) {
+export default function SessionTable({
+  sessions,
+  allSessions,
+  feedTitle,
+  refreshedAt,
+  cinemas,
+}: Props) {
   const [query, setQuery] = useState("");
   const [cinemaFilter, setCinemaFilter] = useState("");
-  const [dayFilter, setDayFilter] = useState("");
-  const [mostraFilter, setMostraFilter] = useState("");
-  const [weekKey, setWeekKey] = useState("");
+  const [timeFilter, setTimeFilter] = useState("");
+  const [selectedPost, setSelectedPost] = useState("");
+  const [activeDayIndex, setActiveDayIndex] = useState(-1);
+  const [postOpen, setPostOpen] = useState(false);
+  const [fullscreenPoster, setFullscreenPoster] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const weeks = useMemo(() => {
-    const seen = new Set<string>();
-    const result: WeekOption[] = [];
+  const postRef = useRef<HTMLDivElement>(null);
+  const pendingPostNavigationRef = useRef<PendingPostNavigation>(null);
+  const shouldScrollToAgendaRef = useRef(false);
 
-    for (const s of allSessions) {
-      const d = parseDate(s);
-      if (!d) continue;
-      const mon = mondayOf(d);
-      const key = formatKey(mon);
+  const postTitles = useMemo(() => {
+    const titles = new Set<string>();
 
-      if (!seen.has(key)) {
-        seen.add(key);
-        const sun = new Date(mon);
-        sun.setDate(mon.getDate() + 6);
-        result.push({ label: `${formatDDMM(mon)} — ${formatDDMM(sun)}`, monday: mon });
+    for (const session of allSessions) {
+      if (session.feedTitle) titles.add(session.feedTitle);
+    }
+
+    const orderedTitles = Array.from(titles);
+
+    if (!orderedTitles.includes(feedTitle)) {
+      orderedTitles.unshift(feedTitle);
+    } else if (orderedTitles[0] !== feedTitle) {
+      return [
+        feedTitle,
+        ...orderedTitles.filter((title) => title !== feedTitle),
+      ];
+    }
+
+    return orderedTitles;
+  }, [allSessions, feedTitle]);
+
+  const olderPostTitles = useMemo(
+    () => postTitles.filter((title) => title !== feedTitle),
+    [postTitles, feedTitle],
+  );
+
+  const resolvedSessions = useMemo(() => {
+    if (!selectedPost) return sessions;
+
+    return allSessions.filter(
+      (session) => session.feedTitle === selectedPost,
+    );
+  }, [selectedPost, sessions, allSessions]);
+
+  const currentPostTitle = selectedPost || feedTitle;
+
+  const postNavigation = useMemo<PostNavigationItem[]>(() => {
+    return postTitles
+      .map((title) => {
+        const matchingSessions = allSessions.filter(
+          (session) => session.feedTitle === title,
+        );
+
+        const postSessions =
+          title === feedTitle && matchingSessions.length === 0
+            ? sessions
+            : matchingSessions;
+
+        return {
+          title,
+          days: getOrderedDays(postSessions),
+        };
+      })
+      .filter((post) => post.days.length > 0);
+  }, [postTitles, allSessions, feedTitle, sessions]);
+
+  const currentPostNavigationIndex = useMemo(
+    () =>
+      postNavigation.findIndex((post) => post.title === currentPostTitle),
+    [postNavigation, currentPostTitle],
+  );
+
+  const canNavigateToNewerPost = currentPostNavigationIndex > 0;
+  const canNavigateToOlderPost =
+    currentPostNavigationIndex >= 0 &&
+    currentPostNavigationIndex < postNavigation.length - 1;
+
+  const daysOut = useMemo(() => {
+    const unique = new Map<string, Session[]>();
+
+    for (const session of resolvedSessions) {
+      if (!unique.has(session.day)) unique.set(session.day, []);
+      unique.get(session.day)!.push(session);
+    }
+
+    return Array.from(unique.entries())
+      .sort(([a], [b]) => (DAY_ORDER[a] ?? 99) - (DAY_ORDER[b] ?? 99))
+      .map(([day, daySessions]) => {
+        const parsedDate = parseDate(daySessions[0]);
+        const today = todayDate();
+        let year = today.getFullYear();
+
+        if (parsedDate) {
+          const testDate = new Date(
+            year,
+            parsedDate.getMonth(),
+            parsedDate.getDate(),
+          );
+
+          if (
+            testDate.getTime() >
+            today.getTime() + 90 * 24 * 60 * 60 * 1000
+          ) {
+            year -= 1;
+          }
+        }
+
+        const date = parsedDate
+          ? new Date(year, parsedDate.getMonth(), parsedDate.getDate())
+          : null;
+
+        return {
+          day,
+          sessions: daySessions,
+          date,
+        };
+      });
+  }, [resolvedSessions]);
+
+  const dayTabs = useMemo(() => {
+    const today = todayDate();
+
+    return daysOut.map((dayOutput, index) => {
+      if (!dayOutput.date) {
+        return {
+          ...dayOutput,
+          label: dayOutput.day,
+          dayNum: 0,
+          month: "",
+          isToday: false,
+          index,
+        };
+      }
+
+      const diff = Math.round(
+        (dayOutput.date.getTime() - today.getTime()) /
+          (1000 * 60 * 60 * 24),
+      );
+
+      let label: string;
+
+      if (diff === 0) {
+        label = "HOJE";
+      } else if (diff === 1) {
+        label = "AMANHÃ";
+      } else {
+        label = dayOutput.date
+          .toLocaleDateString("pt-BR", { weekday: "long" })
+          .replace("-feira", "")
+          .toUpperCase();
+      }
+
+      return {
+        ...dayOutput,
+        label,
+        dayNum: dayOutput.date.getDate(),
+        month: dayOutput.date
+          .toLocaleDateString("pt-BR", { month: "long" })
+          .toUpperCase()
+          .slice(0, 3),
+        isToday: diff === 0,
+        index,
+      };
+    });
+  }, [daysOut]);
+
+  const daySelectorDays = useMemo(
+    () =>
+      dayTabs.map((day) => ({
+        id: day.day,
+        label: day.label,
+        dateLabel: `${String(day.dayNum).padStart(2, "0")} ${day.month.slice(0, 3)}`,
+      })),
+    [dayTabs],
+  );
+
+  const selectedDayId =
+    activeDayIndex >= 0 ? dayTabs[activeDayIndex]?.day ?? "" : "";
+
+  const filtered = useMemo(() => {
+    const normalize = (value: string) =>
+      value
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+
+    const normalizedQuery = normalize(query);
+    const selectedDay =
+      activeDayIndex >= 0 ? dayTabs[activeDayIndex]?.day : null;
+
+    const result = resolvedSessions.filter((session) => {
+      if (selectedDay && session.day !== selectedDay) return false;
+
+      if (normalizedQuery) {
+        const inTitle = normalize(session.title).includes(normalizedQuery);
+        const inCinema = normalize(session.cinema).includes(normalizedQuery);
+        const inDirector = normalize(session.director).includes(normalizedQuery);
+        const inCountry = normalize(session.country).includes(normalizedQuery);
+
+        if (!inTitle && !inCinema && !inDirector && !inCountry) {
+          return false;
+        }
+      }
+
+      if (cinemaFilter && session.cinema !== cinemaFilter) return false;
+
+      if (timeFilter) {
+        const hour = Number.parseInt(session.time, 10);
+
+        if (timeFilter === "manha" && hour >= 12) return false;
+        if (timeFilter === "tarde" && (hour < 12 || hour >= 18)) {
+          return false;
+        }
+        if (timeFilter === "noite" && hour < 18) return false;
+      }
+
+      return true;
+    });
+
+    const timeValue = (session: Session) => {
+      const hour = Number.parseInt(session.time, 10);
+      const minute = Number.parseInt(session.time.split("h")[1] || "0", 10);
+      return hour * 60 + minute;
+    };
+
+    result.sort((a, b) => {
+      const dateA = parseDate(a);
+      const dateB = parseDate(b);
+
+      if (dateA && dateB) {
+        const dateDifference = dateA.getTime() - dateB.getTime();
+        if (dateDifference !== 0) return dateDifference;
+      }
+
+      return timeValue(a) - timeValue(b);
+    });
+
+    return result;
+  }, [
+    resolvedSessions,
+    query,
+    cinemaFilter,
+    timeFilter,
+    activeDayIndex,
+    dayTabs,
+  ]);
+
+  const groups = useMemo(() => {
+    const map = new Map<string, Session[]>();
+
+    for (const session of filtered) {
+      const groupKey = `${session.cinema}|${session.day}|${session.time}|${session.mostra}`;
+
+      if (!map.has(groupKey)) map.set(groupKey, []);
+      map.get(groupKey)!.push(session);
+    }
+
+    return Array.from(map.values());
+  }, [filtered]);
+
+  const dayGroups = useMemo(() => {
+    const result: { day: string; groups: Session[][] }[] = [];
+
+    for (const group of groups) {
+      const day = group[0].day;
+      const last = result[result.length - 1];
+
+      if (last && last.day === day) {
+        last.groups.push(group);
+      } else {
+        result.push({ day, groups: [group] });
       }
     }
 
-    result.sort((a, b) => b.monday.getTime() - a.monday.getTime());
     return result;
-  }, [allSessions]);
+  }, [groups]);
 
-  const resolvedSessions = useMemo(() => {
-    if (!weekKey) return sessions;
+  const cinemaMap = useMemo(() => {
+    const map = new Map<string, CinemaInfo>();
 
-    const mon = parseKey(weekKey);
-    return sessionsInWeek(allSessions, mon);
-  }, [weekKey, sessions, allSessions]);
+    for (const cinema of cinemas) {
+      map.set(cinema.name, cinema);
+    }
 
-  const cinemas = useMemo(() => {
-    const unique = new Set(resolvedSessions.map((s) => s.cinema));
-    return Array.from(unique).sort();
-  }, [resolvedSessions]);
+    return map;
+  }, [cinemas]);
 
-  const days = useMemo(() => {
-    const unique = new Set(resolvedSessions.map((s) => s.day));
-    return Array.from(unique).sort(
-      (a, b) => (DAY_ORDER[a] ?? 99) - (DAY_ORDER[b] ?? 99),
-    );
-  }, [resolvedSessions]);
-
-  const mostras = useMemo(() => {
-    const unique = new Set(resolvedSessions.map((s) => s.mostra).filter(Boolean));
-    return Array.from(unique).sort();
-  }, [resolvedSessions]);
-
-  const filtered = useMemo(() => {
-    const normalize = (s: string) =>
-      s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-
-    const q = normalize(query);
-
-    return resolvedSessions.filter((s) => {
-      if (q) {
-        const inTitle = normalize(s.title).includes(q);
-        const inCinema = normalize(s.cinema).includes(q);
-        const inDirector = normalize(s.director).includes(q);
-        const inCountry = normalize(s.country).includes(q);
-        if (!inTitle && !inCinema && !inDirector && !inCountry) return false;
-      }
-      if (cinemaFilter && s.cinema !== cinemaFilter) return false;
-      if (dayFilter && s.day !== dayFilter) return false;
-      if (mostraFilter && s.mostra !== mostraFilter) return false;
-      return true;
-    });
-  }, [resolvedSessions, query, cinemaFilter, dayFilter, mostraFilter]);
-
-  const grouped: Record<string, Session[]> = {};
-  for (const s of filtered) {
-    if (!grouped[s.day]) grouped[s.day] = [];
-    grouped[s.day].push(s);
-  }
-
-  const sortedDays = Object.keys(grouped).sort(
-    (a, b) => (DAY_ORDER[a] ?? 99) - (DAY_ORDER[b] ?? 99),
+  const availableCinemas = useMemo(
+    () =>
+      Array.from(
+        new Set(resolvedSessions.map((session) => session.cinema)),
+      ).sort(),
+    [resolvedSessions],
   );
 
-  const inputClass =
-    "rounded border border-zinc-300 bg-white px-3 py-2 text-sm text-black outline-none focus:border-zinc-600";
+  const scrollTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+  const closeFullscreen = useCallback(
+    () => setFullscreenPoster(null),
+    [],
+  );
+
+  useEffect(() => {
+    if (!postOpen) return;
+
+    const handler = (event: MouseEvent) => {
+      if (
+        postRef.current &&
+        !postRef.current.contains(event.target as Node)
+      ) {
+        setPostOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [postOpen]);
+
+  useEffect(() => {
+    if (!fullscreenPoster) return;
+
+    const handler = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeFullscreen();
+    };
+
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [fullscreenPoster, closeFullscreen]);
+
+  useEffect(() => {
+    const pendingNavigation = pendingPostNavigationRef.current;
+
+    if (!pendingNavigation) return;
+    if (pendingNavigation.postTitle !== currentPostTitle) return;
+
+    const targetIndex = dayTabs.findIndex(
+      (day) => day.day === pendingNavigation.dayId,
+    );
+
+    if (targetIndex < 0) return;
+
+    pendingPostNavigationRef.current = null;
+    setActiveDayIndex(targetIndex);
+  }, [currentPostTitle, dayTabs]);
+
+  useEffect(() => {
+    if (!shouldScrollToAgendaRef.current) return;
+    if (activeDayIndex < 0 || dayGroups.length === 0) return;
+
+    shouldScrollToAgendaRef.current = false;
+
+    const frameOne = window.requestAnimationFrame(() => {
+      const frameTwo = window.requestAnimationFrame(() => {
+        const agenda = getVisibleElementById("agenda");
+
+        if (!agenda) return;
+
+        const headerOffset = window.innerWidth < 1024 ? 88 : 24;
+        const top =
+          agenda.getBoundingClientRect().top +
+          window.scrollY -
+          headerOffset;
+
+        window.scrollTo({
+          top,
+          behavior: "smooth",
+        });
+      });
+
+      return () => window.cancelAnimationFrame(frameTwo);
+    });
+
+    return () => window.cancelAnimationFrame(frameOne);
+  }, [activeDayIndex, currentPostTitle, dayGroups.length]);
+
+  const handleDayChange = useCallback(
+    (dayId: string) => {
+      if (dayId === selectedDayId) {
+        setActiveDayIndex(-1);
+      } else {
+        const index = dayTabs.findIndex((day) => day.day === dayId);
+        setActiveDayIndex(index);
+      }
+    },
+    [selectedDayId, dayTabs],
+  );
+
+  const handleStickyDayNavigation = useCallback(
+    (direction: "previous" | "next", currentDayIndex: number) => {
+      const currentPostIndex = postNavigation.findIndex(
+        (post) => post.title === currentPostTitle,
+      );
+  
+      if (currentPostIndex < 0) return;
+  
+      // Seta esquerda: dia cronologicamente anterior
+      if (direction === "previous") {
+        if (currentDayIndex > 0) {
+          shouldScrollToAgendaRef.current = true;
+          setActiveDayIndex(currentDayIndex - 1);
+          return;
+        }
+  
+        // O post anterior cronologicamente é mais antigo
+        // e aparece depois na lista postNavigation.
+        const olderPost = postNavigation[currentPostIndex + 1];
+        const targetDay = olderPost?.days[olderPost.days.length - 1];
+  
+        if (!olderPost || !targetDay) return;
+  
+        pendingPostNavigationRef.current = {
+          postTitle: olderPost.title,
+          dayId: targetDay.day,
+        };
+  
+        shouldScrollToAgendaRef.current = true;
+        setSelectedPost(
+          olderPost.title === feedTitle ? "" : olderPost.title,
+        );
+        setActiveDayIndex(-1);
+        setPostOpen(false);
+        return;
+      }
+  
+      // Seta direita: próximo dia cronológico
+      if (currentDayIndex < dayTabs.length - 1) {
+        shouldScrollToAgendaRef.current = true;
+        setActiveDayIndex(currentDayIndex + 1);
+        return;
+      }
+  
+      // O próximo post cronologicamente é mais recente
+      // e aparece antes na lista postNavigation.
+      const newerPost = postNavigation[currentPostIndex - 1];
+      const targetDay = newerPost?.days[0];
+  
+      if (!newerPost || !targetDay) return;
+  
+      pendingPostNavigationRef.current = {
+        postTitle: newerPost.title,
+        dayId: targetDay.day,
+      };
+  
+      shouldScrollToAgendaRef.current = true;
+      setSelectedPost(
+        newerPost.title === feedTitle ? "" : newerPost.title,
+      );
+      setActiveDayIndex(-1);
+      setPostOpen(false);
+    },
+    [
+      currentPostTitle,
+      dayTabs.length,
+      feedTitle,
+      postNavigation,
+    ],
+  );
+
+  const handleTogglePost = useCallback(
+    () => setPostOpen((value) => !value),
+    [],
+  );
+
+  const handleSelectLatest = useCallback(() => {
+    pendingPostNavigationRef.current = null;
+    shouldScrollToAgendaRef.current = false;
+    setSelectedPost("");
+    setPostOpen(false);
+    setActiveDayIndex(-1);
+  }, []);
+
+  const handleSelectOlder = useCallback((title: string) => {
+    pendingPostNavigationRef.current = null;
+    shouldScrollToAgendaRef.current = false;
+    setSelectedPost((previous) => (previous === title ? "" : title));
+    setPostOpen(false);
+    setActiveDayIndex(-1);
+  }, []);
 
   return (
-    <main className="mx-auto max-w-6xl p-4 sm:p-8">
-      <h1 className="mb-1 text-2xl font-bold">{feedTitle}</h1>
-      <p className="mb-6 text-sm text-zinc-500">
-        Atualizado em {new Date(refreshedAt).toLocaleString("pt-BR")}
-      </p>
+    <div className="min-h-screen bg-bg text-ink">
+      <MobileHeader
+        menuOpen={menuOpen}
+        onToggle={() => setMenuOpen((value) => !value)}
+        scrollTo={scrollTo}
+        onClose={() => setMenuOpen(false)}
+      />
 
-      <div className="mb-6 flex flex-wrap gap-3">
-        <select
-          className={`${inputClass} w-56`}
-          value={weekKey}
-          onChange={(e) => setWeekKey(e.target.value)}
-        >
-          <option value="">Esta semana</option>
-          {weeks.map((w) => (
-            <option key={formatKey(w.monday)} value={formatKey(w.monday)}>
-              {w.label}
-            </option>
-          ))}
-        </select>
-        <input
-          className={`${inputClass} min-w-0 flex-1`}
-          placeholder="Buscar filme, cinema, diretor…"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        <select
-          className={`${inputClass} w-48`}
-          value={cinemaFilter}
-          onChange={(e) => setCinemaFilter(e.target.value)}
-        >
-          <option value="">Todos os cinemas</option>
-          {cinemas.map((c) => (
-            <option key={c} value={c}>
-              {c}
-            </option>
-          ))}
-        </select>
-        <select
-          className={`${inputClass} w-44`}
-          value={dayFilter}
-          onChange={(e) => setDayFilter(e.target.value)}
-        >
-          <option value="">Todas as datas</option>
-          {days.map((d) => (
-            <option key={d} value={d}>
-              {d}
-            </option>
-          ))}
-        </select>
-        <select
-          className={`${inputClass} w-56`}
-          value={mostraFilter}
-          onChange={(e) => setMostraFilter(e.target.value)}
-        >
-          <option value="">Todas as mostras</option>
-          {mostras.map((m) => (
-            <option key={m} value={m}>
-              {m}
-            </option>
-          ))}
-        </select>
+      <div className="flex">
+        <div className="max-lg:hidden">
+          <Sidebar scrollTo={scrollTo} />
+        </div>
+
+        <main className="flex-1 min-w-0">
+          <Hero
+            currentPostTitle={currentPostTitle}
+            feedTitle={feedTitle}
+            selectedPost={selectedPost}
+            olderPostTitles={olderPostTitles}
+            postOpen={postOpen}
+            postRef={postRef}
+            onTogglePost={handleTogglePost}
+            onSelectLatest={handleSelectLatest}
+            onSelectOlder={handleSelectOlder}
+          />
+
+          <Toolbar
+            query={query}
+            cinemaFilter={cinemaFilter}
+            timeFilter={timeFilter}
+            availableCinemas={availableCinemas}
+            daySelectorDays={daySelectorDays}
+            selectedDayId={selectedDayId}
+            onQueryChange={setQuery}
+            onCinemaFilterChange={setCinemaFilter}
+            onTimeFilterChange={setTimeFilter}
+            onDayChange={handleDayChange}
+          />
+
+          <div className="lg:hidden">
+            <DayStickyNav
+              dayTabs={dayTabs}
+              activeDayIndex={activeDayIndex}
+              canNavigateToPreviousPost={canNavigateToOlderPost}
+              canNavigateToNextPost={canNavigateToNewerPost}
+              onNavigate={handleStickyDayNavigation}
+            />
+          </div>
+
+          <Agenda
+            groups={groups}
+            dayGroups={dayGroups}
+            dayTabs={dayTabs}
+            cinemaMap={cinemaMap}
+            onPosterClick={setFullscreenPoster}
+          />
+
+          <TextosSection />
+          <SobreSection />
+          <CtaSection />
+          <Footer />
+        </main>
       </div>
 
-      <p className="mb-4 text-sm text-zinc-400">{filtered.length} sessões encontradas</p>
-
-      {sortedDays.length === 0 && (
-        <p className="text-zinc-500">Nenhuma sessão corresponde aos filtros.</p>
-      )}
-
-      {sortedDays.map((day) => (
-        <section key={day} className="mb-10">
-          <h2 className="mb-3 text-lg font-semibold">{day}</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-sm">
-              <thead>
-                <tr className="border-b border-zinc-300 text-left text-zinc-500">
-                  <th className="py-2 pr-4">Cinema</th>
-                  <th className="py-2 pr-4">Horário</th>
-                  <th className="py-2 pr-4">Filme</th>
-                  <th className="py-2 pr-4">Ano</th>
-                  <th className="py-2 pr-4">País</th>
-                  <th className="py-2 pr-4">Duração</th>
-                  <th className="py-2 pr-4">Direção</th>
-                </tr>
-              </thead>
-              <tbody>
-                {grouped[day].map((s, i) => (
-                  <tr key={i} className="border-b border-zinc-200">
-                    <td className="py-2 pr-4">{s.cinema}</td>
-                    <td className="whitespace-nowrap py-2 pr-4">{s.time}</td>
-                    <td className="py-2 pr-4 font-medium">{s.title}</td>
-                    <td className="py-2 pr-4">{s.year}</td>
-                    <td className="py-2 pr-4">{s.country}</td>
-                    <td className="py-2 pr-4">{s.duration}&rsquo;</td>
-                    <td className="py-2 pr-4">{s.director}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      ))}
-    </main>
+      <FullscreenPoster
+        poster={fullscreenPoster}
+        onClose={closeFullscreen}
+      />
+    </div>
   );
 }
+

@@ -1,20 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Programação — Cinema em SP",
-  description: "Programação semanal de cinemas de rua e salas especiais de São Paulo",
+  title: "Cinema em São Paulo",
+  description:
+    "Programação semanal de cinemas de rua e salas especiais de São Paulo",
+
+  icons: {
+    icon: "/assets/favicon.svg",
+  },
+
+  openGraph: {
+    title: "Cinema em São Paulo",
+    description:
+      "Programação semanal de cinemas de rua e salas especiais de São Paulo",
+    url: "https://cinemaemsaopaulo.com.br",
+    siteName: "Cinema em São Paulo",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cinema em São Paulo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +41,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="pt-BR" className={sourceSans.variable}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/vxw7knc.css" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

@@ -33,6 +33,7 @@ async function handleRefresh() {
         const key = sessionKey(s);
         if (!seen.has(key)) {
           seen.add(key);
+          s.feedTitle = item.title;
           allSessions.push(s);
         }
       }
@@ -40,11 +41,14 @@ async function handleRefresh() {
 
     const latest = items[0];
     const latestSessions = extractSessionsDom(latest.html);
+    for (const s of latestSessions) {
+      s.feedTitle = latest.title;
+    }
     const stored = await loadStored();
 
     const posterCache = new Map<string, string>();
     for (const s of stored?.allSessions ?? []) {
-      const key = tmdbKey(s.title, s.year);
+      const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       if (s.poster && !posterCache.has(key)) {
         posterCache.set(key, s.poster);
       }
@@ -56,26 +60,26 @@ async function handleRefresh() {
 
     for (const s of allSessions) {
       if (s.year <= 1900) continue;
-      const key = tmdbKey(s.title, s.year);
-      if (tmdbQueried.has(key)) continue;
-
+      const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       const cached = posterCache.get(key);
       if (cached) {
         s.poster = cached;
         continue;
       }
 
-      if (!changed) continue;
+      if (tmdbQueried.has(key)) continue;
 
-      tmdbQueried.add(key);
-      const poster = await searchMovie(s.title, s.year);
-      s.poster = poster ?? "";
-      posterCache.set(key, s.poster);
+      if (!s.poster) {
+        tmdbQueried.add(key);
+        const poster = await searchMovie(s.title, s.year, s.director, s.originalTitle);
+        s.poster = poster ?? "";
+        posterCache.set(key, s.poster);
+      }
     }
 
     for (const s of latestSessions) {
       if (s.poster) continue;
-      const key = tmdbKey(s.title, s.year);
+      const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       const cached = posterCache.get(key);
       if (cached) s.poster = cached;
     }
