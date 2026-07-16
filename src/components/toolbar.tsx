@@ -35,12 +35,21 @@ export default function Toolbar({
   onDayChange,
 }: Props) {
   const [isNarrow, setIsNarrow] = useState(false);
+  const [isVeryNarrow, setIsVeryNarrow] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 1270px)");
     setIsNarrow(mq.matches);
     const handler = (e: MediaQueryListEvent) => setIsNarrow(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 479px)");
+    setIsVeryNarrow(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsVeryNarrow(e.matches);
     mq.addEventListener("change", handler);
     return () => mq.removeEventListener("change", handler);
   }, []);
@@ -117,7 +126,7 @@ export default function Toolbar({
             days={daySelectorDays}
             selectedDayId={selectedDayId}
             onDayChange={onDayChange}
-            scrollable
+            scrollable={!isVeryNarrow}
           />
         </div>
         <div className="flex items-center gap-3">

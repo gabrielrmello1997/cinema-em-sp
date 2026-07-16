@@ -3,7 +3,7 @@ import PoltronasSVG from "@/components/poltronas-svg";
 export default function CtaSection() {
   return (
     <section className="relative bg-ink text-white overflow-visible max-lg:h-auto" style={{ height: "clamp(220px,20vw,317px)" }}>
-      <div className="px-12 max-lg:px-5 md:px-8 flex gap-0 h-full max-lg:flex-col max-lg:overflow-y-auto" style={{ paddingTop: "clamp(32px,4vw,56px)", paddingBottom: "clamp(32px,4vw,56px)" }}>
+      <div className="px-12 max-lg:px-5 md:px-8 flex gap-0 h-full max-lg:h-auto max-lg:flex-col" style={{ paddingTop: "clamp(32px,4vw,56px)", paddingBottom: "clamp(32px,4vw,56px)" }}>
         <div className="shrink-0 max-lg:w-full" style={{ width: "clamp(240px,22vw,340px)" }}>
           <h2 className="font-bold leading-tight font-sora tracking-wide" style={{ color: "#F3F2ED", fontSize: "clamp(26px,2.8vw,38px)" }}>
             É programador<br />de cinema?

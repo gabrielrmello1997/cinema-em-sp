@@ -5,12 +5,12 @@ export default function SobreSection() {
       <section id="about" className="px-12 py-12 max-lg:px-5 md:px-8">
         <h2 className="text-[18px] uppercase font-medium mb-8 tracking-wide font-sora" style={{ color: "#A52323" }}>SOBRE</h2>
         <div className="flex gap-0 max-lg:flex-col">
-          <div className="shrink-0 max-lg:w-full" style={{ width: "clamp(300px,35vw,480px)" }}>
+          <div className="shrink-0 w-full lg:w-[clamp(440px,35vw,480px)]">
             <p className="font-bold leading-tight font-sora" style={{ fontSize: "clamp(30px,8vw,52px)" }}>
               Não perca<br />mais nenhuma<br />sessão.
             </p>
             <div style={{ filter: "drop-shadow(4px 4px 10px rgba(35,33,29,0.3))" }}>
-            <div className="ticket-shape mt-8 inline-block group max-lg:w-full" style={{ background: "#A52323", padding: "1px", maxWidth: 400 }}>
+            <div className="ticket-shape mt-8 inline-block group w-full" style={{ background: "#A52323", padding: "1px", maxWidth: 400 }}>
               <div className="ticket-shape-inner bg-[#A52323] group-hover:bg-[#F3F2ED] transition-colors">
                 <a
                   href="https://cinemaemsp.substack.com"
@@ -30,7 +30,7 @@ export default function SobreSection() {
 
           <div className="dash-ink-v max-lg:!w-auto max-lg:!h-px max-lg:!my-8 max-lg:!mx-0" style={{ marginLeft: "clamp(24px,3vw,48px)", marginRight: "clamp(24px,3vw,48px)" }} />
 
-          <div className="flex-1 leading-relaxed space-y-4" style={{ color: "#23211D", maxWidth: "clamp(280px,32vw,480px)", fontSize: "clamp(16px,1.2vw,18px)" }}>
+          <div className="flex-1 w-full max-w-none leading-relaxed space-y-4 lg:max-w-[clamp(280px,32vw,480px)]" style={{ color: "#23211D", fontSize: "clamp(16px,1.2vw,18px)" }}>
             <p>Divulgamos a programação das salas de repertório e dos cineclubes da cidade de São Paulo.</p>
             <p>Organizamos e enviamos por email os horários e principais informações das sessões programadas por salas de cinema como as do Cinesesc, do IMS, do CINUSP, do CCSP e outras.</p>
             <p>Focamos sempre nos filmes que já não estão mais na sua janela de exibição, mas são programados em sessões especiais.</p>

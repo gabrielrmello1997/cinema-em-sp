@@ -13,6 +13,7 @@ import TextosSection from "@/components/textos-section";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import FullscreenPoster from "@/components/fullscreen-poster";
+import DayStickyNav from "@/components/day-sticky-nav";
 
 interface Props {
   sessions: Session[];
@@ -249,6 +250,9 @@ export default function SessionTable({ sessions, allSessions, feedTitle, refresh
             onTimeFilterChange={setTimeFilter}
             onDayChange={handleDayChange}
           />
+          <div className="lg:hidden">
+            <DayStickyNav dayTabs={dayTabs} activeDayIndex={activeDayIndex} onDayChange={handleDayChange} />
+          </div>
           <Agenda
             groups={groups}
             dayGroups={dayGroups}

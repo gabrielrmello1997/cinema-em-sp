@@ -143,23 +143,74 @@ body {
   z-index: 1;
 }
 
-.mini-ticket::before {
-  content: "";
-  position: absolute;
-  left: -1px;
-  top: 50%;
-  width: 6px;
-  height: 6px;
-  background: var(--bg);
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+
+@media (max-width: 767px) {
+  .session-mobile-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .mobile-film-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 112px;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .mobile-film-row.no-poster {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-film-poster {
+    width: 112px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+
+  .mobile-session {
+    padding-block: 28px;
+  }
+
+  .mobile-film-list {
+    display: grid;
+    gap: 20px;
+  }
+
+  .mobile-film-item + .mobile-film-item {
+    padding-top: 20px;
+    border-top: 1px dashed rgba(35, 33, 29, 0.28);
+  }
+
+  .mobile-cinema-inline {
+    margin-top: 18px;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .mobile-cinema-divider {
+    width: 44px;
+    border-top: 1px solid var(--line);
+    margin-bottom: 14px;
+    opacity: 0.75;
+  }
+
+  .mobile-cinema {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(35, 33, 29, 0.16);
+  }
 }
 
-@media (max-width: 1023px) {
-  html, body {
-    overflow-x: hidden;
+@media (max-width: 389px) {
+  .mobile-film-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-film-poster {
+    width: 128px;
+    justify-self: end;
   }
 }
 

@@ -52,7 +52,7 @@ export default function DaySelector({
                   style={{
                     background: selected ? ACCENT : BG,
                     borderRight: last ? "none" : "1px dashed " + LINE,
-                    minWidth: scrollable ? "112px" : "clamp(120px, 11vw, 185px)",
+                    minWidth: scrollable ? "112px" : "clamp(100px, 9vw, 145px)",
                     width: scrollable ? "112px" : "auto",
                   }}
                 >
