@@ -1,1 +1,20 @@
-{}
+{
+  "CINE-TEATRO DENOY DE OLIVEIRA|SEGUNDA-FEIRA (13/07)|19h": {
+    "mostra": "MOSTRA PERMANENTE DE CINEMA ITALIANO"
+  },
+  "CINUSP|QUINTA (16/07)|16h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|QUINTA (16/07)|19h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|QUINTA (16/07)|20h30": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (07/07)|16h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (07/07)|19h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (07/07)|20h45": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|QUARTA-FEIRA (08/07)|16h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|QUARTA-FEIRA (08/07)|19h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (30/06)|16h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (30/06)|19h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (30/06)|20h45": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|QUARTA-FEIRA (01/07)|16h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|QUARTA-FEIRA (01/07)|19h": { "mostra": "CAÇA AO TESOURO" },
+  "CINUSP|TERÇA-FEIRA (14/07)|19h": { "title": "Planeta do Tesouro" },
+  "CINUSP|SEXTA-FEIRA (03/07)|16h": { "title": "Planeta do Tesouro" }
+}
