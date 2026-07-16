@@ -58,9 +58,9 @@ export default function MobileHeader({
 >
   <a href="/">
     <img
-      src="/assets/logo.svg"
+      src="/assets/logo-mobile.svg"
       alt="Cinema em São Paulo"
-      className="h-26"
+      className="h-11"
     />
   </a>
 
@@ -120,21 +120,21 @@ export default function MobileHeader({
         <nav className="flex flex-col gap-6 text-[14px] uppercase font-sora font-medium">
           <button
             onClick={() => handleScroll("agenda")}
-            className="text-left hover:text-accent transition-colors cursor-pointer"
+            className="text-left hover:text-accent transition-colors cursor-pointer tracking-wide"
           >
             PROGRAMAÇÃO
           </button>
 
           <button
             onClick={() => handleScroll("textos")}
-            className="text-left hover:text-accent transition-colors cursor-pointer"
+            className="text-left hover:text-accent transition-colors cursor-pointer tracking-wide"
           >
             TEXTOS
           </button>
 
           <button
             onClick={() => handleScroll("about")}
-            className="text-left hover:text-accent transition-colors cursor-pointer"
+            className="text-left hover:text-accent transition-colors cursor-pointer tracking-wide"
           >
             SOBRE
           </button>
