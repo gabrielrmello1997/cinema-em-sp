@@ -101,8 +101,7 @@ export default function MobileHeader({
       z-50
       px-6
       max-md:px-5
-      pt-4
-      pb-8
+      py-6
       transition-all
       duration-300
       ease-out
@@ -117,7 +116,7 @@ export default function MobileHeader({
       borderColor: "rgba(35,33,29,0.35)",
     }}
   >
-        <nav className="flex flex-col gap-6 text-[14px] uppercase font-sora font-medium">
+        <nav className="flex flex-col gap-6 text-[15px] uppercase font-sora font-medium">
           <button
             onClick={() => handleScroll("agenda")}
             className="text-left hover:text-accent transition-colors cursor-pointer tracking-wide"
@@ -140,9 +139,9 @@ export default function MobileHeader({
           </button>
         </nav>
 
-        <div className="dash-ink my-6" style={{ width: 100 }} />
+        <div className="dash-ink my-8" style={{ width: 100 }} />
 
-        <div className="flex flex-col uppercase font-sora tracking-wide text-[14px]">
+        <div className="flex flex-col uppercase font-sora text-[14px] tracking-wide">
           <a
             href="https://cinemaemsp.substack.com"
             target="_blank"
@@ -153,7 +152,7 @@ export default function MobileHeader({
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 fill-[#23211D] group-hover:fill-[#A52323] transition-colors"
+              className="w-[15px] h-[15px] fill-[#23211D] group-hover:fill-[#A52323] transition-colors"
             >
               <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
             </svg>
@@ -184,7 +183,7 @@ export default function MobileHeader({
               viewBox="0 0 21 21"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
+              className="w-[17px] h-[17px]"
             >
               <path
                 d="M1.167 5.833c0-1.237.492-2.424 1.367-3.3a4.667 4.667 0 013.3-1.366h9.334a4.667 4.667 0 013.3 1.367A4.667 4.667 0 0119.834 5.833v9.334a4.667 4.667 0 01-1.367 3.3 4.667 4.667 0 01-3.3 1.367H5.834a4.667 4.667 0 01-3.3-1.367 4.667 4.667 0 01-1.367-3.3V5.833z"
@@ -225,7 +224,7 @@ export default function MobileHeader({
 
           <a
             href="mailto:cinemaemsaopaulo@gmail.com"
-            className="group hover:text-accent transition-colors flex items-center gap-2.5 font-medium"
+            className="group hover:text-accent transition-colors flex items-center gap-2.5 font-medium mb-2"
           >
             <svg
               width="23"
@@ -233,7 +232,7 @@ export default function MobileHeader({
               viewBox="0 0 23 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
+              className="w-[18px] h-[18px]"
             >
               <path
                 fillRule="evenodd"
