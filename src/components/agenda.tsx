@@ -334,7 +334,7 @@ export default function Agenda({
     const dayInfo = dayTabs.find((d) => d.day === dg.day);
 
     return (
-      <div key={dg.day} id={`day-${dgi}`}>
+      <div key={dg.day} id={`day-${dgi}`} style={{ scrollMarginTop: 152 }}>
         {/* Data única acima da linha pontilhada */}
         <div className="flex flex-col gap-4 pt-3">
           <span
@@ -460,7 +460,7 @@ export default function Agenda({
           const dayInfo = dayTabs.find((d) => d.day === dg.day);
 
           return (
-            <div key={dg.day} id={`day-${dgi}`}>
+            <div key={dg.day} id={`day-${dgi}`} style={{ scrollMarginTop: 152 }}>
               <div className="flex flex-col gap-4 pt-3 mb-0">
                 <span
                   className="font-bold font-sora text-[17px] tracking-wide"
