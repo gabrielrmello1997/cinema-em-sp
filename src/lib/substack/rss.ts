@@ -38,12 +38,16 @@ function parseItem(item: Record<string, unknown>): FeedItem {
   const guid =
     typeof item.guid === "string"
       ? item.guid
-      : (item.guid as { cdata?: string })?.cdata ?? "";
+      : (item.guid as { cdata?: string })?.cdata
+        ?? (item.guid as { "#text"?: string })?.["#text"]
+        ?? "";
 
   const link =
     typeof item.link === "string"
       ? item.link
-      : (item.link as { cdata?: string })?.cdata ?? "";
+      : (item.link as { cdata?: string })?.cdata
+        ?? (item.link as { "#text"?: string })?.["#text"]
+        ?? "";
 
   return {
     guid,
