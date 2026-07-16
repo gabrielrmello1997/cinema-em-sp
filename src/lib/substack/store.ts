@@ -51,6 +51,7 @@ export async function saveStored(data: StoredData): Promise<void> {
   await put(BLOB_KEY, payload, {
     access: "public",
     addRandomSuffix: false,
+    allowOverwrite: true,
   });
 }
 
