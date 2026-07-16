@@ -182,7 +182,7 @@ async function handleRefresh(request: Request) {
 
     console.error(`[refresh] Error (${elapsed}ms):`, error);
     return NextResponse.json(
-      { ok: false, stage: "persistence", error: "Failed to persist refreshed data" },
+      { ok: false, stage: "persistence", error: "Failed to persist refreshed data", detail: message },
       { status: 500 },
     );
   }
