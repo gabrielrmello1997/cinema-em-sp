@@ -1,6 +1,8 @@
 import { XMLParser } from "fast-xml-parser";
 
 export interface FeedItem {
+  guid: string;
+  link: string;
   title: string;
   date: string;
   html: string;
@@ -8,10 +10,14 @@ export interface FeedItem {
 
 async function fetchWithRetry(url: string, retries = 3): Promise<Response> {
   for (let attempt = 0; attempt < retries; attempt++) {
-    const response = await fetch(url, { cache: "no-store" });
-
-    if (response.ok) return response;
-
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15_000);
+    try {
+      const response = await fetch(url, { cache: "no-store", signal: controller.signal });
+      if (response.ok) return response;
+    } finally {
+      clearTimeout(timeout);
+    }
     if (attempt < retries - 1) {
       await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
     }
@@ -29,14 +35,24 @@ function parseItem(item: Record<string, unknown>): FeedItem {
     html = (item["content:encoded"] as { cdata: string }).cdata;
   }
 
+  const guid =
+    typeof item.guid === "string"
+      ? item.guid
+      : (item.guid as { cdata?: string })?.cdata ?? "";
+
+  const link =
+    typeof item.link === "string"
+      ? item.link
+      : (item.link as { cdata?: string })?.cdata ?? "";
+
   return {
+    guid,
+    link,
     title:
       typeof item.title === "string"
         ? item.title
         : (item.title as { cdata?: string })?.cdata ?? "",
-
     date: (item.pubDate as string) ?? "",
-
     html,
   };
 }
