@@ -85,7 +85,7 @@ export default function Hero({
           >
             Acompanhe a programação de cineclubes
             <br />
-            e cinemas pela cidade. Atualizada três vezes por semana.
+            e cinemas pela cidade. Atualizada toda semana.
           </p>
         </div>
 

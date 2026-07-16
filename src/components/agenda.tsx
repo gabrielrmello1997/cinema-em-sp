@@ -84,7 +84,7 @@ function FilmMeta({ s, fi }: { s: Session; fi: number }) {
 
       <div
         className="font-bold tracking-wide leading-snug font-sora"
-        style={{ fontSize: "clamp(16px,1.4vw,20px)" }}
+        style={{ fontSize: "clamp(16px,1vw,22px)" }}
       >
         {s.title}
         {s.year > 0 ? ` (${s.year})` : ""}

@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     "Programação semanal de cinemas de rua e salas especiais de São Paulo",
 
   icons: {
-    icon: "/assets/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/assets/favicon.svg", type: "image/svg+xml" },
+    ],
   },
 
   openGraph: {

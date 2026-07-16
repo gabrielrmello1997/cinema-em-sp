@@ -17,9 +17,9 @@ export default function SobreSection() {
               className="font-bold leading-tight font-sora"
               style={{ fontSize: "clamp(38px,2.8vw,54px)" }}
             >
-              Não perca
+              Nunca mais perca
               <br />
-              mais sessões.
+              uma sessão.
             </p>
 
             <div

@@ -27,6 +27,7 @@ async function handleRefresh(request: Request) {
   const force = searchParams.get("force") === "true";
 
   const started = Date.now();
+  const MAX_EXECUTION_MS = 8000;
   let stage = "start";
 
   try {
@@ -41,63 +42,67 @@ async function handleRefresh(request: Request) {
 
     console.log(`[refresh] Latest post: ${latest.guid} — ${latest.title}`);
 
-    if (!force && !isNewerFeed(latest.guid, stored)) {
-      const elapsed = Date.now() - started;
-      console.log(`[refresh] No new post (${elapsed}ms)`);
-      return NextResponse.json({
-        ok: true,
-        updated: false,
-        reason: "Latest post already processed",
-        latestPostId: latest.guid,
-        latestPostTitle: latest.title,
-        checkedAt: new Date().toISOString(),
-      });
+    const isNewPost = force || isNewerFeed(latest.guid, stored);
+
+    if (!isNewPost) {
+      console.log("[refresh] No new post — checking for missing posters");
+    } else {
+      console.log("[refresh] New post detected");
     }
 
-    console.log("[refresh] New post detected");
+    let latestSessions: Session[];
+    let allSessions: Session[];
+    const storedSessions = stored?.sessions ?? [];
+    const storedAllSessions = stored?.allSessions ?? [];
 
-    // Parse sessions from the latest post
-    stage = "parse-latest";
-    const latestSessions = extractSessionsDom(latest.html);
-    for (const s of latestSessions) {
-      s.feedTitle = latest.title;
-    }
+    if (isNewPost) {
+      // Parse sessions from the latest post
+      stage = "parse-latest";
+      latestSessions = extractSessionsDom(latest.html);
+      for (const s of latestSessions) {
+        s.feedTitle = latest.title;
+      }
 
-    if (latestSessions.length === 0) {
-      console.log("[refresh] Latest post has no session data, skipping");
-      return NextResponse.json({
-        ok: false,
-        stage: "post-parser",
-        error: "The latest post could not be parsed",
-      }, { status: 422 });
-    }
+      if (latestSessions.length === 0) {
+        console.log("[refresh] Latest post has no session data, skipping");
+        return NextResponse.json({
+          ok: false,
+          stage: "post-parser",
+          error: "The latest post could not be parsed",
+        }, { status: 422 });
+      }
 
-    // Build full history (all posts)
-    stage = "merge";
-    const seen = new Set<string>();
-    const allSessions: Session[] = [];
+      // Build full history (all posts)
+      stage = "merge";
+      const seen = new Set<string>();
+      allSessions = [];
 
-    for (const item of items) {
-      const sessions = extractSessionsDom(item.html);
-      for (const s of sessions) {
-        const key = sessionKey(s);
-        if (!seen.has(key)) {
-          seen.add(key);
-          s.feedTitle = item.title;
-          allSessions.push(s);
+      for (const item of items) {
+        const sessions = extractSessionsDom(item.html);
+        for (const s of sessions) {
+          const key = sessionKey(s);
+          if (!seen.has(key)) {
+            seen.add(key);
+            s.feedTitle = item.title;
+            allSessions.push(s);
+          }
         }
       }
-    }
 
-    // Deduplicate against stored history (by session key)
-    if (stored?.allSessions) {
-      for (const s of stored.allSessions) {
-        const key = sessionKey(s);
-        if (!seen.has(key)) {
-          seen.add(key);
-          allSessions.push(s);
+      // Deduplicate against stored history (by session key)
+      if (stored?.allSessions) {
+        for (const s of stored.allSessions) {
+          const key = sessionKey(s);
+          if (!seen.has(key)) {
+            seen.add(key);
+            allSessions.push(s);
+          }
         }
       }
+    } else {
+      // No new post — use stored data, just update posters
+      latestSessions = storedSessions;
+      allSessions = storedAllSessions;
     }
 
     // Apply manual overrides from overrides.json
@@ -123,6 +128,10 @@ async function handleRefresh(request: Request) {
     let postersMissing = 0;
 
     for (const s of allSessions) {
+      if (Date.now() - started > MAX_EXECUTION_MS) {
+        console.warn("[refresh] Tempo limite excedido, interrompendo busca TMDB");
+        break;
+      }
       if (s.year <= 1900) continue;
       const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
       const cached = posterCache.get(key);
@@ -161,10 +170,10 @@ async function handleRefresh(request: Request) {
 
     stage = "save";
     await saveStored({
-      feedGuid: latest.guid,
-      feedUrl: latest.link,
-      feedDate: latest.date,
-      feedTitle: latest.title,
+      feedGuid: isNewPost ? latest.guid : stored!.feedGuid,
+      feedUrl: isNewPost ? latest.link : stored!.feedUrl,
+      feedDate: isNewPost ? latest.date : stored!.feedDate,
+      feedTitle: isNewPost ? latest.title : stored!.feedTitle,
       refreshedAt: new Date().toISOString(),
       sessions: latestSessions,
       allSessions,
@@ -172,7 +181,7 @@ async function handleRefresh(request: Request) {
     });
 
     stage = "revalidate";
-    revalidatePath("/");
+    await revalidatePath("/");
 
     const elapsed = Date.now() - started;
     console.log(`[refresh] Persisted successfully (${elapsed}ms)`);
@@ -180,9 +189,9 @@ async function handleRefresh(request: Request) {
 
     return NextResponse.json({
       ok: true,
-      updated: true,
-      postId: latest.guid,
-      postTitle: latest.title,
+      updated: isNewPost,
+      postId: isNewPost ? latest.guid : stored!.feedGuid,
+      postTitle: isNewPost ? latest.title : stored!.feedTitle,
       sessionsParsed: latestSessions.length,
       sessionsSaved: allSessions.length,
       postersFound,
