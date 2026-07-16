@@ -4,12 +4,13 @@ import { revalidatePath } from "next/cache";
 import { fetchAllItems } from "@/lib/substack/rss";
 import { extractSessionsDom } from "@/lib/substack/programming-dom";
 import { loadStored, saveStored, isNewerFeed } from "@/lib/substack/store";
+import { loadOverrides, applyOverrides } from "@/lib/substack/overrides";
 import { searchMovie, tmdbKey } from "@/lib/tmdb";
 import type { Session } from "@/lib/substack/programming";
 import { CINEMAS_DATA } from "@/lib/substack/programming";
 
 function sessionKey(s: Session): string {
-  return `${s.cinema}|${s.day}|${s.time}|${s.title}`;
+  return `${s.cinema}|${s.day}|${s.time}`;
 }
 
 async function handleRefresh(request: Request) {
@@ -98,6 +99,12 @@ async function handleRefresh(request: Request) {
         }
       }
     }
+
+    // Apply manual overrides from overrides.json
+    stage = "override";
+    const overrides = await loadOverrides();
+    applyOverrides(allSessions, overrides);
+    applyOverrides(latestSessions, overrides);
 
     // Build poster cache from stored data
     stage = "cache";
