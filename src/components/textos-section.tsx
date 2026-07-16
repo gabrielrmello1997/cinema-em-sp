@@ -117,7 +117,7 @@ export default function TextosSection() {
         className="px-12 pt-10 md:pt-12 pb-16 max-lg:px-5 md:px-8"
       >
         <h2
-          className="text-[18px] uppercase font-medium mb-8 tracking-wide font-sora"
+          className="text-[18px] uppercase font-bold mb-8 tracking-wide font-sora"
           style={{ color: "#A52323" }}
         >
           TEXTOS

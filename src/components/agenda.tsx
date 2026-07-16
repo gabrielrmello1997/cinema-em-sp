@@ -149,7 +149,7 @@ export default function Agenda({
               <div key={dg.day}>
                 {dgi > 0 && (
                   <div
-                    className="dash-ink -mx-12"
+                    className="dash-ink"
                     style={{
                       marginTop: 48,
                       marginBottom: 48,
@@ -334,7 +334,7 @@ export default function Agenda({
     const dayInfo = dayTabs.find((d) => d.day === dg.day);
 
     return (
-      <div key={dg.day} id={`day-${dgi}`} style={{ scrollMarginTop: 152 }}>
+      <div key={dg.day} id={`day-${dgi}`} style={{ scrollMarginTop: 144 }}>
         {/* Data única acima da linha pontilhada */}
         <div className="flex flex-col gap-4 pt-3">
           <span
@@ -449,7 +449,7 @@ export default function Agenda({
 </section>
 
       {/* Mobile agenda — vertical editorial layout */}
-      <section id="agenda" className="md:hidden px-5 pt-6 pb-6">
+      <section id="agenda" className="md:hidden px-5 pt-8 pb-6">
         {groups.length === 0 && (
           <p className="text-ink/40 text-[18px]">
             Nenhuma sessão para esta data.
@@ -460,7 +460,7 @@ export default function Agenda({
           const dayInfo = dayTabs.find((d) => d.day === dg.day);
 
           return (
-            <div key={dg.day} id={`day-${dgi}`} style={{ scrollMarginTop: 152 }}>
+            <div key={dg.day} id={`day-${dgi}`} style={{ scrollMarginTop: 144 }}>
               <div className="flex flex-col gap-4 pt-3 mb-0">
                 <span
                   className="font-bold font-sora text-[17px] tracking-wide"
@@ -607,7 +607,7 @@ export default function Agenda({
                                       aria-hidden="true"
                                     />
 
-                                    <div className="font-bold text-sm uppercase tracking-wide font-sora">
+                                    <div className="font-bold text-[13px] uppercase tracking-wide font-sora pt-2">
                                       {first.cinema}
                                     </div>
 

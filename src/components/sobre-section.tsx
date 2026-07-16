@@ -5,7 +5,7 @@ export default function SobreSection() {
 
       <section id="about" className="px-12 py-12 max-lg:px-5 md:px-8">
         <h2
-          className="text-[18px] uppercase font-medium mb-8 tracking-wide font-sora"
+          className="text-[18px] uppercase font-bold mb-8 tracking-wide font-sora"
           style={{ color: "#A52323" }}
         >
           SOBRE
@@ -15,7 +15,7 @@ export default function SobreSection() {
           <div className="shrink-0 w-full lg:w-[clamp(440px,35vw,480px)]">
             <p
               className="font-bold leading-tight font-sora"
-              style={{ fontSize: "clamp(36px,2.8vw,38px)" }}
+              style={{ fontSize: "clamp(38px,2.8vw,54px)" }}
             >
               Não perca
               <br />

@@ -3,7 +3,7 @@ import PoltronasSVG from "@/components/poltronas-svg";
 export default function CtaSection() {
   return (
     <section
-      className="relative bg-ink text-white overflow-visible lg:h-[clamp(220px,20vw,317px)]"
+      className="relative bg-ink text-white overflow-visible lg:h-[clamp(220px,20vw,260px)]"
     >
       <div
         className="
@@ -30,7 +30,7 @@ export default function CtaSection() {
             className="font-bold leading-tight font-sora tracking-wide"
             style={{
               color: "#F3F2ED",
-              fontSize: "clamp(36px,2.8vw,38px)",
+              fontSize: "clamp(36px,2.8vw,42px)",
             }}
           >
             É programador
@@ -44,6 +44,7 @@ export default function CtaSection() {
           style={{
             marginLeft: "clamp(24px,4vw,60px)",
             marginRight: "clamp(24px,4vw,60px)",
+            paddingBottom: "140px",
             backgroundImage:
               "repeating-linear-gradient(to bottom, #F3F2ED 0, #F3F2ED 4px, transparent 4px, transparent 6px)",
           }}

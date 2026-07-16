@@ -24,9 +24,9 @@ type Props = {
 
 const RED = "#A52323";
 const RED_DARK = "#8B1C1C";
-const NAV_HEIGHT = 50;
+const NAV_HEIGHT = 44;
 const MOBILE_HEADER_HEIGHT = 72;
-const NAV_BAND_HEIGHT = 64;
+const NAV_BAND_HEIGHT = 56;
 
 function getVisibleId(id: string): HTMLElement | null {
   const elements = document.querySelectorAll<HTMLElement>(`[id="${id}"]`);
@@ -55,19 +55,14 @@ export default function DayStickyNav({
   const [visible, setVisible] = useState(false);
   const [scrollBasedIndex, setScrollBasedIndex] = useState(0);
 
-  const effectiveIndex = visible
-    ? scrollBasedIndex
-    : activeDayIndex >= 0
-      ? activeDayIndex
-      : scrollBasedIndex;
+  const effectiveIndex =
+    activeDayIndex >= 0 ? activeDayIndex : scrollBasedIndex;
 
   const current = dayTabs[effectiveIndex] ?? dayTabs[0];
 
-  const hasPrevious =
-    effectiveIndex > 0 || canNavigateToPreviousPost;
+  const hasPrevious = effectiveIndex > 0;
 
-  const hasNext =
-    effectiveIndex < dayTabs.length - 1 || canNavigateToNextPost;
+  const hasNext = effectiveIndex < dayTabs.length - 1;
 
   useEffect(() => {
     if (activeDayIndex >= 0) {
@@ -111,6 +106,8 @@ export default function DayStickyNav({
   }, [dayTabs.length]);
 
   useEffect(() => {
+    if (activeDayIndex >= 0) return;
+
     const elements: Element[] = [];
 
     for (let index = 0; index < dayTabs.length; index += 1) {
@@ -145,7 +142,7 @@ export default function DayStickyNav({
       },
       {
         threshold: 0,
-        rootMargin: "-136px 0px -65% 0px",
+        rootMargin: "-128px 0px -65% 0px",
       },
     );
 
@@ -188,7 +185,7 @@ export default function DayStickyNav({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "7px 16px",
+        padding: "6px 16px",
         transition: "opacity 0.2s, transform 0.2s",
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(-8px)",
@@ -212,11 +209,10 @@ export default function DayStickyNav({
             style={{ background: RED }}
           >
             <div
-              className="flex items-center"
+              className="flex items-center max-lg:w-[180px] max-[520px]:w-[140px]"
               style={{
-                width: 176,
                 height: NAV_HEIGHT,
-                padding: "0 14px",
+                padding: "0 8px",
               }}
             >
               <button
@@ -225,7 +221,7 @@ export default function DayStickyNav({
                 disabled={!hasPrevious}
                 className="flex items-center justify-center shrink-0 h-full transition-opacity"
                 style={{
-                  width: 22,
+                  width: 16,
                   color: "#F3F2ED",
                   opacity: hasPrevious ? 1 : 0.2,
                   cursor: hasPrevious ? "pointer" : "default",
@@ -283,7 +279,7 @@ export default function DayStickyNav({
                 disabled={!hasNext}
                 className="flex items-center justify-center shrink-0 h-full transition-opacity"
                 style={{
-                  width: 22,
+                  width: 16,
                   color: "#F3F2ED",
                   opacity: hasNext ? 1 : 0.2,
                   cursor: hasNext ? "pointer" : "default",
