@@ -3,6 +3,8 @@ import path from "node:path";
 import type { CinemaInfo, Session } from "./programming";
 
 export interface StoredData {
+  feedGuid: string;
+  feedUrl: string;
   feedDate: string;
   feedTitle: string;
   refreshedAt: string;
@@ -11,11 +13,12 @@ export interface StoredData {
   cinemas: CinemaInfo[];
 }
 
-const DATA_FILE = path.join(process.cwd(), "public", "data", "sessions.json");
+const TMP_PATH = "/tmp/sessions.json";
+const FALLBACK_PATH = path.join(process.cwd(), "public", "data", "sessions.json");
 
-export async function loadStored(): Promise<StoredData | null> {
+async function readFile(filePath: string): Promise<StoredData | null> {
   try {
-    const raw = await fs.readFile(DATA_FILE, "utf-8");
+    const raw = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(raw) as StoredData;
     if (!data.allSessions) data.allSessions = data.sessions;
     return data;
@@ -24,11 +27,18 @@ export async function loadStored(): Promise<StoredData | null> {
   }
 }
 
-export async function saveStored(data: StoredData): Promise<void> {
-  await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2), "utf-8");
+export async function loadStored(): Promise<StoredData | null> {
+  const tmp = await readFile(TMP_PATH);
+  if (tmp) return tmp;
+  return readFile(FALLBACK_PATH);
 }
 
-export function isNewerFeed(currentDate: string, stored: StoredData | null): boolean {
+export async function saveStored(data: StoredData): Promise<void> {
+  const payload = JSON.stringify(data, null, 2);
+  await fs.writeFile(TMP_PATH, payload, "utf-8");
+}
+
+export function isNewerFeed(currentGuid: string, stored: StoredData | null): boolean {
   if (!stored) return true;
-  return currentDate !== stored.feedDate;
+  return currentGuid !== stored.feedGuid;
 }

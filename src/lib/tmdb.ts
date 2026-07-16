@@ -48,9 +48,15 @@ type TmdbPerson = { id: number; name: string };
 type TmdbCredit = { id: number; title?: string; original_title?: string; release_date?: string; poster_path?: string | null; job?: string; department?: string };
 
 async function tmdbFetch(url: string): Promise<{ results?: TmdbResult[] } | null> {
-  const res = await fetch(url);
-  if (!res.ok) return null;
-  return res.json();
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10_000);
+  try {
+    const res = await fetch(url, { signal: controller.signal });
+    if (!res.ok) return null;
+    return res.json();
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 function findYearMatch(results: TmdbResult[], year: number, title: string): TmdbResult | undefined {
