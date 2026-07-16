@@ -23,8 +23,9 @@ export async function loadStored(): Promise<StoredData | null> {
       new Date(a.uploadedAt) > new Date(b.uploadedAt) ? a : b,
     );
 
-    const blob = await get(latest.url);
-    const text = await blob.text();
+    const result = await get(latest.url, { access: "private" });
+    if (!result || result.statusCode !== 200 || !result.stream) return null;
+    const text = await new Response(result.stream).text();
     const data = JSON.parse(text) as StoredData;
     if (!data.allSessions) data.allSessions = data.sessions;
     return data;
