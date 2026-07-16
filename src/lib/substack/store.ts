@@ -24,7 +24,7 @@ export async function loadStored(): Promise<StoredData | null> {
       const latest = blobs.reduce((a, b) =>
         new Date(a.uploadedAt) > new Date(b.uploadedAt) ? a : b,
       );
-      const result = await get(latest.url, { access: "private" });
+      const result = await get(latest.url, { access: "public" });
       if (result && result.statusCode === 200 && result.stream) {
         const text = await new Response(result.stream).text();
         const data = JSON.parse(text) as StoredData;
@@ -49,7 +49,7 @@ export async function loadStored(): Promise<StoredData | null> {
 export async function saveStored(data: StoredData): Promise<void> {
   const payload = JSON.stringify(data);
   await put(BLOB_KEY, payload, {
-    access: "private",
+    access: "public",
     addRandomSuffix: false,
   });
 }
