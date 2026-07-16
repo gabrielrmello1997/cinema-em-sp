@@ -233,16 +233,4 @@ body {
   display: none;
 }
 
-@keyframes ticket-out {
-  from { transform: translateX(0); opacity: 1; }
-  to   { transform: translateX(var(--out-x, -50px)); opacity: 0; }
-}
 
-@keyframes ticket-in {
-  from { transform: translateX(var(--in-x, 50px)); opacity: 0; }
-  to   { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes ticket-snap {
-  to { transform: translateX(0); }
-}

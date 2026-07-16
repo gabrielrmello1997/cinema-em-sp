@@ -487,7 +487,7 @@ export default function Agenda({
                         {/* Session header: time + mostra */}
                         <div className="session-mobile-header pb-2.5">
                           <div
-                            className="text-[22px] font-bold font-sora tracking-wide pb-2.5"
+                            className="text-[23px] font-bold font-sora tracking-wide pb-2.5"
                             style={{ color: "#A52323" }}
                           >
                             {first.time}
@@ -495,7 +495,7 @@ export default function Agenda({
 
                           {first.mostra && (
                             <div
-                              className="text-[12px] font-medium uppercase tracking-wide text-right font-sora leading-snug pb-3"
+                              className="text-[12px] font-medium uppercase tracking-wide text-right font-sora leading-snug"
                               style={{
                                 color: "#A52323",
                                 maxWidth: "55%",
