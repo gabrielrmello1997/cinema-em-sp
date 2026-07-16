@@ -211,8 +211,11 @@ function validateSession(s: Session, index: number) {
 }
 
 function isDayLine(text: string): string | null {
+  const normalized = text.replace(/-FEIRA\b/, "");
   for (const d of DAYS) {
     if (text.startsWith(d)) return text;
+    const short = d.replace(/-FEIRA\b/, "");
+    if (short && normalized.startsWith(short)) return text;
   }
   return null;
 }
