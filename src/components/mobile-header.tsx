@@ -16,7 +16,7 @@ export default function MobileHeader({ menuOpen, onToggle, scrollTo, onClose }: 
   return (
     <header className="lg:hidden sticky top-0 z-50 flex items-center justify-between bg-bg border-b h-[72px] px-6 max-md:px-5" style={{ borderColor: "rgba(35,33,29,0.35)" }}>
       <a href="/">
-        <img src="/assets/logo.svg" alt="Cinema em São Paulo" className="h-8" />
+        <img src="/assets/logo.svg" alt="Cinema em São Paulo" className="h-26" />
       </a>
       <button onClick={onToggle} className="flex items-center justify-center w-10 h-10 text-ink">
         {menuOpen ? (
