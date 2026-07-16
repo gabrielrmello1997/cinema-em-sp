@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 
 type DayTab = {
   day: string;
@@ -24,16 +24,15 @@ type Props = {
 
 const RED = "#A52323";
 const RED_DARK = "#8B1C1C";
-const NAV_HEIGHT = 44;
+const NAV_HEIGHT = 52;
 const MOBILE_HEADER_HEIGHT = 72;
-const NAV_BAND_HEIGHT = 56;
+const NAV_BAND_HEIGHT = 64;
+const DURATION = 250;
 
 function getVisibleId(id: string): HTMLElement | null {
   const elements = document.querySelectorAll<HTMLElement>(`[id="${id}"]`);
-
   for (const element of elements) {
     if (element.offsetParent !== null) return element;
-
     if (
       typeof element.checkVisibility === "function" &&
       element.checkVisibility()
@@ -41,7 +40,6 @@ function getVisibleId(id: string): HTMLElement | null {
       return element;
     }
   }
-
   return null;
 }
 
@@ -54,14 +52,19 @@ export default function DayStickyNav({
 }: Props) {
   const [visible, setVisible] = useState(false);
   const [scrollBasedIndex, setScrollBasedIndex] = useState(0);
+  const [phase, setPhase] = useState<"idle" | "out" | "in">("idle");
+  const [frozenIdx, setFrozenIdx] = useState(0);
+  const [animDir, setAnimDir] = useState<1 | -1>(1);
+  const [dragX, setDragX] = useState(0);
+  const [snapping, setSnapping] = useState(false);
+  const pendingNav = useRef<1 | -1 | null>(null);
+  const touchStartX = useRef(0);
+  const isDragging = useRef(false);
 
   const effectiveIndex =
     activeDayIndex >= 0 ? activeDayIndex : scrollBasedIndex;
-
   const current = dayTabs[effectiveIndex] ?? dayTabs[0];
-
   const hasPrevious = effectiveIndex > 0;
-
   const hasNext = effectiveIndex < dayTabs.length - 1;
 
   useEffect(() => {
@@ -74,30 +77,17 @@ export default function DayStickyNav({
 
   useEffect(() => {
     const triggerTop = MOBILE_HEADER_HEIGHT + NAV_BAND_HEIGHT;
-
     const check = () => {
       const firstDay = getVisibleId("day-0");
       const agenda = getVisibleId("agenda");
-
-      if (!firstDay || !agenda) {
-        setVisible(false);
-        return;
-      }
-
+      if (!firstDay || !agenda) { setVisible(false); return; }
       const firstDayTop = firstDay.getBoundingClientRect().top;
       const agendaBottom = agenda.getBoundingClientRect().bottom;
-
-      const hasEnteredAgenda = firstDayTop < triggerTop;
-      const hasNotLeftAgenda = agendaBottom > triggerTop;
-
-      setVisible(hasEnteredAgenda && hasNotLeftAgenda);
+      setVisible(firstDayTop < triggerTop && agendaBottom > triggerTop);
     };
-
     window.addEventListener("scroll", check, { passive: true });
     window.addEventListener("resize", check);
-
     const timer = window.setTimeout(check, 300);
-
     return () => {
       window.removeEventListener("scroll", check);
       window.removeEventListener("resize", check);
@@ -107,71 +97,190 @@ export default function DayStickyNav({
 
   useEffect(() => {
     if (activeDayIndex >= 0) return;
-
     const elements: Element[] = [];
-
     for (let index = 0; index < dayTabs.length; index += 1) {
       const element = getVisibleId(`day-${index}`);
       if (element) elements.push(element);
     }
-
     if (elements.length === 0) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         let bestIndex = -1;
-
         for (const entry of entries) {
           if (!entry.isIntersecting) continue;
-
-          const index = Number.parseInt(
-            entry.target.id.replace("day-", ""),
-            10,
-          );
-
-          if (!Number.isNaN(index) && index > bestIndex) {
-            bestIndex = index;
-          }
+          const index = Number.parseInt(entry.target.id.replace("day-", ""), 10);
+          if (!Number.isNaN(index) && index > bestIndex) bestIndex = index;
         }
-
         if (bestIndex >= 0) {
-          setScrollBasedIndex((previousIndex) =>
-            previousIndex !== bestIndex ? bestIndex : previousIndex,
-          );
+          setScrollBasedIndex((prev) => prev !== bestIndex ? bestIndex : prev);
         }
       },
-      {
-        threshold: 0,
-        rootMargin: "-128px 0px -65% 0px",
-      },
+      { threshold: 0, rootMargin: "-128px 0px -65% 0px" },
     );
-
-    for (const element of elements) {
-      observer.observe(element);
-    }
-
+    for (const element of elements) observer.observe(element);
     return () => observer.disconnect();
   }, [dayTabs.length]);
 
-  const goPrevious = useCallback(() => {
-    if (!hasPrevious) return;
-    onNavigate("previous", effectiveIndex);
-  }, [hasPrevious, effectiveIndex, onNavigate]);
-
-  const goNext = useCallback(() => {
-    if (!hasNext) return;
-    onNavigate("next", effectiveIndex);
-  }, [hasNext, effectiveIndex, onNavigate]);
+  const doNavigate = useCallback((dir: 1 | -1) => {
+    if (phase !== "idle") return;
+    setFrozenIdx(effectiveIndex);
+    setAnimDir(dir);
+    setPhase("out");
+    setTimeout(() => {
+      onNavigate(dir === 1 ? "next" : "previous", effectiveIndex);
+      setPhase("in");
+      setTimeout(() => setPhase("idle"), DURATION);
+    }, DURATION);
+  }, [effectiveIndex, onNavigate, phase]);
 
   const goCurrentDayTop = useCallback(() => {
+    if (phase !== "idle") return;
     const element = getVisibleId(`day-${effectiveIndex}`);
-    element?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }, [effectiveIndex]);
+    element?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [effectiveIndex, phase]);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    isDragging.current = false;
+    pendingNav.current = null;
+    setSnapping(false);
+    setDragX(0);
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (phase !== "idle") return;
+    const dx = e.touches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 8) isDragging.current = true;
+    if (isDragging.current) setDragX(dx);
+  }, [phase]);
+
+  const handleTouchEnd = useCallback(() => {
+    if (phase !== "idle" || !isDragging.current) {
+      setDragX(0);
+      isDragging.current = false;
+      return;
+    }
+    if (Math.abs(dragX) > 50) {
+      const dir: 1 | -1 = dragX < 0 ? 1 : -1;
+      pendingNav.current = dir;
+      setSnapping(true);
+      setDragX(dir * 50);
+      setTimeout(() => {
+        setSnapping(false);
+        setDragX(0);
+        if (pendingNav.current) {
+          doNavigate(pendingNav.current);
+          pendingNav.current = null;
+        }
+      }, DURATION);
+    } else {
+      setSnapping(true);
+      setDragX(0);
+      setTimeout(() => {
+        setSnapping(false);
+      }, DURATION);
+    }
+    isDragging.current = false;
+  }, [phase, dragX, doNavigate]);
 
   if (dayTabs.length === 0) return null;
+
+  const renderTicket = (tab: DayTab) => (
+    <div style={{ filter: "drop-shadow(0 2px 5px rgba(35,33,29,0.12))" }}>
+      <div className="ticket-shape" style={{ background: RED_DARK, padding: "1px" }}>
+        <div className="ticket-shape-inner" style={{ background: RED }}>
+          <div
+            className="flex items-center max-lg:w-[180px] max-[520px]:w-[140px]"
+            style={{ height: NAV_HEIGHT, padding: "0 4px" }}
+          >
+            <button
+              type="button"
+              onClick={() => doNavigate(-1)}
+              disabled={!hasPrevious || phase !== "idle"}
+              className="flex items-center justify-center shrink-0 h-full transition-opacity"
+              style={{
+                width: 24,
+                color: "#F3F2ED",
+                opacity: hasPrevious ? 1 : 0.2,
+                cursor: hasPrevious ? "pointer" : "default",
+              }}
+              aria-label="Ir para o dia anterior"
+            >
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none">
+                <path d="M6 11L1 6L6 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              onClick={goCurrentDayTop}
+              className="flex-1 min-w-0"
+              aria-label={`Voltar ao início de ${tab?.label ?? "dia atual"}`}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              <span
+                className="font-sora font-bold uppercase tracking-wider"
+                style={{ fontSize: "clamp(12px,1vw,16px)", color: "#F3F2ED", display: "block" }}
+              >
+                {tab?.label ?? ""}
+              </span>
+              <span
+                className="font-normal uppercase tracking-wider"
+                style={{ fontSize: "clamp(12px,1.2vw,18px)", color: "#F3F2ED", display: "block" }}
+              >
+                {tab ? `${tab.dayNum} ${tab.month}` : ""}
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => doNavigate(1)}
+              disabled={!hasNext || phase !== "idle"}
+              className="flex items-center justify-center shrink-0 h-full transition-opacity"
+              style={{
+                width: 24,
+                color: "#F3F2ED",
+                opacity: hasNext ? 1 : 0.2,
+                cursor: hasNext ? "pointer" : "default",
+              }}
+              aria-label="Ir para o próximo dia"
+            >
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none">
+                <path d="M1 1L6 6L1 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const getStyle = () => {
+    if (phase === "out") {
+      return {
+        animation: `ticket-out ${DURATION}ms ease forwards`,
+        "--out-x": `${-animDir * 50}px`,
+      } as React.CSSProperties;
+    }
+    if (phase === "in") {
+      return {
+        animation: `ticket-in ${DURATION}ms ease forwards`,
+        "--in-x": `${animDir * 50}px`,
+      } as React.CSSProperties;
+    }
+    if (snapping) {
+      return {
+        transition: `transform ${DURATION}ms ease`,
+        transform: `translateX(${dragX}px)`,
+      } as React.CSSProperties;
+    }
+    if (dragX !== 0) {
+      return { transform: `translateX(${dragX}px)` } as React.CSSProperties;
+    }
+    return {};
+  };
 
   return (
     <div
@@ -192,118 +301,13 @@ export default function DayStickyNav({
         pointerEvents: visible ? "auto" : "none",
       }}
     >
-      <div
-        style={{
-          filter: "drop-shadow(0 2px 5px rgba(35,33,29,0.12))",
-        }}
-      >
-        <div
-          className="ticket-shape"
-          style={{
-            background: RED_DARK,
-            padding: "1px",
-          }}
-        >
-          <div
-            className="ticket-shape-inner"
-            style={{ background: RED }}
-          >
-            <div
-              className="flex items-center max-lg:w-[180px] max-[520px]:w-[140px]"
-              style={{
-                height: NAV_HEIGHT,
-                padding: "0 8px",
-              }}
-            >
-              <button
-                type="button"
-                onClick={goPrevious}
-                disabled={!hasPrevious}
-                className="flex items-center justify-center shrink-0 h-full transition-opacity"
-                style={{
-                  width: 16,
-                  color: "#F3F2ED",
-                  opacity: hasPrevious ? 1 : 0.2,
-                  cursor: hasPrevious ? "pointer" : "default",
-                }}
-                aria-label="Ir para o dia anterior"
-              >
-                <svg
-                  width="7"
-                  height="12"
-                  viewBox="0 0 7 12"
-                  fill="none"
-                >
-                  <path
-                    d="M6 11L1 6L6 1"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-
-              <button
-                type="button"
-                onClick={goCurrentDayTop}
-                className="flex flex-col items-center justify-center flex-1 min-w-0"
-                aria-label={`Voltar ao início de ${current?.label ?? "dia atual"}`}
-              >
-                <span
-                  className="font-sora font-bold uppercase tracking-wide"
-                  style={{
-                    fontSize: "clamp(12px,1vw,16px)",
-                    color: "#F3F2ED",
-                  }}
-                >
-                  {current?.label ?? ""}
-                </span>
-
-                <span
-                  className="font-normal uppercase tracking-wide"
-                  style={{
-                    fontSize: "clamp(12px,1.2vw,18px)",
-                    color: "#F3F2ED",
-                  }}
-                >
-                  {current
-                    ? `${current.dayNum} ${current.month}`
-                    : ""}
-                </span>
-              </button>
-
-              <button
-                type="button"
-                onClick={goNext}
-                disabled={!hasNext}
-                className="flex items-center justify-center shrink-0 h-full transition-opacity"
-                style={{
-                  width: 16,
-                  color: "#F3F2ED",
-                  opacity: hasNext ? 1 : 0.2,
-                  cursor: hasNext ? "pointer" : "default",
-                }}
-                aria-label="Ir para o próximo dia"
-              >
-                <svg
-                  width="7"
-                  height="12"
-                  viewBox="0 0 7 12"
-                  fill="none"
-                >
-                  <path
-                    d="M1 1L6 6L1 11"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
+      <div style={getStyle()}>
+        {phase === "in"
+          ? renderTicket(current)
+          : phase === "out"
+          ? renderTicket(dayTabs[frozenIdx])
+          : renderTicket(current)
+        }
       </div>
     </div>
   );

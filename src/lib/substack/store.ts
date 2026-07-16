@@ -18,22 +18,24 @@ const BLOB_KEY = "sessions.json";
 const FALLBACK_PATH = path.join(process.cwd(), "public", "data", "sessions.json");
 
 export async function loadStored(): Promise<StoredData | null> {
-  try {
-    const { blobs } = await list({ prefix: BLOB_KEY });
-    if (blobs.length > 0) {
-      const latest = blobs.reduce((a, b) =>
-        new Date(a.uploadedAt) > new Date(b.uploadedAt) ? a : b,
-      );
-      const result = await get(latest.url, { access: "public" });
-      if (result && result.statusCode === 200 && result.stream) {
-        const text = await new Response(result.stream).text();
-        const data = JSON.parse(text) as StoredData;
-        if (!data.allSessions) data.allSessions = data.sessions;
-        return data;
+  if (process.env.NODE_ENV !== "development") {
+    try {
+      const { blobs } = await list({ prefix: BLOB_KEY });
+      if (blobs.length > 0) {
+        const latest = blobs.reduce((a, b) =>
+          new Date(a.uploadedAt) > new Date(b.uploadedAt) ? a : b,
+        );
+        const result = await get(latest.url, { access: "public" });
+        if (result && result.statusCode === 200 && result.stream) {
+          const text = await new Response(result.stream).text();
+          const data = JSON.parse(text) as StoredData;
+          if (!data.allSessions) data.allSessions = data.sessions;
+          return data;
+        }
       }
+    } catch {
+      // fallback
     }
-  } catch {
-    // fallback
   }
 
   try {
@@ -48,6 +50,13 @@ export async function loadStored(): Promise<StoredData | null> {
 
 export async function saveStored(data: StoredData): Promise<void> {
   const payload = JSON.stringify(data);
+
+  if (process.env.NODE_ENV === "development") {
+    await fs.mkdir(path.dirname(FALLBACK_PATH), { recursive: true });
+    await fs.writeFile(FALLBACK_PATH, payload, "utf-8");
+    return;
+  }
+
   await put(BLOB_KEY, payload, {
     access: "public",
     addRandomSuffix: false,

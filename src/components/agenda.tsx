@@ -39,7 +39,7 @@ function CinemaInfoBlock({
   return (
     <>
       {info?.address && (
-        <div className="text-sm mt-1 leading-snug">{info.address}</div>
+        <div className="text-[13px] mt-1 leading-snug">{info.address}</div>
       )}
 
       {info?.infoUrl && (
@@ -94,7 +94,7 @@ function FilmMeta({ s, fi }: { s: Session; fi: number }) {
         s.originalTitle !== s.title &&
         !s.originalTitle.toLowerCase().includes(s.title.toLowerCase()) && (
           <div
-            className="text-[15px] italic mt-0.5 leading-snug"
+            className="text-[15px] italic mt-2 leading-snug"
             style={{ color: "#4A4742" }}
           >
             {s.originalTitle}
@@ -102,7 +102,7 @@ function FilmMeta({ s, fi }: { s: Session; fi: number }) {
         )}
 
       {s.director && (
-        <div className="text-[15px] mt-2 leading-snug">
+        <div className="text-[15px] mt-6 leading-snug">
           Direção: {s.director}
         </div>
       )}
@@ -241,7 +241,7 @@ export default function Agenda({
                                     <div>
                                       {fi === 0 && first.mostra && (
                                         <div
-                                          className="font-medium tracking-wide uppercase mb-0 leading-snug break-words max-w-[400px] font-sora"
+                                          className="font-medium tracking-wide uppercase mb-2 leading-snug break-words max-w-[400px] font-sora"
                                           style={{
                                             fontSize: "clamp(13px,1vw,16px)",
                                             color: "#A52323",
@@ -495,7 +495,7 @@ export default function Agenda({
 
                           {first.mostra && (
                             <div
-                              className="text-[13px] font-medium uppercase tracking-wide text-right font-sora leading-snug"
+                              className="text-[12px] font-medium uppercase tracking-wide text-right font-sora leading-snug"
                               style={{
                                 color: "#A52323",
                                 maxWidth: "55%",

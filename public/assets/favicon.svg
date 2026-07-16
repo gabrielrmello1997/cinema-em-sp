@@ -16,9 +16,9 @@
     fill="#23211D"
   />
 
-  <!-- Parte clara da poltrona, levemente menor -->
+  <!-- Parte clara da poltrona com borda inferior quadrada -->
   <path
-    d="M8 36H56V51C56 54.3137 53.3137 57 50 57H14C10.6863 57 8 54.3137 8 51V36Z"
+    d="M8 36H56V57H8V36Z"
     fill="#F3F2ED"
   />
 </svg>

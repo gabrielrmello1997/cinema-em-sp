@@ -15,7 +15,7 @@ function sessionKey(s: Session): string {
 async function handleRefresh(request: Request) {
   const authHeader = request.headers.get("authorization");
 
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+  if (process.env.NODE_ENV !== "development" && authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
     return NextResponse.json(
       { ok: false, error: "Unauthorized" },
       { status: 401 },
