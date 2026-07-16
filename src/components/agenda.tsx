@@ -549,7 +549,7 @@ export default function Agenda({
                                         .toLowerCase()
                                         .includes(s.title.toLowerCase()) && (
                                         <div
-                                          className="text-sm italic mt-0.5 leading-snug"
+                                          className="text-sm italic mt-2 leading-snug"
                                           style={{ color: "#4A4742" }}
                                         >
                                           {s.originalTitle}
@@ -557,7 +557,7 @@ export default function Agenda({
                                       )}
 
                                     {s.director && (
-                                      <div className="text-sm mt-1.5 leading-snug">
+                                      <div className="text-sm mt-2 leading-snug">
                                         Direção: {s.director}
                                       </div>
                                     )}
