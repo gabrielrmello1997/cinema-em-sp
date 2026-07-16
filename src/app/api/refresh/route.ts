@@ -22,6 +22,9 @@ async function handleRefresh(request: Request) {
     );
   }
 
+  const { searchParams } = new URL(request.url);
+  const force = searchParams.get("force") === "true";
+
   const started = Date.now();
   let stage = "start";
 
@@ -37,7 +40,7 @@ async function handleRefresh(request: Request) {
 
     console.log(`[refresh] Latest post: ${latest.guid} — ${latest.title}`);
 
-    if (!isNewerFeed(latest.guid, stored)) {
+    if (!force && !isNewerFeed(latest.guid, stored)) {
       const elapsed = Date.now() - started;
       console.log(`[refresh] No new post (${elapsed}ms)`);
       return NextResponse.json({
