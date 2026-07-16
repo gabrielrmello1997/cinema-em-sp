@@ -23,11 +23,16 @@ async function handleRefresh(request: Request) {
   }
 
   const started = Date.now();
-  console.log("[refresh] Started");
+  let stage = "start";
 
   try {
+    console.log("[refresh] Started");
+
+    stage = "rss";
     const items = await fetchAllItems();
     const latest = items[0];
+
+    stage = "load";
     const stored = await loadStored();
 
     console.log(`[refresh] Latest post: ${latest.guid} — ${latest.title}`);
@@ -48,6 +53,7 @@ async function handleRefresh(request: Request) {
     console.log("[refresh] New post detected");
 
     // Parse sessions from the latest post
+    stage = "parse-latest";
     const latestSessions = extractSessionsDom(latest.html);
     for (const s of latestSessions) {
       s.feedTitle = latest.title;
@@ -63,6 +69,7 @@ async function handleRefresh(request: Request) {
     }
 
     // Build full history (all posts)
+    stage = "merge";
     const seen = new Set<string>();
     const allSessions: Session[] = [];
 
@@ -90,6 +97,7 @@ async function handleRefresh(request: Request) {
     }
 
     // Build poster cache from stored data
+    stage = "cache";
     const posterCache = new Map<string, string>();
     for (const s of stored?.allSessions ?? []) {
       const key = tmdbKey(s.title, s.year, s.director, s.originalTitle);
@@ -99,6 +107,7 @@ async function handleRefresh(request: Request) {
     }
 
     // Search TMDB for missing posters
+    stage = "tmdb";
     const tmdbQueried = new Set<string>();
     let postersFound = 0;
     let postersMissing = 0;
@@ -140,6 +149,7 @@ async function handleRefresh(request: Request) {
       if (cached) s.poster = cached;
     }
 
+    stage = "save";
     await saveStored({
       feedGuid: latest.guid,
       feedUrl: latest.link,
@@ -151,6 +161,7 @@ async function handleRefresh(request: Request) {
       cinemas: CINEMAS_DATA,
     });
 
+    stage = "revalidate";
     revalidatePath("/");
 
     const elapsed = Date.now() - started;
@@ -170,19 +181,12 @@ async function handleRefresh(request: Request) {
     });
   } catch (error) {
     const elapsed = Date.now() - started;
-    const message = error instanceof Error ? error.message : "Unknown error";
+    const message = error instanceof Error ? error.message : String(error);
 
-    if (message.includes("feed") || message.includes("RSS") || message.includes("Nenhum item")) {
-      console.error(`[refresh] RSS error (${elapsed}ms):`, error);
-      return NextResponse.json(
-        { ok: false, stage: "rss", error: "Failed to fetch or parse RSS feed" },
-        { status: 502 },
-      );
-    }
+    console.error(`[refresh] Failed at stage "${stage}":`, message);
 
-    console.error(`[refresh] Error (${elapsed}ms):`, error);
     return NextResponse.json(
-      { ok: false, stage: "persistence", error: "Failed to persist refreshed data" },
+      { ok: false, stage, error: message },
       { status: 500 },
     );
   }
