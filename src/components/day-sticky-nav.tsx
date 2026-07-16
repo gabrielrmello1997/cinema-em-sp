@@ -24,7 +24,7 @@ type Props = {
 
 const RED = "#A52323";
 const RED_DARK = "#8B1C1C";
-const NAV_BOTTOM = 40;
+const NAV_BOTTOM = 24;
 const NAV_HEIGHT = 50;
 
 function getVisibleId(id: string): HTMLElement | null {
@@ -77,19 +77,20 @@ export default function DayStickyNav({
     const check = () => {
       const firstDay = getVisibleId("day-0");
       const agenda = getVisibleId("agenda");
-
+    
       if (!firstDay || !agenda) {
         setVisible(false);
         return;
       }
-
+    
       const firstDayTop = firstDay.getBoundingClientRect().top;
       const agendaBottom = agenda.getBoundingClientRect().bottom;
-      const navTop = window.innerHeight - NAV_BOTTOM - NAV_HEIGHT;
-
-      const hasEnteredAgenda = firstDayTop < navTop;
-      const hasNotLeftAgenda = agendaBottom > navTop;
-
+    
+      const triggerTop = 200;
+    
+      const hasEnteredAgenda = firstDayTop < triggerTop;
+      const hasNotLeftAgenda = agendaBottom > triggerTop;
+    
       setVisible(hasEnteredAgenda && hasNotLeftAgenda);
     };
 
