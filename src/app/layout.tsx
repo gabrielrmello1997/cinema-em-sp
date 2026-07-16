@@ -9,7 +9,30 @@ const sourceSans = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: "Cinema em São Paulo",
-  description: "Programação semanal de cinemas de rua e salas especiais de São Paulo",
+  description:
+    "Programação semanal de cinemas de rua e salas especiais de São Paulo",
+
+  icons: {
+    icon: "/assets/favicon.svg",
+  },
+
+  openGraph: {
+    title: "Cinema em São Paulo",
+    description:
+      "Programação semanal de cinemas de rua e salas especiais de São Paulo",
+    url: "https://cinemaemsaopaulo.com.br",
+    siteName: "Cinema em São Paulo",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cinema em São Paulo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

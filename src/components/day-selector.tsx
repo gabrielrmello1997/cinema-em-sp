@@ -48,12 +48,10 @@ export default function DaySelector({
                   type="button"
                   aria-pressed={selected}
                   onClick={() => onDayChange(day.id)}
-                  className={"flex flex-col items-center justify-center transition-colors relative cursor-pointer tracking-wide" + (scrollable ? "" : " flex-1")}
+                  className="flex flex-1 min-w-0 flex-col items-center justify-center transition-colors relative cursor-pointer tracking-wide"
                   style={{
                     background: selected ? ACCENT : BG,
-                    borderRight: last ? "none" : "1px dashed " + LINE,
-                    minWidth: scrollable ? "112px" : "clamp(100px, 9vw, 145px)",
-                    width: scrollable ? "112px" : "auto",
+                    borderRight: last ? "none" : `1px dashed ${LINE}`,
                   }}
                 >
                   <span
@@ -80,8 +78,8 @@ export default function DaySelector({
   if (scrollable) {
     return (
       <div className={className}>
-        <div className="days-scroll">
-          <div style={{ display: "inline-flex" }}>
+        <div className="days-scroll w-full pt-[2px] pb-3">
+          <div className="w-full">
             {inner}
           </div>
         </div>

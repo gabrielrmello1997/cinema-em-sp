@@ -12,11 +12,28 @@ export default function Sidebar({ scrollTo }: Props) {
           <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "100%", maxWidth: "32rem" }} />
         </a>
         <div className="dash-ink mb-10" />
-        <nav className="flex flex-col uppercase font-sora tracking-wide" style={{ fontSize: "clamp(11px,1.1vw,16px)" }}>
-          <button onClick={() => scrollTo("agenda")} className="text-left hover:text-accent transition-colors font-medium mb-8 cursor-pointer">
+        <nav
+          className="flex flex-col uppercase font-sora tracking-wide"
+          style={{ fontSize: "clamp(11px,1.1vw,16px)" }}
+        >
+          <button
+            onClick={() => scrollTo("agenda")}
+            className="text-left hover:text-accent transition-colors font-medium mb-8 cursor-pointer"
+          >
             PROGRAMAÇÃO
           </button>
-          <button onClick={() => scrollTo("about")} className="text-left hover:text-accent transition-colors font-medium mb-10 cursor-pointer tracking-wide">
+
+          <button
+            onClick={() => scrollTo("textos")}
+            className="text-left hover:text-accent transition-colors font-medium mb-8 cursor-pointer"
+          >
+            TEXTOS
+          </button>
+
+          <button
+            onClick={() => scrollTo("about")}
+            className="text-left hover:text-accent transition-colors font-medium mb-10 cursor-pointer"
+          >
             SOBRE
           </button>
         </nav>

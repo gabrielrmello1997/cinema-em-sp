@@ -1,6 +1,12 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type PointerEvent as ReactPointerEvent,
+} from "react";
 
 const cards = [
   {
@@ -31,105 +37,329 @@ const cards = [
 
 export default function TextosSection() {
   const [showAll, setShowAll] = useState(true);
+  const [activeCard, setActiveCard] = useState(0);
+  const dragStartX = useRef<number | null>(null);
+  const dragCurrentX = useRef<number | null>(null);
 
-  const check = useCallback(() => setShowAll(window.innerWidth >= 1830), []);
+  const check = useCallback(() => {
+    setShowAll(window.innerWidth >= 1830);
+  }, []);
 
   useEffect(() => {
     check();
     window.addEventListener("resize", check);
+
     return () => window.removeEventListener("resize", check);
   }, [check]);
+
+  const previousCard = useCallback(() => {
+    setActiveCard((current) =>
+      current === 0 ? cards.length - 1 : current - 1,
+    );
+  }, []);
+
+  const nextCard = useCallback(() => {
+    setActiveCard((current) =>
+      current === cards.length - 1 ? 0 : current + 1,
+    );
+  }, []);
+
+  const handlePointerDown = (
+    event: ReactPointerEvent<HTMLDivElement>,
+  ) => {
+    dragStartX.current = event.clientX;
+    dragCurrentX.current = event.clientX;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  };
+
+  const handlePointerMove = (
+    event: ReactPointerEvent<HTMLDivElement>,
+  ) => {
+    if (dragStartX.current === null) return;
+    dragCurrentX.current = event.clientX;
+  };
+
+  const handlePointerEnd = (
+    event: ReactPointerEvent<HTMLDivElement>,
+  ) => {
+    if (
+      dragStartX.current === null ||
+      dragCurrentX.current === null
+    ) {
+      return;
+    }
+
+    const distance = dragCurrentX.current - dragStartX.current;
+    const swipeThreshold = 45;
+
+    if (distance <= -swipeThreshold) {
+      nextCard();
+    } else if (distance >= swipeThreshold) {
+      previousCard();
+    }
+
+    dragStartX.current = null;
+    dragCurrentX.current = null;
+
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+  };
+
+  const active = cards[activeCard];
 
   return (
     <>
       <div className="dash-ink mx-12 max-lg:mx-5 md:mx-8" />
-      <section id="textos" className="px-12 pt-12 pb-16 max-lg:px-5 md:px-8">
-        <h2 className="text-[18px] uppercase font-medium mb-8 tracking-wide font-sora" style={{ color: "#A52323" }}>TEXTOS</h2>
+
+      <section
+        id="textos"
+        className="px-12 pt-10 md:pt-12 pb-16 max-lg:px-5 md:px-8"
+      >
+        <h2
+          className="text-[18px] uppercase font-medium mb-8 tracking-wide font-sora"
+          style={{ color: "#A52323" }}
+        >
+          TEXTOS
+        </h2>
+
         <p className="text-[18px] mb-10" style={{ color: "#23211D" }}>
           Veja nossas últimas publicações no Substack
         </p>
 
-        {/* Desktop: flex layout (unchanged) */}
         <div className="max-lg:hidden">
-          <div className="flex flex-wrap justify-start gap-8">
+          <div
+            className="grid gap-8 items-stretch"
+            style={{
+              gridTemplateColumns: `repeat(${
+                showAll ? 4 : 3
+              }, minmax(0, 1fr))`,
+            }}
+          >
             {cards.slice(0, showAll ? 4 : 3).map((c, i) => (
-              <div key={i} className="shrink-0 border" style={{ width: "clamp(230px,22vw,354px)", height: "clamp(260px,25vw,392px)", borderColor: "rgba(35,33,29,0.2)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
-                <div className="p-4 flex flex-col h-full">
-                  <div className="w-full" style={{ height: "clamp(120px,11vw,186px)" }}>
-                    <img src={c.img} alt={c.title} className="w-full h-full object-cover" />
+              <article
+                key={i}
+                className="border h-full"
+                style={{
+                  borderColor: "rgba(35,33,29,0.2)",
+                  boxShadow: "4px 4px 10px rgba(35,33,29,0.3)",
+                }}
+              >
+                <div className="p-4 grid h-full grid-rows-[auto_auto_1fr_auto]">
+                  <div
+                    className="w-full overflow-hidden"
+                    style={{ aspectRatio: "322 / 186" }}
+                  >
+                    <img
+                      src={c.img}
+                      alt={c.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div className="flex-1 flex flex-col pt-4">
-                    <h3 className="font-bold font-sora leading-snug" style={{ fontSize: "clamp(15px,1.2vw,18px)" }}>{c.title}</h3>
-                    <p className="leading-snug mt-2 flex-1" style={{ color: "#23211D", fontSize: "clamp(12px,1vw,14px)" }}>{c.desc}</p>
-                    <a href={c.url} target="_blank" rel="noopener noreferrer"
-                      className="group inline-flex items-center gap-1.5 font-semibold mt-3"
-                      style={{ color: "#A52323", fontSize: "clamp(12px,1vw,14px)" }}>
-                      Ler no Substack
-                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="stroke-[#A52323]">
-                        <path d="M7.333 0.667L0.667 7.333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M1.333 0.667h6v6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </a>
-                  </div>
+
+                  <h3
+                    className="font-bold font-sora leading-snug mt-4"
+                    style={{
+                      fontSize: "clamp(15px,1.2vw,18px)",
+                    }}
+                  >
+                    {c.title}
+                  </h3>
+
+                  <p
+                    className="leading-snug mt-2"
+                    style={{
+                      color: "#23211D",
+                      fontSize: "clamp(12px,1vw,14px)",
+                    }}
+                  >
+                    {c.desc}
+                  </p>
+
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-1.5 font-semibold mt-4 self-end"
+                    style={{
+                      color: "#A52323",
+                      fontSize: "clamp(12px,1vw,14px)",
+                    }}
+                  >
+                    Ler no Substack
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      className="stroke-[#A52323]"
+                    >
+                      <path
+                        d="M7.333 0.667L0.667 7.333"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M1.333 0.667h6v6"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
 
-        {/* Tablet: 2 columns */}
-        <div className="hidden md:grid lg:hidden gap-6" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
-          {cards.slice(0, 3).map((c, i) => (
-            <div key={i} className="border" style={{ borderColor: "rgba(35,33,29,0.2)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
-              <div className="p-4 flex flex-col h-full">
-                <div className="w-full" style={{ aspectRatio: "322/186" }}>
-                  <img src={c.img} alt={c.title} className="w-full h-full object-cover" />
-                </div>
-                <div className="flex-1 flex flex-col pt-4">
-                  <h3 className="font-bold font-sora leading-snug text-base">{c.title}</h3>
-                  <p className="text-sm leading-snug mt-2 flex-1" style={{ color: "#23211D" }}>{c.desc}</p>
-                  <a href={c.url} target="_blank" rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-1.5 font-semibold mt-3 text-sm"
-                    style={{ color: "#A52323" }}>
-                    Ler no Substack
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="stroke-[#A52323]">
-                      <path d="M7.333 0.667L0.667 7.333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M1.333 0.667h6v6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile: 1 column */}
-        <div className="md:hidden flex flex-col gap-6">
-          {cards.map((c, i) => (
-            <div key={i}>
-              {i > 0 && <div className="dash-ink mb-6" />}
-              <div className="border" style={{ borderColor: "rgba(35,33,29,0.2)", boxShadow: "4px 4px 10px rgba(35,33,29,0.3)" }}>
+        <div className="lg:hidden">
+          <div className="relative">
+            <div
+              className="select-none touch-pan-y cursor-grab active:cursor-grabbing"
+              onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
+              onPointerUp={handlePointerEnd}
+              onPointerCancel={handlePointerEnd}
+            >
+              <article
+                key={activeCard}
+                className="text-card-enter border"
+                style={{
+                  borderColor: "rgba(35,33,29,0.2)",
+                  boxShadow: "4px 4px 10px rgba(35,33,29,0.3)",
+                }}
+              >
                 <div className="p-4 flex flex-col">
-                  <div className="w-full" style={{ aspectRatio: "322/186" }}>
-                    <img src={c.img} alt={c.title} className="w-full h-full object-cover" />
+                  <div
+                    className="w-full overflow-hidden"
+                    style={{ aspectRatio: "322 / 186" }}
+                  >
+                    <img
+                      src={active.img}
+                      alt={active.title}
+                      draggable={false}
+                      className="w-full h-full object-cover pointer-events-none"
+                    />
                   </div>
+
                   <div className="pt-4">
-                    <h3 className="font-bold font-sora leading-snug text-base">{c.title}</h3>
-                    <p className="text-sm leading-snug mt-2" style={{ color: "#23211D" }}>{c.desc}</p>
-                    <a href={c.url} target="_blank" rel="noopener noreferrer"
+                    <h3 className="font-bold font-sora leading-snug text-base">
+                      {active.title}
+                    </h3>
+
+                    <p
+                      className="text-sm leading-snug mt-2"
+                      style={{ color: "#23211D" }}
+                    >
+                      {active.desc}
+                    </p>
+
+                    <a
+                      href={active.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group inline-flex items-center gap-1.5 font-semibold mt-3 text-sm"
-                      style={{ color: "#A52323" }}>
+                      style={{ color: "#A52323" }}
+                      onPointerDown={(event) => event.stopPropagation()}
+                    >
                       Ler no Substack
-                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" className="stroke-[#A52323]">
-                        <path d="M7.333 0.667L0.667 7.333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M1.333 0.667h6v6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <svg
+                        width="8"
+                        height="8"
+                        viewBox="0 0 8 8"
+                        fill="none"
+                        className="stroke-[#A52323]"
+                      >
+                        <path
+                          d="M7.333 0.667L0.667 7.333"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M1.333 0.667h6v6"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </a>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
-          ))}
+
+            <div className="mt-6 flex items-center justify-between">
+              <button
+                type="button"
+                onClick={previousCard}
+                aria-label="Texto anterior"
+                className="flex h-10 w-10 items-center justify-center text-[#A52323] transition-opacity hover:opacity-65"
+              >
+                <svg
+                  width="7"
+                  height="12"
+                  viewBox="0 0 7 12"
+                  fill="none"
+                  style={{ transform: "rotate(180deg)" }}
+                >
+                  <path
+                    d="M1 1L6 6L1 11"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <div className="flex items-center gap-2">
+                {cards.map((_, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    onClick={() => setActiveCard(index)}
+                    aria-label={`Ir para o texto ${index + 1}`}
+                    aria-current={
+                      activeCard === index ? "true" : undefined
+                    }
+                    className="h-2 w-2 rounded-full border"
+                    style={{
+                      borderColor: "#A52323",
+                      background:
+                        activeCard === index
+                          ? "#A52323"
+                          : "transparent",
+                    }}
+                  />
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={nextCard}
+                aria-label="Próximo texto"
+                className="flex h-10 w-10 items-center justify-center text-[#A52323] transition-opacity hover:opacity-65"
+              >
+                <svg
+                  width="7"
+                  height="12"
+                  viewBox="0 0 7 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L6 6L1 11"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </>

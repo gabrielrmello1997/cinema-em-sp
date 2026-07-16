@@ -319,147 +319,134 @@ export default function Agenda({
         </div>
       </section>
 
-      {/* Tablet agenda — reduced grid + sticky headers */}
-      <section
-        id="agenda"
-        className="hidden md:block lg:hidden px-8 pt-8 pb-16"
-      >
-        {groups.length === 0 && (
-          <p className="text-ink/40 text-[20px]">
-            Nenhuma sessão para esta data.
-          </p>
-        )}
+      {/* Tablet agenda — sem data empilhada */}
+<section
+  id="agenda"
+  className="hidden md:block lg:hidden px-8 pt-8 pb-16"
+>
+  {groups.length === 0 && (
+    <p className="text-ink/40 text-[20px]">
+      Nenhuma sessão para esta data.
+    </p>
+  )}
 
-        {dayGroups.map((dg, dgi) => {
-          const dayInfo = dayTabs.find((d) => d.day === dg.day);
+  {dayGroups.map((dg, dgi) => {
+    const dayInfo = dayTabs.find((d) => d.day === dg.day);
 
-          return (
-            <div key={dg.day} id={`day-${dgi}`}>
-              <div className="flex flex-col gap-4 pt-3 mb-0">
-                <span
-                  className="font-bold font-sora text-[17px] tracking-wide"
-                  style={{ color: "#A52323" }}
-                >
-                  {dayInfo
-                    ? `${dayInfo.label} · ${dayInfo.dayNum} DE ${dayInfo.month}`
-                    : dg.day}
-                </span>
+    return (
+      <div key={dg.day} id={`day-${dgi}`}>
+        {/* Data única acima da linha pontilhada */}
+        <div className="flex flex-col gap-4 pt-3">
+          <span
+            className="font-bold font-sora text-[17px] uppercase tracking-wide"
+            style={{ color: "#A52323" }}
+          >
+            {dayInfo
+              ? `${dayInfo.label} • ${dayInfo.dayNum} DE ${dayInfo.month}`
+              : dg.day}
+          </span>
 
-                <div className="dash-ink" />
-              </div>
+          <div className="dash-ink" />
+        </div>
 
-              {dgi > 0 && <div className="h-6" />}
+        <div className="pt-7">
+          {dg.groups.map((group, gi) => {
+            const first = group[0];
 
-              <div className="flex gap-4">
-                <div
-                  className="shrink-0 text-center self-start pt-1"
-                  style={{ width: 75 }}
-                >
-                  <div className="font-medium uppercase leading-tight font-sora text-sm">
-                    {dayInfo?.label || ""}
-                  </div>
+            return (
+              <Fragment key={gi}>
+                {gi > 0 && <div className="dash-ink my-8" />}
 
+                <div className="flex gap-10">
+                  {/* Horário */}
                   <div
-                    className="font-bold leading-tight font-sora text-3xl"
-                    style={{ color: "#A52323" }}
+                    className="shrink-0 pt-1"
+                    style={{ width: 76 }}
                   >
-                    {dayInfo?.dayNum ?? ""}
+                    <div
+                      className="text-[20px] font-bold leading-tight font-sora tracking-wide"
+                      style={{ color: "#A52323" }}
+                    >
+                      {first.time}
+                    </div>
                   </div>
 
-                  <div className="font-medium uppercase leading-tight font-sora text-sm">
-                    {dayInfo?.month || ""}
+                  {/* Filmes + posters */}
+                  <div className="flex-1 min-w-0 pt-1">
+                    <div
+                      className="grid gap-x-6 gap-y-4"
+                      style={{
+                        gridTemplateColumns:
+                          "minmax(0, 1fr) clamp(80px,10vw,110px)",
+                      }}
+                    >
+                      {group.map((s, fi) => (
+                        <Fragment key={fi}>
+                          <div className="min-w-0">
+                            {fi === 0 && first.mostra && (
+                              <div
+                                className="font-medium uppercase text-[14px] mb-1 break-words font-sora"
+                                style={{ color: "#A52323" }}
+                              >
+                                {first.mostra}
+                              </div>
+                            )}
+
+                            <FilmMeta s={s} fi={fi} />
+                          </div>
+
+                          <div>
+                            {fi > 0 && <div className="h-[30px]" />}
+
+                            {s.poster && (
+                              <img
+                                src={s.poster}
+                                alt={s.title}
+                                className="w-full cursor-pointer object-cover"
+                                style={{
+                                  aspectRatio: "150/220",
+                                  maxWidth: 110,
+                                  border:
+                                    "1px solid rgba(35,33,29,0.3)",
+                                  boxShadow:
+                                    "4px 4px 10px rgba(35,33,29,0.2)",
+                                }}
+                                onClick={() =>
+                                  onPosterClick(s.poster)
+                                }
+                              />
+                            )}
+                          </div>
+                        </Fragment>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Cinema */}
+                  <div
+                    className="shrink-0 pt-1"
+                    style={{
+                      width: "clamp(150px,20vw,210px)",
+                    }}
+                  >
+                    <div className="font-bold text-sm uppercase leading-tight tracking-wide font-sora">
+                      {first.cinema}
+                    </div>
+
+                    <CinemaInfoBlock
+                      cinema={first.cinema}
+                      cinemaMap={cinemaMap}
+                    />
                   </div>
                 </div>
-
-                <div className="flex-1 min-w-0">
-                  {dg.groups.map((group, gi) => {
-                    const first = group[0];
-
-                    return (
-                      <Fragment key={gi}>
-                        {gi > 0 && <div className="dash-ink my-8" />}
-
-                        <div className="flex gap-3">
-                          <div
-                            className="shrink-0 pt-1"
-                            style={{ width: 70 }}
-                          >
-                            <div
-                              className="text-lg font-bold font-sora tracking-wide"
-                              style={{ color: "#A52323" }}
-                            >
-                              {first.time}
-                            </div>
-                          </div>
-
-                          <div className="flex-1 min-w-0 pt-1">
-                            <div
-                              className="grid gap-x-6 gap-y-4"
-                              style={{
-                                gridTemplateColumns: "1fr 90px",
-                              }}
-                            >
-                              {group.map((s, fi) => (
-                                <Fragment key={fi}>
-                                  <div>
-                                    {fi === 0 && first.mostra && (
-                                      <div
-                                        className="font-medium uppercase text-xs mb-1 break-words font-sora"
-                                        style={{ color: "#A52323" }}
-                                      >
-                                        {first.mostra}
-                                      </div>
-                                    )}
-
-                                    <FilmMeta s={s} fi={fi} />
-                                  </div>
-
-                                  <div>
-                                    {fi > 0 && <div className="h-[30px]" />}
-
-                                    {s.poster && (
-                                      <img
-                                        src={s.poster}
-                                        alt={s.title}
-                                        className="w-full cursor-pointer object-cover"
-                                        style={{
-                                          aspectRatio: "150/220",
-                                          maxWidth: 90,
-                                        }}
-                                        onClick={() =>
-                                          onPosterClick(s.poster)
-                                        }
-                                      />
-                                    )}
-                                  </div>
-                                </Fragment>
-                              ))}
-                            </div>
-                          </div>
-
-                          <div
-                            className="shrink-0 pt-1"
-                            style={{ width: 200 }}
-                          >
-                            <div className="font-bold text-sm uppercase tracking-wide font-sora">
-                              {first.cinema}
-                            </div>
-
-                            <CinemaInfoBlock
-                              cinema={first.cinema}
-                              cinemaMap={cinemaMap}
-                            />
-                          </div>
-                        </div>
-                      </Fragment>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </section>
+              </Fragment>
+            );
+          })}
+        </div>
+      </div>
+    );
+  })}
+</section>
 
       {/* Mobile agenda — vertical editorial layout */}
       <section id="agenda" className="md:hidden px-5 pt-6 pb-6">
@@ -508,7 +495,7 @@ export default function Agenda({
 
                           {first.mostra && (
                             <div
-                              className="text-[11px] font-medium uppercase tracking-wide text-right font-sora leading-snug"
+                              className="text-[13px] font-medium uppercase tracking-wide text-right font-sora leading-snug"
                               style={{
                                 color: "#A52323",
                                 maxWidth: "55%",

@@ -28,7 +28,7 @@ export default function PostSelector({
   fullWidth,
 }: Props) {
   return (
-    <div className={fullWidth ? "relative" : "absolute"} style={fullWidth ? {width: "100%", maxWidth: "280px"} : { right: "clamp(16px,3vw,42px)", top: "33%" }} ref={postRef}>
+    <div className={fullWidth ? "relative" : "absolute"} style={fullWidth ? {width: "100%", maxWidth: "320px"} : { right: "clamp(16px,3vw,42px)", top: "33%" }} ref={postRef}>
       <div className="relative">
         <button
           onClick={onToggle}

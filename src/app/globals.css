@@ -67,27 +67,20 @@ body {
   --ticket-shape: polygon(
     10px 0,
     calc(100% - 10px) 0,
-
     calc(100% - 10px) 7px,
     100% 7px,
-
     100% calc(50% - 8px),
     calc(100% - 7px) 50%,
     100% calc(50% + 8px),
-
     100% calc(100% - 7px),
     calc(100% - 10px) calc(100% - 7px),
-
     calc(100% - 10px) 100%,
     10px 100%,
-
     10px calc(100% - 7px),
     0 calc(100% - 7px),
-
     0 calc(50% + 8px),
     7px 50%,
     0 calc(50% - 8px),
-
     0 7px,
     10px 7px
   );
@@ -100,27 +93,20 @@ body {
   --ticket-shape-inner: polygon(
     10px 0,
     calc(100% - 10px) 0,
-
     calc(100% - 10px) 7px,
     100% 7px,
-
     100% calc(50% - 8.4px),
     calc(100% - 7.35px) 50%,
     100% calc(50% + 8.4px),
-
     100% calc(100% - 7px),
     calc(100% - 10px) calc(100% - 7px),
-
     calc(100% - 10px) 100%,
     10px 100%,
-
     10px calc(100% - 7px),
     0 calc(100% - 7px),
-
     0 calc(50% + 8.4px),
     7.35px 50%,
     0 calc(50% - 8.4px),
-
     0 7px,
     10px 7px
   );
@@ -143,6 +129,29 @@ body {
   z-index: 1;
 }
 
+@keyframes text-card-enter {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1023px) {
+  .text-card-enter {
+    animation: text-card-enter 400ms ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-card-enter {
+    animation: none;
+  }
+}
 
 @media (max-width: 767px) {
   .session-mobile-header {
@@ -209,7 +218,7 @@ body {
   }
 
   .mobile-film-poster {
-    width: 128px;
+    width: 118px;
     justify-self: end;
   }
 }
