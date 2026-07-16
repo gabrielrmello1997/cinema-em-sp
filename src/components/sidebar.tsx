@@ -7,11 +7,11 @@ type Props = {
 export default function Sidebar({ scrollTo }: Props) {
   return (
     <aside className="shrink-0 border-r py-0 px-[clamp(16px,2vw,32px)] sticky top-0 self-start min-h-screen" style={{ width: "clamp(140px,14vw,220px)" }}>
-      <div className="flex flex-col">
-        <a href="/" className="mt-[-16px]">
-          <img src="/assets/logo.svg" alt="Cinema em São Paulo" style={{ width: "100%", maxWidth: "32rem" }} />
+      <div className="flex flex-col pt-[56px]">
+        <a href="/">
+          <img src="/assets/logo-mobile.svg" alt="Cinema em São Paulo" style={{ width: "100%", maxWidth: "150px" }} />
         </a>
-        <div className="dash-ink mb-10" />
+        <div className="dash-ink mb-9 mt-9" />
         <nav
           className="flex flex-col uppercase font-sora tracking-wide"
           style={{ fontSize: "clamp(11px,1.1vw,16px)" }}
