@@ -385,7 +385,7 @@ export default function Agenda({
                           <div className="min-w-0">
                             {fi === 0 && first.mostra && (
                               <div
-                                className="font-medium uppercase text-[14px] mb-1 break-words font-sora"
+                                className="font-medium uppercase text-[14px] mb-1 break-words font-sora tracking-wide"
                                 style={{ color: "#A52323" }}
                               >
                                 {first.mostra}

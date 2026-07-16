@@ -155,7 +155,7 @@ export default function DayStickyNav({
     <div
       className="fixed left-0 right-0 flex items-center justify-center pointer-events-none"
       style={{
-        bottom: "40px",
+        bottom: "32px",
         zIndex: 35,
         transition: "opacity 0.2s, transform 0.2s",
         opacity: visible ? 1 : 0,
@@ -165,7 +165,7 @@ export default function DayStickyNav({
       <div
         className="pointer-events-auto"
         style={{
-          filter: "drop-shadow(2px 2px 6px rgba(35,33,29,0.15))",
+          filter: "drop-shadow(0 6px 16px rgba(35,33,29,0.20))",
         }}
       >
         <div
