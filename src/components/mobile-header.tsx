@@ -22,7 +22,7 @@ export default function MobileHeader({
       if (!element) return;
   
       const headerHeight = 72;
-      const extraSpacing = 16;
+      const extraSpacing = id === "agenda" ? 72 : 16;
       const offset = headerHeight + extraSpacing;
   
       const top =

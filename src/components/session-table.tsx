@@ -433,7 +433,7 @@ export default function SessionTable({
 
         if (!agenda) return;
 
-        const headerOffset = window.innerWidth < 1024 ? 88 : 24;
+        const headerOffset = window.innerWidth < 1024 ? 102  : 24;
         const top =
           agenda.getBoundingClientRect().top +
           window.scrollY -

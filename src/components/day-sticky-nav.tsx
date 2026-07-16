@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 type DayTab = {
   day: string;
@@ -24,8 +24,9 @@ type Props = {
 
 const RED = "#A52323";
 const RED_DARK = "#8B1C1C";
-const NAV_BOTTOM = 24;
-const NAV_HEIGHT = 50;
+const NAV_HEIGHT = 44;
+const MOBILE_HEADER_HEIGHT = 72;
+const NAV_BAND_HEIGHT = 56;
 
 function getVisibleId(id: string): HTMLElement | null {
   const elements = document.querySelectorAll<HTMLElement>(`[id="${id}"]`);
@@ -59,11 +60,9 @@ export default function DayStickyNav({
 
   const current = dayTabs[effectiveIndex] ?? dayTabs[0];
 
-  const hasPrevious =
-    effectiveIndex > 0 || canNavigateToPreviousPost;
+  const hasPrevious = effectiveIndex > 0;
 
-  const hasNext =
-    effectiveIndex < dayTabs.length - 1 || canNavigateToNextPost;
+  const hasNext = effectiveIndex < dayTabs.length - 1;
 
   useEffect(() => {
     if (activeDayIndex >= 0) {
@@ -74,23 +73,23 @@ export default function DayStickyNav({
   }, [activeDayIndex, dayTabs]);
 
   useEffect(() => {
+    const triggerTop = MOBILE_HEADER_HEIGHT + NAV_BAND_HEIGHT;
+
     const check = () => {
       const firstDay = getVisibleId("day-0");
       const agenda = getVisibleId("agenda");
-    
+
       if (!firstDay || !agenda) {
         setVisible(false);
         return;
       }
-    
+
       const firstDayTop = firstDay.getBoundingClientRect().top;
       const agendaBottom = agenda.getBoundingClientRect().bottom;
-    
-      const triggerTop = 200;
-    
+
       const hasEnteredAgenda = firstDayTop < triggerTop;
       const hasNotLeftAgenda = agendaBottom > triggerTop;
-    
+
       setVisible(hasEnteredAgenda && hasNotLeftAgenda);
     };
 
@@ -143,7 +142,7 @@ export default function DayStickyNav({
       },
       {
         threshold: 0,
-        rootMargin: "-90px 0px -70% 0px",
+        rootMargin: "-128px 0px -65% 0px",
       },
     );
 
@@ -152,35 +151,50 @@ export default function DayStickyNav({
     }
 
     return () => observer.disconnect();
-  }, [dayTabs.length, activeDayIndex]);
+  }, [dayTabs.length]);
 
-  const goPrevious = () => {
+  const goPrevious = useCallback(() => {
     if (!hasPrevious) return;
     onNavigate("previous", effectiveIndex);
-  };
+  }, [hasPrevious, effectiveIndex, onNavigate]);
 
-  const goNext = () => {
+  const goNext = useCallback(() => {
     if (!hasNext) return;
     onNavigate("next", effectiveIndex);
-  };
+  }, [hasNext, effectiveIndex, onNavigate]);
+
+  const goCurrentDayTop = useCallback(() => {
+    const element = getVisibleId(`day-${effectiveIndex}`);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, [effectiveIndex]);
 
   if (dayTabs.length === 0) return null;
 
   return (
     <div
-      className="fixed left-0 right-0 flex items-center justify-center pointer-events-none"
+      className="fixed left-0 right-0 lg:hidden"
       style={{
-        bottom: `${NAV_BOTTOM}px`,
-        zIndex: 35,
+        top: `${MOBILE_HEADER_HEIGHT}px`,
+        zIndex: 40,
+        minHeight: `${NAV_BAND_HEIGHT}px`,
+        background: "#F3F2ED",
+        borderBottom: "1px dashed rgba(35, 33, 29, 0.55)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "6px 16px",
         transition: "opacity 0.2s, transform 0.2s",
         opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(8px)",
+        transform: visible ? "translateY(0)" : "translateY(-8px)",
+        pointerEvents: visible ? "auto" : "none",
       }}
     >
       <div
-        className="pointer-events-auto"
         style={{
-          filter: "drop-shadow(0 6px 16px rgba(35,33,29,0.20))",
+          filter: "drop-shadow(0 2px 5px rgba(35,33,29,0.12))",
         }}
       >
         <div
@@ -195,11 +209,10 @@ export default function DayStickyNav({
             style={{ background: RED }}
           >
             <div
-              className="flex items-center"
+              className="flex items-center max-lg:w-[180px] max-[520px]:w-[140px]"
               style={{
-                width: 140,
                 height: NAV_HEIGHT,
-                padding: "0 16px",
+                padding: "0 8px",
               }}
             >
               <button
@@ -208,12 +221,12 @@ export default function DayStickyNav({
                 disabled={!hasPrevious}
                 className="flex items-center justify-center shrink-0 h-full transition-opacity"
                 style={{
-                  width: 22,
+                  width: 16,
                   color: "#F3F2ED",
                   opacity: hasPrevious ? 1 : 0.2,
                   cursor: hasPrevious ? "pointer" : "default",
                 }}
-                aria-label="Dia anterior"
+                aria-label="Ir para o dia anterior"
               >
                 <svg
                   width="7"
@@ -231,7 +244,12 @@ export default function DayStickyNav({
                 </svg>
               </button>
 
-              <div className="flex flex-col items-center justify-center flex-1 min-w-0">
+              <button
+                type="button"
+                onClick={goCurrentDayTop}
+                className="flex flex-col items-center justify-center flex-1 min-w-0"
+                aria-label={`Voltar ao início de ${current?.label ?? "dia atual"}`}
+              >
                 <span
                   className="font-sora font-bold uppercase tracking-wide"
                   style={{
@@ -253,7 +271,7 @@ export default function DayStickyNav({
                     ? `${current.dayNum} ${current.month}`
                     : ""}
                 </span>
-              </div>
+              </button>
 
               <button
                 type="button"
@@ -261,12 +279,12 @@ export default function DayStickyNav({
                 disabled={!hasNext}
                 className="flex items-center justify-center shrink-0 h-full transition-opacity"
                 style={{
-                  width: 22,
+                  width: 16,
                   color: "#F3F2ED",
                   opacity: hasNext ? 1 : 0.2,
                   cursor: hasNext ? "pointer" : "default",
                 }}
-                aria-label="Próximo dia"
+                aria-label="Ir para o próximo dia"
               >
                 <svg
                   width="7"
