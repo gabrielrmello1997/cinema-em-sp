@@ -155,7 +155,7 @@ export default function DayStickyNav({
     <div
       className="fixed left-0 right-0 flex items-center justify-center pointer-events-none"
       style={{
-        top: "80px",
+        bottom: "80px",
         zIndex: 35,
         transition: "opacity 0.2s, transform 0.2s",
         opacity: visible ? 1 : 0,
