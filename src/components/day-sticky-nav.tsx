@@ -14,17 +14,29 @@ type DayTab = {
 type Props = {
   dayTabs: DayTab[];
   activeDayIndex: number;
-  onDayChange: (dayId: string) => void;
+  canNavigateToPreviousPost: boolean;
+  canNavigateToNextPost: boolean;
+  onNavigate: (
+    direction: "previous" | "next",
+    currentDayIndex: number,
+  ) => void;
 };
 
 const RED = "#A52323";
 const RED_DARK = "#8B1C1C";
+const NAV_BOTTOM = 40;
+const NAV_HEIGHT = 50;
 
 function getVisibleId(id: string): HTMLElement | null {
   const elements = document.querySelectorAll<HTMLElement>(`[id="${id}"]`);
 
   for (const element of elements) {
-    if (element.offsetParent !== null || element.checkVisibility()) {
+    if (element.offsetParent !== null) return element;
+
+    if (
+      typeof element.checkVisibility === "function" &&
+      element.checkVisibility()
+    ) {
       return element;
     }
   }
@@ -35,7 +47,9 @@ function getVisibleId(id: string): HTMLElement | null {
 export default function DayStickyNav({
   dayTabs,
   activeDayIndex,
-  onDayChange,
+  canNavigateToPreviousPost,
+  canNavigateToNextPost,
+  onNavigate,
 }: Props) {
   const [visible, setVisible] = useState(false);
   const [scrollBasedIndex, setScrollBasedIndex] = useState(0);
@@ -44,8 +58,20 @@ export default function DayStickyNav({
     activeDayIndex >= 0 ? activeDayIndex : scrollBasedIndex;
 
   const current = dayTabs[effectiveIndex] ?? dayTabs[0];
-  const hasPrev = effectiveIndex > 0;
-  const hasNext = effectiveIndex < dayTabs.length - 1;
+
+  const hasPrevious =
+    effectiveIndex > 0 || canNavigateToPreviousPost;
+
+  const hasNext =
+    effectiveIndex < dayTabs.length - 1 || canNavigateToNextPost;
+
+  useEffect(() => {
+    if (activeDayIndex >= 0) {
+      setScrollBasedIndex(activeDayIndex);
+    } else {
+      setScrollBasedIndex(0);
+    }
+  }, [activeDayIndex, dayTabs]);
 
   useEffect(() => {
     const check = () => {
@@ -59,9 +85,10 @@ export default function DayStickyNav({
 
       const firstDayTop = firstDay.getBoundingClientRect().top;
       const agendaBottom = agenda.getBoundingClientRect().bottom;
+      const navTop = window.innerHeight - NAV_BOTTOM - NAV_HEIGHT;
 
-      const hasEnteredAgenda = firstDayTop < 110;
-      const hasNotLeftAgenda = agendaBottom > 110;
+      const hasEnteredAgenda = firstDayTop < navTop;
+      const hasNotLeftAgenda = agendaBottom > navTop;
 
       setVisible(hasEnteredAgenda && hasNotLeftAgenda);
     };
@@ -83,12 +110,9 @@ export default function DayStickyNav({
 
     const elements: Element[] = [];
 
-    for (let index = 0; index < dayTabs.length; index++) {
+    for (let index = 0; index < dayTabs.length; index += 1) {
       const element = getVisibleId(`day-${index}`);
-
-      if (element) {
-        elements.push(element);
-      }
+      if (element) elements.push(element);
     }
 
     if (elements.length === 0) return;
@@ -129,24 +153,14 @@ export default function DayStickyNav({
     return () => observer.disconnect();
   }, [dayTabs.length, activeDayIndex]);
 
-  const goTo = (index: number) => {
-    if (index < 0 || index >= dayTabs.length) return;
+  const goPrevious = () => {
+    if (!hasPrevious) return;
+    onNavigate("previous", effectiveIndex);
+  };
 
-    onDayChange(dayTabs[index].day);
-
-    window.setTimeout(() => {
-      const element = getVisibleId("day-0");
-
-      if (!element) return;
-
-      const top =
-        element.getBoundingClientRect().top + window.scrollY - 90;
-
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
-    }, 100);
+  const goNext = () => {
+    if (!hasNext) return;
+    onNavigate("next", effectiveIndex);
   };
 
   if (dayTabs.length === 0) return null;
@@ -155,11 +169,11 @@ export default function DayStickyNav({
     <div
       className="fixed left-0 right-0 flex items-center justify-center pointer-events-none"
       style={{
-        bottom: "28px",
+        bottom: `${NAV_BOTTOM}px`,
         zIndex: 35,
         transition: "opacity 0.2s, transform 0.2s",
         opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(-8px)",
+        transform: visible ? "translateY(0)" : "translateY(8px)",
       }}
     >
       <div
@@ -183,20 +197,20 @@ export default function DayStickyNav({
               className="flex items-center"
               style={{
                 width: 140,
-                height: 50,
+                height: NAV_HEIGHT,
                 padding: "0 16px",
               }}
             >
               <button
                 type="button"
-                onClick={() => goTo(effectiveIndex - 1)}
-                disabled={!hasPrev}
+                onClick={goPrevious}
+                disabled={!hasPrevious}
                 className="flex items-center justify-center shrink-0 h-full transition-opacity"
                 style={{
                   width: 22,
                   color: "#F3F2ED",
-                  opacity: hasPrev ? 1 : 0.2,
-                  cursor: hasPrev ? "pointer" : "default",
+                  opacity: hasPrevious ? 1 : 0.2,
+                  cursor: hasPrevious ? "pointer" : "default",
                 }}
                 aria-label="Dia anterior"
               >
@@ -242,7 +256,7 @@ export default function DayStickyNav({
 
               <button
                 type="button"
-                onClick={() => goTo(effectiveIndex + 1)}
+                onClick={goNext}
                 disabled={!hasNext}
                 className="flex items-center justify-center shrink-0 h-full transition-opacity"
                 style={{
