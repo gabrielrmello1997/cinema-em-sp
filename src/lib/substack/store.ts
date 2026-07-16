@@ -1,5 +1,4 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
+import { put, list, get } from "@vercel/blob";
 import type { CinemaInfo, Session } from "./programming";
 
 export interface StoredData {
@@ -13,13 +12,21 @@ export interface StoredData {
   cinemas: CinemaInfo[];
 }
 
-const TMP_PATH = "/tmp/sessions.json";
-const FALLBACK_PATH = path.join(process.cwd(), "public", "data", "sessions.json");
+const BLOB_KEY = "sessions.json";
 
-async function readFile(filePath: string): Promise<StoredData | null> {
+export async function loadStored(): Promise<StoredData | null> {
   try {
-    const raw = await fs.readFile(filePath, "utf-8");
-    const data = JSON.parse(raw) as StoredData;
+    const { blobs } = await list({ prefix: BLOB_KEY });
+    if (blobs.length === 0) return null;
+
+    const latest = blobs.reduce((a, b) =>
+      new Date(a.uploadedAt) > new Date(b.uploadedAt) ? a : b,
+    );
+
+    const result = await get(latest.url, { access: "private" });
+    if (!result || result.statusCode !== 200 || !result.stream) return null;
+    const text = await new Response(result.stream).text();
+    const data = JSON.parse(text) as StoredData;
     if (!data.allSessions) data.allSessions = data.sessions;
     return data;
   } catch {
@@ -27,15 +34,12 @@ async function readFile(filePath: string): Promise<StoredData | null> {
   }
 }
 
-export async function loadStored(): Promise<StoredData | null> {
-  const tmp = await readFile(TMP_PATH);
-  if (tmp) return tmp;
-  return readFile(FALLBACK_PATH);
-}
-
 export async function saveStored(data: StoredData): Promise<void> {
-  const payload = JSON.stringify(data, null, 2);
-  await fs.writeFile(TMP_PATH, payload, "utf-8");
+  const payload = JSON.stringify(data);
+  await put(BLOB_KEY, payload, {
+    access: "private",
+    addRandomSuffix: false,
+  });
 }
 
 export function isNewerFeed(currentGuid: string, stored: StoredData | null): boolean {
