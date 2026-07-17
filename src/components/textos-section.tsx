@@ -124,7 +124,7 @@ export default function TextosSection() {
         </h2>
 
         <p className="text-[18px] mb-10" style={{ color: "#23211D" }}>
-          Veja nossas últimas publicações no Substack
+          Veja nossas últimas publicações no Substack.
         </p>
 
         <div className="max-lg:hidden">
