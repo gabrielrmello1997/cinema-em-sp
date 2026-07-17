@@ -1,40 +1,98 @@
-import { NextResponse } from "next/server";
-import { revalidatePath } from "next/cache";
+import { promises as fs } from "node:fs";
+import path from "node:path";
 
-import { fetchAllItems } from "@/lib/substack/rss";
-import { extractSessionsDom } from "@/lib/substack/programming-dom";
-import { loadStored, saveStored, isNewerFeed } from "@/lib/substack/store";
-import { loadOverrides, applyOverrides } from "@/lib/substack/overrides";
-import { searchMovie, tmdbKey } from "@/lib/tmdb";
-import type { Session } from "@/lib/substack/programming";
-import { CINEMAS_DATA } from "@/lib/substack/programming";
+import { fetchAllItems } from "../src/lib/substack/rss";
+import type { FeedItem } from "../src/lib/substack/rss";
+import { extractSessionsDom } from "../src/lib/substack/programming-dom";
+import { loadStored, saveStored, isNewerFeed } from "../src/lib/substack/store";
+import type { StoredData } from "../src/lib/substack/store";
+import { loadOverrides, applyOverrides } from "../src/lib/substack/overrides";
+import { searchMovie, tmdbKey } from "../src/lib/tmdb";
+import type { Session } from "../src/lib/substack/programming";
+import { CINEMAS_DATA } from "../src/lib/substack/programming";
 
 function sessionKey(s: Session): string {
   return `${s.cinema}|${s.day}|${s.time}`;
 }
 
-async function handleRefresh(request: Request) {
-  const authHeader = request.headers.get("authorization");
+const force = process.argv.includes("--force");
 
-  if (process.env.NODE_ENV !== "development" && authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return NextResponse.json(
-      { ok: false, error: "Unauthorized" },
-      { status: 401 },
-    );
+async function backupAndWrite(dataPath: string, data: StoredData): Promise<void> {
+  const dir = path.dirname(dataPath);
+  const ext = path.extname(dataPath);
+  const base = path.basename(dataPath, ext);
+
+  const backupsDir = process.env.SESSIONS_BACKUP_DIR
+    ? path.resolve(process.env.SESSIONS_BACKUP_DIR)
+    : path.join(dir, ".sessions-backups");
+
+  await fs.mkdir(backupsDir, { recursive: true });
+
+  // Backup do arquivo atual (se existir e for válido)
+  try {
+    const raw = await fs.readFile(dataPath, "utf-8");
+    JSON.parse(raw);
+
+    // backup simples
+    await fs.copyFile(dataPath, path.join(backupsDir, `${base}.backup.json`));
+
+    // backup com timestamp
+    const ts = new Date().toISOString().replace(/[:.Z-]/g, "").replace("T", "T");
+    await fs.copyFile(dataPath, path.join(backupsDir, `${base}.${ts}.json`));
+
+    // Limpa backups antigos com timestamp (mantém últimos 5)
+    const entries = await fs.readdir(backupsDir);
+    const stamped = entries
+      .filter((f) => {
+        if (!f.startsWith(`${base}.`)) return false;
+        if (f === `${base}.json` || f === `${base}.backup.json`) return false;
+        return f.endsWith(".json");
+      })
+      .sort()
+      .reverse();
+
+    if (stamped.length > 5) {
+      for (const old of stamped.slice(5)) {
+        await fs.unlink(path.join(backupsDir, old));
+      }
+    }
+  } catch {
+    // Arquivo atual inexistente ou inválido — nada a backup
   }
 
-  const { searchParams } = new URL(request.url);
-  const force = searchParams.get("force") === "true";
+  // Valida estrutura do novo dado
+  const payload = JSON.stringify(data);
+  const parsed = JSON.parse(payload);
+  if (!parsed.sessions || !Array.isArray(parsed.sessions)) {
+    throw new Error("Dado inválido: sessions ausente ou não é array");
+  }
+  if (!parsed.feedTitle) {
+    throw new Error("Dado inválido: feedTitle ausente");
+  }
 
-  const started = Date.now();
-  const MAX_EXECUTION_MS = 8000;
-  let stage = "start";
+  // Escrita atômica
+  const tmp = dataPath + ".tmp." + process.pid;
+  await fs.writeFile(tmp, payload, "utf-8");
+  await fs.rename(tmp, dataPath);
+}
 
+const started = Date.now();
+const MAX_EXECUTION_MS = 8000;
+let stage = "start";
+
+async function main() {
   try {
     console.log("[refresh] Started");
 
     stage = "rss";
-    const items = await fetchAllItems();
+    let items: FeedItem[];
+    try {
+      items = await fetchAllItems();
+    } catch (err) {
+      console.error("[refresh] Falha ao buscar RSS:", err);
+      process.exit(1);
+    }
+
     const latest = items[0];
 
     stage = "load";
@@ -56,7 +114,6 @@ async function handleRefresh(request: Request) {
     const storedAllSessions = stored?.allSessions ?? [];
 
     if (isNewPost) {
-      // Parse sessions from the latest post
       stage = "parse-latest";
       latestSessions = extractSessionsDom(latest.html);
       for (const s of latestSessions) {
@@ -65,14 +122,9 @@ async function handleRefresh(request: Request) {
 
       if (latestSessions.length === 0) {
         console.log("[refresh] Latest post has no session data, skipping");
-        return NextResponse.json({
-          ok: false,
-          stage: "post-parser",
-          error: "The latest post could not be parsed",
-        }, { status: 422 });
+        process.exit(1);
       }
 
-      // Build full history (all posts)
       stage = "merge";
       const seen = new Set<string>();
       allSessions = [];
@@ -89,7 +141,6 @@ async function handleRefresh(request: Request) {
         }
       }
 
-      // Deduplicate against stored history (by session key)
       if (stored?.allSessions) {
         for (const s of stored.allSessions) {
           const key = sessionKey(s);
@@ -100,18 +151,15 @@ async function handleRefresh(request: Request) {
         }
       }
     } else {
-      // No new post — use stored data, just update posters
       latestSessions = storedSessions;
       allSessions = storedAllSessions;
     }
 
-    // Apply manual overrides from overrides.json
     stage = "override";
     const overrides = await loadOverrides();
     applyOverrides(allSessions, overrides);
     applyOverrides(latestSessions, overrides);
 
-    // Build poster cache from stored data
     stage = "cache";
     const posterCache = new Map<string, string>();
     for (const s of stored?.allSessions ?? []) {
@@ -121,7 +169,6 @@ async function handleRefresh(request: Request) {
       }
     }
 
-    // Search TMDB for missing posters
     stage = "tmdb";
     const tmdbQueried = new Set<string>();
     let postersFound = 0;
@@ -169,7 +216,7 @@ async function handleRefresh(request: Request) {
     }
 
     stage = "save";
-    await saveStored({
+    const saveData: StoredData = {
       feedGuid: isNewPost ? latest.guid : stored!.feedGuid,
       feedUrl: isNewPost ? latest.link : stored!.feedUrl,
       feedDate: isNewPost ? latest.date : stored!.feedDate,
@@ -178,16 +225,19 @@ async function handleRefresh(request: Request) {
       sessions: latestSessions,
       allSessions,
       cinemas: CINEMAS_DATA,
-    });
+    };
 
-    stage = "revalidate";
-    await revalidatePath("/");
+    const dataPath = process.env.SESSIONS_PATH
+      ?? path.join(process.cwd(), "public", "data", "sessions.json");
+
+    await backupAndWrite(dataPath, saveData);
 
     const elapsed = Date.now() - started;
     console.log(`[refresh] Persisted successfully (${elapsed}ms)`);
     console.log(`[refresh] Parsed ${allSessions.length} total sessions`);
+    console.log(`[refresh] Posters: ${postersFound} found, ${postersMissing} missing`);
 
-    return NextResponse.json({
+    console.log(JSON.stringify({
       ok: true,
       updated: isNewPost,
       postId: isNewPost ? latest.guid : stored!.feedGuid,
@@ -196,25 +246,25 @@ async function handleRefresh(request: Request) {
       sessionsSaved: allSessions.length,
       postersFound,
       postersMissing,
-      refreshedAt: new Date().toISOString(),
-    });
+      refreshedAt: saveData.refreshedAt,
+    }));
+
+    process.exit(0);
   } catch (error) {
     const elapsed = Date.now() - started;
     const message = error instanceof Error ? error.message : String(error);
 
     console.error(`[refresh] Failed at stage "${stage}":`, message);
 
-    return NextResponse.json(
-      { ok: false, stage, error: message },
-      { status: 500 },
-    );
+    console.error(JSON.stringify({
+      ok: false,
+      stage,
+      error: message,
+      elapsed,
+    }));
+
+    process.exit(1);
   }
 }
 
-export async function GET(request: Request) {
-  return handleRefresh(request);
-}
-
-export async function POST(request: Request) {
-  return handleRefresh(request);
-}
+main();

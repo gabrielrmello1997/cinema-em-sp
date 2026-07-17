@@ -81,6 +81,31 @@ export default function SessionTable({
   const [fullscreenPoster, setFullscreenPoster] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const [liveData, setLiveData] = useState({ sessions, allSessions, feedTitle, refreshedAt, cinemas });
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/data/sessions.json", { signal: controller.signal })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((newData) => {
+        if (
+          newData &&
+          newData.refreshedAt &&
+          newData.refreshedAt !== liveData.refreshedAt
+        ) {
+          setLiveData({
+            sessions: newData.sessions ?? liveData.sessions,
+            allSessions: newData.allSessions ?? liveData.allSessions,
+            feedTitle: newData.feedTitle ?? liveData.feedTitle,
+            refreshedAt: newData.refreshedAt,
+            cinemas: newData.cinemas ?? liveData.cinemas,
+          });
+        }
+      })
+      .catch(() => {});
+    return () => controller.abort();
+  }, []);
+
   const postRef = useRef<HTMLDivElement>(null);
   const pendingPostNavigationRef = useRef<PendingPostNavigation>(null);
   const shouldScrollToAgendaRef = useRef(false);
@@ -88,49 +113,49 @@ export default function SessionTable({
   const postTitles = useMemo(() => {
     const titles = new Set<string>();
 
-    for (const session of allSessions) {
+    for (const session of liveData.allSessions) {
       if (session.feedTitle) titles.add(session.feedTitle);
     }
 
     const orderedTitles = Array.from(titles);
 
-    if (!orderedTitles.includes(feedTitle)) {
-      orderedTitles.unshift(feedTitle);
-    } else if (orderedTitles[0] !== feedTitle) {
+    if (!orderedTitles.includes(liveData.feedTitle)) {
+      orderedTitles.unshift(liveData.feedTitle);
+    } else if (orderedTitles[0] !== liveData.feedTitle) {
       return [
-        feedTitle,
-        ...orderedTitles.filter((title) => title !== feedTitle),
+        liveData.feedTitle,
+        ...orderedTitles.filter((title) => title !== liveData.feedTitle),
       ];
     }
 
     return orderedTitles;
-  }, [allSessions, feedTitle]);
+  }, [liveData.allSessions, liveData.feedTitle]);
 
   const olderPostTitles = useMemo(
-    () => postTitles.filter((title) => title !== feedTitle),
-    [postTitles, feedTitle],
+    () => postTitles.filter((title) => title !== liveData.feedTitle),
+    [postTitles, liveData.feedTitle],
   );
 
   const resolvedSessions = useMemo(() => {
-    if (!selectedPost) return sessions;
+    if (!selectedPost) return liveData.sessions;
 
-    return allSessions.filter(
+    return liveData.allSessions.filter(
       (session) => session.feedTitle === selectedPost,
     );
-  }, [selectedPost, sessions, allSessions]);
+  }, [selectedPost, liveData.sessions, liveData.allSessions]);
 
-  const currentPostTitle = selectedPost || feedTitle;
+  const currentPostTitle = selectedPost || liveData.feedTitle;
 
   const postNavigation = useMemo<PostNavigationItem[]>(() => {
     return postTitles
       .map((title) => {
-        const matchingSessions = allSessions.filter(
+        const matchingSessions = liveData.allSessions.filter(
           (session) => session.feedTitle === title,
         );
 
         const postSessions =
-          title === feedTitle && matchingSessions.length === 0
-            ? sessions
+          title === liveData.feedTitle && matchingSessions.length === 0
+            ? liveData.sessions
             : matchingSessions;
 
         return {
@@ -139,7 +164,7 @@ export default function SessionTable({
         };
       })
       .filter((post) => post.days.length > 0);
-  }, [postTitles, allSessions, feedTitle, sessions]);
+  }, [postTitles, liveData.allSessions, liveData.feedTitle, liveData.sessions]);
 
   const currentPostNavigationIndex = useMemo(
     () =>
@@ -355,12 +380,12 @@ export default function SessionTable({
   const cinemaMap = useMemo(() => {
     const map = new Map<string, CinemaInfo>();
 
-    for (const cinema of cinemas) {
+    for (const cinema of liveData.cinemas) {
       map.set(cinema.name, cinema);
     }
 
     return map;
-  }, [cinemas]);
+  }, [liveData.cinemas]);
 
   const availableCinemas = useMemo(
     () =>
@@ -496,7 +521,7 @@ export default function SessionTable({
   
         shouldScrollToAgendaRef.current = true;
         setSelectedPost(
-          olderPost.title === feedTitle ? "" : olderPost.title,
+          olderPost.title === liveData.feedTitle ? "" : olderPost.title,
         );
         setActiveDayIndex(-1);
         setPostOpen(false);
@@ -523,16 +548,16 @@ export default function SessionTable({
       };
   
       shouldScrollToAgendaRef.current = true;
-      setSelectedPost(
-        newerPost.title === feedTitle ? "" : newerPost.title,
-      );
+        setSelectedPost(
+          newerPost.title === liveData.feedTitle ? "" : newerPost.title,
+        );
       setActiveDayIndex(-1);
       setPostOpen(false);
     },
     [
       currentPostTitle,
       dayTabs.length,
-      feedTitle,
+      liveData.feedTitle,
       postNavigation,
     ],
   );
@@ -575,7 +600,7 @@ export default function SessionTable({
         <main className="flex-1 min-w-0">
           <Hero
             currentPostTitle={currentPostTitle}
-            feedTitle={feedTitle}
+            feedTitle={liveData.feedTitle}
             selectedPost={selectedPost}
             olderPostTitles={olderPostTitles}
             postOpen={postOpen}

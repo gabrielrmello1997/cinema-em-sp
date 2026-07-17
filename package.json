@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "pnpm refresh && next build",
+    "start": "npx serve out",
+    "refresh": "npx tsx scripts/refresh.ts",
     "lint": "eslint"
   },
   "dependencies": {
-    "@vercel/blob": "^2.6.1",
     "fast-xml-parser": "^5.9.3",
     "next": "16.2.10",
     "node-html-parser": "^9.0.0",

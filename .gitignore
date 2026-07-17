@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# session backups (runtime-generated, not for version control)
+public/data/.sessions-backups/
+
 # production
 /build
 
