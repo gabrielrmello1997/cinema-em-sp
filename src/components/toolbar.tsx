@@ -86,7 +86,7 @@ export default function Toolbar({
                 value={query}
                 onChange={(e) => onQueryChange(e.target.value)}
                 placeholder="Buscar filme, diretor, cinema..."
-                className="flex-1 px-2 text-sm bg-transparent text-ink placeholder:text-ink/30 outline-none"
+                className="flex-1 px-2 text-sm bg-transparent text-ink placeholder:text-ink/50 outline-none"
                 style={{ height: 49 }}
               />
             </div>
@@ -171,7 +171,7 @@ export default function Toolbar({
         value={query}
         onChange={(e) => onQueryChange(e.target.value)}
         placeholder="Buscar filme, diretor, cinema..."
-        className="flex-1 min-w-0 px-2 text-sm bg-transparent text-ink placeholder:text-ink/30 outline-none"
+        className="flex-1 min-w-0 px-2 text-sm bg-transparent text-ink placeholder:text-ink/50 outline-none"
         style={{ height: 44 }}
       />
     </div>

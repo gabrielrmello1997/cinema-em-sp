@@ -294,7 +294,7 @@ export default function Agenda({
                               }}
                             >
                               <div
-                                className="font-bold leading-tight tracking-wide font-sora"
+                                className="font-bold leading-tight tracking-wide font-sora pb-2"
                                 style={{
                                   fontSize: "clamp(12px,1.3vw,20px)",
                                 }}
@@ -429,7 +429,7 @@ export default function Agenda({
                       width: "clamp(150px,20vw,210px)",
                     }}
                   >
-                    <div className="font-bold text-sm uppercase leading-tight tracking-wide font-sora">
+                    <div className="font-bold text-sm uppercase leading-tight tracking-wide font-sora pb-2">
                       {first.cinema}
                     </div>
 
@@ -607,7 +607,7 @@ export default function Agenda({
                                       aria-hidden="true"
                                     />
 
-                                    <div className="font-bold text-[13px] uppercase tracking-wide font-sora pt-2">
+                                    <div className="font-bold text-[13px] uppercase tracking-wide font-sora pt-2 pb-1">
                                       {first.cinema}
                                     </div>
 

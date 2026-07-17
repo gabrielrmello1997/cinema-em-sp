@@ -58,8 +58,7 @@ export default function CtaSection() {
             pt-8
             lg:pt-1
             pr-10
-            max-w-[500px]
-            md:max-w-[550px]
+            max-w-[640px]
             lg:max-w-[600px]
           "
           style={{
