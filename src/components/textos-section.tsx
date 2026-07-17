@@ -110,11 +110,11 @@ export default function TextosSection() {
 
   return (
     <>
-      <div className="dash-ink mx-12 max-lg:mx-5 md:mx-8" />
+      <div className="dash-ink mx-5 md:mx-8 lg:mx-12" />
 
       <section
         id="textos"
-        className="px-12 pt-10 md:pt-12 pb-16 max-lg:px-5 md:px-8"
+        className="px-5 md:px-8 lg:px-12 pt-10 md:pt-12 pb-16"
       >
         <h2
           className="text-[18px] uppercase font-bold mb-8 tracking-wide font-sora"

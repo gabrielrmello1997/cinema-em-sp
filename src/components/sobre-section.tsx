@@ -1,9 +1,9 @@
 export default function SobreSection() {
   return (
     <>
-      <div className="dash-ink mx-12 max-lg:mx-5 md:mx-8" />
+      <div className="dash-ink mx-5 md:mx-8 lg:mx-12" />
 
-      <section id="about" className="px-12 py-12 max-lg:px-5 md:px-8">
+      <section id="about" className="px-5 md:px-8 lg:px-12 py-12">
         <h2
           className="text-[18px] uppercase font-bold mb-8 tracking-wide font-sora"
           style={{ color: "#A52323" }}
@@ -118,7 +118,7 @@ export default function SobreSection() {
             <p>
               Nosso trabalho é feito manualmente a oito mãos.
               <br />
-              <b>Toda ajuda é bem vinda</b> :)
+              <b>Toda ajuda é bem-vinda</b> :)
             </p>
           </div>
         </div>

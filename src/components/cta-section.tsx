@@ -7,9 +7,9 @@ export default function CtaSection() {
     >
       <div
         className="
-          px-12
-          max-lg:px-5
+          px-5
           md:px-8
+          lg:px-12
           flex
           gap-0
           h-full
