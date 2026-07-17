@@ -66,7 +66,7 @@ export default function Hero({
           }}
         >
           <h1
-            className="font-sora leading-none font-bold mt-4 tracking-wide"
+            className="font-sora leading-none font-bold mt-4"
             style={{
               color: "#F3F2ED",
               fontSize: "clamp(32px,3.5vw,54px)",

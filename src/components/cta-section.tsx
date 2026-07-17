@@ -27,7 +27,7 @@ export default function CtaSection() {
           style={{ width: "clamp(260px,22vw,340px)" }}
         >
           <h2
-            className="font-bold leading-tight font-sora tracking-wide"
+            className="font-bold leading-tight font-sora"
             style={{
               color: "#F3F2ED",
               fontSize: "clamp(36px,2.8vw,42px)",

@@ -93,7 +93,7 @@ export default function SobreSection() {
           />
 
           <div
-            className="flex-1 w-full max-w-none leading-relaxed space-y-4 pt-10 lg:max-w-[clamp(280px,32vw,420px)]"
+            className="flex-1 w-full max-w-none leading-relaxed space-y-4 pt-10 lg:max-w-[clamp(280px, 32vw, 420px)]"
             style={{
               color: "#23211D",
               fontSize: "clamp(16px,1.2vw,18px)",
