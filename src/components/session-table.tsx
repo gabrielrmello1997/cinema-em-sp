@@ -365,9 +365,12 @@ export default function SessionTable({
   const availableCinemas = useMemo(
     () =>
       Array.from(
-        new Set(resolvedSessions.map((session) => session.cinema)),
+        new Set([
+          ...resolvedSessions.map((session) => session.cinema),
+          ...(cinemaFilter ? [cinemaFilter] : []),
+        ]),
       ).sort(),
-    [resolvedSessions],
+    [resolvedSessions, cinemaFilter],
   );
 
   const scrollTo = (id: string) =>

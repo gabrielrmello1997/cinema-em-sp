@@ -90,11 +90,11 @@ export default function Toolbar({
                 style={{ height: 49 }}
               />
             </div>
-            <div className="relative flex-shrink-0" style={{ width: "clamp(90px,10vw,190px)" }}>
+            <div className="relative flex-shrink-0" style={{ width: isNarrow ? "clamp(90px,10vw,150px)" : "clamp(100px,12vw,210px)" }}>
               <select
                 value={cinemaFilter}
                 onChange={(e) => onCinemaFilterChange(e.target.value)}
-                className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
+                className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer truncate"
                 style={{ height: 49, border: "1px solid #66625D" }}
               >
                 <option value="">{isNarrow ? "Cinemas" : "Todos os cinemas"}</option>
@@ -106,17 +106,17 @@ export default function Toolbar({
                 <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <div className="relative flex-shrink-0" style={{ width: "clamp(80px,10vw,180px)" }}>
+            <div className="relative flex-shrink-0" style={{ width: isNarrow ? "clamp(90px,10vw,150px)" : "clamp(65px,7vw,110px)" }}>
               <select
                 value={timeFilter}
                 onChange={(e) => onTimeFilterChange(e.target.value)}
                 className="w-full px-3 pr-8 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
                 style={{ height: 49, border: "1px solid #66625D" }}
               >
-                <option value="">{isNarrow ? "Horário" : "Qualquer horário"}</option>
-                <option value="manha">Manhã (até 12h)</option>
-                <option value="tarde">Tarde (12h–18h)</option>
-                <option value="noite">Noite (após 18h)</option>
+                <option value="">Horário</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
               </select>
               <svg style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, pointerEvents: 'none' }} viewBox="0 0 10 6" fill="none">
                 <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -207,7 +207,7 @@ export default function Toolbar({
                 <select
                   value={cinemaFilter}
                   onChange={(e) => onCinemaFilterChange(e.target.value)}
-                  className="w-full px-3 pr-8 py-2.5 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
+                  className="w-full px-3 pr-8 py-2.5 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer truncate"
                   style={{ border: "1px solid #66625D" }}
                 >
                   <option value="">Todos os cinemas</option>
@@ -226,7 +226,7 @@ export default function Toolbar({
                   className="w-full px-3 pr-8 py-2.5 text-sm bg-transparent text-ink outline-none appearance-none cursor-pointer"
                   style={{ border: "1px solid #66625D" }}
                 >
-                  <option value="">Qualquer horário</option>
+                  <option value="">Horário</option>
                   <option value="manha">Manhã (até 12h)</option>
                   <option value="tarde">Tarde (12h–18h)</option>
                   <option value="noite">Noite (após 18h)</option>
